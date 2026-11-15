@@ -1,0 +1,21 @@
+# Local configuration and secrets
+.env
+
+# Large downloaded files (see each demo's README)
+**/data/tokenizer.json
+
+# Pipeline runs: state, outbox, and review queue (regenerate with the demo's scripts)
+**/runs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ruff_cache/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store

@@ -1,0 +1,10 @@
+{
+  "name": "reliable-llm-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A four-step LLM pipeline (extract, retrieve, draft, send) with checks, retries, and saved state. Companion to Article #18 on snehalagrawal.com.",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

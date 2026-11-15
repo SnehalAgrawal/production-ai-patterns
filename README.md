@@ -1,1 +1,22 @@
 # production-ai-patterns
+
+Runnable demos of what it takes to run AI features in production: checks, retries, state, and failure handling. They accompany the AI engineering series on [snehalagrawal.com](https://snehalagrawal.com/articles/). Each demo is self-contained and runs locally in Python and JavaScript with [Ollama](https://ollama.com): no API keys or paid services.
+
+| Demo | Article | What it shows |
+|---|---|---|
+| [01-reliable-llm-pipeline](01-reliable-llm-pipeline/) | [Building Reliable LLM Pipelines](https://snehalagrawal.com/articles/building-reliable-llm-pipelines/) | A four-step pipeline for customer emails: how errors compound across steps, what checks between steps catch and miss, what retries fix, and what a crash costs with and without saved state |
+
+## Linting
+
+The repository has one lint setup for every demo: [Ruff](https://docs.astral.sh/ruff/) for Python and [ESLint](https://eslint.org/) for JavaScript.
+
+```bash
+npm install                              # ESLint (repository root)
+pip install -r requirements-dev.txt      # Ruff
+npm run lint                             # both
+```
+
+## Conventions
+
+- Every demo has a README with the exact setup that produced the numbers in its article.
+- Generated files (`runs/`, `data/tokenizer.json`) and `.env` files are not committed.

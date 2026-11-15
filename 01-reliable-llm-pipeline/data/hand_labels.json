@@ -1,0 +1,192 @@
+{
+ "_comment": "Hand labels for replies, keyed by the first 16 hex digits of the SHA-256 of 'email id, newline, reply' (score.py). A label applies only to the exact reply that was read. 'correct' means every fact the labels list for the email's answerable questions is stated correctly, every unanswerable question is said to be not covered, and nothing false is stated; true but unasked information doesn't make a reply wrong. Every reply was read in full; 'note' explains every 'wrong' label and any 'correct' label with something worth knowing. Statements in a 'correct' reply that go beyond the labelled facts were checked against the five documents; all are stated there, except e06's advice to try signing in with a password, which is noted.",
+ "replies": {
+  "84e9d66e0304d7dc": {
+   "email": "e02",
+   "verdict": "wrong",
+   "note": "Doesn't say what SSO-103 means, and says to invite her 'in Okta', where she is already assigned; the invitation is in the app."
+  },
+  "d5ce5fbfea1f7c6d": {
+   "email": "e02",
+   "verdict": "correct",
+   "note": "Meaning and both fixes are right. The reply repeats itself three times, which a human would not send, but no statement is wrong."
+  },
+  "45d2912f7403a0ee": {
+   "email": "e04",
+   "verdict": "correct",
+   "note": "'We help the customer decide whether to notify the authorities' rewords the policy ('the customer decides ... we help with the information we have'); consistent with it, not false."
+  },
+  "7faba08e6fbde4f2": {
+   "email": "e04",
+   "verdict": "correct"
+  },
+  "78042845a283157f": {
+   "email": "e06",
+   "verdict": "correct"
+  },
+  "e806dc74883847f0": {
+   "email": "e06",
+   "verdict": "correct",
+   "note": "Adds advice that isn't in the documentation (try signing in with a password, then contact support). It is neither stated nor contradicted there, so it isn't counted as false; the facts asked for are all right."
+  },
+  "3dc5aab87c2d8210": {
+   "email": "e08",
+   "verdict": "correct",
+   "note": "'is 10' isn't one of the accepted wordings, so the mechanical check misses it; the value is right."
+  },
+  "b9558e39fdeed176": {
+   "email": "e08",
+   "verdict": "correct"
+  },
+  "26296a27dd48bffa": {
+   "email": "e10",
+   "verdict": "wrong",
+   "note": "Unanswerable question answered: claims there is no nonprofit discount."
+  },
+  "a70d96457d5b4f1f": {
+   "email": "e10",
+   "verdict": "wrong",
+   "note": "Unanswerable question answered: invents a nonprofit pricing plan included in Pro."
+  },
+  "5b20a31a1137c385": {
+   "email": "e12",
+   "verdict": "correct"
+  },
+  "c4fc4676cac2cea8": {
+   "email": "e12",
+   "verdict": "correct"
+  },
+  "8afbe714c76602b2": {
+   "email": "e14",
+   "verdict": "correct",
+   "note": "Adds true but unasked information about retention after a plan ends."
+  },
+  "80dfce5330c5e9ea": {
+   "email": "e16",
+   "verdict": "wrong",
+   "note": "Retry schedule and read-only are right, but it never says whether the API integration will stop working (only read requests are accepted)."
+  },
+  "a0028d2a9dc865ee": {
+   "email": "e16",
+   "verdict": "wrong",
+   "note": "Says the next retry is 2 days after the failed payment; the schedule is 1, 3, and 7 days."
+  },
+  "2bcaf38da01cc986": {
+   "email": "e18",
+   "verdict": "wrong",
+   "note": "Retries and the limit of 20 are right, but it tells the customer to upgrade to a plan that supports more webhooks; no plan does."
+  },
+  "99ef5e85f40895ca": {
+   "email": "e18",
+   "verdict": "wrong",
+   "note": "Facts right, but suggests upgrading the plan to get more webhooks (no plan allows more than 20) and cites the wrong document."
+  },
+  "665a6e83ba9f0420": {
+   "email": "e20",
+   "verdict": "wrong",
+   "note": "Leaves out the one-year validity and the 14-day warning, and says groups can be mapped to projects while also saying they aren't synchronized."
+  },
+  "c5ce935bea523722": {
+   "email": "e20",
+   "verdict": "correct",
+   "note": "Adds true but unasked SCIM details."
+  },
+  "97c5a458df4f920f": {
+   "email": "e22",
+   "verdict": "correct"
+  },
+  "bdd62a5abafb8d23": {
+   "email": "e22",
+   "verdict": "wrong",
+   "note": "Says limit=500 will fail because of the Basic rate limit; a larger page size is treated as 200, and the rate limit is unrelated."
+  },
+  "9a819029b288d234": {
+   "email": "e24",
+   "verdict": "wrong",
+   "note": "Downgrade answer is right, but the unanswerable question is answered: 'there is no discount for paying three years upfront'."
+  },
+  "f001238aacd71743": {
+   "email": "e24",
+   "verdict": "wrong",
+   "note": "Downgrade answer is right, but the unanswerable question is answered: 'there is no discount for paying three years upfront'."
+  },
+  "6df690673313b7aa": {
+   "email": "e26",
+   "verdict": "wrong",
+   "note": "Explains that requests from outside the allowlist are refused and that webhooks aren't affected, but never says to add the CI addresses, which the labelled fact requires."
+  },
+  "fbf95b69e276c9c4": {
+   "email": "e26",
+   "verdict": "wrong",
+   "note": "Says the office range isn't in the allowlist; the office range is the one they added, and the CI's addresses are the ones missing."
+  },
+  "a630e48bcd900c36": {
+   "email": "e28",
+   "verdict": "correct",
+   "note": "Repeats one point, but every statement is right, including that suspended members still count toward the limit."
+  },
+  "e4a9c610314284e4": {
+   "email": "e28",
+   "verdict": "wrong",
+   "note": "Says old assignments aren't restored, which is true of removing a member, not suspending; doesn't say what suspending keeps."
+  },
+  "649ba0038edb6f6a": {
+   "email": "e30",
+   "verdict": "wrong",
+   "note": "Says the app is available in Italian, and then that the documentation doesn't cover the question it has just answered."
+  },
+  "b0e9771741193e65": {
+   "email": "e30",
+   "verdict": "wrong",
+   "note": "Says the app is available in Italian; the languages are English, German, French, and Spanish."
+  },
+  "0f4499f05f795a9f": {
+   "email": "e32",
+   "verdict": "wrong",
+   "note": "Leaves out that a bank transfer invoice is due within 30 days."
+  },
+  "dbbc871dcc6b874f": {
+   "email": "e32",
+   "verdict": "correct",
+   "note": "Adds true but unasked information about the Change plan page."
+  },
+  "562c93a2f7e60836": {
+   "email": "e34",
+   "verdict": "wrong",
+   "note": "Adds a claim that isn't in the documentation and contradicts it: spreading requests across keys 'will not improve performance' (the limit is per key)."
+  },
+  "89f1dca5715a5c08": {
+   "email": "e34",
+   "verdict": "correct"
+  },
+  "0aa22d828fd2ee64": {
+   "email": "e36",
+   "verdict": "correct"
+  },
+  "f73c9fbca3dcbde8": {
+   "email": "e36",
+   "verdict": "correct",
+   "note": "Has stray 'n' characters where line breaks should be; every statement is right."
+  },
+  "252fe92a5661599b": {
+   "email": "e38",
+   "verdict": "wrong",
+   "note": "Says the API can't restore the project but leaves out that it can be restored in the app for 30 days, which the labelled fact requires."
+  },
+  "a4a40d1893505394": {
+   "email": "e38",
+   "verdict": "wrong",
+   "note": "Says the API can't restore the project but leaves out that it can be restored in the app for 30 days, which the labelled fact requires."
+  },
+  "01e982c29356e3d8": {
+   "email": "e40",
+   "verdict": "wrong",
+   "note": "Unanswerable question answered: says the mobile app doesn't work offline, citing release notes that say nothing about it."
+  },
+  "60388cc43a292413": {
+   "email": "e40",
+   "verdict": "wrong",
+   "note": "Unanswerable question answered: says the mobile app doesn't work offline. Also leaves out the authenticator app."
+  }
+ }
+}

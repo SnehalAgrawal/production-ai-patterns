@@ -1,0 +1,36 @@
+{
+  "_comment": "Every setting of the pipeline and the experiments, written before the first run. Retrieval is rag-engineering's (structure-headings chunks, RRF of vector and BM25), with the budget from 05/06; it is not tuned here. Prompts are developed on the development emails only.",
+  "chunking": {"name": "structure-headings", "kind": "structure", "max_tokens": 512, "headings": true},
+  "embedding": {"document_prefix": "search_document: ", "query_prefix": "search_query: ", "batch_size": 32},
+  "retrieval": {
+    "ranking": "RRF of the vector ranking (every chunk) and the BM25 ranking (matched chunks only), k = 60",
+    "bm25": {"k1": 1.2, "b": 0.75, "analyzer": "words"},
+    "rrf_k": 60,
+    "budget_per_question": 1000,
+    "budget_per_email": 3000,
+    "rule": "questions in order; each fills its budget from its own ranking, skipping chunks already chosen for the email and chunks that don't fit what is left; tokens are Llama 3.2 tokens of the chunk text"
+  },
+  "checks": {
+    "extract": "the output is a JSON object with a non-empty list of non-empty questions and a list of identifiers, and every identifier appears in the email",
+    "retrieve": "every identifier from the extraction, except plan names, that appears anywhere in the documentation also appears in the retrieved excerpts",
+    "draft": "the output is a JSON object with a non-empty reply and a list of sources that are all excerpt numbers, and every value in the reply (numbers, codes such as SSO-101, snake_case identifiers, email addresses) appears in the excerpts it cites or in the customer's email",
+    "matching": "values and identifiers are compared as whole words or phrases in normalized text, as in data/README.md",
+    "plan_names": ["Basic", "Pro"]
+  },
+  "chat": {
+    "model": "llama3.2:3b",
+    "options": {"temperature": 0, "seed": 1, "num_ctx": 8192},
+    "extract_max_tokens": 400,
+    "draft_max_tokens": 700
+  },
+  "retries": {
+    "max_retries": 2,
+    "rule": "when a step's output fails its checks, the step is called again with its previous output and the list of problems; after max_retries failed retries the email goes to the review queue. Retrieval has no model call to retry: if it fails its check, the email goes to the review queue."
+  },
+  "crash": {
+    "split": "test",
+    "email": "e24",
+    "point": "after the reply is written to the outbox, before the step state records it",
+    "exit_code": 3
+  }
+}
