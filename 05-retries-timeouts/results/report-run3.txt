@@ -1,0 +1,116 @@
+Run: 20261124T150103Z
+Started 2026-11-24T15:01:03+00:00, finished 2026-11-24T15:03:11+00:00
+Environment: {"demo_files_uncommitted": true, "load_average": [3.31, 4.41, 4.73], "load_average_end": [2.42, 3.77, 4.43], "machine": "arm64", "platform": "macOS-26.6.2-arm64-arm-64bit", "processor": "Apple M4 Pro", "python": "3.12.13", "repository_head": "558517d"}
+Calibration: {"local_round_trip_s": {"max": 0.00071, "median": 0.0003}, "sleep_50ms_overshoot_s": {"max": 0.00507, "median": 0.00446}}
+Freeze: matches=True frozen_at=2026-11-24T14:56:42+00:00 changed=[]
+
+== Stable ==
+PASS E1 No timeout: still waiting at 3 s; returns only when the stand-in closes (6 s) | still_waiting_at_3s=True how=connection
+PASS E2 Classification: 400 invalid request | attempts=1 arrivals=1 outcome=not_retryable categories=rejected
+PASS E2 Classification: 401 invalid API key | attempts=1 arrivals=1 outcome=not_retryable categories=rejected
+PASS E2 Classification: 429 credit balance exhausted (OpenAI shape) | attempts=1 arrivals=1 outcome=not_retryable categories=limit_wont_clear
+PASS E2 Classification: 429 spend cap reached (Anthropic shape) | attempts=1 arrivals=1 outcome=not_retryable categories=limit_wont_clear
+PASS E2 Classification: 429 rate limit, Retry-After: 1, then success | attempts=2 arrivals=2 outcome=ok categories=rate_limited,ok check=usable
+PASS E2 Classification: 500 once, then success | attempts=2 arrivals=2 outcome=ok categories=provider_error,ok check=usable
+PASS E2 Classification: 503 overloaded, every time (OpenAI shape) | attempts=3 arrivals=3 outcome=attempts_exhausted categories=provider_error,provider_error,provider_error
+PASS E2 Classification: 529 overloaded, every time (Anthropic shape) | attempts=3 arrivals=3 outcome=attempts_exhausted categories=provider_error,provider_error,provider_error
+PASS E2 Classification: 200, but cut off at the token limit | attempts=1 arrivals=1 outcome=ok categories=ok check=unusable: cut off
+PASS E2 Classification: connection refused (nothing listening) | attempts=3 arrivals=None outcome=attempts_exhausted categories=connection,connection,connection
+PASS E3 Retry-After: 30 with 6 s left: one attempt, fails at once | attempts=1 outcome=no_time_left
+PASS E4 Hung provider, 1 s per attempt: 3 attempts and >= 3 s; with a 2 s deadline, <= 2 s | per_attempt_only attempts=3; with_deadline attempts=2 stopped_by_deadline=True
+PASS E5 Application loop of 3 around a client loop of 3: 9 requests reach the provider | arrivals=9 outcome=attempts_exhausted
+PASS E6 Body in 8 pieces over 4 s: a 1 s socket timeout doesn't fire; a 2 s deadline passed as the per-wait timeout doesn't stop it | socket_timeout outcome=ok; deadline outcome=ok attempts=1
+PASS E7 Stream clocks: healthy | outcome=complete chunks=10 arrivals=1 standin_disconnect=False standin_finished=True standin_sent_after_received=0
+PASS E7 Stream clocks: slow first token | outcome=timeout:first_token chunks=0 arrivals=1 standin_disconnect=True standin_finished=False standin_sent_after_received=1
+PASS E7 Stream clocks: stalls after 3 chunks | outcome=timeout:idle chunks=3 arrivals=1 standin_disconnect=True standin_finished=False standin_sent_after_received=1
+PASS E7 Stream clocks: steady but long | outcome=timeout:total chunks=12 arrivals=1 standin_disconnect=True standin_finished=False standin_sent_after_received=1
+PASS E7 Stream clocks: error event after 3 chunks | outcome=error_event chunks=3 arrivals=1 standin_disconnect=False standin_finished=False standin_sent_after_received=0
+PASS E8 Timed out at 1 s, retried: the stand-in completed both generations, the first after 1 s | attempts=2 outcome=ok generations=2
+PASS E9 Refund: naive retry (like a model call) | status=failed refunds_in_ledger=3 requests=3
+PASS E9 Refund: by retry class, with a lookup | status=done refunds_in_ledger=1 requests=1
+PASS E9 Refund: by retry class, no lookup | status=unknown refunds_in_ledger=1 requests=1
+PASS E9 Refund: by retry class, lookup before the write lands | status=not_applied refunds_in_ledger=1 requests=1
+PASS E10 Recovery exhausted, chat: one record per attempt with every field; final decision | records=2 final=gave up (attempts_exhausted): show a fixed message with a 'try again' button
+PASS E10 Recovery exhausted, nightly batch: one record per attempt with every field; final decision | records=4 final=gave up (attempts_exhausted): put the ticket back in the queue for a later run
+PASS E11 Total outage, 1,000 requests: 1,000 / 3,000 / 9,000 / 27,000 calls; budget <= 1,110 | [no retries (1 attempt)]=1000 [3 attempts, one layer]=3000 [3 attempts x 2 layers]=9000 [3 attempts x 3 layers]=27000 [3 attempts + 10% retry budget]=1109
+PASS E11 5% failures: the budget changes no outcome; 20% failures: the budget costs successes | 5%: 1000 vs 1000; 20%: 988 vs 867
+PASS E12 Burst of 100 failures, retry 1: peak per 50 ms, no jitter 100 > SDK-style > full jitter | no_jitter=100 sdk_style=48 full_jitter=16
+PASS E12 Burst of 100 failures, retry 2: peak per 50 ms, no jitter 100 > SDK-style > full jitter | no_jitter=100 sdk_style=26 full_jitter=10
+PASS E13 [openai] Overloaded every time: 3 requests, retry-count 0,1,2, SDK delays in its ranges, no idempotency header | arrivals=3 retry_count=0,1,2 idempotency_headers=[] exception=InternalServerError
+PASS E14 [openai] 400: one request | arrivals=1 exception=BadRequestError
+PASS E15 [openai] 429 + Retry-After: 1: two requests, the SDK waits the server's 1 s | arrivals=2 logged_delays=[1.0] exception=None
+PASS E16 [openai] 429 that waiting won't fix: the SDK still sends 3 requests | arrivals=3 exception=RateLimitError
+PASS E17 [openai] No response, timeout 1 s: 3 requests, >= 3 x 1 s + both delays, a timeout error | arrivals=3 exception=APITimeoutError
+PASS E18 [openai] Application loop of 3 around the SDK's defaults: 9 requests | arrivals=9 retry_count=0,1,2,0,1,2,0,1,2
+PASS E19 [openai] Stream of 8 s, timeout 2 s: completes, no error | chunks=16 exception=None
+PASS E20 [openai] Stream stalls after 3 chunks, timeout 1 s: an error after 3 chunks, not retried | arrivals=1 chunks=3 exception=openai.APITimeoutError
+PASS E21 [openai] Error event after 3 chunks (after a 200): an error after 3 chunks, not retried | arrivals=1 chunks=3 exception=APIError
+PASS E22 [openai] Connection refused: 2 retries in the SDK's ranges, a connection error | retries=2 exception=APIConnectionError
+PASS E23 [openai] 429 + Retry-After: 130: raises at once (over its 120 s cap) | arrivals=1 still_waiting_at_4s=False logged_delays=[] caller_saw=RateLimitError
+PASS E13 [anthropic] Overloaded every time: 3 requests, retry-count 0,1,2, SDK delays in its ranges, no idempotency header | arrivals=3 retry_count=0,1,2 idempotency_headers=[] exception=OverloadedError
+PASS E14 [anthropic] 400: one request | arrivals=1 exception=BadRequestError
+PASS E15 [anthropic] 429 + Retry-After: 1: two requests, the SDK waits the server's 1 s | arrivals=2 logged_delays=[1.0] exception=None
+PASS E16 [anthropic] 429 that waiting won't fix: the SDK still sends 3 requests | arrivals=3 exception=EnforcedSpendLimitReachedError
+PASS E17 [anthropic] No response, timeout 1 s: 3 requests, >= 3 x 1 s + both delays, a timeout error | arrivals=3 exception=APITimeoutError
+PASS E18 [anthropic] Application loop of 3 around the SDK's defaults: 9 requests | arrivals=9 retry_count=0,1,2,0,1,2,0,1,2
+PASS E19 [anthropic] Stream of 8 s, timeout 2 s: completes, no error | chunks=16 exception=None
+PASS E20 [anthropic] Stream stalls after 3 chunks, timeout 1 s: an error after 3 chunks, not retried | arrivals=1 chunks=3 exception=httpx2.ReadTimeout
+PASS E21 [anthropic] Error event after 3 chunks (after a 200): an error after 3 chunks, not retried | arrivals=1 chunks=3 exception=APIStatusError
+PASS E22 [anthropic] Connection refused: 2 retries in the SDK's ranges, a connection error | retries=2 exception=APIConnectionError
+PASS E23 [anthropic] 429 + Retry-After: 130: waits the server's 130 s | arrivals=1 still_waiting_at_4s=True logged_delays=[130.0] caller_saw=None
+PASS E24 [anthropic] Non-streaming, max_tokens 64,000: ValueError before any request | arrivals=0 exception=ValueError
+VERSIONS [openai] {"anyio": "4.16.0", "h11": "0.16.0", "httpcore2": "2.16.2", "httpx2": "2.16.2", "openai": "3.58.0", "pydantic": "2.14.4"}
+VERSIONS [anthropic] {"anthropic": "2.13.0", "anyio": "4.16.0", "h11": "0.16.0", "httpcore2": "2.16.2", "httpx2": "2.16.2", "pydantic": "2.14.4"}
+
+Stable digest: 28a7ae178473d9c4aa6c1b41e67f40ad24e3ebdd38b67010e59617966133e896
+Expectations: 54 passed, 0 failed
+
+== Timings (seconds; vary between runs) ==
+A1 naive call ended after 6.01 s (connection)
+A2 400 invalid request: 0.002 s, delays []
+A2 401 invalid API key: 0.001 s, delays []
+A2 429 credit balance exhausted (OpenAI shape): 0.002 s, delays []
+A2 429 spend cap reached (Anthropic shape): 0.002 s, delays []
+A2 429 rate limit, Retry-After: 1, then success: 1.007 s, delays [1.0]
+A2 500 once, then success: 0.448 s, delays [0.439]
+A2 503 overloaded, every time (OpenAI shape): 1.267 s, delays [0.355, 0.901]
+A2 529 overloaded, every time (Anthropic shape): 0.714 s, delays [0.123, 0.581]
+A2 200, but cut off at the token limit: 0.001 s, delays []
+A2 connection refused (nothing listening): 0.23 s, delays [0.023, 0.203]
+A3 0.001 s
+A4 per_attempt_only: 3.425 s, attempts 3, delays [0.154, 0.254]
+A4 with_2s_deadline: 2.002 s, attempts 2, delays [0.154]
+A5 3.683 s
+A6 socket_timeout_1s: 4.033 s
+A6 call_model_deadline_2s: 4.04 s
+A7 healthy: 1.15 s
+A7 slow first token: 1.003 s
+A7 stalls after 3 chunks: 0.82 s
+A7 steady but long: 3.002 s
+A7 error event after 3 chunks: 0.419 s
+A8 1.344 s; first generation finished 1.503 s after it arrived
+A10 chat: 0.397 s; delays [0.389, 0.0]
+A10 nightly batch: 1.999 s; delays [0.398, 0.059, 1.52, 0.0]
+[openai] B1 overloaded every time (defaults): 1.389 s; delays [0.403, 0.948]; gaps [0.413, 0.956]
+[openai] B2 400 invalid request (defaults): 0.003 s; delays []; gaps []
+[openai] B3 429 with Retry-After: 1, then success: 1.017 s; delays [1.0]; gaps [1.008]
+[openai] B5 429 that waiting won't fix, no Retry-After: 1.386 s; delays [0.423, 0.945]; gaps [0.428, 0.953]
+[openai] B6 no response, timeout=1.0 (defaults otherwise): 4.32 s; delays [0.454, 0.84]; gaps [1.464, 1.85]
+[openai] B7 application loop of 3 around the SDK: 4.702 s; delays [0.479, 0.952, 0.396, 0.846, 0.499, 0.79]; gaps [0.487, 0.959, 0.354, 0.405, 0.854, 0.334, 0.507, 0.796]
+[openai] B8 stream, a chunk every 0.5 s for 8 s, timeout=2.0: 8.073 s; delays []; gaps []
+[openai] B9 stream stalls after 3 chunks, timeout=1.0: 1.319 s; delays []; gaps []
+[openai] B10 error event after 3 chunks: 0.424 s; delays []; gaps []
+[openai] B12 connection refused (defaults): 1.464 s; delays [0.489, 0.96]; gaps None
+[openai] B4 429 with Retry-After: 130, then success: 0.003 s; delays []; gaps []
+[anthropic] B1 overloaded every time (defaults): 1.369 s; delays [0.419, 0.915]; gaps [0.425, 0.921]
+[anthropic] B2 400 invalid request (defaults): 0.005 s; delays []; gaps []
+[anthropic] B3 429 with Retry-After: 1, then success: 1.026 s; delays [1.0]; gaps [1.007]
+[anthropic] B5 429 that waiting won't fix, no Retry-After: 1.213 s; delays [0.433, 0.76]; gaps [0.442, 0.769]
+[anthropic] B6 no response, timeout=1.0 (defaults otherwise): 4.399 s; delays [0.495, 0.879]; gaps [1.505, 1.89]
+[anthropic] B7 application loop of 3 around the SDK: 4.698 s; delays [0.479, 0.952, 0.396, 0.846, 0.499, 0.79]; gaps [0.488, 0.958, 0.359, 0.404, 0.849, 0.331, 0.508, 0.796]
+[anthropic] B8 stream, a chunk every 0.5 s for 8 s, timeout=2.0: 8.07 s; delays []; gaps []
+[anthropic] B9 stream stalls after 3 chunks, timeout=1.0: 1.316 s; delays []; gaps []
+[anthropic] B10 error event after 3 chunks: 0.424 s; delays []; gaps []
+[anthropic] B12 connection refused (defaults): 1.462 s; delays [0.489, 0.96]; gaps None
+[anthropic] B11 non-streaming, max_tokens=64000, default timeout: 0.001 s; delays []; gaps []
+[anthropic] B4 429 with Retry-After: 130, then success: 4.002 s; delays [130.0]; gaps []

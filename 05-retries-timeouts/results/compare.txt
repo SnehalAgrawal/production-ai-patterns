@@ -1,0 +1,56 @@
+Runs: 20261124T145647Z, 20261124T145855Z, 20261124T150103Z
+Stable digests:
+  28a7ae178473d9c4aa6c1b41e67f40ad24e3ebdd38b67010e59617966133e896
+  28a7ae178473d9c4aa6c1b41e67f40ad24e3ebdd38b67010e59617966133e896
+  28a7ae178473d9c4aa6c1b41e67f40ad24e3ebdd38b67010e59617966133e896
+Stable output: identical in all runs
+
+Timing ranges across runs (min to max of each number, in order):
+  A: 6-6.01
+  A2 400 invalid request: 0.002-0.003
+  A2 401 invalid API key: 0.001
+  A2 429 credit balance exhausted (OpenAI shape): 0.002-0.003
+  A2 429 spend cap reached (Anthropic shape): 0.002
+  A2 429 rate limit, Retry-After: 1.007-1.013, 1
+  A2 500 once, then success: 0.448-0.452, 0.439
+  A2 503 overloaded, every time (OpenAI shape): 1.266-1.281, 0.355, 0.901
+  A2 529 overloaded, every time (Anthropic shape): 0.714-0.725, 0.123, 0.581
+  A2 200, but cut off at the token limit: 0.001-0.003
+  A2 connection refused (nothing listening): 0.23-0.249, 0.023, 0.203
+  A: 0.001-0.003
+  A4 per_attempt_only: 3.425-3.438, 0.154, 0.254
+  A4 with_2s_deadline: 2.002-2.004, 0.154
+  A: 3.683-3.724
+  A6 socket_timeout_1s: 4.033-4.063
+  A6 call_model_deadline_2s: 4.04-4.07
+  A7 healthy: 1.15-1.199
+  A7 slow first token: 1.003-1.004
+  A7 stalls after 3 chunks: 0.82-0.826
+  A7 steady but long: 3.002-3.004
+  A7 error event after 3 chunks: 0.419-0.434
+  A: 1.344-1.352, 1.503-1.51
+  A10 chat: 0.397-0.4, 0.389, 0
+  A10 nightly batch: 1.995-2, 0.398, 0.059, 1.52, 0
+  [openai] B1 overloaded every time (defaults): 1.281-1.389, 0.403-0.475, 0.767-0.948, 0.413-0.485, 0.779-0.956
+  [openai] B2 400 invalid request (defaults): 0.003-0.005
+  [openai] B3 429 with Retry-After: 1.017-1.025, 1, 1.008-1.013
+  [openai] B5 429 that waiting won't fix, no Retry-After: 1.386-1.483, 0.389-0.467, 0.945-0.991, 0.404-0.479, 0.953-1.002
+  [openai] B6 no response, timeout=1.0 (defaults otherwise): 1, 4.297-4.416, 0.443-0.497, 0.763-0.942, 1.452-1.513, 1.778-1.957
+  [openai] B7 application loop of 3 around the SDK: 4.702-4.729, 0.479, 0.952, 0.396, 0.846, 0.499, 0.79, 0.487-0.494, 0.959-0.967, 0.354-0.362, 0.404-0.405, 0.852-0.855, 0.334-0.337, 0.505-0.51, 0.795-0.805
+  [openai] B8 stream, a chunk every 0.5 s for 8 s, timeout=2.0: 0.5, 2, 8.073-8.123
+  [openai] B9 stream stalls after 3 chunks, timeout=1.0: 1, 1.319-1.331
+  [openai] B10 error event after 3 chunks: 0.424-0.438
+  [openai] B12 connection refused (defaults): 1.464-1.472, 0.489, 0.96
+  [openai] B4 429 with Retry-After: 0.003-0.005
+  [anthropic] B1 overloaded every time (defaults): 1.287-1.427, 0.389-0.498, 0.852-0.915, 0.404-0.506, 0.861-0.921
+  [anthropic] B2 400 invalid request (defaults): 0.005
+  [anthropic] B3 429 with Retry-After: 1.026-1.033, 1, 1.007-1.015
+  [anthropic] B5 429 that waiting won't fix, no Retry-After: 1.213-1.42, 0.409-0.434, 0.76-0.954, 0.424-0.449, 0.769-0.966
+  [anthropic] B6 no response, timeout=1.0 (defaults otherwise): 1, 4.248-4.399, 0.38-0.495, 0.83-0.94, 1.397-1.505, 1.848-1.959
+  [anthropic] B7 application loop of 3 around the SDK: 4.698-4.732, 0.479, 0.952, 0.396, 0.846, 0.499, 0.79, 0.488-0.493, 0.958-0.966, 0.356-0.359, 0.404-0.409, 0.849-0.86, 0.331-0.34, 0.505-0.511, 0.795-0.804
+  [anthropic] B8 stream, a chunk every 0.5 s for 8 s, timeout=2.0: 0.5, 2, 8.07-8.133
+  [anthropic] B9 stream stalls after 3 chunks, timeout=1.0: 1, 1.316-1.33
+  [anthropic] B10 error event after 3 chunks: 0.424-0.442
+  [anthropic] B12 connection refused (defaults): 1.462-1.471, 0.489, 0.96
+  [anthropic] B11 non-streaming, max_tokens=64000, default timeout: 0.001-0.003
+  [anthropic] B4 429 with Retry-After: 4.002-4.007, 130

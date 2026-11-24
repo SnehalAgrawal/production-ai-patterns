@@ -1,0 +1,978 @@
+{
+ "started_utc": "2026-11-24T15:01:03+00:00",
+ "freeze": {
+  "frozen_at_utc": "2026-11-24T14:56:42+00:00",
+  "current": {
+   "PROTOCOL.md": "b86605277b2206a7e0b2bf6b63914228326d159c88ac4f1ff89651d57fc931f6",
+   "python/policy.py": "47163e29ade46713d0978de775d81cf397b68dc443eebf58c83d01959b25ee78",
+   "python/standin.py": "a64918bc1b7c481d3191d7d53868dede962462643a7e4d720a9f029ab15cc8da",
+   "python/http_send.py": "cd786f7cc35d3dae2fc9ab7232c5d1f50a3e5507684de81d8cbe485f023f730b",
+   "python/tools.py": "881686f6a9a38b216e97a4c2be2d1e9fd52370d86e5810fa15d41be7ff775605",
+   "python/scenarios_a.py": "f95f992b597c9745d0f55a1b1de372201d3ba40270c6d894b0315b5e0fe9e81d",
+   "python/simulate.py": "047bde588a598638a491e20bc6327e3baa8a8d16c7aed3142a4a9244e79e8547",
+   "python/sdk_probe.py": "f41fb48e1d3e95a15e18ba9485707cddb399f9fd36ef4d9d3fc6fb5c56c37ec5",
+   "python/run.py": "a71d24556d1175f3a9378d3dd5ac00d90ca845ddbcec899511d09d57451c2202",
+   "python/report.py": "a49aa7894069d41a3f041079f1e46d07e46da12b46115a8e3ff7129740d52fd5",
+   "python/compare.py": "6daf9d59bf1525cf8ce84f74d399c5687f09d19cc60ad780b3db64ec6f1ca220",
+   "python/test_policy.py": "b410803feddf50a550ae58e05e4fca913541d0fcb2cccf63d4acb110e082138a",
+   "requirements-sdk.txt": "f546e2c7c5ca844eb55abcbfddaa32ba58b33b77ead227d4fc4b7e9739cd72d5"
+  },
+  "changed": [],
+  "matches": true
+ },
+ "environment": {
+  "python": "3.12.13",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "processor": "Apple M4 Pro",
+  "load_average": [
+   3.31,
+   4.41,
+   4.73
+  ],
+  "repository_head": "558517d",
+  "demo_files_uncommitted": true,
+  "load_average_end": [
+   2.42,
+   3.77,
+   4.43
+  ]
+ },
+ "calibration": {
+  "sleep_50ms_overshoot_s": {
+   "median": 0.00446,
+   "max": 0.00507
+  },
+  "local_round_trip_s": {
+   "median": 0.0003,
+   "max": 0.00071
+  }
+ },
+ "part_a": {
+  "A1": {
+   "still_waiting_at_3s": true,
+   "how": "connection",
+   "ended_s": 6.01
+  },
+  "A2": {
+   "400 invalid request": {
+    "outcome": "not_retryable",
+    "elapsed_s": 0.002,
+    "finish_reason": null,
+    "application_check": null,
+    "attempts": 1,
+    "categories": [
+     "rejected"
+    ],
+    "delays_s": [],
+    "arrivals": 1
+   },
+   "401 invalid API key": {
+    "outcome": "not_retryable",
+    "elapsed_s": 0.001,
+    "finish_reason": null,
+    "application_check": null,
+    "attempts": 1,
+    "categories": [
+     "rejected"
+    ],
+    "delays_s": [],
+    "arrivals": 1
+   },
+   "429 credit balance exhausted (OpenAI shape)": {
+    "outcome": "not_retryable",
+    "elapsed_s": 0.002,
+    "finish_reason": null,
+    "application_check": null,
+    "attempts": 1,
+    "categories": [
+     "limit_wont_clear"
+    ],
+    "delays_s": [],
+    "arrivals": 1
+   },
+   "429 spend cap reached (Anthropic shape)": {
+    "outcome": "not_retryable",
+    "elapsed_s": 0.002,
+    "finish_reason": null,
+    "application_check": null,
+    "attempts": 1,
+    "categories": [
+     "limit_wont_clear"
+    ],
+    "delays_s": [],
+    "arrivals": 1
+   },
+   "429 rate limit, Retry-After: 1, then success": {
+    "outcome": "ok",
+    "elapsed_s": 1.007,
+    "finish_reason": "stop",
+    "application_check": "usable",
+    "attempts": 2,
+    "categories": [
+     "rate_limited",
+     "ok"
+    ],
+    "delays_s": [
+     1.0
+    ],
+    "arrivals": 2
+   },
+   "500 once, then success": {
+    "outcome": "ok",
+    "elapsed_s": 0.448,
+    "finish_reason": "stop",
+    "application_check": "usable",
+    "attempts": 2,
+    "categories": [
+     "provider_error",
+     "ok"
+    ],
+    "delays_s": [
+     0.439
+    ],
+    "arrivals": 2
+   },
+   "503 overloaded, every time (OpenAI shape)": {
+    "outcome": "attempts_exhausted",
+    "elapsed_s": 1.267,
+    "finish_reason": null,
+    "application_check": null,
+    "attempts": 3,
+    "categories": [
+     "provider_error",
+     "provider_error",
+     "provider_error"
+    ],
+    "delays_s": [
+     0.355,
+     0.901
+    ],
+    "arrivals": 3
+   },
+   "529 overloaded, every time (Anthropic shape)": {
+    "outcome": "attempts_exhausted",
+    "elapsed_s": 0.714,
+    "finish_reason": null,
+    "application_check": null,
+    "attempts": 3,
+    "categories": [
+     "provider_error",
+     "provider_error",
+     "provider_error"
+    ],
+    "delays_s": [
+     0.123,
+     0.581
+    ],
+    "arrivals": 3
+   },
+   "200, but cut off at the token limit": {
+    "outcome": "ok",
+    "elapsed_s": 0.001,
+    "finish_reason": "length",
+    "application_check": "unusable: cut off",
+    "attempts": 1,
+    "categories": [
+     "ok"
+    ],
+    "delays_s": [],
+    "arrivals": 1
+   },
+   "connection refused (nothing listening)": {
+    "outcome": "attempts_exhausted",
+    "elapsed_s": 0.23,
+    "attempts": 3,
+    "categories": [
+     "connection",
+     "connection",
+     "connection"
+    ],
+    "delays_s": [
+     0.023,
+     0.203
+    ],
+    "arrivals": null
+   }
+  },
+  "A3": {
+   "outcome": "no_time_left",
+   "elapsed_s": 0.001,
+   "finish_reason": null,
+   "application_check": null,
+   "attempts": 1,
+   "categories": [
+    "rate_limited"
+   ],
+   "delays_s": [],
+   "arrivals": 1
+  },
+  "A4": {
+   "per_attempt_only": {
+    "outcome": "attempts_exhausted",
+    "elapsed_s": 3.425,
+    "finish_reason": null,
+    "application_check": null,
+    "attempts": 3,
+    "categories": [
+     "timeout",
+     "timeout",
+     "timeout"
+    ],
+    "delays_s": [
+     0.154,
+     0.254
+    ],
+    "arrivals": 3
+   },
+   "with_2s_deadline": {
+    "outcome": "no_time_left",
+    "elapsed_s": 2.002,
+    "finish_reason": null,
+    "application_check": null,
+    "attempts": 2,
+    "categories": [
+     "timeout",
+     "timeout"
+    ],
+    "delays_s": [
+     0.154
+    ],
+    "arrivals": 2
+   }
+  },
+  "A5": {
+   "outcome": "attempts_exhausted",
+   "arrivals": 9,
+   "elapsed_s": 3.683
+  },
+  "A6": {
+   "socket_timeout_1s": {
+    "outcome": "ok",
+    "elapsed_s": 4.033
+   },
+   "call_model_deadline_2s": {
+    "outcome": "ok",
+    "elapsed_s": 4.04,
+    "finish_reason": "stop",
+    "application_check": "usable",
+    "attempts": 1,
+    "categories": [
+     "ok"
+    ],
+    "delays_s": [],
+    "arrivals": 1
+   }
+  },
+  "A7": {
+   "healthy": {
+    "outcome": "complete",
+    "chunks": 10,
+    "elapsed_s": 1.15,
+    "arrivals": 1,
+    "standin_finished_generating": true,
+    "standin_chunks_sent": 10,
+    "standin_saw_disconnect": false
+   },
+   "slow first token": {
+    "outcome": "timeout:first_token",
+    "chunks": 0,
+    "elapsed_s": 1.003,
+    "arrivals": 1,
+    "standin_finished_generating": false,
+    "standin_chunks_sent": 1,
+    "standin_saw_disconnect": true
+   },
+   "stalls after 3 chunks": {
+    "outcome": "timeout:idle",
+    "chunks": 3,
+    "elapsed_s": 0.82,
+    "arrivals": 1,
+    "standin_finished_generating": false,
+    "standin_chunks_sent": 4,
+    "standin_saw_disconnect": true
+   },
+   "steady but long": {
+    "outcome": "timeout:total",
+    "chunks": 12,
+    "elapsed_s": 3.002,
+    "arrivals": 1,
+    "standin_finished_generating": false,
+    "standin_chunks_sent": 13,
+    "standin_saw_disconnect": true
+   },
+   "error event after 3 chunks": {
+    "outcome": "error_event",
+    "chunks": 3,
+    "elapsed_s": 0.419,
+    "arrivals": 1,
+    "standin_finished_generating": false,
+    "standin_chunks_sent": 3,
+    "standin_saw_disconnect": false
+   }
+  },
+  "A8": {
+   "outcome": "ok",
+   "elapsed_s": 1.344,
+   "finish_reason": "stop",
+   "application_check": "usable",
+   "attempts": 2,
+   "categories": [
+    "timeout",
+    "ok"
+   ],
+   "delays_s": [
+    0.336
+   ],
+   "arrivals": 2,
+   "generations_completed": 2,
+   "first_generation_finished_after_s": 1.503
+  },
+  "A9": {
+   "naive retry (like a model call)": {
+    "status": "failed",
+    "model_sees": "error: status=None type=None code=None kind=timeout",
+    "ledger": 3,
+    "arrivals": 3
+   },
+   "by retry class, with a lookup": {
+    "status": "done",
+    "model_sees": "refund issued (confirmed by lookup after a timeout)",
+    "ledger": 1,
+    "arrivals": 1
+   },
+   "by retry class, no lookup": {
+    "status": "unknown",
+    "model_sees": "outcome unknown; a person is checking. Do not retry.",
+    "ledger": 1,
+    "arrivals": 1
+   },
+   "by retry class, lookup before the write lands": {
+    "status": "not_applied",
+    "model_sees": "refund not issued; safe to try again",
+    "ledger_when_executor_answered": 0,
+    "ledger": 1,
+    "arrivals": 1
+   }
+  },
+  "A10": {
+   "chat": {
+    "records": [
+     {
+      "request_id": "req-chat-1",
+      "workload": "chat",
+      "provider": "standin (OpenAI shape)",
+      "endpoint": "/v1/chat/completions",
+      "attempt": 1,
+      "category": "provider_error",
+      "elapsed": 0.002,
+      "timeout": 1.0,
+      "delay": 0.389,
+      "outcome": "retry",
+      "deadline_remaining": 1.998
+     },
+     {
+      "request_id": "req-chat-1",
+      "workload": "chat",
+      "provider": "standin (OpenAI shape)",
+      "endpoint": "/v1/chat/completions",
+      "attempt": 2,
+      "category": "provider_error",
+      "elapsed": 0.397,
+      "timeout": 1.0,
+      "delay": 0.0,
+      "outcome": "attempts_exhausted",
+      "deadline_remaining": 1.603
+     }
+    ],
+    "final": "gave up (attempts_exhausted): show a fixed message with a 'try again' button",
+    "elapsed_s": 0.397
+   },
+   "nightly batch": {
+    "records": [
+     {
+      "request_id": "req-nightly-1",
+      "workload": "nightly batch",
+      "provider": "standin (OpenAI shape)",
+      "endpoint": "/v1/chat/completions",
+      "attempt": 1,
+      "category": "provider_error",
+      "elapsed": 0.002,
+      "timeout": 2.0,
+      "delay": 0.398,
+      "outcome": "retry",
+      "deadline_remaining": 29.998
+     },
+     {
+      "request_id": "req-nightly-1",
+      "workload": "nightly batch",
+      "provider": "standin (OpenAI shape)",
+      "endpoint": "/v1/chat/completions",
+      "attempt": 2,
+      "category": "provider_error",
+      "elapsed": 0.406,
+      "timeout": 2.0,
+      "delay": 0.059,
+      "outcome": "retry",
+      "deadline_remaining": 29.594
+     },
+     {
+      "request_id": "req-nightly-1",
+      "workload": "nightly batch",
+      "provider": "standin (OpenAI shape)",
+      "endpoint": "/v1/chat/completions",
+      "attempt": 3,
+      "category": "provider_error",
+      "elapsed": 0.472,
+      "timeout": 2.0,
+      "delay": 1.52,
+      "outcome": "retry",
+      "deadline_remaining": 29.528
+     },
+     {
+      "request_id": "req-nightly-1",
+      "workload": "nightly batch",
+      "provider": "standin (OpenAI shape)",
+      "endpoint": "/v1/chat/completions",
+      "attempt": 4,
+      "category": "provider_error",
+      "elapsed": 1.999,
+      "timeout": 2.0,
+      "delay": 0.0,
+      "outcome": "attempts_exhausted",
+      "deadline_remaining": 28.001
+     }
+    ],
+    "final": "gave up (attempts_exhausted): put the ticket back in the queue for a later run",
+    "elapsed_s": 1.999
+   }
+  }
+ },
+ "simulation": {
+  "amplification": {
+   "n": 1000,
+   "seed": 7,
+   "results": {
+    "0.05|no retries (1 attempt)": {
+     "provider_calls": 1000,
+     "succeeded": 942
+    },
+    "0.05|3 attempts, one layer": {
+     "provider_calls": 1060,
+     "succeeded": 1000
+    },
+    "0.05|3 attempts x 2 layers": {
+     "provider_calls": 1060,
+     "succeeded": 1000
+    },
+    "0.05|3 attempts x 3 layers": {
+     "provider_calls": 1060,
+     "succeeded": 1000
+    },
+    "0.05|3 attempts + 10% retry budget": {
+     "provider_calls": 1060,
+     "succeeded": 1000
+    },
+    "0.20|no retries (1 attempt)": {
+     "provider_calls": 1000,
+     "succeeded": 784
+    },
+    "0.20|3 attempts, one layer": {
+     "provider_calls": 1263,
+     "succeeded": 988
+    },
+    "0.20|3 attempts x 2 layers": {
+     "provider_calls": 1277,
+     "succeeded": 1000
+    },
+    "0.20|3 attempts x 3 layers": {
+     "provider_calls": 1277,
+     "succeeded": 1000
+    },
+    "0.20|3 attempts + 10% retry budget": {
+     "provider_calls": 1109,
+     "succeeded": 867
+    },
+    "1.00|no retries (1 attempt)": {
+     "provider_calls": 1000,
+     "succeeded": 0
+    },
+    "1.00|3 attempts, one layer": {
+     "provider_calls": 3000,
+     "succeeded": 0
+    },
+    "1.00|3 attempts x 2 layers": {
+     "provider_calls": 9000,
+     "succeeded": 0
+    },
+    "1.00|3 attempts x 3 layers": {
+     "provider_calls": 27000,
+     "succeeded": 0
+    },
+    "1.00|3 attempts + 10% retry budget": {
+     "provider_calls": 1109,
+     "succeeded": 0
+    }
+   }
+  },
+  "jitter": {
+   "clients": 100,
+   "window_s": 0.05,
+   "seed": 11,
+   "results": {
+    "no jitter|retry 1": {
+     "peak_in_window": 100,
+     "first": 0.5,
+     "last": 0.5
+    },
+    "no jitter|retry 2": {
+     "peak_in_window": 100,
+     "first": 1.5,
+     "last": 1.5
+    },
+    "SDK-style (0-25% shorter)|retry 1": {
+     "peak_in_window": 48,
+     "first": 0.3753,
+     "last": 0.4999
+    },
+    "SDK-style (0-25% shorter)|retry 2": {
+     "peak_in_window": 26,
+     "first": 1.1559,
+     "last": 1.4828
+    },
+    "full jitter|retry 1": {
+     "peak_in_window": 16,
+     "first": 0.0003,
+     "last": 0.4988
+    },
+    "full jitter|retry 2": {
+     "peak_in_window": 10,
+     "first": 0.0688,
+     "last": 1.3765
+    }
+   }
+  }
+ },
+ "part_b": {
+  "openai": {
+   "sdk": "openai",
+   "versions": {
+    "openai": "3.58.0",
+    "httpx2": "2.16.2",
+    "httpcore2": "2.16.2",
+    "h11": "0.16.0",
+    "anyio": "4.16.0",
+    "pydantic": "2.14.4"
+   },
+   "python": "3.12.13",
+   "scenarios": {
+    "B1 overloaded every time (defaults)": {
+     "arrivals": 3,
+     "retry_count_headers": [
+      "0",
+      "1",
+      "2"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [
+      0.413,
+      0.956
+     ],
+     "sdk_logged_delays_s": [
+      0.403,
+      0.948
+     ],
+     "exception": "InternalServerError",
+     "exception_module": "openai",
+     "elapsed_s": 1.389
+    },
+    "B2 400 invalid request (defaults)": {
+     "arrivals": 1,
+     "retry_count_headers": [
+      "0"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [],
+     "sdk_logged_delays_s": [],
+     "exception": "BadRequestError",
+     "exception_module": "openai",
+     "elapsed_s": 0.003
+    },
+    "B3 429 with Retry-After: 1, then success": {
+     "arrivals": 2,
+     "retry_count_headers": [
+      "0",
+      "1"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [
+      1.008
+     ],
+     "sdk_logged_delays_s": [
+      1.0
+     ],
+     "exception": null,
+     "exception_module": null,
+     "elapsed_s": 1.017,
+     "answered": true
+    },
+    "B5 429 that waiting won't fix, no Retry-After": {
+     "arrivals": 3,
+     "retry_count_headers": [
+      "0",
+      "1",
+      "2"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [
+      0.428,
+      0.953
+     ],
+     "sdk_logged_delays_s": [
+      0.423,
+      0.945
+     ],
+     "exception": "RateLimitError",
+     "exception_module": "openai",
+     "elapsed_s": 1.386
+    },
+    "B6 no response, timeout=1.0 (defaults otherwise)": {
+     "arrivals": 3,
+     "retry_count_headers": [
+      "0",
+      "1",
+      "2"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [
+      1.464,
+      1.85
+     ],
+     "sdk_logged_delays_s": [
+      0.454,
+      0.84
+     ],
+     "exception": "APITimeoutError",
+     "exception_module": "openai",
+     "elapsed_s": 4.32
+    },
+    "B7 application loop of 3 around the SDK": {
+     "arrivals": 9,
+     "retry_count_headers": [
+      "0",
+      "1",
+      "2",
+      "0",
+      "1",
+      "2",
+      "0",
+      "1",
+      "2"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [
+      0.487,
+      0.959,
+      0.354,
+      0.405,
+      0.854,
+      0.334,
+      0.507,
+      0.796
+     ],
+     "sdk_logged_delays_s": [
+      0.479,
+      0.952,
+      0.396,
+      0.846,
+      0.499,
+      0.79
+     ],
+     "exception": "GiveUp",
+     "exception_module": "policy",
+     "elapsed_s": 4.702
+    },
+    "B8 stream, a chunk every 0.5 s for 8 s, timeout=2.0": {
+     "arrivals": 1,
+     "retry_count_headers": [
+      "0"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [],
+     "sdk_logged_delays_s": [],
+     "exception": null,
+     "exception_module": null,
+     "elapsed_s": 8.073,
+     "chunks_received": 16
+    },
+    "B9 stream stalls after 3 chunks, timeout=1.0": {
+     "arrivals": 1,
+     "retry_count_headers": [
+      "0"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [],
+     "sdk_logged_delays_s": [],
+     "exception": "APITimeoutError",
+     "exception_module": "openai",
+     "elapsed_s": 1.319,
+     "chunks_received": 3
+    },
+    "B10 error event after 3 chunks": {
+     "arrivals": 1,
+     "retry_count_headers": [
+      "0"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [],
+     "sdk_logged_delays_s": [],
+     "exception": "APIError",
+     "exception_module": "openai",
+     "elapsed_s": 0.424,
+     "chunks_received": 3
+    },
+    "B12 connection refused (defaults)": {
+     "arrivals": null,
+     "sdk_logged_delays_s": [
+      0.489,
+      0.96
+     ],
+     "exception": "APIConnectionError",
+     "exception_module": "openai",
+     "elapsed_s": 1.464
+    },
+    "B4 429 with Retry-After: 130, then success": {
+     "arrivals": 1,
+     "retry_count_headers": [
+      "0"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [],
+     "sdk_logged_delays_s": [],
+     "exception": null,
+     "exception_module": null,
+     "elapsed_s": 0.003,
+     "still_waiting_at_4s": false,
+     "caller_saw": "RateLimitError"
+    }
+   }
+  },
+  "anthropic": {
+   "sdk": "anthropic",
+   "versions": {
+    "anthropic": "2.13.0",
+    "httpx2": "2.16.2",
+    "httpcore2": "2.16.2",
+    "h11": "0.16.0",
+    "anyio": "4.16.0",
+    "pydantic": "2.14.4"
+   },
+   "python": "3.12.13",
+   "scenarios": {
+    "B1 overloaded every time (defaults)": {
+     "arrivals": 3,
+     "retry_count_headers": [
+      "0",
+      "1",
+      "2"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [
+      0.425,
+      0.921
+     ],
+     "sdk_logged_delays_s": [
+      0.419,
+      0.915
+     ],
+     "exception": "OverloadedError",
+     "exception_module": "anthropic",
+     "elapsed_s": 1.369
+    },
+    "B2 400 invalid request (defaults)": {
+     "arrivals": 1,
+     "retry_count_headers": [
+      "0"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [],
+     "sdk_logged_delays_s": [],
+     "exception": "BadRequestError",
+     "exception_module": "anthropic",
+     "elapsed_s": 0.005
+    },
+    "B3 429 with Retry-After: 1, then success": {
+     "arrivals": 2,
+     "retry_count_headers": [
+      "0",
+      "1"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [
+      1.007
+     ],
+     "sdk_logged_delays_s": [
+      1.0
+     ],
+     "exception": null,
+     "exception_module": null,
+     "elapsed_s": 1.026,
+     "answered": true
+    },
+    "B5 429 that waiting won't fix, no Retry-After": {
+     "arrivals": 3,
+     "retry_count_headers": [
+      "0",
+      "1",
+      "2"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [
+      0.442,
+      0.769
+     ],
+     "sdk_logged_delays_s": [
+      0.433,
+      0.76
+     ],
+     "exception": "EnforcedSpendLimitReachedError",
+     "exception_module": "anthropic",
+     "elapsed_s": 1.213
+    },
+    "B6 no response, timeout=1.0 (defaults otherwise)": {
+     "arrivals": 3,
+     "retry_count_headers": [
+      "0",
+      "1",
+      "2"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [
+      1.505,
+      1.89
+     ],
+     "sdk_logged_delays_s": [
+      0.495,
+      0.879
+     ],
+     "exception": "APITimeoutError",
+     "exception_module": "anthropic",
+     "elapsed_s": 4.399
+    },
+    "B7 application loop of 3 around the SDK": {
+     "arrivals": 9,
+     "retry_count_headers": [
+      "0",
+      "1",
+      "2",
+      "0",
+      "1",
+      "2",
+      "0",
+      "1",
+      "2"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [
+      0.488,
+      0.958,
+      0.359,
+      0.404,
+      0.849,
+      0.331,
+      0.508,
+      0.796
+     ],
+     "sdk_logged_delays_s": [
+      0.479,
+      0.952,
+      0.396,
+      0.846,
+      0.499,
+      0.79
+     ],
+     "exception": "GiveUp",
+     "exception_module": "policy",
+     "elapsed_s": 4.698
+    },
+    "B8 stream, a chunk every 0.5 s for 8 s, timeout=2.0": {
+     "arrivals": 1,
+     "retry_count_headers": [
+      "0"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [],
+     "sdk_logged_delays_s": [],
+     "exception": null,
+     "exception_module": null,
+     "elapsed_s": 8.07,
+     "chunks_received": 16
+    },
+    "B9 stream stalls after 3 chunks, timeout=1.0": {
+     "arrivals": 1,
+     "retry_count_headers": [
+      "0"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [],
+     "sdk_logged_delays_s": [],
+     "exception": "ReadTimeout",
+     "exception_module": "httpx2",
+     "elapsed_s": 1.316,
+     "chunks_received": 3
+    },
+    "B10 error event after 3 chunks": {
+     "arrivals": 1,
+     "retry_count_headers": [
+      "0"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [],
+     "sdk_logged_delays_s": [],
+     "exception": "APIStatusError",
+     "exception_module": "anthropic",
+     "elapsed_s": 0.424,
+     "chunks_received": 3
+    },
+    "B12 connection refused (defaults)": {
+     "arrivals": null,
+     "sdk_logged_delays_s": [
+      0.489,
+      0.96
+     ],
+     "exception": "APIConnectionError",
+     "exception_module": "anthropic",
+     "elapsed_s": 1.462
+    },
+    "B11 non-streaming, max_tokens=64000, default timeout": {
+     "arrivals": 0,
+     "retry_count_headers": [],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [],
+     "sdk_logged_delays_s": [],
+     "exception": "ValueError",
+     "exception_module": "builtins",
+     "elapsed_s": 0.001,
+     "message": "Streaming is required for operations that may take longer than 10 minutes. See h"
+    },
+    "B4 429 with Retry-After: 130, then success": {
+     "arrivals": 1,
+     "retry_count_headers": [
+      "0"
+     ],
+     "idempotency_headers": [],
+     "gaps_between_arrivals_s": [],
+     "sdk_logged_delays_s": [
+      130.0
+     ],
+     "exception": null,
+     "exception_module": null,
+     "elapsed_s": 4.002,
+     "still_waiting_at_4s": true,
+     "caller_saw": null
+    }
+   }
+  }
+ },
+ "finished_utc": "2026-11-24T15:03:11+00:00"
+}

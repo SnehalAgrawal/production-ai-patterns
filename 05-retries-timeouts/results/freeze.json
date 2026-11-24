@@ -1,0 +1,19 @@
+{
+ "frozen_at_utc": "2026-11-24T14:56:42+00:00",
+ "note": "Written before the first reported run. run.py compares these hashes on every run.",
+ "files": {
+  "PROTOCOL.md": "b86605277b2206a7e0b2bf6b63914228326d159c88ac4f1ff89651d57fc931f6",
+  "python/policy.py": "47163e29ade46713d0978de775d81cf397b68dc443eebf58c83d01959b25ee78",
+  "python/standin.py": "a64918bc1b7c481d3191d7d53868dede962462643a7e4d720a9f029ab15cc8da",
+  "python/http_send.py": "cd786f7cc35d3dae2fc9ab7232c5d1f50a3e5507684de81d8cbe485f023f730b",
+  "python/tools.py": "881686f6a9a38b216e97a4c2be2d1e9fd52370d86e5810fa15d41be7ff775605",
+  "python/scenarios_a.py": "f95f992b597c9745d0f55a1b1de372201d3ba40270c6d894b0315b5e0fe9e81d",
+  "python/simulate.py": "047bde588a598638a491e20bc6327e3baa8a8d16c7aed3142a4a9244e79e8547",
+  "python/sdk_probe.py": "f41fb48e1d3e95a15e18ba9485707cddb399f9fd36ef4d9d3fc6fb5c56c37ec5",
+  "python/run.py": "a71d24556d1175f3a9378d3dd5ac00d90ca845ddbcec899511d09d57451c2202",
+  "python/report.py": "a49aa7894069d41a3f041079f1e46d07e46da12b46115a8e3ff7129740d52fd5",
+  "python/compare.py": "6daf9d59bf1525cf8ce84f74d399c5687f09d19cc60ad780b3db64ec6f1ca220",
+  "python/test_policy.py": "b410803feddf50a550ae58e05e4fca913541d0fcb2cccf63d4acb110e082138a",
+  "requirements-sdk.txt": "f546e2c7c5ca844eb55abcbfddaa32ba58b33b77ead227d4fc4b7e9739cd72d5"
+ }
+}
