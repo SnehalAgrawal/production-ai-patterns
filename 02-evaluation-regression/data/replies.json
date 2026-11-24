@@ -1,0 +1,335 @@
+{
+ "_comment": "The 39 test replies hand-labelled for 01-reliable-llm-pipeline (Article #18), exported once from 01's local runs by export_replies.py. 'key' is 01's label key (score.py); 'sha256' is over the reply text alone; 'source' is relative to 01-reliable-llm-pipeline/. A reply of null means the arm produced none.",
+ "produced_by": {
+  "demo": "01-reliable-llm-pipeline (published results; code at commit 0f51f32)",
+  "prompts": "v3 (01's data/prompts.json)",
+  "chat_model": "llama3.2:3b, ID a80c4f17acd5 (Q4_K_M)",
+  "embedding_model": "nomic-embed-text, ID 0a109f422b47",
+  "ollama": "0.40.16",
+  "options": "temperature 0, seed 1, num_ctx 8192 (01's data/settings.json)",
+  "split": "test (20 emails)"
+ },
+ "replies": [
+  {
+   "email": "e02",
+   "arm": "chain",
+   "reply": "Aiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) to fix the issue.\n\nTo fix the SSO login error for Aiyana, invite her or check the NameID format. If the problem continues, contact support through live chat with the error code and the time of the failed attempt.\n\nAiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) to fix the issue.\n\nTo fix the SSO login error for Aiyana, invite her or check the NameID format. If the problem continues, contact support through live chat with the error code and the time of the failed attempt.\n\nAiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) to fix the issue.\n\nTo fix the SSO login error for Aiyana, invite her or check the NameID format. If the problem continues, contact support through live chat with the error code and the time of the failed attempt.",
+   "key": "d5ce5fbfea1f7c6d",
+   "sha256": "4df3916ea73ce12a4d0797c03a417933f294c756d4af4c4adf12afe6485836e2",
+   "source": "runs/python/test-none/state/e02.json"
+  },
+  {
+   "email": "e04",
+   "arm": "chain",
+   "reply": "We will notify you about a personal data breach affecting your data within 48 hours, as stated in our data processing policy. If information isn't available yet, we will send it as soon as it is, without waiting for a complete report. We help the customer decide whether to notify the authorities and the people affected.",
+   "key": "45d2912f7403a0ee",
+   "sha256": "3757f6ce44fe631d13aa0c61bc06eb2ef3ebe293b289c431a26937d27a7c25bb",
+   "source": "runs/python/test-none/state/e04.json"
+  },
+  {
+   "email": "e06",
+   "arm": "chain",
+   "reply": "Hi Grace,\n\nTo become the Owner of your account, please contact support through live chat. We will ask for written confirmation from someone authorized to act for your company, such as a director, on company letterhead. Ownership transfers through support usually take 3 to 5 business days.\n\nTo regain access to your account, you can try signing in with your email address and password. If you are unable to do so, please contact support for further assistance.\n\nSupport team",
+   "key": "e806dc74883847f0",
+   "sha256": "483fb58bf2494c8feac1f4ff1c9e678786d769e185963ae6755e44045a4fa15d",
+   "source": "runs/python/test-none/state/e06.json"
+  },
+  {
+   "email": "e08",
+   "arm": "chain",
+   "reply": "The limit of 6 custom statuses on the production board has been raised to 10 per project. You can add a custom status called 'Waiting on client' and 'QA'.",
+   "key": "b9558e39fdeed176",
+   "sha256": "fe3ae5e827d391365a54c981b3ede2f39ddd3fade701490d4a432c5c806c4ad7",
+   "source": "runs/python/test-none/state/e08.json"
+  },
+  {
+   "email": "e10",
+   "arm": "chain",
+   "reply": "Hi Rebecca,\n\nWe do offer a discount for nonprofits or charities. Our nonprofit pricing plan is included in the Pro plan, which removes the limits on projects, members, and guests, and adds the features larger organizations need: reports, single sign-on, SCIM provisioning, the audit log, and the IP allowlist.\n\nBest wishes,\nSupport team",
+   "key": "a70d96457d5b4f1f",
+   "sha256": "c3007de241a894ff6538289bde58fb02e0be5fc2a2d911e70699582aab2fac7c",
+   "source": "runs/python/test-none/state/e10.json"
+  },
+  {
+   "email": "e12",
+   "arm": "chain",
+   "reply": "If you switch 2FA on, members who haven't set it up yet will be asked to do so at their next sign-in and have 3 days to complete it. After that, they can't open any project until they set it up. Only authenticator apps are supported; SMS codes are not. Members who sign in through enforced SSO are exempt, because their identity provider handles multi-factor authentication.",
+   "key": "5b20a31a1137c385",
+   "sha256": "9ce9a731dbc8d07bb844057e24197e1dcb6e03984bf52223a24e0eea088252a7",
+   "source": "runs/python/test-none/state/e12.json"
+  },
+  {
+   "email": "e14",
+   "arm": "chain",
+   "reply": null,
+   "key": null,
+   "sha256": null,
+   "source": "runs/python/test-none/state/e14.json",
+   "missing": "the draft has no usable reply"
+  },
+  {
+   "email": "e16",
+   "arm": "chain",
+   "reply": "We will retry the payment on the schedule specified in our billing guide. The first retry will be 1 day after the failed payment, the second retry will be 3 days after the failed payment, and the third retry will be 7 days after the failed payment. If the third retry also fails, the organization will become read-only until the payment method is updated.\n\nIf the payment fails repeatedly, it may be due to an expired card. Please update the card on file under Settings > Billing > Payment method.\n\nIf you have any further questions, please don't hesitate to ask.\n\nSupport team",
+   "key": "80dfce5330c5e9ea",
+   "sha256": "42054fe77ffe57195fb86a74cd610b5392316db76706564f063d2390ec64fc47",
+   "source": "runs/python/test-none/state/e16.json"
+  },
+  {
+   "email": "e18",
+   "arm": "chain",
+   "reply": "We will not lose task.completed events sent during the 3-hour window when your webhook endpoint is down. According to the API reference, failed webhook deliveries are retried up to 5 times over 24 hours, so any events sent during the 3-hour window will be retried and delivered after the downtime.\n\nAs for splitting your integrations, the API reference states that each organization can now have up to 20 webhooks, up from 10. However, you are planning to have 25 webhooks, which exceeds the limit. You will need to upgrade to a plan that supports more webhooks or contact us to discuss alternative solutions.",
+   "key": "2bcaf38da01cc986",
+   "sha256": "1ca11d95a891791c6fa875624d87367be210c388dd4bd8bff13308c95a9d19f6",
+   "source": "runs/python/test-none/state/e18.json"
+  },
+  {
+   "email": "e20",
+   "arm": "chain",
+   "reply": "1. When the SCIM token expires, provisioning stops, but existing members are not affected.\n2. Members do not lose access when the SCIM token expires.\n3. Yes, we can map our identity provider groups to projects, but groups from the identity provider are not synchronized.",
+   "key": "665a6e83ba9f0420",
+   "sha256": "d62c203f96737f1333ac67505cbba1ce361703c8511a5e086b0d3fce41eed36a",
+   "source": "runs/python/test-none/state/e20.json"
+  },
+  {
+   "email": "e22",
+   "arm": "chain",
+   "reply": "1) Yes, limit=500 will fail because the Basic plan has a requests per minute limit of 100. 2) API v1 will stop working on 2027-03-31.",
+   "key": "bdd62a5abafb8d23",
+   "sha256": "572c53edcd831266d4b850155a92f72acc8e41de28ca709a5a03d519ab8a8158",
+   "source": "runs/python/test-none/state/e22.json"
+  },
+  {
+   "email": "e24",
+   "arm": "chain",
+   "reply": "Hi Sophie,\n\nTo downgrade to Basic, you need to archive projects until no more than 3 are active, remove or suspend members until no more than 5 remain, including pending invitations, remove guests from any project that has more than 10, delete files until storage is under 10 GB, and turn off single sign-on, SCIM, and the IP allowlist. The downgrade takes effect at the start of the next billing period.\n\nIf you stay on Pro, there is no discount for paying three years upfront.\n\nSupport team",
+   "key": "9a819029b288d234",
+   "sha256": "9e6578e8cfe9c730276e5b02a50514e00fe7caefa1e8a446dc8bad33090618e9",
+   "source": "runs/python/test-none/state/e24.json"
+  },
+  {
+   "email": "e26",
+   "arm": "chain",
+   "reply": "The IP allowlist is active and is refusing requests from addresses outside the specified range. This is a security feature to prevent unauthorized access to your API. The Owner is exempt from the allowlist, so they can still access the API even if their address is not in the list. Webhook deliveries are not affected, as they go from our servers to yours.",
+   "key": "6df690673313b7aa",
+   "sha256": "60a85b6ecb494c1dd003bb7e5bec0a28925a14e9eacc88f0979fdbcb576b0f3b",
+   "source": "runs/python/test-none/state/e26.json"
+  },
+  {
+   "email": "e28",
+   "arm": "chain",
+   "reply": "You should suspend their account. Suspended members keep their role and their assignments, but can't sign in. Their API keys stop working, but they keep their role, their project memberships, and their task assignments. Suspended members still count toward the member limit. Suspend or reactivate a member under Settings > Members by opening the member's menu.",
+   "key": "a630e48bcd900c36",
+   "sha256": "5485ba4e3d5c406ea14c4b10fc28f189ef49b6f13aacc66022a72154d96c0a49",
+   "source": "runs/python/test-none/state/e28.json"
+  },
+  {
+   "email": "e30",
+   "arm": "chain",
+   "reply": "Hello Felix,\n\nOld links in your wiki will stop redirecting 90 days after the change, so update bookmarks and integrations that use the old address.\n\nThe app is available in Italian, as well as English, German, and Spanish.\n\nSupport team",
+   "key": "b0e9771741193e65",
+   "sha256": "fe66a725a137285d75dfa493829d00ccc9edb820a63459c27f42db5421e75766",
+   "source": "runs/python/test-none/state/e30.json"
+  },
+  {
+   "email": "e32",
+   "arm": "chain",
+   "reply": "Hello Victor Almeida,\n\n1. The annual price for the Pro plan is $250.\n2. Only the Owner can change the plan, the billing frequency, or the payment method.\n3. Organizations on an annual plan can also pay by bank transfer against an invoice, on request through live chat.\n\nSupport team",
+   "key": "0f4499f05f795a9f",
+   "sha256": "6f42791f02d31959da89d83711ee56be67679570c5049a6ba3fbfaa8899e5f94",
+   "source": "runs/python/test-none/state/e32.json"
+  },
+  {
+   "email": "e34",
+   "arm": "chain",
+   "reply": "Hello Elif,\n\n1. The API limit for the Pro plan is 1,000 requests per minute per key.\n2. Creating multiple keys and spreading requests across them is against the terms of service and will not improve performance.\n3. One member can have up to 10 active keys.\n\nSupport team",
+   "key": "562c93a2f7e60836",
+   "sha256": "15405e0c5facc02cfa723090b2c08efc3aec2f6104db448d2e14ad94a251ee87",
+   "source": "runs/python/test-none/state/e34.json"
+  },
+  {
+   "email": "e36",
+   "arm": "chain",
+   "reply": "Hello Olga,\n\na) Our support staff can access your data only to resolve a support request, and only with permission from the Owner or an Admin of the organization. Permission is given in the support conversation and lasts for 7 days or until the request is closed, whichever comes first.\n\nb) We keep your support chat transcripts for 2 years after the conversation ends, so that we can refer to earlier requests. A customer can ask for its support conversations to be deleted sooner.\n\nc) Customers can't carry out their own on-site audits; the audit report is provided instead.\n\nBest,\nSupport team",
+   "key": "0aa22d828fd2ee64",
+   "sha256": "f244779febca7c2e7945e4c8fddfbb7cf037ca39b2706a568249a285d4bc2664",
+   "source": "runs/python/test-none/state/e36.json"
+  },
+  {
+   "email": "e38",
+   "arm": "chain",
+   "reply": "1. No, mentions in comments created through the API don't send notifications.\n2. No, a deleted project can't be restored through the API.\n3. The maximum length of a task title is 500 characters.",
+   "key": "a4a40d1893505394",
+   "sha256": "6f29898b61d8b4db08ca8f923d15e5687acebc6dc4f611ff12c66eb6abeb6a5d",
+   "source": "runs/python/test-none/state/e38.json"
+  },
+  {
+   "email": "e40",
+   "arm": "chain",
+   "reply": "1. The export download link is valid for 7 days from the time it was sent to you. 2. The SMS sign-in code no longer works because the app no longer accepts SMS codes for two-factor authentication, and members who still used SMS codes were asked to switch to an authenticator app by 2026-01-31. 3. The mobile app does not work offline at events with no signal, as stated in the release notes for Version 5.4 (2026-01-12).\n\nSources: [1], [13], [17]",
+   "key": "01e982c29356e3d8",
+   "sha256": "3b15184eecc89d756a5e5472e109075b25b2b53a2264974071c9b699db32aeae",
+   "source": "runs/python/test-none/state/e40.json"
+  },
+  {
+   "email": "e02",
+   "arm": "perfect_inputs",
+   "reply": "Aiyana needs to be invited to the app in Okta, or the NameID format needs to be checked (step 3 in the administrator guide).",
+   "key": "84e9d66e0304d7dc",
+   "sha256": "d3c139961daeeafd49229186effe9089077d2a6aef77b1ea3ea1bb9572b1e4b2",
+   "source": "runs/python/test-isolated/e02.json"
+  },
+  {
+   "email": "e04",
+   "arm": "perfect_inputs",
+   "reply": "We notify the Owner without undue delay, and in any case within 48 hours, of a breach of security that affects customer data. The notification describes, as far as we know at the time, what happened and when, which categories of data and roughly how many people are affected, the likely consequences, what we have done and will do to contain the breach, and a contact person for further information.",
+   "key": "7faba08e6fbde4f2",
+   "sha256": "e7858c0b6d1b514a8fb5cdc925215da92fc707f0b8c74d5e62814b746e37d609",
+   "source": "runs/python/test-isolated/e04.json"
+  },
+  {
+   "email": "e06",
+   "arm": "perfect_inputs",
+   "reply": "Hi Grace,\n\nWe can't transfer ownership through the Admin role. Please contact support through live chat and we will ask for written confirmation from someone authorized to act for your company, such as a director, on company letterhead. Ownership transfers through support usually take 3 to 5 business days.\n\nSupport team",
+   "key": "78042845a283157f",
+   "sha256": "f1a9c61d1d4afa267370c326df6e93b0570252cd8bd8f56aea858deb35bf01d4",
+   "source": "runs/python/test-isolated/e06.json"
+  },
+  {
+   "email": "e08",
+   "arm": "perfect_inputs",
+   "reply": "Hi Li Wei,\n\nThe current limit on custom statuses per project is 10.\n\nSupport team",
+   "key": "3dc5aab87c2d8210",
+   "sha256": "964d8c1050d4855555276344f1c0e183d4b0889af9bf0bd72f8d92aaa97eb785",
+   "source": "runs/python/test-isolated/e08.json"
+  },
+  {
+   "email": "e10",
+   "arm": "perfect_inputs",
+   "reply": "Hi Rebecca,Thank you for reaching out to us about nonprofit pricing. Unfortunately, our app does not offer a discount for nonprofits or charities. However, we do provide a free trial period of 14 days, which includes all Pro features. If you're interested in learning more about our plans and pricing, I recommend checking out our billing guide (section 1). If you have any further questions, feel free to ask. Best wishes,Support team",
+   "key": "26296a27dd48bffa",
+   "sha256": "e039cc8ec81ba85f6112d6eed249624100e9bdab3a1fa203e0a39793bea919d9",
+   "source": "runs/python/test-isolated/e10.json"
+  },
+  {
+   "email": "e12",
+   "arm": "perfect_inputs",
+   "reply": "Hello Ahmed,\n\nWhen you require two-factor authentication for all members, members who haven't set it up yet will be asked to do so at their next sign-in and have 3 days to complete it. After that, they can't open any project until they set it up. Only authenticator apps are supported; SMS codes are not. Members who sign in through enforced SSO are exempt, because their identity provider handles multi-factor authentication.\n\nSupport team",
+   "key": "c4fc4676cac2cea8",
+   "sha256": "2a20417de6941f683fb903b6f36208e1d5b18fdf2e180d5ed205baa0120b13f9",
+   "source": "runs/python/test-isolated/e12.json"
+  },
+  {
+   "email": "e14",
+   "arm": "perfect_inputs",
+   "reply": "Our data is backed up every 6 hours. Backups are kept for 35 days and then deleted. After the plan ends, your data is kept for 90 days. During that time you can sign in, export your data, and reactivate the subscription from Settings > Billing. After 90 days, all projects, tasks, and files are permanently deleted. If you want your data deleted sooner, delete the organization instead; see the Data Processing Policy for how long deletion takes, including backups.",
+   "key": "8afbe714c76602b2",
+   "sha256": "54dcf713c0618f739698b50dfb9a8f0b35b54553eb20d8ca4bd450787674b7dc",
+   "source": "runs/python/test-isolated/e14.json"
+  },
+  {
+   "email": "e16",
+   "arm": "perfect_inputs",
+   "reply": "We will retry the payment on the next scheduled attempt. The next retry will be on 2 days after the failed payment. If the third retry also fails, the organization will become read-only until the payment method is updated. You can check the current status of the payment and the organization's read-only status under Settings > Billing > Payment method and Settings > Members, respectively. If you have any further questions, please contact us.",
+   "key": "a0028d2a9dc865ee",
+   "sha256": "6d399845d0040451296350068b3501c17f4f1d18c16d1e8acaa4d8db25bf05f5",
+   "source": "runs/python/test-isolated/e16.json"
+  },
+  {
+   "email": "e18",
+   "arm": "perfect_inputs",
+   "reply": "Webhook events are not lost while the endpoint is down for 3 hours. According to section 4 in the data-processing-policy.md, failed webhook deliveries are now retried up to 5 times over 24 hours, instead of 3 times over 1 hour. This means that if the endpoint is down for 3 hours, the deliveries that were sent before the endpoint went down will still be retried after it comes back up.\n\nAs for your second question, according to section 8 in the api-reference.md, each organization can have up to 20 webhooks. You are planning to split your integrations and need around 25 webhooks, which is above the limit. You may need to consider other options, such as upgrading your plan or using a different integration method.",
+   "key": "99ef5e85f40895ca",
+   "sha256": "b096079c5adae4eaf516069481f32a450f52cc7dccb429e02b405fff8fd9ab2e",
+   "source": "runs/python/test-isolated/e18.json"
+  },
+  {
+   "email": "e20",
+   "arm": "perfect_inputs",
+   "reply": "SCIM tokens are valid for one year. The Owner and Admins are emailed 14 days before a token expires; generate a new token and update it in the identity provider before then. When a token expires, provisioning stops, but existing members are not affected. When the identity provider deactivates a user, the member is removed from the organization within 5 minutes, with the same effects as removing them by hand (section 3.3). Members created through SCIM join with the Member role; change their role in this app if they need to be Admins. Groups from the identity provider are not synchronized.\n\nIdentity provider groups cannot be mapped to projects.\n\nSupport team",
+   "key": "c5ce935bea523722",
+   "sha256": "aadb4ec1c9ceee95f63301ae8a1065b292f428320c84f7b232fac73631a0a778",
+   "source": "runs/python/test-isolated/e20.json"
+  },
+  {
+   "email": "e22",
+   "arm": "perfect_inputs",
+   "reply": "1) A page size of 500 will be treated as 200, not rejected. 2) API version 1 will stop working on 2027-03-31.",
+   "key": "97c5a458df4f920f",
+   "sha256": "802f49aea875ec958359b2f89e905abbe89b4b4c94379a4cc84be9a14578ffc4",
+   "source": "runs/python/test-isolated/e22.json"
+  },
+  {
+   "email": "e24",
+   "arm": "perfect_inputs",
+   "reply": "Hi Sophie,\n\nTo downgrade to Basic, you need to archive projects until no more than 3 are active, remove or suspend members until no more than 5 remain, including pending invitations, remove guests from any project that has more than 10, delete files until storage is under 10 GB, and turn off single sign-on, SCIM, and the IP allowlist. The audit log is kept, but it stops recording new events and becomes visible again only if you upgrade. Downgrades take effect at the start of the next billing period, so you keep Pro features until then.\n\nIf you stay on Pro, there is no discount for paying three years upfront. However, you can ask about other payment options, such as a bank transfer, through live chat.\n\nSupport team",
+   "key": "f001238aacd71743",
+   "sha256": "36ca5683321d3d23aa984143d3d192c0b57b21dc54445ad8a25ea571846d8b98",
+   "source": "runs/python/test-isolated/e24.json"
+  },
+  {
+   "email": "e26",
+   "arm": "perfect_inputs",
+   "reply": "The CI pipeline gets 403 after the IP allowlist was turned on because the requests from the office range are not in the allowlist. The allowlist only allows requests from IP addresses in the specified ranges, and the office range is not in the list. The Owner is exempt from the allowlist, so a wrong entry can't lock everyone out.\n\nThe IP allowlist does not affect webhook deliveries, because they go from our servers to yours, as stated in the Administrator Guide.",
+   "key": "fbf95b69e276c9c4",
+   "sha256": "c004478454a9b1fdca67b0c301d0a8119e88a96608ea44aa747dac6ddda0f59a",
+   "source": "runs/python/test-isolated/e26.json"
+  },
+  {
+   "email": "e28",
+   "arm": "perfect_inputs",
+   "reply": "Suspend the member. Suspend does not free a seat. Suspended members still count toward the member limit. To give someone access again later, invite them again; their old assignments are not restored.\n\nThe API key will stop working while the member is away.",
+   "key": "e4a9c610314284e4",
+   "sha256": "070533e29fafa6bcd2025d47c58ba34ac8f3342aa18bf76b8af80b13246f1d79",
+   "source": "runs/python/test-isolated/e28.json"
+  },
+  {
+   "email": "e30",
+   "arm": "perfect_inputs",
+   "reply": "Old links keep working for 90 days after a change and then stop redirecting, so update bookmarks and integrations that use the old address. The app is available in Italian, but the documentation doesn't cover whether old links will break after the web address changes. I have passed this question to a colleague.\n\nThe app is available in Italian, but the documentation doesn't cover whether old links will break after the web address changes.",
+   "key": "649ba0038edb6f6a",
+   "sha256": "dc5475183b5e1cd7c9f9b031ee77649a2d14ec783843cda1f8257aa27f8d117b",
+   "source": "runs/python/test-isolated/e30.json"
+  },
+  {
+   "email": "e32",
+   "arm": "perfect_inputs",
+   "reply": "Hello Victor Almeida,\n\nThe annual Pro plan costs $250. Only the Owner can change the plan, and you can do this under Settings > Billing > Change plan. On the Change plan page, the app checks every limit and lists what still needs to be done to downgrade to the Basic plan.\n\nTo pay by bank transfer, ask for this through live chat before your first annual payment. A bank transfer invoice is due within 30 days of its date; if it isn't paid by then, the organization becomes read-only, as with a failed card payment.\n\nSupport team",
+   "key": "dbbc871dcc6b874f",
+   "sha256": "04f2f60f6c7f2de3a37e7eac2ccce7f8c21dd917dcbff988e1683907a14a0702",
+   "source": "runs/python/test-isolated/e32.json"
+  },
+  {
+   "email": "e34",
+   "arm": "perfect_inputs",
+   "reply": "The Pro API rate limit is 1,000 requests per minute, per key.\n\nCreating several keys and spreading requests across them to go faster is against the terms of service.\n\nOne member can have up to 10 active API keys.",
+   "key": "89f1dca5715a5c08",
+   "sha256": "bb48a53f2f66c324d5a89848a9e21cce6958e1d89d63cdcafd890c5168a017ab",
+   "source": "runs/python/test-isolated/e34.json"
+  },
+  {
+   "email": "e36",
+   "arm": "perfect_inputs",
+   "reply": "Hello Olga,\r\n\r\na) Our support staff can access your data only to resolve a support request, and only with permission from the Owner or an Admin of the organization. Permission is given in the support conversation and lasts for 7 days or until the request is closed, whichever comes first.\r\n\rn b) We keep support chat transcripts for 2 years after the conversation ends, so that we can refer to earlier requests. A customer can ask for its support conversations to be deleted sooner.\r\n\rn c) We don't allow on-site audits of our data centre. Instead, we provide an independent security audit report to Pro customers through live chat.\r\n\rn\rnBest,\r\nSupport team",
+   "key": "f73c9fbca3dcbde8",
+   "sha256": "bc3829d19b59b6fab2d2a2dab2769a307a327ceca61f4792ec112f68663c99bf",
+   "source": "runs/python/test-isolated/e36.json"
+  },
+  {
+   "email": "e38",
+   "arm": "perfect_inputs",
+   "reply": "1. No, mentions in API comments do not notify people.\n2. No, a deleted project cannot be restored through the API.\n3. The maximum length of a task title is 500 characters.",
+   "key": "252fe92a5661599b",
+   "sha256": "1406e742521985882a984eccd796fa50adc84aead701ae4f429d299fd27673e2",
+   "source": "runs/python/test-isolated/e38.json"
+  },
+  {
+   "email": "e40",
+   "arm": "perfect_inputs",
+   "reply": "Hello Ben,\n\n1. The export download link is valid for 7 days.\n2. The SMS sign-in code no longer works because the feature was removed in version 5.4.\n3. The mobile app does not work offline.\n\nSupport team",
+   "key": "60388cc43a292413",
+   "sha256": "5fe51b55730e9d6a6f079140fc4d66b345821d600f0f4d45ac001bd8af0047c4",
+   "source": "runs/python/test-isolated/e40.json"
+  }
+ ]
+}

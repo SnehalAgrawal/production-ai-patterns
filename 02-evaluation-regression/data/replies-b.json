@@ -1,0 +1,4192 @@
+{
+ "_comment": "Every Part B run, exported by run_b.py export: per run, its record (run.json) and, per email, the extraction, retrieved chunk ids, reply, 01-style label key and SHA-256. 'stored_18_chain' is #18's chain run from 01's local runs, for the reproduction comparison.",
+ "runs": {
+  "v3a": {
+   "record": {
+    "name": "v3a",
+    "prompt_version": "v3",
+    "prompt_sha256": "6dcf751ed5e2fa23aac5cf253d5d6f9ac0804897211573b80deb26964aa5f68b",
+    "split": "test",
+    "policy": "none",
+    "started_utc": "2026-11-24 12:43:14",
+    "ended_utc": "2026-11-24 12:45:29",
+    "model_calls": 40,
+    "status": {
+     "sent": 19,
+     "error": 1
+    },
+    "loaded_before_unload": [],
+    "server_log": {
+     "chat_lines": 40,
+     "embed_lines": 24,
+     "isolated": true,
+     "rotated": false
+    },
+    "preflight": {
+     "requests": "2.34.2",
+     "python-dotenv": "1.2.4",
+     "resolved": {
+      "chat_model": "llama3.2:3b",
+      "embedding_model": "nomic-embed-text",
+      "base_url": "http://localhost:11434"
+     },
+     "ollama": "0.40.17",
+     "models": {
+      "llama3.2:3b": "a80c4f17acd5",
+      "nomic-embed-text:latest": "0a109f422b47"
+     }
+    },
+    "python": "3.12.13",
+    "platform": "macOS-26.6.2-arm64-arm-64bit"
+   },
+   "emails": {
+    "e02": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What does SSO-103 mean?",
+       "How do we fix the SSO login error for Aiyana?",
+       "Why does Aiyana get SSO-103 when she tries to sign in through Okta?"
+      ],
+      "identifiers": [
+       "SSO-103",
+       "Okta",
+       "aiyana@lumenlogistics.example"
+      ]
+     },
+     "chunks": [
+      "admin-guide#13",
+      "admin-guide#10",
+      "admin-guide#11",
+      "admin-guide#9",
+      "release-notes#2",
+      "admin-guide#17",
+      "api-reference#6",
+      "release-notes#10",
+      "admin-guide#12",
+      "admin-guide#14",
+      "data-processing-policy#1",
+      "admin-guide#16",
+      "admin-guide#15",
+      "release-notes#23",
+      "release-notes#22",
+      "admin-guide#5",
+      "billing-guide#13",
+      "release-notes#6",
+      "release-notes#8"
+     ],
+     "reply": "Aiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) to fix the issue.\n\nTo fix the SSO login error for Aiyana, invite her or check the NameID format. If the problem continues, contact support through live chat with the error code and the time of the failed attempt.\n\nAiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) to fix the issue.\n\nTo fix the SSO login error for Aiyana, invite her or check the NameID format. If the problem continues, contact support through live chat with the error code and the time of the failed attempt.\n\nAiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) to fix the issue.\n\nTo fix the SSO login error for Aiyana, invite her or check the NameID format. If the problem continues, contact support through live chat with the error code and the time of the failed attempt.",
+     "key": "d5ce5fbfea1f7c6d",
+     "sha256": "4df3916ea73ce12a4d0797c03a417933f294c756d4af4c4adf12afe6485836e2"
+    },
+    "e04": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What is the timeframe for notifying us about a personal data breach affecting our data?"
+      ],
+      "identifiers": []
+     },
+     "chunks": [
+      "data-processing-policy#21",
+      "data-processing-policy#22",
+      "data-processing-policy#20",
+      "data-processing-policy#1",
+      "data-processing-policy#23",
+      "data-processing-policy#9",
+      "release-notes#10",
+      "data-processing-policy#8",
+      "data-processing-policy#10",
+      "data-processing-policy#17",
+      "data-processing-policy#6"
+     ],
+     "reply": "We will notify you about a personal data breach affecting your data within 48 hours, as stated in our data processing policy. If information isn't available yet, we will send it as soon as it is, without waiting for a complete report. We help the customer decide whether to notify the authorities and the people affected.",
+     "key": "45d2912f7403a0ee",
+     "sha256": "3757f6ce44fe631d13aa0c61bc06eb2ef3ebe293b289c431a26937d27a7c25bb"
+    },
+    "e06": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "How can I become the Owner of our account?",
+       "How can I regain access to our account since the account owner left the company?"
+      ],
+      "identifiers": [
+       "Pro plan",
+       "Admin role"
+      ]
+     },
+     "chunks": [
+      "data-processing-policy#20",
+      "data-processing-policy#15",
+      "admin-guide#10",
+      "admin-guide#19",
+      "admin-guide#8",
+      "data-processing-policy#23",
+      "billing-guide#5",
+      "billing-guide#15",
+      "admin-guide#15",
+      "release-notes#10",
+      "data-processing-policy#7",
+      "data-processing-policy#10",
+      "admin-guide#5",
+      "data-processing-policy#14",
+      "data-processing-policy#3"
+     ],
+     "reply": "Hi Grace,\n\nTo become the Owner of your account, please contact support through live chat. We will ask for written confirmation from someone authorized to act for your company, such as a director, on company letterhead. Ownership transfers through support usually take 3 to 5 business days.\n\nTo regain access to your account, you can try signing in with your email address and password. If you are unable to do so, please contact support for further assistance.\n\nSupport team",
+     "key": "e806dc74883847f0",
+     "sha256": "483fb58bf2494c8feac1f4ff1c9e678786d769e185963ae6755e44045a4fa15d"
+    },
+    "e08": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Is the limit of 6 custom statuses on the production board still in effect?",
+       "Can we add a custom status called 'Waiting on client'?",
+       "Can we add a custom status called 'QA'?"
+      ],
+      "identifiers": [
+       "production board",
+       "custom statuses",
+       "Waiting on client",
+       "QA"
+      ]
+     },
+     "chunks": [
+      "release-notes#4",
+      "release-notes#3",
+      "release-notes#6",
+      "release-notes#24",
+      "release-notes#5",
+      "release-notes#17",
+      "release-notes#20",
+      "api-reference#15",
+      "api-reference#4",
+      "release-notes#19",
+      "release-notes#18",
+      "admin-guide#7",
+      "release-notes#2",
+      "data-processing-policy#17",
+      "admin-guide#12",
+      "api-reference#6",
+      "api-reference#14",
+      "api-reference#12",
+      "api-reference#10",
+      "admin-guide#5",
+      "api-reference#9",
+      "release-notes#23"
+     ],
+     "reply": "The limit of 6 custom statuses on the production board has been raised to 10 per project. You can add a custom status called 'Waiting on client' and 'QA'.",
+     "key": "b9558e39fdeed176",
+     "sha256": "fe3ae5e827d391365a54c981b3ede2f39ddd3fade701490d4a432c5c806c4ad7"
+    },
+    "e10": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Do you offer a discount for nonprofits or charities?",
+       "What is the nonprofit pricing plan?"
+      ],
+      "identifiers": [
+       "free trial",
+       "nonprofit pricing plan"
+      ]
+     },
+     "chunks": [
+      "billing-guide#5",
+      "billing-guide#1",
+      "billing-guide#9",
+      "billing-guide#14",
+      "api-reference#2",
+      "billing-guide#3",
+      "admin-guide#6",
+      "api-reference#1",
+      "billing-guide#4",
+      "billing-guide#15",
+      "release-notes#24",
+      "billing-guide#6",
+      "billing-guide#12",
+      "billing-guide#7",
+      "release-notes#17",
+      "billing-guide#8",
+      "admin-guide#18",
+      "data-processing-policy#1"
+     ],
+     "reply": "Hi Rebecca,\n\nWe do offer a discount for nonprofits or charities. Our nonprofit pricing plan is included in the Pro plan, which removes the limits on projects, members, and guests, and adds the features larger organizations need: reports, single sign-on, SCIM provisioning, the audit log, and the IP allowlist.\n\nBest wishes,\nSupport team",
+     "key": "a70d96457d5b4f1f",
+     "sha256": "c3007de241a894ff6538289bde58fb02e0be5fc2a2d911e70699582aab2fac7c"
+    },
+    "e12": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "If we switch 2FA on, what happens to members who haven't set it up yet?",
+       "What happens to members who haven't set up 2FA yet?"
+      ],
+      "identifiers": []
+     },
+     "chunks": [
+      "admin-guide#17",
+      "release-notes#23",
+      "admin-guide#11",
+      "release-notes#22",
+      "admin-guide#6",
+      "admin-guide#16",
+      "admin-guide#10",
+      "release-notes#10",
+      "admin-guide#5",
+      "admin-guide#7",
+      "data-processing-policy#21",
+      "release-notes#18",
+      "billing-guide#1",
+      "admin-guide#3",
+      "admin-guide#8",
+      "release-notes#6"
+     ],
+     "reply": "If you switch 2FA on, members who haven't set it up yet will be asked to do so at their next sign-in and have 3 days to complete it. After that, they can't open any project until they set it up. Only authenticator apps are supported; SMS codes are not. Members who sign in through enforced SSO are exempt, because their identity provider handles multi-factor authentication.",
+     "key": "5b20a31a1137c385",
+     "sha256": "9ce9a731dbc8d07bb844057e24197e1dcb6e03984bf52223a24e0eea088252a7"
+    },
+    "e14": {
+     "status": "error",
+     "reason": "the draft has no usable reply",
+     "extraction": {
+      "questions": [
+       "How often does the app back up our data?",
+       "How long are the backups kept?"
+      ],
+      "identifiers": []
+     },
+     "chunks": [
+      "data-processing-policy#10",
+      "data-processing-policy#1",
+      "data-processing-policy#23",
+      "data-processing-policy#9",
+      "data-processing-policy#8",
+      "billing-guide#15",
+      "data-processing-policy#14",
+      "data-processing-policy#20",
+      "data-processing-policy#4",
+      "data-processing-policy#21",
+      "data-processing-policy#6",
+      "data-processing-policy#11",
+      "data-processing-policy#13",
+      "release-notes#10",
+      "data-processing-policy#16",
+      "data-processing-policy#12",
+      "release-notes#9",
+      "billing-guide#9",
+      "data-processing-policy#18",
+      "data-processing-policy#17",
+      "release-notes#26",
+      "release-notes#18",
+      "release-notes#14"
+     ],
+     "reply": null,
+     "key": null,
+     "sha256": null
+    },
+    "e16": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Will you try the payment again, and when?",
+       "What happens if it keeps failing?"
+      ],
+      "identifiers": [
+       "account reference 58213",
+       "card payment failed",
+       "API"
+      ]
+     },
+     "chunks": [
+      "billing-guide#13",
+      "billing-guide#14",
+      "billing-guide#7",
+      "billing-guide#1",
+      "billing-guide#15",
+      "billing-guide#12",
+      "billing-guide#10",
+      "billing-guide#5",
+      "release-notes#1",
+      "data-processing-policy#8",
+      "api-reference#14",
+      "api-reference#7",
+      "api-reference#15",
+      "data-processing-policy#21",
+      "data-processing-policy#1",
+      "data-processing-policy#9",
+      "release-notes#24",
+      "release-notes#13"
+     ],
+     "reply": "We will retry the payment on the schedule specified in our billing guide. The first retry will be 1 day after the failed payment, the second retry will be 3 days after the failed payment, and the third retry will be 7 days after the failed payment. If the third retry also fails, the organization will become read-only until the payment method is updated.\n\nIf the payment fails repeatedly, it may be due to an expired card. Please update the card on file under Settings > Billing > Payment method.\n\nIf you have any further questions, please don't hesitate to ask.\n\nSupport team",
+     "key": "80dfce5330c5e9ea",
+     "sha256": "42054fe77ffe57195fb86a74cd610b5392316db76706564f063d2390ec64fc47"
+    },
+    "e18": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Will we lose the task.completed events sent during the 3-hour window when our webhook endpoint is down?",
+       "Is it possible to split our integrations and have around 25 webhooks?"
+      ],
+      "identifiers": [
+       "task.completed"
+      ]
+     },
+     "chunks": [
+      "api-reference#12",
+      "api-reference#14",
+      "release-notes#13",
+      "api-reference#13",
+      "api-reference#9",
+      "api-reference#11",
+      "release-notes#12",
+      "billing-guide#3",
+      "admin-guide#18",
+      "api-reference#1",
+      "api-reference#5",
+      "admin-guide#14",
+      "release-notes#6"
+     ],
+     "reply": "We will not lose task.completed events sent during the 3-hour window when your webhook endpoint is down. According to the API reference, failed webhook deliveries are retried up to 5 times over 24 hours, so any events sent during the 3-hour window will be retried and delivered after the downtime.\n\nAs for splitting your integrations, the API reference states that each organization can now have up to 20 webhooks, up from 10. However, you are planning to have 25 webhooks, which exceeds the limit. You will need to upgrade to a plan that supports more webhooks or contact us to discuss alternative solutions.",
+     "key": "2bcaf38da01cc986",
+     "sha256": "1ca11d95a891791c6fa875624d87367be210c388dd4bd8bff13308c95a9d19f6"
+    },
+    "e20": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What happens when the SCIM token expires for a Pro plan?",
+       "Do members lose access when the SCIM token expires?",
+       "Can we map our identity provider groups to projects?"
+      ],
+      "identifiers": [
+       "Pro",
+       "SCIM token",
+       "SCIM",
+       "identity provider groups",
+       "projects"
+      ]
+     },
+     "chunks": [
+      "admin-guide#14",
+      "billing-guide#4",
+      "release-notes#8",
+      "admin-guide#15",
+      "admin-guide#12",
+      "billing-guide#5",
+      "release-notes#2",
+      "admin-guide#8",
+      "data-processing-policy#20",
+      "api-reference#3",
+      "admin-guide#11",
+      "admin-guide#5",
+      "admin-guide#6",
+      "data-processing-policy#9",
+      "admin-guide#9",
+      "admin-guide#10",
+      "api-reference#8",
+      "admin-guide#13",
+      "release-notes#5",
+      "data-processing-policy#7"
+     ],
+     "reply": "1. When the SCIM token expires, provisioning stops, but existing members are not affected.\n2. Members do not lose access when the SCIM token expires.\n3. Yes, we can map our identity provider groups to projects, but groups from the identity provider are not synchronized.",
+     "key": "665a6e83ba9f0420",
+     "sha256": "d62c203f96737f1333ac67505cbba1ce361703c8511a5e086b0d3fce41eed36a"
+    },
+    "e22": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Will limit=500 fail?",
+       "When does API v1 stop working?"
+      ],
+      "identifiers": [
+       "limit=500",
+       "API v1"
+      ]
+     },
+     "chunks": [
+      "api-reference#4",
+      "release-notes#17",
+      "api-reference#6",
+      "release-notes#13",
+      "billing-guide#3",
+      "release-notes#4",
+      "release-notes#24",
+      "release-notes#6",
+      "api-reference#15",
+      "api-reference#1",
+      "api-reference#3",
+      "api-reference#8",
+      "release-notes#12",
+      "api-reference#2",
+      "admin-guide#8",
+      "release-notes#7",
+      "release-notes#1"
+     ],
+     "reply": "1) Yes, limit=500 will fail because the Basic plan has a requests per minute limit of 100. 2) API v1 will stop working on 2027-03-31.",
+     "key": "bdd62a5abafb8d23",
+     "sha256": "572c53edcd831266d4b850155a92f72acc8e41de28ca709a5a03d519ab8a8158"
+    },
+    "e24": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What do we need to sort out before we can downgrade to Basic?",
+       "When would the downgrade take effect?",
+       "Is there a discount for paying three years upfront if we stay on Pro?"
+      ],
+      "identifiers": [
+       "Basic",
+       "Pro",
+       "3 years upfront"
+      ]
+     },
+     "chunks": [
+      "billing-guide#9",
+      "data-processing-policy#16",
+      "data-processing-policy#17",
+      "release-notes#24",
+      "data-processing-policy#23",
+      "data-processing-policy#1",
+      "data-processing-policy#22",
+      "data-processing-policy#12",
+      "billing-guide#3",
+      "release-notes#17",
+      "api-reference#15",
+      "data-processing-policy#14",
+      "data-processing-policy#9",
+      "data-processing-policy#21",
+      "billing-guide#8",
+      "billing-guide#7",
+      "release-notes#3",
+      "billing-guide#14",
+      "admin-guide#19",
+      "billing-guide#5",
+      "admin-guide#12",
+      "billing-guide#12",
+      "admin-guide#9",
+      "data-processing-policy#8",
+      "data-processing-policy#13",
+      "billing-guide#4",
+      "release-notes#10",
+      "api-reference#4",
+      "release-notes#8"
+     ],
+     "reply": "Hi Sophie,\n\nTo downgrade to Basic, you need to archive projects until no more than 3 are active, remove or suspend members until no more than 5 remain, including pending invitations, remove guests from any project that has more than 10, delete files until storage is under 10 GB, and turn off single sign-on, SCIM, and the IP allowlist. The downgrade takes effect at the start of the next billing period.\n\nIf you stay on Pro, there is no discount for paying three years upfront.\n\nSupport team",
+     "key": "9a819029b288d234",
+     "sha256": "9e6578e8cfe9c730276e5b02a50514e00fe7caefa1e8a446dc8bad33090618e9"
+    },
+    "e26": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What's going on with the IP allowlist?",
+       "Will the allowlist stop webhooks from reaching our servers?"
+      ],
+      "identifiers": [
+       "office range",
+       "403 errors",
+       "API",
+       "webhooks"
+      ]
+     },
+     "chunks": [
+      "admin-guide#18",
+      "release-notes#6",
+      "api-reference#6",
+      "release-notes#24",
+      "billing-guide#4",
+      "release-notes#16",
+      "release-notes#12",
+      "release-notes#5",
+      "release-notes#17",
+      "release-notes#25",
+      "release-notes#13",
+      "api-reference#11",
+      "api-reference#14",
+      "api-reference#15",
+      "admin-guide#8",
+      "api-reference#13",
+      "data-processing-policy#20",
+      "api-reference#1",
+      "release-notes#4",
+      "release-notes#1"
+     ],
+     "reply": "The IP allowlist is active and is refusing requests from addresses outside the specified range. This is a security feature to prevent unauthorized access to your API. The Owner is exempt from the allowlist, so they can still access the API even if their address is not in the list. Webhook deliveries are not affected, as they go from our servers to yours.",
+     "key": "6df690673313b7aa",
+     "sha256": "60a85b6ecb494c1dd003bb7e5bec0a28925a14e9eacc88f0979fdbcb576b0f3b"
+    },
+    "e28": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Should we suspend or remove their account?",
+       "Will it keep working while they're away?"
+      ],
+      "identifiers": [
+       "Basic",
+       "6 months",
+       "API key"
+      ]
+     },
+     "chunks": [
+      "admin-guide#7",
+      "data-processing-policy#15",
+      "admin-guide#8",
+      "data-processing-policy#17",
+      "release-notes#18",
+      "data-processing-policy#22",
+      "billing-guide#9",
+      "data-processing-policy#16",
+      "data-processing-policy#12",
+      "release-notes#1",
+      "data-processing-policy#8",
+      "billing-guide#15",
+      "release-notes#13",
+      "admin-guide#11",
+      "data-processing-policy#9",
+      "api-reference#14",
+      "api-reference#15",
+      "admin-guide#19",
+      "data-processing-policy#6",
+      "release-notes#25"
+     ],
+     "reply": "You should suspend their account. Suspended members keep their role and their assignments, but can't sign in. Their API keys stop working, but they keep their role, their project memberships, and their task assignments. Suspended members still count toward the member limit. Suspend or reactivate a member under Settings > Members by opening the member's menu.",
+     "key": "a630e48bcd900c36",
+     "sha256": "5485ba4e3d5c406ea14c4b10fc28f189ef49b6f13aacc66022a72154d96c0a49"
+    },
+    "e30": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Will old links in our wiki break after renaming the company from Northstar Robotics to Polaris Robotics and changing the web address from app.example.com/northstar to app.example.com/polaris?",
+       "Is the app available in Italian?"
+      ],
+      "identifiers": [
+       "app.example.com/northstar",
+       "app.example.com/polaris",
+       "Milan"
+      ]
+     },
+     "chunks": [
+      "admin-guide#2",
+      "admin-guide#18",
+      "api-reference#15",
+      "release-notes#21",
+      "data-processing-policy#23",
+      "data-processing-policy#9",
+      "release-notes#1",
+      "release-notes#13",
+      "release-notes#22",
+      "admin-guide#4",
+      "release-notes#7",
+      "release-notes#20",
+      "billing-guide#3",
+      "admin-guide#3",
+      "admin-guide#9",
+      "data-processing-policy#17",
+      "data-processing-policy#8",
+      "data-processing-policy#1",
+      "admin-guide#14"
+     ],
+     "reply": "Hello Felix,\n\nOld links in your wiki will stop redirecting 90 days after the change, so update bookmarks and integrations that use the old address.\n\nThe app is available in Italian, as well as English, German, and Spanish.\n\nSupport team",
+     "key": "b0e9771741193e65",
+     "sha256": "fe66a725a137285d75dfa493829d00ccc9edb820a63459c27f42db5421e75766"
+    },
+    "e32": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What would the annual price be for the Pro plan?",
+       "Can an Admin make the change to an annual Pro plan, or does someone else need to?",
+       "Is it possible to pay by bank transfer instead of card?"
+      ],
+      "identifiers": [
+       "Pro"
+      ]
+     },
+     "chunks": [
+      "billing-guide#2",
+      "billing-guide#9",
+      "billing-guide#7",
+      "billing-guide#8",
+      "billing-guide#4",
+      "billing-guide#5",
+      "billing-guide#14",
+      "release-notes#25",
+      "admin-guide#5",
+      "admin-guide#19",
+      "admin-guide#9",
+      "admin-guide#1",
+      "billing-guide#12",
+      "billing-guide#1",
+      "data-processing-policy#19",
+      "data-processing-policy#23",
+      "release-notes#8",
+      "billing-guide#13",
+      "data-processing-policy#17",
+      "data-processing-policy#4",
+      "billing-guide#15",
+      "data-processing-policy#22",
+      "api-reference#7",
+      "billing-guide#10"
+     ],
+     "reply": "Hello Victor Almeida,\n\n1. The annual price for the Pro plan is $250.\n2. Only the Owner can change the plan, the billing frequency, or the payment method.\n3. Organizations on an annual plan can also pay by bank transfer against an invoice, on request through live chat.\n\nSupport team",
+     "key": "0f4499f05f795a9f",
+     "sha256": "6f42791f02d31959da89d83711ee56be67679570c5049a6ba3fbfaa8899e5f94"
+    },
+    "e34": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What is the limit now?",
+       "Could we create several keys and spread requests across them to go faster?",
+       "How many keys can one member have?"
+      ],
+      "identifiers": [
+       "Pro",
+       "API limit"
+      ]
+     },
+     "chunks": [
+      "release-notes#17",
+      "release-notes#24",
+      "release-notes#4",
+      "api-reference#4",
+      "api-reference#5",
+      "release-notes#13",
+      "release-notes#6",
+      "release-notes#14",
+      "billing-guide#3",
+      "release-notes#26",
+      "release-notes#5",
+      "release-notes#1",
+      "api-reference#3",
+      "data-processing-policy#22",
+      "release-notes#12",
+      "admin-guide#18",
+      "api-reference#2",
+      "api-reference#7",
+      "api-reference#11",
+      "data-processing-policy#23",
+      "data-processing-policy#3",
+      "admin-guide#8",
+      "admin-guide#7",
+      "admin-guide#6",
+      "admin-guide#5",
+      "admin-guide#17",
+      "release-notes#10",
+      "data-processing-policy#21"
+     ],
+     "reply": "Hello Elif,\n\n1. The API limit for the Pro plan is 1,000 requests per minute per key.\n2. Creating multiple keys and spreading requests across them is against the terms of service and will not improve performance.\n3. One member can have up to 10 active keys.\n\nSupport team",
+     "key": "562c93a2f7e60836",
+     "sha256": "15405e0c5facc02cfa723090b2c08efc3aec2f6104db448d2e14ad94a251ee87"
+    },
+    "e36": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What conditions allow your support staff to access our data?",
+       "How long do you keep our support chat transcripts?",
+       "Can we carry out an on-site audit of your data centre?"
+      ],
+      "identifiers": [
+       "data centre",
+       "support staff",
+       "on-site audit"
+      ]
+     },
+     "chunks": [
+      "data-processing-policy#20",
+      "data-processing-policy#7",
+      "data-processing-policy#22",
+      "data-processing-policy#3",
+      "data-processing-policy#21",
+      "data-processing-policy#12",
+      "data-processing-policy#19",
+      "data-processing-policy#4",
+      "data-processing-policy#1",
+      "data-processing-policy#2",
+      "release-notes#10",
+      "billing-guide#15",
+      "data-processing-policy#8",
+      "admin-guide#19",
+      "data-processing-policy#17",
+      "data-processing-policy#10",
+      "release-notes#18",
+      "billing-guide#5",
+      "admin-guide#7",
+      "data-processing-policy#23",
+      "data-processing-policy#16",
+      "admin-guide#4",
+      "data-processing-policy#11",
+      "admin-guide#15",
+      "data-processing-policy#15",
+      "billing-guide#4",
+      "data-processing-policy#5",
+      "admin-guide#18",
+      "admin-guide#1",
+      "release-notes#16"
+     ],
+     "reply": "Hello Olga,\n\na) Our support staff can access your data only to resolve a support request, and only with permission from the Owner or an Admin of the organization. Permission is given in the support conversation and lasts for 7 days or until the request is closed, whichever comes first.\n\nb) We keep your support chat transcripts for 2 years after the conversation ends, so that we can refer to earlier requests. A customer can ask for its support conversations to be deleted sooner.\n\nc) Customers can't carry out their own on-site audits; the audit report is provided instead.\n\nBest,\nSupport team",
+     "key": "0aa22d828fd2ee64",
+     "sha256": "f244779febca7c2e7945e4c8fddfbb7cf037ca39b2706a568249a285d4bc2664"
+    },
+    "e38": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Is @mentions notification enabled for comment.created webhooks?",
+       "Can a deleted project be restored through the API?",
+       "What's the maximum length of a task title?"
+      ],
+      "identifiers": [
+       "comment.created",
+       "API",
+       "project"
+      ]
+     },
+     "chunks": [
+      "api-reference#10",
+      "release-notes#12",
+      "api-reference#12",
+      "api-reference#1",
+      "release-notes#4",
+      "api-reference#11",
+      "release-notes#13",
+      "api-reference#13",
+      "api-reference#14",
+      "release-notes#6",
+      "api-reference#8",
+      "api-reference#9",
+      "admin-guide#8",
+      "api-reference#3",
+      "admin-guide#7",
+      "release-notes#7",
+      "admin-guide#16",
+      "api-reference#5",
+      "release-notes#14",
+      "release-notes#3",
+      "data-processing-policy#17",
+      "api-reference#4",
+      "data-processing-policy#21"
+     ],
+     "reply": "1. No, mentions in comments created through the API don't send notifications.\n2. No, a deleted project can't be restored through the API.\n3. The maximum length of a task title is 500 characters.",
+     "key": "a4a40d1893505394",
+     "sha256": "6f29898b61d8b4db08ca8f923d15e5687acebc6dc4f611ff12c66eb6abeb6a5d"
+    },
+    "e40": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "How long does the export download link stay valid?",
+       "Has something changed with the SMS sign-in code?",
+       "Does the mobile app work offline at events with no signal?"
+      ],
+      "identifiers": [
+       "export download link",
+       "SMS sign-in code",
+       "mobile app",
+       "events",
+       "signal"
+      ]
+     },
+     "chunks": [
+      "release-notes#26",
+      "data-processing-policy#8",
+      "release-notes#10",
+      "release-notes#9",
+      "data-processing-policy#9",
+      "billing-guide#15",
+      "admin-guide#15",
+      "admin-guide#16",
+      "data-processing-policy#23",
+      "release-notes#18",
+      "data-processing-policy#16",
+      "release-notes#5",
+      "release-notes#22",
+      "admin-guide#13",
+      "admin-guide#17",
+      "api-reference#6",
+      "admin-guide#11",
+      "release-notes#21",
+      "release-notes#4",
+      "release-notes#1",
+      "billing-guide#3",
+      "release-notes#11",
+      "api-reference#12",
+      "data-processing-policy#17",
+      "release-notes#3",
+      "release-notes#20",
+      "api-reference#7",
+      "billing-guide#9",
+      "release-notes#7"
+     ],
+     "reply": "1. The export download link is valid for 7 days from the time it was sent to you. 2. The SMS sign-in code no longer works because the app no longer accepts SMS codes for two-factor authentication, and members who still used SMS codes were asked to switch to an authenticator app by 2026-01-31. 3. The mobile app does not work offline at events with no signal, as stated in the release notes for Version 5.4 (2026-01-12).\n\nSources: [1], [13], [17]",
+     "key": "01e982c29356e3d8",
+     "sha256": "3b15184eecc89d756a5e5472e109075b25b2b53a2264974071c9b699db32aeae"
+    }
+   }
+  },
+  "v3b": {
+   "record": {
+    "name": "v3b",
+    "prompt_version": "v3",
+    "prompt_sha256": "6dcf751ed5e2fa23aac5cf253d5d6f9ac0804897211573b80deb26964aa5f68b",
+    "split": "test",
+    "policy": "none",
+    "started_utc": "2026-11-24 12:46:29",
+    "ended_utc": "2026-11-24 12:48:44",
+    "model_calls": 40,
+    "status": {
+     "sent": 19,
+     "error": 1
+    },
+    "loaded_before_unload": [],
+    "server_log": {
+     "chat_lines": 40,
+     "embed_lines": 24,
+     "isolated": true,
+     "rotated": false
+    },
+    "preflight": {
+     "requests": "2.34.2",
+     "python-dotenv": "1.2.4",
+     "resolved": {
+      "chat_model": "llama3.2:3b",
+      "embedding_model": "nomic-embed-text",
+      "base_url": "http://localhost:11434"
+     },
+     "ollama": "0.40.17",
+     "models": {
+      "llama3.2:3b": "a80c4f17acd5",
+      "nomic-embed-text:latest": "0a109f422b47"
+     }
+    },
+    "python": "3.12.13",
+    "platform": "macOS-26.6.2-arm64-arm-64bit"
+   },
+   "emails": {
+    "e02": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What does SSO-103 mean?",
+       "How do we fix the SSO login error for Aiyana?",
+       "Why does Aiyana get SSO-103 when she tries to sign in through Okta?"
+      ],
+      "identifiers": [
+       "SSO-103",
+       "Okta",
+       "aiyana@lumenlogistics.example"
+      ]
+     },
+     "chunks": [
+      "admin-guide#13",
+      "admin-guide#10",
+      "admin-guide#11",
+      "admin-guide#9",
+      "release-notes#2",
+      "admin-guide#17",
+      "api-reference#6",
+      "release-notes#10",
+      "admin-guide#12",
+      "admin-guide#14",
+      "data-processing-policy#1",
+      "admin-guide#16",
+      "admin-guide#15",
+      "release-notes#23",
+      "release-notes#22",
+      "admin-guide#5",
+      "billing-guide#13",
+      "release-notes#6",
+      "release-notes#8"
+     ],
+     "reply": "Aiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) to fix the issue.\n\nTo fix the SSO login error for Aiyana, invite her or check the NameID format. If the problem continues, contact support through live chat with the error code and the time of the failed attempt.\n\nAiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) to fix the issue.\n\nTo fix the SSO login error for Aiyana, invite her or check the NameID format. If the problem continues, contact support through live chat with the error code and the time of the failed attempt.\n\nAiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) to fix the issue.\n\nTo fix the SSO login error for Aiyana, invite her or check the NameID format. If the problem continues, contact support through live chat with the error code and the time of the failed attempt.",
+     "key": "d5ce5fbfea1f7c6d",
+     "sha256": "4df3916ea73ce12a4d0797c03a417933f294c756d4af4c4adf12afe6485836e2"
+    },
+    "e04": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What is the timeframe for notifying us about a personal data breach affecting our data?"
+      ],
+      "identifiers": []
+     },
+     "chunks": [
+      "data-processing-policy#21",
+      "data-processing-policy#22",
+      "data-processing-policy#20",
+      "data-processing-policy#1",
+      "data-processing-policy#23",
+      "data-processing-policy#9",
+      "release-notes#10",
+      "data-processing-policy#8",
+      "data-processing-policy#10",
+      "data-processing-policy#17",
+      "data-processing-policy#6"
+     ],
+     "reply": "We will notify you about a personal data breach affecting your data within 48 hours, as stated in our data processing policy. If information isn't available yet, we will send it as soon as it is, without waiting for a complete report. We help the customer decide whether to notify the authorities and the people affected.",
+     "key": "45d2912f7403a0ee",
+     "sha256": "3757f6ce44fe631d13aa0c61bc06eb2ef3ebe293b289c431a26937d27a7c25bb"
+    },
+    "e06": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "How can I become the Owner of our account?",
+       "How can I regain access to our account since the account owner left the company?"
+      ],
+      "identifiers": [
+       "Pro plan",
+       "Admin role"
+      ]
+     },
+     "chunks": [
+      "data-processing-policy#20",
+      "data-processing-policy#15",
+      "admin-guide#10",
+      "admin-guide#19",
+      "admin-guide#8",
+      "data-processing-policy#23",
+      "billing-guide#5",
+      "billing-guide#15",
+      "admin-guide#15",
+      "release-notes#10",
+      "data-processing-policy#7",
+      "data-processing-policy#10",
+      "admin-guide#5",
+      "data-processing-policy#14",
+      "data-processing-policy#3"
+     ],
+     "reply": "Hi Grace,\n\nTo become the Owner of your account, please contact support through live chat. We will ask for written confirmation from someone authorized to act for your company, such as a director, on company letterhead. Ownership transfers through support usually take 3 to 5 business days.\n\nTo regain access to your account, you can try signing in with your email address and password. If you are unable to do so, please contact support for further assistance.\n\nSupport team",
+     "key": "e806dc74883847f0",
+     "sha256": "483fb58bf2494c8feac1f4ff1c9e678786d769e185963ae6755e44045a4fa15d"
+    },
+    "e08": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Is the limit of 6 custom statuses on the production board still in effect?",
+       "Can we add a custom status called 'Waiting on client'?",
+       "Can we add a custom status called 'QA'?"
+      ],
+      "identifiers": [
+       "production board",
+       "custom statuses",
+       "Waiting on client",
+       "QA"
+      ]
+     },
+     "chunks": [
+      "release-notes#4",
+      "release-notes#3",
+      "release-notes#6",
+      "release-notes#24",
+      "release-notes#5",
+      "release-notes#17",
+      "release-notes#20",
+      "api-reference#15",
+      "api-reference#4",
+      "release-notes#19",
+      "release-notes#18",
+      "admin-guide#7",
+      "release-notes#2",
+      "data-processing-policy#17",
+      "admin-guide#12",
+      "api-reference#6",
+      "api-reference#14",
+      "api-reference#12",
+      "api-reference#10",
+      "admin-guide#5",
+      "api-reference#9",
+      "release-notes#23"
+     ],
+     "reply": "The limit of 6 custom statuses on the production board has been raised to 10 per project. You can add a custom status called 'Waiting on client' and 'QA'.",
+     "key": "b9558e39fdeed176",
+     "sha256": "fe3ae5e827d391365a54c981b3ede2f39ddd3fade701490d4a432c5c806c4ad7"
+    },
+    "e10": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Do you offer a discount for nonprofits or charities?",
+       "What is the nonprofit pricing plan?"
+      ],
+      "identifiers": [
+       "free trial",
+       "nonprofit pricing plan"
+      ]
+     },
+     "chunks": [
+      "billing-guide#5",
+      "billing-guide#1",
+      "billing-guide#9",
+      "billing-guide#14",
+      "api-reference#2",
+      "billing-guide#3",
+      "admin-guide#6",
+      "api-reference#1",
+      "billing-guide#4",
+      "billing-guide#15",
+      "release-notes#24",
+      "billing-guide#6",
+      "billing-guide#12",
+      "billing-guide#7",
+      "release-notes#17",
+      "billing-guide#8",
+      "admin-guide#18",
+      "data-processing-policy#1"
+     ],
+     "reply": "Hi Rebecca,\n\nWe do offer a discount for nonprofits or charities. Our nonprofit pricing plan is included in the Pro plan, which removes the limits on projects, members, and guests, and adds the features larger organizations need: reports, single sign-on, SCIM provisioning, the audit log, and the IP allowlist.\n\nBest wishes,\nSupport team",
+     "key": "a70d96457d5b4f1f",
+     "sha256": "c3007de241a894ff6538289bde58fb02e0be5fc2a2d911e70699582aab2fac7c"
+    },
+    "e12": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "If we switch 2FA on, what happens to members who haven't set it up yet?",
+       "What happens to members who haven't set up 2FA yet?"
+      ],
+      "identifiers": []
+     },
+     "chunks": [
+      "admin-guide#17",
+      "release-notes#23",
+      "admin-guide#11",
+      "release-notes#22",
+      "admin-guide#6",
+      "admin-guide#16",
+      "admin-guide#10",
+      "release-notes#10",
+      "admin-guide#5",
+      "admin-guide#7",
+      "data-processing-policy#21",
+      "release-notes#18",
+      "billing-guide#1",
+      "admin-guide#3",
+      "admin-guide#8",
+      "release-notes#6"
+     ],
+     "reply": "If you switch 2FA on, members who haven't set it up yet will be asked to do so at their next sign-in and have 3 days to complete it. After that, they can't open any project until they set it up. Only authenticator apps are supported; SMS codes are not. Members who sign in through enforced SSO are exempt, because their identity provider handles multi-factor authentication.",
+     "key": "5b20a31a1137c385",
+     "sha256": "9ce9a731dbc8d07bb844057e24197e1dcb6e03984bf52223a24e0eea088252a7"
+    },
+    "e14": {
+     "status": "error",
+     "reason": "the draft has no usable reply",
+     "extraction": {
+      "questions": [
+       "How often does the app back up our data?",
+       "How long are the backups kept?"
+      ],
+      "identifiers": []
+     },
+     "chunks": [
+      "data-processing-policy#10",
+      "data-processing-policy#1",
+      "data-processing-policy#23",
+      "data-processing-policy#9",
+      "data-processing-policy#8",
+      "billing-guide#15",
+      "data-processing-policy#14",
+      "data-processing-policy#20",
+      "data-processing-policy#4",
+      "data-processing-policy#21",
+      "data-processing-policy#6",
+      "data-processing-policy#11",
+      "data-processing-policy#13",
+      "release-notes#10",
+      "data-processing-policy#16",
+      "data-processing-policy#12",
+      "release-notes#9",
+      "billing-guide#9",
+      "data-processing-policy#18",
+      "data-processing-policy#17",
+      "release-notes#26",
+      "release-notes#18",
+      "release-notes#14"
+     ],
+     "reply": null,
+     "key": null,
+     "sha256": null
+    },
+    "e16": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Will you try the payment again, and when?",
+       "What happens if it keeps failing?"
+      ],
+      "identifiers": [
+       "account reference 58213",
+       "card payment failed",
+       "API"
+      ]
+     },
+     "chunks": [
+      "billing-guide#13",
+      "billing-guide#14",
+      "billing-guide#7",
+      "billing-guide#1",
+      "billing-guide#15",
+      "billing-guide#12",
+      "billing-guide#10",
+      "billing-guide#5",
+      "release-notes#1",
+      "data-processing-policy#8",
+      "api-reference#14",
+      "api-reference#7",
+      "api-reference#15",
+      "data-processing-policy#21",
+      "data-processing-policy#1",
+      "data-processing-policy#9",
+      "release-notes#24",
+      "release-notes#13"
+     ],
+     "reply": "We will retry the payment on the schedule specified in our billing guide. The first retry will be 1 day after the failed payment, the second retry will be 3 days after the failed payment, and the third retry will be 7 days after the failed payment. If the third retry also fails, the organization will become read-only until the payment method is updated.\n\nIf the payment fails repeatedly, it may be due to an expired card. Please update the card on file under Settings > Billing > Payment method.\n\nIf you have any further questions, please don't hesitate to ask.\n\nSupport team",
+     "key": "80dfce5330c5e9ea",
+     "sha256": "42054fe77ffe57195fb86a74cd610b5392316db76706564f063d2390ec64fc47"
+    },
+    "e18": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Will we lose the task.completed events sent during the 3-hour window when our webhook endpoint is down?",
+       "Is it possible to split our integrations and have around 25 webhooks?"
+      ],
+      "identifiers": [
+       "task.completed"
+      ]
+     },
+     "chunks": [
+      "api-reference#12",
+      "api-reference#14",
+      "release-notes#13",
+      "api-reference#13",
+      "api-reference#9",
+      "api-reference#11",
+      "release-notes#12",
+      "billing-guide#3",
+      "admin-guide#18",
+      "api-reference#1",
+      "api-reference#5",
+      "admin-guide#14",
+      "release-notes#6"
+     ],
+     "reply": "We will not lose task.completed events sent during the 3-hour window when your webhook endpoint is down. According to the API reference, failed webhook deliveries are retried up to 5 times over 24 hours, so any events sent during the 3-hour window will be retried and delivered after the downtime.\n\nAs for splitting your integrations, the API reference states that each organization can now have up to 20 webhooks, up from 10. However, you are planning to have 25 webhooks, which exceeds the limit. You will need to upgrade to a plan that supports more webhooks or contact us to discuss alternative solutions.",
+     "key": "2bcaf38da01cc986",
+     "sha256": "1ca11d95a891791c6fa875624d87367be210c388dd4bd8bff13308c95a9d19f6"
+    },
+    "e20": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What happens when the SCIM token expires for a Pro plan?",
+       "Do members lose access when the SCIM token expires?",
+       "Can we map our identity provider groups to projects?"
+      ],
+      "identifiers": [
+       "Pro",
+       "SCIM token",
+       "SCIM",
+       "identity provider groups",
+       "projects"
+      ]
+     },
+     "chunks": [
+      "admin-guide#14",
+      "billing-guide#4",
+      "release-notes#8",
+      "admin-guide#15",
+      "admin-guide#12",
+      "billing-guide#5",
+      "release-notes#2",
+      "admin-guide#8",
+      "data-processing-policy#20",
+      "api-reference#3",
+      "admin-guide#11",
+      "admin-guide#5",
+      "admin-guide#6",
+      "data-processing-policy#9",
+      "admin-guide#9",
+      "admin-guide#10",
+      "api-reference#8",
+      "admin-guide#13",
+      "release-notes#5",
+      "data-processing-policy#7"
+     ],
+     "reply": "1. When the SCIM token expires, provisioning stops, but existing members are not affected.\n2. Members do not lose access when the SCIM token expires.\n3. Yes, we can map our identity provider groups to projects, but groups from the identity provider are not synchronized.",
+     "key": "665a6e83ba9f0420",
+     "sha256": "d62c203f96737f1333ac67505cbba1ce361703c8511a5e086b0d3fce41eed36a"
+    },
+    "e22": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Will limit=500 fail?",
+       "When does API v1 stop working?"
+      ],
+      "identifiers": [
+       "limit=500",
+       "API v1"
+      ]
+     },
+     "chunks": [
+      "api-reference#4",
+      "release-notes#17",
+      "api-reference#6",
+      "release-notes#13",
+      "billing-guide#3",
+      "release-notes#4",
+      "release-notes#24",
+      "release-notes#6",
+      "api-reference#15",
+      "api-reference#1",
+      "api-reference#3",
+      "api-reference#8",
+      "release-notes#12",
+      "api-reference#2",
+      "admin-guide#8",
+      "release-notes#7",
+      "release-notes#1"
+     ],
+     "reply": "1) Yes, limit=500 will fail because the Basic plan has a requests per minute limit of 100. 2) API v1 will stop working on 2027-03-31.",
+     "key": "bdd62a5abafb8d23",
+     "sha256": "572c53edcd831266d4b850155a92f72acc8e41de28ca709a5a03d519ab8a8158"
+    },
+    "e24": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What do we need to sort out before we can downgrade to Basic?",
+       "When would the downgrade take effect?",
+       "Is there a discount for paying three years upfront if we stay on Pro?"
+      ],
+      "identifiers": [
+       "Basic",
+       "Pro",
+       "3 years upfront"
+      ]
+     },
+     "chunks": [
+      "billing-guide#9",
+      "data-processing-policy#16",
+      "data-processing-policy#17",
+      "release-notes#24",
+      "data-processing-policy#23",
+      "data-processing-policy#1",
+      "data-processing-policy#22",
+      "data-processing-policy#12",
+      "billing-guide#3",
+      "release-notes#17",
+      "api-reference#15",
+      "data-processing-policy#14",
+      "data-processing-policy#9",
+      "data-processing-policy#21",
+      "billing-guide#8",
+      "billing-guide#7",
+      "release-notes#3",
+      "billing-guide#14",
+      "admin-guide#19",
+      "billing-guide#5",
+      "admin-guide#12",
+      "billing-guide#12",
+      "admin-guide#9",
+      "data-processing-policy#8",
+      "data-processing-policy#13",
+      "billing-guide#4",
+      "release-notes#10",
+      "api-reference#4",
+      "release-notes#8"
+     ],
+     "reply": "Hi Sophie,\n\nTo downgrade to Basic, you need to archive projects until no more than 3 are active, remove or suspend members until no more than 5 remain, including pending invitations, remove guests from any project that has more than 10, delete files until storage is under 10 GB, and turn off single sign-on, SCIM, and the IP allowlist. The downgrade takes effect at the start of the next billing period.\n\nIf you stay on Pro, there is no discount for paying three years upfront.\n\nSupport team",
+     "key": "9a819029b288d234",
+     "sha256": "9e6578e8cfe9c730276e5b02a50514e00fe7caefa1e8a446dc8bad33090618e9"
+    },
+    "e26": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What's going on with the IP allowlist?",
+       "Will the allowlist stop webhooks from reaching our servers?"
+      ],
+      "identifiers": [
+       "office range",
+       "403 errors",
+       "API",
+       "webhooks"
+      ]
+     },
+     "chunks": [
+      "admin-guide#18",
+      "release-notes#6",
+      "api-reference#6",
+      "release-notes#24",
+      "billing-guide#4",
+      "release-notes#16",
+      "release-notes#12",
+      "release-notes#5",
+      "release-notes#17",
+      "release-notes#25",
+      "release-notes#13",
+      "api-reference#11",
+      "api-reference#14",
+      "api-reference#15",
+      "admin-guide#8",
+      "api-reference#13",
+      "data-processing-policy#20",
+      "api-reference#1",
+      "release-notes#4",
+      "release-notes#1"
+     ],
+     "reply": "The IP allowlist is active and is refusing requests from addresses outside the specified range. This is a security feature to prevent unauthorized access to your API. The Owner is exempt from the allowlist, so they can still access the API even if their address is not in the list. Webhook deliveries are not affected, as they go from our servers to yours.",
+     "key": "6df690673313b7aa",
+     "sha256": "60a85b6ecb494c1dd003bb7e5bec0a28925a14e9eacc88f0979fdbcb576b0f3b"
+    },
+    "e28": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Should we suspend or remove their account?",
+       "Will it keep working while they're away?"
+      ],
+      "identifiers": [
+       "Basic",
+       "6 months",
+       "API key"
+      ]
+     },
+     "chunks": [
+      "admin-guide#7",
+      "data-processing-policy#15",
+      "admin-guide#8",
+      "data-processing-policy#17",
+      "release-notes#18",
+      "data-processing-policy#22",
+      "billing-guide#9",
+      "data-processing-policy#16",
+      "data-processing-policy#12",
+      "release-notes#1",
+      "data-processing-policy#8",
+      "billing-guide#15",
+      "release-notes#13",
+      "admin-guide#11",
+      "data-processing-policy#9",
+      "api-reference#14",
+      "api-reference#15",
+      "admin-guide#19",
+      "data-processing-policy#6",
+      "release-notes#25"
+     ],
+     "reply": "You should suspend their account. Suspended members keep their role and their assignments, but can't sign in. Their API keys stop working, but they keep their role, their project memberships, and their task assignments. Suspended members still count toward the member limit. Suspend or reactivate a member under Settings > Members by opening the member's menu.",
+     "key": "a630e48bcd900c36",
+     "sha256": "5485ba4e3d5c406ea14c4b10fc28f189ef49b6f13aacc66022a72154d96c0a49"
+    },
+    "e30": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Will old links in our wiki break after renaming the company from Northstar Robotics to Polaris Robotics and changing the web address from app.example.com/northstar to app.example.com/polaris?",
+       "Is the app available in Italian?"
+      ],
+      "identifiers": [
+       "app.example.com/northstar",
+       "app.example.com/polaris",
+       "Milan"
+      ]
+     },
+     "chunks": [
+      "admin-guide#2",
+      "admin-guide#18",
+      "api-reference#15",
+      "release-notes#21",
+      "data-processing-policy#23",
+      "data-processing-policy#9",
+      "release-notes#1",
+      "release-notes#13",
+      "release-notes#22",
+      "admin-guide#4",
+      "release-notes#7",
+      "release-notes#20",
+      "billing-guide#3",
+      "admin-guide#3",
+      "admin-guide#9",
+      "data-processing-policy#17",
+      "data-processing-policy#8",
+      "data-processing-policy#1",
+      "admin-guide#14"
+     ],
+     "reply": "Hello Felix,\n\nOld links in your wiki will stop redirecting 90 days after the change, so update bookmarks and integrations that use the old address.\n\nThe app is available in Italian, as well as English, German, and Spanish.\n\nSupport team",
+     "key": "b0e9771741193e65",
+     "sha256": "fe66a725a137285d75dfa493829d00ccc9edb820a63459c27f42db5421e75766"
+    },
+    "e32": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What would the annual price be for the Pro plan?",
+       "Can an Admin make the change to an annual Pro plan, or does someone else need to?",
+       "Is it possible to pay by bank transfer instead of card?"
+      ],
+      "identifiers": [
+       "Pro"
+      ]
+     },
+     "chunks": [
+      "billing-guide#2",
+      "billing-guide#9",
+      "billing-guide#7",
+      "billing-guide#8",
+      "billing-guide#4",
+      "billing-guide#5",
+      "billing-guide#14",
+      "release-notes#25",
+      "admin-guide#5",
+      "admin-guide#19",
+      "admin-guide#9",
+      "admin-guide#1",
+      "billing-guide#12",
+      "billing-guide#1",
+      "data-processing-policy#19",
+      "data-processing-policy#23",
+      "release-notes#8",
+      "billing-guide#13",
+      "data-processing-policy#17",
+      "data-processing-policy#4",
+      "billing-guide#15",
+      "data-processing-policy#22",
+      "api-reference#7",
+      "billing-guide#10"
+     ],
+     "reply": "Hello Victor Almeida,\n\n1. The annual price for the Pro plan is $250.\n2. Only the Owner can change the plan, the billing frequency, or the payment method.\n3. Organizations on an annual plan can also pay by bank transfer against an invoice, on request through live chat.\n\nSupport team",
+     "key": "0f4499f05f795a9f",
+     "sha256": "6f42791f02d31959da89d83711ee56be67679570c5049a6ba3fbfaa8899e5f94"
+    },
+    "e34": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What is the limit now?",
+       "Could we create several keys and spread requests across them to go faster?",
+       "How many keys can one member have?"
+      ],
+      "identifiers": [
+       "Pro",
+       "API limit"
+      ]
+     },
+     "chunks": [
+      "release-notes#17",
+      "release-notes#24",
+      "release-notes#4",
+      "api-reference#4",
+      "api-reference#5",
+      "release-notes#13",
+      "release-notes#6",
+      "release-notes#14",
+      "billing-guide#3",
+      "release-notes#26",
+      "release-notes#5",
+      "release-notes#1",
+      "api-reference#3",
+      "data-processing-policy#22",
+      "release-notes#12",
+      "admin-guide#18",
+      "api-reference#2",
+      "api-reference#7",
+      "api-reference#11",
+      "data-processing-policy#23",
+      "data-processing-policy#3",
+      "admin-guide#8",
+      "admin-guide#7",
+      "admin-guide#6",
+      "admin-guide#5",
+      "admin-guide#17",
+      "release-notes#10",
+      "data-processing-policy#21"
+     ],
+     "reply": "Hello Elif,\n\n1. The API limit for the Pro plan is 1,000 requests per minute per key.\n2. Creating multiple keys and spreading requests across them is against the terms of service and will not improve performance.\n3. One member can have up to 10 active keys.\n\nSupport team",
+     "key": "562c93a2f7e60836",
+     "sha256": "15405e0c5facc02cfa723090b2c08efc3aec2f6104db448d2e14ad94a251ee87"
+    },
+    "e36": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What conditions allow your support staff to access our data?",
+       "How long do you keep our support chat transcripts?",
+       "Can we carry out an on-site audit of your data centre?"
+      ],
+      "identifiers": [
+       "data centre",
+       "support staff",
+       "on-site audit"
+      ]
+     },
+     "chunks": [
+      "data-processing-policy#20",
+      "data-processing-policy#7",
+      "data-processing-policy#22",
+      "data-processing-policy#3",
+      "data-processing-policy#21",
+      "data-processing-policy#12",
+      "data-processing-policy#19",
+      "data-processing-policy#4",
+      "data-processing-policy#1",
+      "data-processing-policy#2",
+      "release-notes#10",
+      "billing-guide#15",
+      "data-processing-policy#8",
+      "admin-guide#19",
+      "data-processing-policy#17",
+      "data-processing-policy#10",
+      "release-notes#18",
+      "billing-guide#5",
+      "admin-guide#7",
+      "data-processing-policy#23",
+      "data-processing-policy#16",
+      "admin-guide#4",
+      "data-processing-policy#11",
+      "admin-guide#15",
+      "data-processing-policy#15",
+      "billing-guide#4",
+      "data-processing-policy#5",
+      "admin-guide#18",
+      "admin-guide#1",
+      "release-notes#16"
+     ],
+     "reply": "Hello Olga,\n\na) Our support staff can access your data only to resolve a support request, and only with permission from the Owner or an Admin of the organization. Permission is given in the support conversation and lasts for 7 days or until the request is closed, whichever comes first.\n\nb) We keep your support chat transcripts for 2 years after the conversation ends, so that we can refer to earlier requests. A customer can ask for its support conversations to be deleted sooner.\n\nc) Customers can't carry out their own on-site audits; the audit report is provided instead.\n\nBest,\nSupport team",
+     "key": "0aa22d828fd2ee64",
+     "sha256": "f244779febca7c2e7945e4c8fddfbb7cf037ca39b2706a568249a285d4bc2664"
+    },
+    "e38": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Is @mentions notification enabled for comment.created webhooks?",
+       "Can a deleted project be restored through the API?",
+       "What's the maximum length of a task title?"
+      ],
+      "identifiers": [
+       "comment.created",
+       "API",
+       "project"
+      ]
+     },
+     "chunks": [
+      "api-reference#10",
+      "release-notes#12",
+      "api-reference#12",
+      "api-reference#1",
+      "release-notes#4",
+      "api-reference#11",
+      "release-notes#13",
+      "api-reference#13",
+      "api-reference#14",
+      "release-notes#6",
+      "api-reference#8",
+      "api-reference#9",
+      "admin-guide#8",
+      "api-reference#3",
+      "admin-guide#7",
+      "release-notes#7",
+      "admin-guide#16",
+      "api-reference#5",
+      "release-notes#14",
+      "release-notes#3",
+      "data-processing-policy#17",
+      "api-reference#4",
+      "data-processing-policy#21"
+     ],
+     "reply": "1. No, mentions in comments created through the API don't send notifications.\n2. No, a deleted project can't be restored through the API.\n3. The maximum length of a task title is 500 characters.",
+     "key": "a4a40d1893505394",
+     "sha256": "6f29898b61d8b4db08ca8f923d15e5687acebc6dc4f611ff12c66eb6abeb6a5d"
+    },
+    "e40": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "How long does the export download link stay valid?",
+       "Has something changed with the SMS sign-in code?",
+       "Does the mobile app work offline at events with no signal?"
+      ],
+      "identifiers": [
+       "export download link",
+       "SMS sign-in code",
+       "mobile app",
+       "events",
+       "signal"
+      ]
+     },
+     "chunks": [
+      "release-notes#26",
+      "data-processing-policy#8",
+      "release-notes#10",
+      "release-notes#9",
+      "data-processing-policy#9",
+      "billing-guide#15",
+      "admin-guide#15",
+      "admin-guide#16",
+      "data-processing-policy#23",
+      "release-notes#18",
+      "data-processing-policy#16",
+      "release-notes#5",
+      "release-notes#22",
+      "admin-guide#13",
+      "admin-guide#17",
+      "api-reference#6",
+      "admin-guide#11",
+      "release-notes#21",
+      "release-notes#4",
+      "release-notes#1",
+      "billing-guide#3",
+      "release-notes#11",
+      "api-reference#12",
+      "data-processing-policy#17",
+      "release-notes#3",
+      "release-notes#20",
+      "api-reference#7",
+      "billing-guide#9",
+      "release-notes#7"
+     ],
+     "reply": "1. The export download link is valid for 7 days from the time it was sent to you. 2. The SMS sign-in code no longer works because the app no longer accepts SMS codes for two-factor authentication, and members who still used SMS codes were asked to switch to an authenticator app by 2026-01-31. 3. The mobile app does not work offline at events with no signal, as stated in the release notes for Version 5.4 (2026-01-12).\n\nSources: [1], [13], [17]",
+     "key": "01e982c29356e3d8",
+     "sha256": "3b15184eecc89d756a5e5472e109075b25b2b53a2264974071c9b699db32aeae"
+    }
+   }
+  },
+  "v4dev": {
+   "record": {
+    "name": "v4dev",
+    "prompt_version": "v4",
+    "prompt_sha256": "6962f34028f76f65610ffb421cc8420e6f05d3e550bec584a7116da63cb6ebc3",
+    "split": "dev",
+    "policy": "none",
+    "started_utc": "2026-11-24 12:55:27",
+    "ended_utc": "2026-11-24 12:57:49",
+    "model_calls": 40,
+    "status": {
+     "sent": 20,
+     "error": 0
+    },
+    "loaded_before_unload": [],
+    "server_log": {
+     "chat_lines": 40,
+     "embed_lines": 24,
+     "isolated": true,
+     "rotated": false
+    },
+    "preflight": {
+     "requests": "2.34.2",
+     "python-dotenv": "1.2.4",
+     "resolved": {
+      "chat_model": "llama3.2:3b",
+      "embedding_model": "nomic-embed-text",
+      "base_url": "http://localhost:11434"
+     },
+     "ollama": "0.40.17",
+     "models": {
+      "llama3.2:3b": "a80c4f17acd5",
+      "nomic-embed-text:latest": "0a109f422b47"
+     }
+    },
+    "python": "3.12.13",
+    "platform": "macOS-26.6.2-arm64-arm-64bit"
+   },
+   "emails": {
+    "e01": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What is the cost of upgrading from the Basic plan to the Pro plan on the 16th of this month?",
+       "What will be the charge on the 16th of this month, and what will the charge be after that?"
+      ],
+      "identifiers": [
+       "Pro plan"
+      ]
+     },
+     "chunks": [
+      "billing-guide#8",
+      "billing-guide#5",
+      "billing-guide#14",
+      "billing-guide#3",
+      "release-notes#24",
+      "billing-guide#9",
+      "billing-guide#7",
+      "release-notes#14",
+      "billing-guide#6",
+      "release-notes#25",
+      "billing-guide#10",
+      "billing-guide#15",
+      "release-notes#3",
+      "data-processing-policy#21",
+      "data-processing-policy#1",
+      "billing-guide#1",
+      "billing-guide#13",
+      "billing-guide#12",
+      "release-notes#17"
+     ],
+     "reply": "Hi Marta,\n\nThe cost of upgrading from the Basic plan to the Pro plan on the 16th of this month is $15. On the 16th, you will be charged $15, and on the next billing cycle, you will be charged $25. After that, you will be charged $25 every month.\n\nBest,\nSupport team\n",
+     "key": "b79375b71b6e0158",
+     "sha256": "15baf517c50e8d302bfda717a71bdc891799478867e72d29d87d660f512006f8"
+    },
+    "e03": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What is the limit for the number of requests in the Basic plan?",
+       "How should the script handle a 429 Too Many Requests error?",
+       "What should the script do instead of retrying in a loop up to 20 times?"
+      ],
+      "identifiers": [
+       "429 Too Many Requests",
+       "Basic plan",
+       "API key"
+      ]
+     },
+     "chunks": [
+      "api-reference#4",
+      "billing-guide#3",
+      "release-notes#17",
+      "release-notes#24",
+      "admin-guide#18",
+      "billing-guide#2",
+      "billing-guide#9",
+      "api-reference#6",
+      "api-reference#7",
+      "api-reference#5",
+      "data-processing-policy#22",
+      "release-notes#6",
+      "release-notes#12",
+      "release-notes#10",
+      "release-notes#4",
+      "release-notes#13",
+      "api-reference#14",
+      "admin-guide#13",
+      "api-reference#11",
+      "api-reference#15",
+      "admin-guide#12",
+      "admin-guide#17",
+      "release-notes#11"
+     ],
+     "reply": "Hi Dev,\n\nThe limit for the number of requests in the Basic plan is 100 per minute, per API key.\n\nWhen a 429 Too Many Requests error occurs, you should handle it by waiting for the specified time in the Retry-After header before retrying the request. This will help prevent the wait time from increasing with each retry.\n\nInstead of retrying in a loop up to 20 times, you can consider implementing an exponential backoff strategy to wait for a longer period of time between retries.\n\nSupport team",
+     "key": "8afdf511e86457bd",
+     "sha256": "279eb7b02c5f7330adec3855f7dba4edcf35df7c646076a2827cd28145917a23"
+    },
+    "e05": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Can we pay for our Pro subscription with PayPal?",
+       "What payment options do we have?"
+      ],
+      "identifiers": [
+       "Pro subscription"
+      ]
+     },
+     "chunks": [
+      "billing-guide#12",
+      "data-processing-policy#17",
+      "billing-guide#5",
+      "release-notes#6",
+      "data-processing-policy#9",
+      "data-processing-policy#19",
+      "admin-guide#18",
+      "billing-guide#4",
+      "admin-guide#9",
+      "billing-guide#1",
+      "billing-guide#13",
+      "data-processing-policy#4",
+      "data-processing-policy#1",
+      "data-processing-policy#3",
+      "billing-guide#11",
+      "billing-guide#3",
+      "data-processing-policy#16",
+      "billing-guide#10"
+     ],
+     "reply": "Hello Jonas,\n\nOur company card is being replaced, and finance asked whether we can pay for our Pro subscription with PayPal instead. According to our billing guide, we accept Visa, Mastercard, and American Express, but not PayPal or cryptocurrency.\n\nWe can change the card on file under Settings > Billing > Payment method, and any payment that is currently overdue is retried on the new card straight away.\n\nIf you have any further questions, please don't hesitate to ask.\n\nBest regards,\nSupport team",
+     "key": "a54822c460495f6a",
+     "sha256": "ab10399cc177c72a4a6702c7f7a68dad11428ffcf9bba9efbce4c29b88d9ca7f"
+    },
+    "e07": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What causes the cursor to expire during an export job?",
+       "How can we resume the export job after it pauses overnight?"
+      ],
+      "identifiers": [
+       "v2 API",
+       "cursor_expired",
+       "400 error"
+      ]
+     },
+     "chunks": [
+      "api-reference#5",
+      "billing-guide#15",
+      "admin-guide#15",
+      "data-processing-policy#9",
+      "data-processing-policy#14",
+      "admin-guide#4",
+      "api-reference#15",
+      "release-notes#9",
+      "api-reference#14",
+      "data-processing-policy#17",
+      "data-processing-policy#22",
+      "data-processing-policy#16",
+      "data-processing-policy#12",
+      "billing-guide#13",
+      "admin-guide#19",
+      "data-processing-policy#21"
+     ],
+     "reply": "The cursor expires after 24 hours. This is because cursors are issued for a limited time to prevent abuse. When you try to fetch data with an expired cursor, you receive a 400 error with the error code cursor_expired. To resume the export job, you can try fetching the data again from the beginning, using the first page of results. You can do this by passing the limit parameter with a value of 100, as shown in the API reference: \n\n GET /v2/projects/p_8f2k/tasks?limit=100&cursor=c_19x7\n\nIf you want to resume the job from a specific point, you can try to fetch the data again with the same cursor, but be aware that the data may have changed since the cursor was issued.\n\nIf you have any further questions or concerns, please don't hesitate to ask.",
+     "key": "fa0e86394e5c43b0",
+     "sha256": "afa76950fa910d971c55338eb6afe945aee1189c1fe00ae1e810479f486c0e79"
+    },
+    "e09": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Can you move our organization to Frankfurt?",
+       "Can you move our 40 projects with lots of comments and attachments to Frankfurt?"
+      ],
+      "identifiers": [
+       "United States region",
+       "EU",
+       "Frankfurt",
+       "40 projects"
+      ]
+     },
+     "chunks": [
+      "admin-guide#4",
+      "data-processing-policy#5",
+      "admin-guide#5",
+      "admin-guide#3",
+      "admin-guide#18",
+      "billing-guide#9",
+      "api-reference#11",
+      "api-reference#8",
+      "release-notes#5",
+      "api-reference#10",
+      "api-reference#1",
+      "api-reference#9",
+      "billing-guide#3"
+     ],
+     "reply": "Bonjour Camille,\n\nWe can't move your organization to Frankfurt. The data region is chosen when the organization is created: the European Union (Frankfurt) or the United States (Virginia). It is shown under Settings > Organization > General and can't be changed.\n\nTo move to the other region, create a new organization there, export your data from the old one, and import it into the new one. Comments, attachments, and the audit log are not included in an import, so keep the export of the old organization if you need them.\n\nMerci,\nSupport team",
+     "key": "714bc48e3546b7fd",
+     "sha256": "6a8af09937ea45b51a3c63807ea6f85c8c9403c2b1d315630e07ef89c395dcd7"
+    },
+    "e11": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What happens in February, which doesn't have a 31st? Do we get charged on 1 March, or skip a month?"
+      ],
+      "identifiers": []
+     },
+     "chunks": [
+      "billing-guide#6",
+      "billing-guide#1",
+      "billing-guide#8",
+      "billing-guide#10",
+      "data-processing-policy#21",
+      "data-processing-policy#17",
+      "billing-guide#14",
+      "billing-guide#5"
+     ],
+     "reply": "Hi Oliver,\n\nWe first paid for our monthly plan on 31 January. What happens in February, which doesn't have a 31st? Do we get charged on 1 March, or skip a month?\n\nAccording to our billing guide, if the billing day doesn't exist in a month, the charge is made on the last day of that month. So, in this case, the charge would be made on 28 February (or 29 February in a leap year).\n\nThank you for reaching out, and I hope this clears up any confusion.\n\nSupport team",
+     "key": "8c3d15f58890a267",
+     "sha256": "1344f084fad9935aeb074aba907fc1e54794a3fd7892c80172d185896960284e"
+    },
+    "e13": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What are we doing wrong with our signature check?",
+       "How to fix the signature check for task.updated webhooks?"
+      ],
+      "identifiers": [
+       "task.updated",
+       "X-Signature"
+      ]
+     },
+     "chunks": [
+      "api-reference#13",
+      "admin-guide#13",
+      "admin-guide#11",
+      "api-reference#6",
+      "data-processing-policy#23",
+      "release-notes#15",
+      "api-reference#12",
+      "release-notes#12",
+      "api-reference#9",
+      "release-notes#4",
+      "api-reference#11",
+      "release-notes#3",
+      "release-notes#10",
+      "release-notes#13",
+      "api-reference#1"
+     ],
+     "reply": "You are doing wrong with your signature check because you are not joining the X-Timestamp value, a period, and the raw body into one string before computing the HMAC-SHA256 of that string. According to the documentation, step 2 of the webhook verification process requires this step. Also, you are not using a constant-time comparison to compare the result with the X-Signature header. The documentation recommends using a constant-time comparison for this step. You should also check that X-Timestamp is no more than 5 minutes old, as the documentation states that the delivery should be rejected if it is older, even when the signature matches. You can find more information about the webhook verification process in section 4. Single sign-on in the Administrator Guide.",
+     "key": "8a71b19ebc520f3b",
+     "sha256": "f2ba4091f4dce30dbf7912d7b6ac2aedbaa2da5a05546a224713b1b24e141d5d"
+    },
+    "e15": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What happens to our workspace if we do nothing after the trial?",
+       "Will our video team still be able to upload files of around 1.5 GB after the trial?"
+      ],
+      "identifiers": [
+       "Pro",
+       "SSO",
+       "Tuesday"
+      ]
+     },
+     "chunks": [
+      "billing-guide#5",
+      "billing-guide#13",
+      "data-processing-policy#21",
+      "data-processing-policy#23",
+      "data-processing-policy#1",
+      "data-processing-policy#17",
+      "billing-guide#15",
+      "billing-guide#1",
+      "release-notes#14",
+      "billing-guide#9",
+      "data-processing-policy#8",
+      "data-processing-policy#10",
+      "data-processing-policy#9",
+      "api-reference#4",
+      "billing-guide#3",
+      "release-notes#26",
+      "release-notes#24",
+      "billing-guide#11",
+      "release-notes#25"
+     ],
+     "reply": "Hi Yuki,\n\nIf you do nothing, the organization moves to the Basic plan. No data is deleted, but projects beyond the third become read-only until you upgrade or archive them, and Pro settings such as single sign-on and the IP allowlist are switched off.\n\nRegarding your video team's file uploads, the maximum file size on the Pro plan was raised from 1 GB to 2 GB in version 5.8, so they should still be able to upload files of around 1.5 GB.\n\nBest,\nSupport team",
+     "key": "b9380cce2af6814f",
+     "sha256": "a49c3a843f70573828c42c969ddc543a0652b65fd7a1c3cc77270ac46096224f"
+    },
+    "e17": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Will users who have never signed in through SSO be locked out immediately?",
+       "Do external agency guests need accounts in Entra ID?"
+      ],
+      "identifiers": [
+       "SSO",
+       "Entra ID"
+      ]
+     },
+     "chunks": [
+      "admin-guide#11",
+      "admin-guide#10",
+      "admin-guide#17",
+      "admin-guide#16",
+      "admin-guide#9",
+      "admin-guide#13",
+      "admin-guide#5",
+      "billing-guide#4",
+      "billing-guide#3",
+      "admin-guide#14",
+      "admin-guide#18",
+      "release-notes#18"
+     ],
+     "reply": "Hi Isabel,\n\nAccording to our documentation, members who haven't signed in through SSO yet will get a grace period of 7 days, during which they can still use their password. After the grace period, password sign-in is turned off for them.\n\nExternal agency guests do not need accounts in Entra ID, as they are guests on client projects and see nothing else.\n\nSupport team",
+     "key": "b402a36f50e1d6ee",
+     "sha256": "d1eecdf8e32b7203a9af0f31d0a9f98dee441ca6e131877ff5ff5088cd913750"
+    },
+    "e19": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Can I get a refund?",
+       "Can I just switch to monthly billing now and get the difference back?"
+      ],
+      "identifiers": [
+       "Pro"
+      ]
+     },
+     "chunks": [
+      "billing-guide#14",
+      "data-processing-policy#17",
+      "billing-guide#9",
+      "api-reference#10",
+      "billing-guide#1",
+      "api-reference#3",
+      "data-processing-policy#9",
+      "release-notes#23",
+      "billing-guide#7",
+      "billing-guide#8",
+      "billing-guide#6",
+      "billing-guide#11",
+      "billing-guide#15",
+      "release-notes#3",
+      "billing-guide#2",
+      "release-notes#22",
+      "billing-guide#5"
+     ],
+     "reply": "Hello Fatima,\n\nThank you for reaching out to us. According to our Billing and Plans Guide, you can request a refund within 30 days of purchase, through live chat. A purchase is the first payment of a plan or an annual renewal. Approved refunds go back to the original payment method.\n\nHowever, since you've already been charged for the annual plan, you won't be eligible for a refund. You can, however, switch to monthly billing now and get the difference back. Please note that downgrades take effect at the start of the next billing period, so you'll keep Pro features until then. You can downgrade to Basic by following the steps in our Billing and Plans Guide.\n\nIf you have any further questions or concerns, please don't hesitate to ask.\n\nBest regards,\nSupport team",
+     "key": "21c50ef726df5b3e",
+     "sha256": "ca00f0c25c60440466c213b31df9191508b79b4d8508c2818b98eb5d65f67cf9"
+    },
+    "e21": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "How long will deletion take, including backups?",
+       "When can we get the confirmation?",
+       "Will you keep any of our invoices afterwards?"
+      ],
+      "identifiers": [
+       "organization",
+       "DPO",
+       "invoices"
+      ]
+     },
+     "chunks": [
+      "data-processing-policy#10",
+      "data-processing-policy#16",
+      "billing-guide#15",
+      "data-processing-policy#14",
+      "data-processing-policy#6",
+      "data-processing-policy#8",
+      "billing-guide#9",
+      "release-notes#10",
+      "data-processing-policy#21",
+      "admin-guide#19",
+      "data-processing-policy#17",
+      "data-processing-policy#23",
+      "release-notes#23",
+      "release-notes#2",
+      "data-processing-policy#22",
+      "data-processing-policy#12",
+      "billing-guide#13",
+      "data-processing-policy#9",
+      "billing-guide#14",
+      "billing-guide#12",
+      "billing-guide#11",
+      "billing-guide#10",
+      "data-processing-policy#4",
+      "data-processing-policy#13",
+      "billing-guide#1",
+      "admin-guide#8",
+      "billing-guide#5",
+      "admin-guide#2",
+      "release-notes#13",
+      "release-notes#18"
+     ],
+     "reply": "Hello Eva,\n\nWe're happy to help you with your request to delete your organization. According to our Data Processing Policy, when the Owner deletes the organization, all customer data is deleted from the app within 24 hours. This means that your data will be deleted from our system within 24 hours of the deletion.\n\nRegarding your request for confirmation, we will send you a confirmation email within 10 business days of the request, as per our Data Processing Policy.\n\nAs for your invoices, we will keep them for 10 years, as per our Data Processing Policy.\n\nPlease note that we will not keep any of your invoices after the 10-year retention period.\n\nIf you have any further questions or concerns, please don't hesitate to reach out.\n\nBest regards,\nSupport team",
+     "key": "c993da0c9dde2e06",
+     "sha256": "f25f69fb5ed68273daf5c2d4222c37a755ccc3ccab2a7256ffd1a070a1de3613"
+    },
+    "e23": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Can we export all audit log events from the last six months as a CSV file?",
+       "Can old audit log entries be deleted to keep things tidy?"
+      ],
+      "identifiers": [
+       "auditors",
+       "audit log events",
+       "six months",
+       "CSV file",
+       "old audit log entries",
+       "audit log entries"
+      ]
+     },
+     "chunks": [
+      "admin-guide#15",
+      "release-notes#9",
+      "data-processing-policy#11",
+      "release-notes#15",
+      "admin-guide#4",
+      "data-processing-policy#20",
+      "billing-guide#15",
+      "billing-guide#9",
+      "billing-guide#4",
+      "data-processing-policy#19",
+      "admin-guide#8",
+      "data-processing-policy#15",
+      "data-processing-policy#12",
+      "admin-guide#2",
+      "data-processing-policy#8",
+      "admin-guide#5",
+      "data-processing-policy#10",
+      "data-processing-policy#13",
+      "data-processing-policy#14"
+     ],
+     "reply": "Hello Daniel,\n\nOur current plan doesn't allow for exporting all audit log events from the last six months as a CSV file. However, you can export the events in parts, with each part covering up to 90 days. You can also check the audit log events for the last six months manually.\n\nRegarding deleting old audit log entries, the audit log entries can't be edited or deleted, not even by the Owner. Deleting the organization deletes its audit log along with everything else.\n\nBest,\nSupport team",
+     "key": "ecfd587c8efed2c4",
+     "sha256": "0f2f84de9c0506ab850986743bca9f4cddc9ce15bf4c64257ed163f38532cb8c"
+    },
+    "e25": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What causes the 409 idempotency_mismatch when creating a task?",
+       "How quickly does revocation of an API key take effect?"
+      ],
+      "identifiers": [
+       "409",
+       "idempotency_mismatch",
+       "task title",
+       "public repository",
+       "API key"
+      ]
+     },
+     "chunks": [
+      "api-reference#7",
+      "api-reference#6",
+      "api-reference#9",
+      "release-notes#12",
+      "api-reference#3",
+      "api-reference#4",
+      "api-reference#10",
+      "api-reference#8",
+      "data-processing-policy#23",
+      "api-reference#13",
+      "release-notes#26"
+     ],
+     "reply": "Hi Mei,\n\nThe 409 idempotency_mismatch error occurs when a POST request is retried with the same Idempotency-Key but a different body. This is because the API uses idempotency keys to prevent duplicate objects from being created. If a request with the same key and the same body arrives again within 24 hours, the API returns the original response instead of creating a second object. Reusing a key with a different body receives 409 with the code idempotency_mismatch.\n\nAs for the revocation of an API key, it takes effect within one minute.\n\nSupport team",
+     "key": "27d7b28b1f121101",
+     "sha256": "537593ad7882990511f5cb5d1adff6a1fc48fdba2f47bd96cf0f68305d1465f7"
+    },
+    "e27": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What is the guaranteed uptime in the SLA?",
+       "How is our data encrypted in transit?",
+       "How is our data encrypted at rest?"
+      ],
+      "identifiers": [
+       "SLA",
+       "encryption",
+       "uptime"
+      ]
+     },
+     "chunks": [
+      "data-processing-policy#8",
+      "data-processing-policy#6",
+      "data-processing-policy#20",
+      "billing-guide#3",
+      "api-reference#4",
+      "admin-guide#12",
+      "data-processing-policy#1",
+      "admin-guide#15",
+      "release-notes#3",
+      "data-processing-policy#18",
+      "data-processing-policy#4",
+      "data-processing-policy#21",
+      "data-processing-policy#5",
+      "data-processing-policy#7",
+      "data-processing-policy#2",
+      "data-processing-policy#19",
+      "data-processing-policy#10",
+      "data-processing-policy#23",
+      "data-processing-policy#3",
+      "data-processing-policy#13",
+      "data-processing-policy#9",
+      "api-reference#1",
+      "data-processing-policy#16",
+      "billing-guide#15",
+      "data-processing-policy#14",
+      "data-processing-policy#17",
+      "api-reference#3",
+      "data-processing-policy#15",
+      "data-processing-policy#22",
+      "release-notes#7"
+     ],
+     "reply": "Hi Priya,\n\nWe're glad you're considering our project-management app for your finance team. Our SLA guarantees 99.9% uptime, which means we aim to be available 99.9% of the time. For data encryption in transit, we use TLS 1.2 or later, and at rest, we use AES-256. You can find more information about our data processing policy in section 8 of the policy document.\n\nBest,\nSupport team",
+     "key": "f64c714eaaa66fb7",
+     "sha256": "d8b0db11a0bbd20d0887f08abadc6734ee590832e4d3344a8ae684cc933616d6"
+    },
+    "e29": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Can you correct the invoice to remove the Italian VAT since we are a VAT-registered business and only added our VAT number after paying?",
+       "Can invoices be sent automatically to our finance team as well as to the Owner?"
+      ],
+      "identifiers": [
+       "Italian VAT",
+       "VAT-registered business",
+       "Owner"
+      ]
+     },
+     "chunks": [
+      "billing-guide#10",
+      "billing-guide#11",
+      "billing-guide#12",
+      "data-processing-policy#4",
+      "billing-guide#9",
+      "billing-guide#13",
+      "data-processing-policy#22",
+      "release-notes#1",
+      "admin-guide#19",
+      "data-processing-policy#3",
+      "billing-guide#1",
+      "data-processing-policy#20",
+      "billing-guide#7",
+      "admin-guide#18",
+      "data-processing-policy#23",
+      "data-processing-policy#21",
+      "admin-guide#2"
+     ],
+     "reply": "Hi Laura,\n\nWe can't correct the invoice to remove the Italian VAT since you added your VAT number after paying. However, we can send invoices to your finance team as well as to the Owner. To do this, add their address as a billing contact under Settings > Billing > Invoice details. You can add up to 3 billing contacts.\n\nBest,\nSupport team",
+     "key": "997edbc378e4b492",
+     "sha256": "ea5c6a53c082b0982d51b37dea9fcee7d5ea25509372dad930512114e1360a72"
+    },
+    "e31": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "How do we fix this right now?",
+       "How do we avoid downtime the next time the certificate changes?",
+       "Is there any warning before a certificate expires?"
+      ],
+      "identifiers": [
+       "SSO-101",
+       "IdP signing certificate"
+      ]
+     },
+     "chunks": [
+      "data-processing-policy#21",
+      "data-processing-policy#23",
+      "billing-guide#13",
+      "release-notes#13",
+      "data-processing-policy#17",
+      "data-processing-policy#1",
+      "release-notes#19",
+      "data-processing-policy#16",
+      "release-notes#10",
+      "release-notes#21",
+      "admin-guide#12",
+      "release-notes#2",
+      "admin-guide#13",
+      "billing-guide#15",
+      "billing-guide#9",
+      "admin-guide#16",
+      "data-processing-policy#22",
+      "api-reference#5",
+      "data-processing-policy#9",
+      "release-notes#9",
+      "api-reference#15",
+      "api-reference#3",
+      "admin-guide#8",
+      "billing-guide#5",
+      "release-notes#3"
+     ],
+     "reply": "Hi Ingrid,\n\nWe're sorry to hear that you're experiencing issues with SSO sign-in. According to our documentation, if a certificate expires before it is replaced, SSO sign-in fails for everyone, and only the Owner can sign in, with a password.\n\nYou can try adding the identity provider's current certificate under Settings > Security > SSO > Certificates.\n\nIf the problem continues, please contact support through live chat with the error code SSO-101 and the time of the failed attempt.\n\nSupport team",
+     "key": "20184572df9cb9cc",
+     "sha256": "69aebc49c21d1e06fe043518519b81410ff3632e8fcb1d1ac4ffcbf0d6f233b0"
+    },
+    "e33": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "How long can the team keep working in the app after cancellation today?",
+       "How long will you keep our data after cancellation?",
+       "Can you export our projects in a format Jira can import directly?"
+      ],
+      "identifiers": [
+       "Jira"
+      ]
+     },
+     "chunks": [
+      "data-processing-policy#9",
+      "billing-guide#15",
+      "admin-guide#7",
+      "release-notes#10",
+      "data-processing-policy#8",
+      "admin-guide#8",
+      "data-processing-policy#10",
+      "release-notes#18",
+      "release-notes#13",
+      "data-processing-policy#1",
+      "data-processing-policy#14",
+      "data-processing-policy#12",
+      "release-notes#1",
+      "data-processing-policy#21",
+      "data-processing-policy#20",
+      "billing-guide#5",
+      "data-processing-policy#13",
+      "data-processing-policy#23",
+      "data-processing-policy#4",
+      "data-processing-policy#16",
+      "billing-guide#14",
+      "billing-guide#9",
+      "admin-guide#4",
+      "api-reference#8",
+      "release-notes#5",
+      "data-processing-policy#22",
+      "api-reference#2",
+      "api-reference#12",
+      "admin-guide#18",
+      "billing-guide#3"
+     ],
+     "reply": "Hello Noah,\n\nWe've received your request to cancel your subscription. According to our data processing policy, when a subscription ends, customer data is kept for 90 days so that the customer can export it or reactivate the subscription. After 90 days, it is permanently deleted from the app.\n\nRegarding your projects, the team can keep working in the app until the end of the current billing period. After that, the organization becomes read-only.\n\nAs for exporting your projects in a format Jira can import directly, our API does not support this feature. However, you can use our API to export your projects in a format that can be imported into Jira.\n\nPlease let us know if you have any further questions or concerns.\n\nBest regards,\nSupport team",
+     "key": "2e4fa2b31d0e2cf4",
+     "sha256": "a230ab22ff1f079ee0dd8a9db6e4dcf9dd1b0142347eff7d1f5f6caaa3d434e6"
+    },
+    "e35": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Why can't I send invitations?",
+       "How long do invitations stay valid?",
+       "Is there a way for people with our company email address to join without me inviting each one?"
+      ],
+      "identifiers": [
+       "Basic",
+       "Lagoon Print House"
+      ]
+     },
+     "chunks": [
+      "admin-guide#6",
+      "release-notes#17",
+      "billing-guide#3",
+      "api-reference#7",
+      "data-processing-policy#17",
+      "admin-guide#18",
+      "api-reference#11",
+      "billing-guide#11",
+      "release-notes#16",
+      "release-notes#10",
+      "data-processing-policy#8",
+      "billing-guide#15",
+      "admin-guide#16",
+      "release-notes#26",
+      "admin-guide#17",
+      "admin-guide#7",
+      "api-reference#6",
+      "admin-guide#11",
+      "admin-guide#9",
+      "admin-guide#14",
+      "admin-guide#19",
+      "release-notes#6",
+      "admin-guide#2",
+      "billing-guide#5",
+      "release-notes#8"
+     ],
+     "reply": "Hello Zainab,\n\nWe're happy to help you with your issue. According to our documentation, on the Basic plan, pending invitations count toward the member limit, so a sixth invitation can't be sent while five members and invitations exist.\n\nTo let people join without an invitation, turn on Allowed email domains under Settings > Members > Joining. Anyone who signs up with a verified email address on one of those domains can join as a Member.\n\nIf you have any further questions, feel free to ask.\n\nBest,\nSupport team",
+     "key": "07db86c47eb76b43",
+     "sha256": "cfa07cc1f9fa35febf274d487fe228346b852567f31d89a40144e1fd0e0cc0e2"
+    },
+    "e37": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Can we shorten the session timeout period and will it log everyone out immediately?",
+       "Is there a way to sign everyone out right now?",
+       "Will you sign a HIPAA business associate agreement with us?"
+      ],
+      "identifiers": [
+       "Clearwater Clinic"
+      ]
+     },
+     "chunks": [
+      "admin-guide#16",
+      "data-processing-policy#21",
+      "billing-guide#15",
+      "admin-guide#15",
+      "data-processing-policy#17",
+      "admin-guide#8",
+      "release-notes#10",
+      "data-processing-policy#16",
+      "admin-guide#12",
+      "admin-guide#9",
+      "admin-guide#11",
+      "release-notes#8",
+      "admin-guide#18",
+      "admin-guide#10",
+      "release-notes#17",
+      "billing-guide#5",
+      "release-notes#2",
+      "release-notes#6",
+      "data-processing-policy#22",
+      "admin-guide#19",
+      "admin-guide#17",
+      "billing-guide#11",
+      "admin-guide#7",
+      "billing-guide#10",
+      "release-notes#16"
+     ],
+     "reply": "Hi Marcus,\n\n1. Our members stay signed in for weeks. Can we shorten that, and will it log everyone out immediately?\n\nAnswer: No, a shorter session length applies at each member's next sign-in; it doesn't sign anyone out immediately. To sign everyone out now, for example after a suspected breach, use Sign out all members on the same page. The person who uses it stays signed in.\n\n2. One of our laptops was stolen yesterday. Is there a way to sign everyone out right now?\n\nAnswer: Yes, use Sign out all members on the same page. The person who uses it stays signed in.\n\n3. Will you sign a HIPAA business associate agreement with us?\n\nAnswer: No information is available on this in the documentation.\n\nBest,\nSupport team",
+     "key": "744d00aadf4b3219",
+     "sha256": "58a2014348ff8564a0b1c7e5947214f10f231092b68d9c85e883ba5a00b05a28"
+    },
+    "e39": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Will you tell us before adding a new subprocessor, and can we object?",
+       "Do you use our data to train AI models?",
+       "If one of our clients contacts you directly asking you to delete their personal data, what will you do?"
+      ],
+      "identifiers": [
+       "Data Processing Policy",
+       "subprocessor",
+       "AI models"
+      ]
+     },
+     "chunks": [
+      "data-processing-policy#17",
+      "data-processing-policy#23",
+      "api-reference#15",
+      "release-notes#2",
+      "billing-guide#9",
+      "data-processing-policy#21",
+      "data-processing-policy#22",
+      "data-processing-policy#4",
+      "data-processing-policy#3",
+      "data-processing-policy#1",
+      "data-processing-policy#2",
+      "data-processing-policy#19",
+      "data-processing-policy#20",
+      "api-reference#6",
+      "billing-guide#15",
+      "billing-guide#11",
+      "data-processing-policy#15",
+      "admin-guide#11",
+      "admin-guide#5",
+      "data-processing-policy#7",
+      "billing-guide#5",
+      "release-notes#7"
+     ],
+     "reply": "Hello Johanna,\n\nWe have the following answers to your questions:\n\n1. Will you tell us before adding a new subprocessor, and can we object?\nWe notify the Owner by email at least 30 days before we add or replace a subprocessor. The customer can object within 14 days of the notice, giving reasons. If we can't resolve the objection, the customer can cancel the affected subscription and receive a refund for the unused part of the current billing period, even if the 30-day refund period in the Billing and Plans Guide has passed.\n\n2. Do you use our data to train AI models?\nNo, we don't use customer data to train machine learning models.\n\n3. If one of our clients contacts you directly asking you to delete their personal data, what will you do?\nWe forward the request to the customer within 5 business days and don't respond to it ourselves. We help the customer respond to such requests, for example by exporting a person's data, within 10 business days of the customer's request.\n\nBest regards,\nSupport team",
+     "key": "34cbe3898437b220",
+     "sha256": "6558ddd64e15fbf228abb68e0854fbd596fc17c64bdb3f5b49f6fc6566553322"
+    }
+   }
+  },
+  "v4test": {
+   "record": {
+    "name": "v4test",
+    "prompt_version": "v4",
+    "prompt_sha256": "6962f34028f76f65610ffb421cc8420e6f05d3e550bec584a7116da63cb6ebc3",
+    "split": "test",
+    "policy": "none",
+    "started_utc": "2026-11-24 12:59:27",
+    "ended_utc": "2026-11-24 13:01:39",
+    "model_calls": 40,
+    "status": {
+     "sent": 20,
+     "error": 0
+    },
+    "loaded_before_unload": [],
+    "server_log": {
+     "chat_lines": 40,
+     "embed_lines": 24,
+     "isolated": true,
+     "rotated": false
+    },
+    "preflight": {
+     "requests": "2.34.2",
+     "python-dotenv": "1.2.4",
+     "resolved": {
+      "chat_model": "llama3.2:3b",
+      "embedding_model": "nomic-embed-text",
+      "base_url": "http://localhost:11434"
+     },
+     "ollama": "0.40.17",
+     "models": {
+      "llama3.2:3b": "a80c4f17acd5",
+      "nomic-embed-text:latest": "0a109f422b47"
+     }
+    },
+    "python": "3.12.13",
+    "platform": "macOS-26.6.2-arm64-arm-64bit"
+   },
+   "emails": {
+    "e02": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What does SSO-103 mean?",
+       "How do we fix the SSO login error for Aiyana?",
+       "Why does Aiyana get SSO-103 when she tries to sign in through Okta?"
+      ],
+      "identifiers": [
+       "SSO-103",
+       "Okta",
+       "aiyana@lumenlogistics.example"
+      ]
+     },
+     "chunks": [
+      "admin-guide#13",
+      "admin-guide#10",
+      "admin-guide#11",
+      "admin-guide#9",
+      "release-notes#2",
+      "admin-guide#17",
+      "api-reference#6",
+      "release-notes#10",
+      "admin-guide#12",
+      "admin-guide#14",
+      "data-processing-policy#1",
+      "admin-guide#16",
+      "admin-guide#15",
+      "release-notes#23",
+      "release-notes#22",
+      "admin-guide#5",
+      "billing-guide#13",
+      "release-notes#6",
+      "release-notes#8"
+     ],
+     "reply": "Hello Tomás,\n\nAiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) in the administrator guide.\n\nFor more information on setting up SSO, see section 4.2 in the administrator guide.\n\nIf the problem continues, contact support through live chat with the error code and the time of the failed attempt.\n\nBest,\nSupport team",
+     "key": "a8f39b94a74080f3",
+     "sha256": "cd25093cb598c974ae36211df5d142485bd0ccfd25f115562b9160c923fb395b"
+    },
+    "e04": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What is the timeframe for notifying us about a personal data breach affecting our data?"
+      ],
+      "identifiers": []
+     },
+     "chunks": [
+      "data-processing-policy#21",
+      "data-processing-policy#22",
+      "data-processing-policy#20",
+      "data-processing-policy#1",
+      "data-processing-policy#23",
+      "data-processing-policy#9",
+      "release-notes#10",
+      "data-processing-policy#8",
+      "data-processing-policy#10",
+      "data-processing-policy#17",
+      "data-processing-policy#6"
+     ],
+     "reply": "We will notify you about a personal data breach affecting your data within 48 hours, as stated in our data processing policy. We will also notify you about a breach within 5 business days if you request access to your data, and within 10 business days if you request correction or deletion of your data. Our staff can access your data only with permission from the Owner or an Admin of the organization, and every access is logged and appears in your audit log.",
+     "key": "462576cb7b567d3d",
+     "sha256": "451f6729e3c5f11ff549ee8fef5cf94eb73e998087534fe5789afedf8bd7703c"
+    },
+    "e06": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "How can I become the Owner of our account?",
+       "How can I regain access to our account since the account owner left the company?"
+      ],
+      "identifiers": [
+       "Pro plan",
+       "Admin role"
+      ]
+     },
+     "chunks": [
+      "data-processing-policy#20",
+      "data-processing-policy#15",
+      "admin-guide#10",
+      "admin-guide#19",
+      "admin-guide#8",
+      "data-processing-policy#23",
+      "billing-guide#5",
+      "billing-guide#15",
+      "admin-guide#15",
+      "release-notes#10",
+      "data-processing-policy#7",
+      "data-processing-policy#10",
+      "admin-guide#5",
+      "data-processing-policy#14",
+      "data-processing-policy#3"
+     ],
+     "reply": "Hi Grace,\n\nThank you for reaching out to us. I'm happy to help you with transferring ownership of your account. According to our documentation, ownership can only be transferred by the current Owner, under Settings > Organization > Transfer ownership, and only to an existing Admin.\n\nIf the Owner has left your company without transferring ownership, please contact support through live chat, and we will ask for written confirmation from someone authorized to act for your company, such as a director, on company letterhead. Ownership transfers through support usually take 3 to 5 business days.\n\nIf you have any further questions, please don't hesitate to ask.\n\nBest regards,\nSupport team",
+     "key": "c3db79a8598cfdcd",
+     "sha256": "0e35458f652122f6251e340171e22079d7564c4ea831f35a3fba0c7344f09381"
+    },
+    "e08": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Is the limit of 6 custom statuses on the production board still in effect?",
+       "Can we add a custom status called 'Waiting on client'?",
+       "Can we add a custom status called 'QA'?"
+      ],
+      "identifiers": [
+       "production board",
+       "custom statuses",
+       "Waiting on client",
+       "QA"
+      ]
+     },
+     "chunks": [
+      "release-notes#4",
+      "release-notes#3",
+      "release-notes#6",
+      "release-notes#24",
+      "release-notes#5",
+      "release-notes#17",
+      "release-notes#20",
+      "api-reference#15",
+      "api-reference#4",
+      "release-notes#19",
+      "release-notes#18",
+      "admin-guide#7",
+      "release-notes#2",
+      "data-processing-policy#17",
+      "admin-guide#12",
+      "api-reference#6",
+      "api-reference#14",
+      "api-reference#12",
+      "api-reference#10",
+      "admin-guide#5",
+      "api-reference#9",
+      "release-notes#23"
+     ],
+     "reply": "Hi Li,\n\nThe limit of 6 custom statuses on the production board has been raised to 10 per project, as stated in the release notes for version 6.3 (2026-10-06).\n\nYou can add a custom status called 'Waiting on client' and 'QA' as they are not mentioned in the list of existing statuses. However, please note that adding new statuses may affect the behavior of certain features, such as the board view.\n\nSupport team",
+     "key": "b6bf1a9f00afc549",
+     "sha256": "7fdbfbb3f941c45d91ff999bd47c834b0f796d404e3105e23fbbd491c917c1a1"
+    },
+    "e10": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Do you offer a discount for nonprofits or charities?",
+       "What is the nonprofit pricing plan?"
+      ],
+      "identifiers": [
+       "free trial",
+       "nonprofit pricing plan"
+      ]
+     },
+     "chunks": [
+      "billing-guide#5",
+      "billing-guide#1",
+      "billing-guide#9",
+      "billing-guide#14",
+      "api-reference#2",
+      "billing-guide#3",
+      "admin-guide#6",
+      "api-reference#1",
+      "billing-guide#4",
+      "billing-guide#15",
+      "release-notes#24",
+      "billing-guide#6",
+      "billing-guide#12",
+      "billing-guide#7",
+      "release-notes#17",
+      "billing-guide#8",
+      "admin-guide#18",
+      "data-processing-policy#1"
+     ],
+     "reply": "Hi Rebecca,\n\nThank you for reaching out to us about our pricing plans. We do not offer a discount for nonprofits or charities. However, we do have a Basic plan that is suitable for small teams and organizations with limited features. You can learn more about the Basic plan and its features in our Billing and Plans Guide (section 6).\n\nIf you have any further questions or would like to discuss your specific needs, please don't hesitate to ask. We're here to help.\n\nBest regards,\nSupport team",
+     "key": "6851129cfb12d05f",
+     "sha256": "3e8a9ee33854c0d9826b00759909b911e351136c3031b71b29360587024e2095"
+    },
+    "e12": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "If we switch 2FA on, what happens to members who haven't set it up yet?",
+       "What happens to members who haven't set up 2FA yet?"
+      ],
+      "identifiers": []
+     },
+     "chunks": [
+      "admin-guide#17",
+      "release-notes#23",
+      "admin-guide#11",
+      "release-notes#22",
+      "admin-guide#6",
+      "admin-guide#16",
+      "admin-guide#10",
+      "release-notes#10",
+      "admin-guide#5",
+      "admin-guide#7",
+      "data-processing-policy#21",
+      "release-notes#18",
+      "billing-guide#1",
+      "admin-guide#3",
+      "admin-guide#8",
+      "release-notes#6"
+     ],
+     "reply": "Hello Ahmed,\n\nIf you switch 2FA on, members who haven't set it up yet will be asked to do so at their next sign-in and have 3 days to complete it. After that, they can't open any project until they set it up. Only authenticator apps are supported; SMS codes are not. Members who sign in through enforced SSO are exempt, because their identity provider handles multi-factor authentication.\n\nBest,\nSupport team",
+     "key": "dd39429555ae99e9",
+     "sha256": "ac3d85500c5f4ec6defbf5d83500342fbfd369a44efaa8c53405e3568ae3cadf"
+    },
+    "e14": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "How often does the app back up our data?",
+       "How long are the backups kept?"
+      ],
+      "identifiers": []
+     },
+     "chunks": [
+      "data-processing-policy#10",
+      "data-processing-policy#1",
+      "data-processing-policy#23",
+      "data-processing-policy#9",
+      "data-processing-policy#8",
+      "billing-guide#15",
+      "data-processing-policy#14",
+      "data-processing-policy#20",
+      "data-processing-policy#4",
+      "data-processing-policy#21",
+      "data-processing-policy#6",
+      "data-processing-policy#11",
+      "data-processing-policy#13",
+      "release-notes#10",
+      "data-processing-policy#16",
+      "data-processing-policy#12",
+      "release-notes#9",
+      "billing-guide#9",
+      "data-processing-policy#18",
+      "data-processing-policy#17",
+      "release-notes#26",
+      "release-notes#18",
+      "release-notes#14"
+     ],
+     "reply": "Hello Martin,\n\nOur data is backed up every 6 hours, and the backups are kept for 35 days before being deleted. After a subscription ends, customer data is kept for 90 days so that the customer can export it or reactivate the subscription.\n\nBest regards,\nSupport team",
+     "key": "75cc05b70237e396",
+     "sha256": "7e75d29d9db9deea92c7291a1422434c1bdabb6f46d9a1cd0d899a6861221657"
+    },
+    "e16": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Will you try the payment again, and when?",
+       "What happens if it keeps failing?"
+      ],
+      "identifiers": [
+       "account reference 58213",
+       "card payment failed",
+       "API"
+      ]
+     },
+     "chunks": [
+      "billing-guide#13",
+      "billing-guide#14",
+      "billing-guide#7",
+      "billing-guide#1",
+      "billing-guide#15",
+      "billing-guide#12",
+      "billing-guide#10",
+      "billing-guide#5",
+      "release-notes#1",
+      "data-processing-policy#8",
+      "api-reference#14",
+      "api-reference#7",
+      "api-reference#15",
+      "data-processing-policy#21",
+      "data-processing-policy#1",
+      "data-processing-policy#9",
+      "release-notes#24",
+      "release-notes#13"
+     ],
+     "reply": "Hello Ruth,\n\nWe've tried the payment again, and it has been successful. The payment was retried on the schedule specified in our billing guide, and the organization is now writable again.\n\nIf the payment had kept failing, the organization would have become read-only until the payment method was updated. However, since the payment was successful, the organization is now writable again.\n\nIf you have any further questions, please don't hesitate to ask.\n\nBest,\nSupport team\n",
+     "key": "2c0f5f65c0ec8771",
+     "sha256": "550a0c4f142072d86b88bef5ae666fbe25f40c4dd306073f963ded125a82f75e"
+    },
+    "e18": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Will we lose the task.completed events sent during the 3-hour window when our webhook endpoint is down?",
+       "Is it possible to split our integrations and have around 25 webhooks?"
+      ],
+      "identifiers": [
+       "task.completed"
+      ]
+     },
+     "chunks": [
+      "api-reference#12",
+      "api-reference#14",
+      "release-notes#13",
+      "api-reference#13",
+      "api-reference#9",
+      "api-reference#11",
+      "release-notes#12",
+      "billing-guide#3",
+      "admin-guide#18",
+      "api-reference#1",
+      "api-reference#5",
+      "admin-guide#14",
+      "release-notes#6"
+     ],
+     "reply": "We will not lose task.completed events sent during the 3-hour window when our webhook endpoint is down. According to the API documentation, failed webhook deliveries are retried up to 5 times over 24 hours, and if the last retry fails, the webhook is paused and the Owner is notified by email. Since the 3-hour window is within the 24-hour retry period, the task.completed events should be retried and delivered successfully.\n\nRegarding your second question, yes, it is possible to split your integrations and have around 25 webhooks. According to the API documentation, each organization can now have up to 20 webhooks, up from 10, and the API allows for idempotency keys on POST requests, which can be used to limit the number of webhooks.\n\nPlease let us know if you have any further questions or concerns.",
+     "key": "ac29e08fd6f9ebd4",
+     "sha256": "dd50a31bcd3d730d5e8ca46a2fe9cdb19336ed950ad7a2f26f73d2cd4d09a1a4"
+    },
+    "e20": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What happens when the SCIM token expires for a Pro plan?",
+       "Do members lose access when the SCIM token expires?",
+       "Can we map our identity provider groups to projects?"
+      ],
+      "identifiers": [
+       "Pro",
+       "SCIM token",
+       "SCIM",
+       "identity provider groups",
+       "projects"
+      ]
+     },
+     "chunks": [
+      "admin-guide#14",
+      "billing-guide#4",
+      "release-notes#8",
+      "admin-guide#15",
+      "admin-guide#12",
+      "billing-guide#5",
+      "release-notes#2",
+      "admin-guide#8",
+      "data-processing-policy#20",
+      "api-reference#3",
+      "admin-guide#11",
+      "admin-guide#5",
+      "admin-guide#6",
+      "data-processing-policy#9",
+      "admin-guide#9",
+      "admin-guide#10",
+      "api-reference#8",
+      "admin-guide#13",
+      "release-notes#5",
+      "data-processing-policy#7"
+     ],
+     "reply": "Hello Henrik,\n\nWhen the SCIM token expires for a Pro plan, provisioning stops, but existing members are not affected.\n\nMembers do not lose access when the SCIM token expires.\n\nYes, we can map your identity provider groups to projects.\n\nBest,\nSupport team",
+     "key": "2c4ce6891ee6bb74",
+     "sha256": "fd2f747e5c462c50914bff1d842689fe33dc99d9e138c88c4a595e1135cb52b2"
+    },
+    "e22": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Will limit=500 fail?",
+       "When does API v1 stop working?"
+      ],
+      "identifiers": [
+       "limit=500",
+       "API v1"
+      ]
+     },
+     "chunks": [
+      "api-reference#4",
+      "release-notes#17",
+      "api-reference#6",
+      "release-notes#13",
+      "billing-guide#3",
+      "release-notes#4",
+      "release-notes#24",
+      "release-notes#6",
+      "api-reference#15",
+      "api-reference#1",
+      "api-reference#3",
+      "api-reference#8",
+      "release-notes#12",
+      "api-reference#2",
+      "admin-guide#8",
+      "release-notes#7",
+      "release-notes#1"
+     ],
+     "reply": "Hi Pablo,\n\n1) Yes, limit=500 will fail because the Basic plan has a limit of 100 requests per minute, per key. You can increase the limit to 1000 with the Pro plan.\n\n2) Version 1 of the API will stop working on 2027-03-31. You can start using version 2, which is available now, and will keep working until then.\n\nGracias,\nSupport team",
+     "key": "a40893092adbb5c6",
+     "sha256": "03f93d19fa8286efa0ce19a87392eb447129b002e59639b7ad2f50a6d7c21ab6"
+    },
+    "e24": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What do we need to sort out before we can downgrade to Basic?",
+       "When would the downgrade take effect?",
+       "Is there a discount for paying three years upfront if we stay on Pro?"
+      ],
+      "identifiers": [
+       "Basic",
+       "Pro",
+       "3 years upfront"
+      ]
+     },
+     "chunks": [
+      "billing-guide#9",
+      "data-processing-policy#16",
+      "data-processing-policy#17",
+      "release-notes#24",
+      "data-processing-policy#23",
+      "data-processing-policy#1",
+      "data-processing-policy#22",
+      "data-processing-policy#12",
+      "billing-guide#3",
+      "release-notes#17",
+      "api-reference#15",
+      "data-processing-policy#14",
+      "data-processing-policy#9",
+      "data-processing-policy#21",
+      "billing-guide#8",
+      "billing-guide#7",
+      "release-notes#3",
+      "billing-guide#14",
+      "admin-guide#19",
+      "billing-guide#5",
+      "admin-guide#12",
+      "billing-guide#12",
+      "admin-guide#9",
+      "data-processing-policy#8",
+      "data-processing-policy#13",
+      "billing-guide#4",
+      "release-notes#10",
+      "api-reference#4",
+      "release-notes#8"
+     ],
+     "reply": "Hi Sophie,\n\nTo downgrade to Basic, you need to archive projects until no more than 3 are active, remove or suspend members until no more than 5 remain, including pending invitations, remove guests from any project that has more than 10, delete files until storage is under 10 GB, and turn off single sign-on, SCIM, and the IP allowlist. The downgrade takes effect at the start of the next billing period.\n\nIf you stay on Pro, there is no discount for paying three years upfront.\n\nSupport team",
+     "key": "9a819029b288d234",
+     "sha256": "9e6578e8cfe9c730276e5b02a50514e00fe7caefa1e8a446dc8bad33090618e9"
+    },
+    "e26": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What's going on with the IP allowlist?",
+       "Will the allowlist stop webhooks from reaching our servers?"
+      ],
+      "identifiers": [
+       "office range",
+       "403 errors",
+       "API",
+       "webhooks"
+      ]
+     },
+     "chunks": [
+      "admin-guide#18",
+      "release-notes#6",
+      "api-reference#6",
+      "release-notes#24",
+      "billing-guide#4",
+      "release-notes#16",
+      "release-notes#12",
+      "release-notes#5",
+      "release-notes#17",
+      "release-notes#25",
+      "release-notes#13",
+      "api-reference#11",
+      "api-reference#14",
+      "api-reference#15",
+      "admin-guide#8",
+      "api-reference#13",
+      "data-processing-policy#20",
+      "api-reference#1",
+      "release-notes#4",
+      "release-notes#1"
+     ],
+     "reply": "Hi Lucas,\n\nIt seems like the IP allowlist might be causing issues with your CI pipeline. This is a known feature of the Pro plan, and it's intended to limit sign-ins and API requests to specific IP address ranges. You can check the address you're connecting from on the settings page to ensure it's in the allowlist.\n\nAs for webhooks, they are not affected by the IP allowlist, as they go from our servers to yours. However, if you're experiencing issues with webhook deliveries, you can try checking the webhook secret and verifying the delivery using the X-Signature and X-Timestamp headers.\n\nIf you're still experiencing issues, feel free to reach out to us, and we'll do our best to help.\n\nBest,\nSupport team",
+     "key": "3db6d63b74019401",
+     "sha256": "454bb4b6cac1189a1f91b1537510e3176ae67fa25febd02d2e809cb362b00463"
+    },
+    "e28": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Should we suspend or remove their account?",
+       "Will it keep working while they're away?"
+      ],
+      "identifiers": [
+       "Basic",
+       "6 months",
+       "API key"
+      ]
+     },
+     "chunks": [
+      "admin-guide#7",
+      "data-processing-policy#15",
+      "admin-guide#8",
+      "data-processing-policy#17",
+      "release-notes#18",
+      "data-processing-policy#22",
+      "billing-guide#9",
+      "data-processing-policy#16",
+      "data-processing-policy#12",
+      "release-notes#1",
+      "data-processing-policy#8",
+      "billing-guide#15",
+      "release-notes#13",
+      "admin-guide#11",
+      "data-processing-policy#9",
+      "api-reference#14",
+      "api-reference#15",
+      "admin-guide#19",
+      "data-processing-policy#6",
+      "release-notes#25"
+     ],
+     "reply": "Hello Aarav,\n\nFor a member going on long leave, we recommend suspending their account instead of removing it. This way, they can still access their tasks and projects, but won't be able to sign in. You can do this under Settings > Members by opening the member's menu.\n\nRegarding the API key, it will stop working while the member is away, but you can create a new one for the temporary replacement.\n\nBest,\nSupport team\n",
+     "key": "40e13a474b0db7e4",
+     "sha256": "5737df7e89c281616fc450e9cde11a28f0963ec9b1cf34ca785b7c7d1ec5d98f"
+    },
+    "e30": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Will old links in our wiki break after renaming the company from Northstar Robotics to Polaris Robotics and changing the web address from app.example.com/northstar to app.example.com/polaris?",
+       "Is the app available in Italian?"
+      ],
+      "identifiers": [
+       "app.example.com/northstar",
+       "app.example.com/polaris",
+       "Milan"
+      ]
+     },
+     "chunks": [
+      "admin-guide#2",
+      "admin-guide#18",
+      "api-reference#15",
+      "release-notes#21",
+      "data-processing-policy#23",
+      "data-processing-policy#9",
+      "release-notes#1",
+      "release-notes#13",
+      "release-notes#22",
+      "admin-guide#4",
+      "release-notes#7",
+      "release-notes#20",
+      "billing-guide#3",
+      "admin-guide#3",
+      "admin-guide#9",
+      "data-processing-policy#17",
+      "data-processing-policy#8",
+      "data-processing-policy#1",
+      "admin-guide#14"
+     ],
+     "reply": "Hello Felix,\n\nWe've received your question about the impact of the company name change on your wiki links and the availability of the app in Italian. According to our documentation, old links in your wiki will stop redirecting 90 days after the change, so it's a good idea to update bookmarks and integrations that use the old address.\n\nAs for the app's language, our documentation states that the app is available in Italian, in addition to English, German, and French, starting from version 5.5. However, it's worth noting that the available languages are limited to these four, and you can set a default language and time zone for new members under Settings > Organization > Defaults.\n\nIf you have any further questions or concerns, please don't hesitate to reach out.\n\nBest regards,\nSupport team",
+     "key": "b7cee94e7139f26e",
+     "sha256": "289bc9f1cdcbc1263b05ac707417f40dd2803624f442b5921135a68c2ba91f91"
+    },
+    "e32": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What would the annual price be for the Pro plan?",
+       "Can an Admin make the change to an annual Pro plan, or does someone else need to?",
+       "Is it possible to pay by bank transfer instead of card?"
+      ],
+      "identifiers": [
+       "Pro"
+      ]
+     },
+     "chunks": [
+      "billing-guide#2",
+      "billing-guide#9",
+      "billing-guide#7",
+      "billing-guide#8",
+      "billing-guide#4",
+      "billing-guide#5",
+      "billing-guide#14",
+      "release-notes#25",
+      "admin-guide#5",
+      "admin-guide#19",
+      "admin-guide#9",
+      "admin-guide#1",
+      "billing-guide#12",
+      "billing-guide#1",
+      "data-processing-policy#19",
+      "data-processing-policy#23",
+      "release-notes#8",
+      "billing-guide#13",
+      "data-processing-policy#17",
+      "data-processing-policy#4",
+      "billing-guide#15",
+      "data-processing-policy#22",
+      "api-reference#7",
+      "billing-guide#10"
+     ],
+     "reply": "Hello Victor,\n\nOur annual Pro plan costs $250. As an Admin, you can make the change to an annual Pro plan. However, our CFO needs to confirm the change. You can request a bank transfer payment for your annual plan, but this is only possible on request through live chat.\n\nBest,\nSupport team",
+     "key": "ff5048c2eda2e225",
+     "sha256": "8bced2dcfbfc83c4b4717d32f935d974d0a7c59bb49fdcd87350054515dd2e0e"
+    },
+    "e34": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What is the limit now?",
+       "Could we create several keys and spread requests across them to go faster?",
+       "How many keys can one member have?"
+      ],
+      "identifiers": [
+       "Pro",
+       "API limit"
+      ]
+     },
+     "chunks": [
+      "release-notes#17",
+      "release-notes#24",
+      "release-notes#4",
+      "api-reference#4",
+      "api-reference#5",
+      "release-notes#13",
+      "release-notes#6",
+      "release-notes#14",
+      "billing-guide#3",
+      "release-notes#26",
+      "release-notes#5",
+      "release-notes#1",
+      "api-reference#3",
+      "data-processing-policy#22",
+      "release-notes#12",
+      "admin-guide#18",
+      "api-reference#2",
+      "api-reference#7",
+      "api-reference#11",
+      "data-processing-policy#23",
+      "data-processing-policy#3",
+      "admin-guide#8",
+      "admin-guide#7",
+      "admin-guide#6",
+      "admin-guide#5",
+      "admin-guide#17",
+      "release-notes#10",
+      "data-processing-policy#21"
+     ],
+     "reply": "Hello Elif,\n\n1. The API limit for the Pro plan is 1,000 requests per minute per key.\n2. Creating multiple keys and spreading requests across them is against the terms of service and will not improve performance.\n3. One member can have up to 10 active keys.\n\nThank you for reaching out to us. We're here to help.\nSupport team",
+     "key": "59e7c77f9175a00c",
+     "sha256": "f2996184a65630be7fed2ce6d63cd7d8fa11d4437665e3cc55a5a2df1b3cc311"
+    },
+    "e36": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "What conditions allow your support staff to access our data?",
+       "How long do you keep our support chat transcripts?",
+       "Can we carry out an on-site audit of your data centre?"
+      ],
+      "identifiers": [
+       "data centre",
+       "support staff",
+       "on-site audit"
+      ]
+     },
+     "chunks": [
+      "data-processing-policy#20",
+      "data-processing-policy#7",
+      "data-processing-policy#22",
+      "data-processing-policy#3",
+      "data-processing-policy#21",
+      "data-processing-policy#12",
+      "data-processing-policy#19",
+      "data-processing-policy#4",
+      "data-processing-policy#1",
+      "data-processing-policy#2",
+      "release-notes#10",
+      "billing-guide#15",
+      "data-processing-policy#8",
+      "admin-guide#19",
+      "data-processing-policy#17",
+      "data-processing-policy#10",
+      "release-notes#18",
+      "billing-guide#5",
+      "admin-guide#7",
+      "data-processing-policy#23",
+      "data-processing-policy#16",
+      "admin-guide#4",
+      "data-processing-policy#11",
+      "admin-guide#15",
+      "data-processing-policy#15",
+      "billing-guide#4",
+      "data-processing-policy#5",
+      "admin-guide#18",
+      "admin-guide#1",
+      "release-notes#16"
+     ],
+     "reply": "Dear Olga,\n\nWe have reviewed your questions and here are the answers:\n\n1. Our support staff can access your data only to resolve a support request, and only with permission from the Owner or an Admin of the organization. Permission is given in the support conversation and lasts for 7 days or until the request is closed, whichever comes first. Every access is logged and appears in the customer's audit log.\n\n2. We keep your support chat transcripts for 2 years after the conversation ends, so that we can refer to earlier requests. A customer can ask for its support conversations to be deleted sooner.\n\n3. Customers can't carry out their own on-site audits; the audit report is provided instead.\n\nIf you have any further questions, please don't hesitate to ask.\n\nThank you for choosing our project-management app.\n\nBest regards,\nSupport team",
+     "key": "f97c5ad9bec9fd2e",
+     "sha256": "643b9356eac80ad9057fe1e7e23a5523d64d862b8c6d3ce21f2fc12d5c3c8a58"
+    },
+    "e38": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "Is @mentions notification enabled for comment.created webhooks?",
+       "Can a deleted project be restored through the API?",
+       "What's the maximum length of a task title?"
+      ],
+      "identifiers": [
+       "comment.created",
+       "API",
+       "project"
+      ]
+     },
+     "chunks": [
+      "api-reference#10",
+      "release-notes#12",
+      "api-reference#12",
+      "api-reference#1",
+      "release-notes#4",
+      "api-reference#11",
+      "release-notes#13",
+      "api-reference#13",
+      "api-reference#14",
+      "release-notes#6",
+      "api-reference#8",
+      "api-reference#9",
+      "admin-guide#8",
+      "api-reference#3",
+      "admin-guide#7",
+      "release-notes#7",
+      "admin-guide#16",
+      "api-reference#5",
+      "release-notes#14",
+      "release-notes#3",
+      "data-processing-policy#17",
+      "api-reference#4",
+      "data-processing-policy#21"
+     ],
+     "reply": "1. No, @mentions in comments created through the API don't send notifications.\n2. No, a deleted project can't be restored through the API.\n3. The maximum length of a task title is 500 characters.",
+     "key": "3417a07018b00e99",
+     "sha256": "274a3445f1d83e710658ba0f3630a64202e32588f7d2cdba6e60335a35c9b94e"
+    },
+    "e40": {
+     "status": "sent",
+     "reason": null,
+     "extraction": {
+      "questions": [
+       "How long does the export download link stay valid?",
+       "Has something changed with the SMS sign-in code?",
+       "Does the mobile app work offline at events with no signal?"
+      ],
+      "identifiers": [
+       "export download link",
+       "SMS sign-in code",
+       "mobile app",
+       "events",
+       "signal"
+      ]
+     },
+     "chunks": [
+      "release-notes#26",
+      "data-processing-policy#8",
+      "release-notes#10",
+      "release-notes#9",
+      "data-processing-policy#9",
+      "billing-guide#15",
+      "admin-guide#15",
+      "admin-guide#16",
+      "data-processing-policy#23",
+      "release-notes#18",
+      "data-processing-policy#16",
+      "release-notes#5",
+      "release-notes#22",
+      "admin-guide#13",
+      "admin-guide#17",
+      "api-reference#6",
+      "admin-guide#11",
+      "release-notes#21",
+      "release-notes#4",
+      "release-notes#1",
+      "billing-guide#3",
+      "release-notes#11",
+      "api-reference#12",
+      "data-processing-policy#17",
+      "release-notes#3",
+      "release-notes#20",
+      "api-reference#7",
+      "billing-guide#9",
+      "release-notes#7"
+     ],
+     "reply": "Hi Ben,\n\n1. The export download link is valid for 7 days from when it was sent to you.\n2. The SMS sign-in code no longer works because we removed SMS codes for two-factor authentication in version 5.4. Members who still used SMS codes were asked to switch to an authenticator app by 2026-01-31.\n3. The mobile app does not work offline at events with no signal.\n\nSupport team",
+     "key": "ba619a8d23ff32ae",
+     "sha256": "5f0632925d5c07224ff9b73fbb37d2f663787885a76310936a4749e921603eb4"
+    }
+   }
+  }
+ },
+ "stored_18_chain": {
+  "e02": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "What does SSO-103 mean?",
+     "How do we fix the SSO login error for Aiyana?",
+     "Why does Aiyana get SSO-103 when she tries to sign in through Okta?"
+    ],
+    "identifiers": [
+     "SSO-103",
+     "Okta",
+     "aiyana@lumenlogistics.example"
+    ]
+   },
+   "chunks": [
+    "admin-guide#13",
+    "admin-guide#10",
+    "admin-guide#11",
+    "admin-guide#9",
+    "release-notes#2",
+    "admin-guide#17",
+    "api-reference#6",
+    "release-notes#10",
+    "admin-guide#12",
+    "admin-guide#14",
+    "data-processing-policy#1",
+    "admin-guide#16",
+    "admin-guide#15",
+    "release-notes#23",
+    "release-notes#22",
+    "admin-guide#5",
+    "billing-guide#13",
+    "release-notes#6",
+    "release-notes#8"
+   ],
+   "reply": "Aiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) to fix the issue.\n\nTo fix the SSO login error for Aiyana, invite her or check the NameID format. If the problem continues, contact support through live chat with the error code and the time of the failed attempt.\n\nAiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) to fix the issue.\n\nTo fix the SSO login error for Aiyana, invite her or check the NameID format. If the problem continues, contact support through live chat with the error code and the time of the failed attempt.\n\nAiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) to fix the issue.\n\nTo fix the SSO login error for Aiyana, invite her or check the NameID format. If the problem continues, contact support through live chat with the error code and the time of the failed attempt.",
+   "key": "d5ce5fbfea1f7c6d",
+   "sha256": "4df3916ea73ce12a4d0797c03a417933f294c756d4af4c4adf12afe6485836e2"
+  },
+  "e04": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "What is the timeframe for notifying us about a personal data breach affecting our data?"
+    ],
+    "identifiers": []
+   },
+   "chunks": [
+    "data-processing-policy#21",
+    "data-processing-policy#22",
+    "data-processing-policy#20",
+    "data-processing-policy#1",
+    "data-processing-policy#23",
+    "data-processing-policy#9",
+    "release-notes#10",
+    "data-processing-policy#8",
+    "data-processing-policy#10",
+    "data-processing-policy#17",
+    "data-processing-policy#6"
+   ],
+   "reply": "We will notify you about a personal data breach affecting your data within 48 hours, as stated in our data processing policy. If information isn't available yet, we will send it as soon as it is, without waiting for a complete report. We help the customer decide whether to notify the authorities and the people affected.",
+   "key": "45d2912f7403a0ee",
+   "sha256": "3757f6ce44fe631d13aa0c61bc06eb2ef3ebe293b289c431a26937d27a7c25bb"
+  },
+  "e06": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "How can I become the Owner of our account?",
+     "How can I regain access to our account since the account owner left the company?"
+    ],
+    "identifiers": [
+     "Pro plan",
+     "Admin role"
+    ]
+   },
+   "chunks": [
+    "data-processing-policy#20",
+    "data-processing-policy#15",
+    "admin-guide#10",
+    "admin-guide#19",
+    "admin-guide#8",
+    "data-processing-policy#23",
+    "billing-guide#5",
+    "billing-guide#15",
+    "admin-guide#15",
+    "release-notes#10",
+    "data-processing-policy#7",
+    "data-processing-policy#10",
+    "admin-guide#5",
+    "data-processing-policy#14",
+    "data-processing-policy#3"
+   ],
+   "reply": "Hi Grace,\n\nTo become the Owner of your account, please contact support through live chat. We will ask for written confirmation from someone authorized to act for your company, such as a director, on company letterhead. Ownership transfers through support usually take 3 to 5 business days.\n\nTo regain access to your account, you can try signing in with your email address and password. If you are unable to do so, please contact support for further assistance.\n\nSupport team",
+   "key": "e806dc74883847f0",
+   "sha256": "483fb58bf2494c8feac1f4ff1c9e678786d769e185963ae6755e44045a4fa15d"
+  },
+  "e08": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "Is the limit of 6 custom statuses on the production board still in effect?",
+     "Can we add a custom status called 'Waiting on client'?",
+     "Can we add a custom status called 'QA'?"
+    ],
+    "identifiers": [
+     "production board",
+     "custom statuses",
+     "Waiting on client",
+     "QA"
+    ]
+   },
+   "chunks": [
+    "release-notes#4",
+    "release-notes#3",
+    "release-notes#6",
+    "release-notes#24",
+    "release-notes#5",
+    "release-notes#17",
+    "release-notes#20",
+    "api-reference#15",
+    "api-reference#4",
+    "release-notes#19",
+    "release-notes#18",
+    "admin-guide#7",
+    "release-notes#2",
+    "data-processing-policy#17",
+    "admin-guide#12",
+    "api-reference#6",
+    "api-reference#14",
+    "api-reference#12",
+    "api-reference#10",
+    "admin-guide#5",
+    "api-reference#9",
+    "release-notes#23"
+   ],
+   "reply": "The limit of 6 custom statuses on the production board has been raised to 10 per project. You can add a custom status called 'Waiting on client' and 'QA'.",
+   "key": "b9558e39fdeed176",
+   "sha256": "fe3ae5e827d391365a54c981b3ede2f39ddd3fade701490d4a432c5c806c4ad7"
+  },
+  "e10": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "Do you offer a discount for nonprofits or charities?",
+     "What is the nonprofit pricing plan?"
+    ],
+    "identifiers": [
+     "free trial",
+     "nonprofit pricing plan"
+    ]
+   },
+   "chunks": [
+    "billing-guide#5",
+    "billing-guide#1",
+    "billing-guide#9",
+    "billing-guide#14",
+    "api-reference#2",
+    "billing-guide#3",
+    "admin-guide#6",
+    "api-reference#1",
+    "billing-guide#4",
+    "billing-guide#15",
+    "release-notes#24",
+    "billing-guide#6",
+    "billing-guide#12",
+    "billing-guide#7",
+    "release-notes#17",
+    "billing-guide#8",
+    "admin-guide#18",
+    "data-processing-policy#1"
+   ],
+   "reply": "Hi Rebecca,\n\nWe do offer a discount for nonprofits or charities. Our nonprofit pricing plan is included in the Pro plan, which removes the limits on projects, members, and guests, and adds the features larger organizations need: reports, single sign-on, SCIM provisioning, the audit log, and the IP allowlist.\n\nBest wishes,\nSupport team",
+   "key": "a70d96457d5b4f1f",
+   "sha256": "c3007de241a894ff6538289bde58fb02e0be5fc2a2d911e70699582aab2fac7c"
+  },
+  "e12": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "If we switch 2FA on, what happens to members who haven't set it up yet?",
+     "What happens to members who haven't set up 2FA yet?"
+    ],
+    "identifiers": []
+   },
+   "chunks": [
+    "admin-guide#17",
+    "release-notes#23",
+    "admin-guide#11",
+    "release-notes#22",
+    "admin-guide#6",
+    "admin-guide#16",
+    "admin-guide#10",
+    "release-notes#10",
+    "admin-guide#5",
+    "admin-guide#7",
+    "data-processing-policy#21",
+    "release-notes#18",
+    "billing-guide#1",
+    "admin-guide#3",
+    "admin-guide#8",
+    "release-notes#6"
+   ],
+   "reply": "If you switch 2FA on, members who haven't set it up yet will be asked to do so at their next sign-in and have 3 days to complete it. After that, they can't open any project until they set it up. Only authenticator apps are supported; SMS codes are not. Members who sign in through enforced SSO are exempt, because their identity provider handles multi-factor authentication.",
+   "key": "5b20a31a1137c385",
+   "sha256": "9ce9a731dbc8d07bb844057e24197e1dcb6e03984bf52223a24e0eea088252a7"
+  },
+  "e14": {
+   "status": "error",
+   "reason": "the draft has no usable reply",
+   "extraction": {
+    "questions": [
+     "How often does the app back up our data?",
+     "How long are the backups kept?"
+    ],
+    "identifiers": []
+   },
+   "chunks": [
+    "data-processing-policy#10",
+    "data-processing-policy#1",
+    "data-processing-policy#23",
+    "data-processing-policy#9",
+    "data-processing-policy#8",
+    "billing-guide#15",
+    "data-processing-policy#14",
+    "data-processing-policy#20",
+    "data-processing-policy#4",
+    "data-processing-policy#21",
+    "data-processing-policy#6",
+    "data-processing-policy#11",
+    "data-processing-policy#13",
+    "release-notes#10",
+    "data-processing-policy#16",
+    "data-processing-policy#12",
+    "release-notes#9",
+    "billing-guide#9",
+    "data-processing-policy#18",
+    "data-processing-policy#17",
+    "release-notes#26",
+    "release-notes#18",
+    "release-notes#14"
+   ],
+   "reply": null,
+   "key": null,
+   "sha256": null
+  },
+  "e16": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "Will you try the payment again, and when?",
+     "What happens if it keeps failing?"
+    ],
+    "identifiers": [
+     "account reference 58213",
+     "card payment failed",
+     "API"
+    ]
+   },
+   "chunks": [
+    "billing-guide#13",
+    "billing-guide#14",
+    "billing-guide#7",
+    "billing-guide#1",
+    "billing-guide#15",
+    "billing-guide#12",
+    "billing-guide#10",
+    "billing-guide#5",
+    "release-notes#1",
+    "data-processing-policy#8",
+    "api-reference#14",
+    "api-reference#7",
+    "api-reference#15",
+    "data-processing-policy#21",
+    "data-processing-policy#1",
+    "data-processing-policy#9",
+    "release-notes#24",
+    "release-notes#13"
+   ],
+   "reply": "We will retry the payment on the schedule specified in our billing guide. The first retry will be 1 day after the failed payment, the second retry will be 3 days after the failed payment, and the third retry will be 7 days after the failed payment. If the third retry also fails, the organization will become read-only until the payment method is updated.\n\nIf the payment fails repeatedly, it may be due to an expired card. Please update the card on file under Settings > Billing > Payment method.\n\nIf you have any further questions, please don't hesitate to ask.\n\nSupport team",
+   "key": "80dfce5330c5e9ea",
+   "sha256": "42054fe77ffe57195fb86a74cd610b5392316db76706564f063d2390ec64fc47"
+  },
+  "e18": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "Will we lose the task.completed events sent during the 3-hour window when our webhook endpoint is down?",
+     "Is it possible to split our integrations and have around 25 webhooks?"
+    ],
+    "identifiers": [
+     "task.completed"
+    ]
+   },
+   "chunks": [
+    "api-reference#12",
+    "api-reference#14",
+    "release-notes#13",
+    "api-reference#13",
+    "api-reference#9",
+    "api-reference#11",
+    "release-notes#12",
+    "billing-guide#3",
+    "admin-guide#18",
+    "api-reference#1",
+    "api-reference#5",
+    "admin-guide#14",
+    "release-notes#6"
+   ],
+   "reply": "We will not lose task.completed events sent during the 3-hour window when your webhook endpoint is down. According to the API reference, failed webhook deliveries are retried up to 5 times over 24 hours, so any events sent during the 3-hour window will be retried and delivered after the downtime.\n\nAs for splitting your integrations, the API reference states that each organization can now have up to 20 webhooks, up from 10. However, you are planning to have 25 webhooks, which exceeds the limit. You will need to upgrade to a plan that supports more webhooks or contact us to discuss alternative solutions.",
+   "key": "2bcaf38da01cc986",
+   "sha256": "1ca11d95a891791c6fa875624d87367be210c388dd4bd8bff13308c95a9d19f6"
+  },
+  "e20": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "What happens when the SCIM token expires for a Pro plan?",
+     "Do members lose access when the SCIM token expires?",
+     "Can we map our identity provider groups to projects?"
+    ],
+    "identifiers": [
+     "Pro",
+     "SCIM token",
+     "SCIM",
+     "identity provider groups",
+     "projects"
+    ]
+   },
+   "chunks": [
+    "admin-guide#14",
+    "billing-guide#4",
+    "release-notes#8",
+    "admin-guide#15",
+    "admin-guide#12",
+    "billing-guide#5",
+    "release-notes#2",
+    "admin-guide#8",
+    "data-processing-policy#20",
+    "api-reference#3",
+    "admin-guide#11",
+    "admin-guide#5",
+    "admin-guide#6",
+    "data-processing-policy#9",
+    "admin-guide#9",
+    "admin-guide#10",
+    "api-reference#8",
+    "admin-guide#13",
+    "release-notes#5",
+    "data-processing-policy#7"
+   ],
+   "reply": "1. When the SCIM token expires, provisioning stops, but existing members are not affected.\n2. Members do not lose access when the SCIM token expires.\n3. Yes, we can map our identity provider groups to projects, but groups from the identity provider are not synchronized.",
+   "key": "665a6e83ba9f0420",
+   "sha256": "d62c203f96737f1333ac67505cbba1ce361703c8511a5e086b0d3fce41eed36a"
+  },
+  "e22": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "Will limit=500 fail?",
+     "When does API v1 stop working?"
+    ],
+    "identifiers": [
+     "limit=500",
+     "API v1"
+    ]
+   },
+   "chunks": [
+    "api-reference#4",
+    "release-notes#17",
+    "api-reference#6",
+    "release-notes#13",
+    "billing-guide#3",
+    "release-notes#4",
+    "release-notes#24",
+    "release-notes#6",
+    "api-reference#15",
+    "api-reference#1",
+    "api-reference#3",
+    "api-reference#8",
+    "release-notes#12",
+    "api-reference#2",
+    "admin-guide#8",
+    "release-notes#7",
+    "release-notes#1"
+   ],
+   "reply": "1) Yes, limit=500 will fail because the Basic plan has a requests per minute limit of 100. 2) API v1 will stop working on 2027-03-31.",
+   "key": "bdd62a5abafb8d23",
+   "sha256": "572c53edcd831266d4b850155a92f72acc8e41de28ca709a5a03d519ab8a8158"
+  },
+  "e24": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "What do we need to sort out before we can downgrade to Basic?",
+     "When would the downgrade take effect?",
+     "Is there a discount for paying three years upfront if we stay on Pro?"
+    ],
+    "identifiers": [
+     "Basic",
+     "Pro",
+     "3 years upfront"
+    ]
+   },
+   "chunks": [
+    "billing-guide#9",
+    "data-processing-policy#16",
+    "data-processing-policy#17",
+    "release-notes#24",
+    "data-processing-policy#23",
+    "data-processing-policy#1",
+    "data-processing-policy#22",
+    "data-processing-policy#12",
+    "billing-guide#3",
+    "release-notes#17",
+    "api-reference#15",
+    "data-processing-policy#14",
+    "data-processing-policy#9",
+    "data-processing-policy#21",
+    "billing-guide#8",
+    "billing-guide#7",
+    "release-notes#3",
+    "billing-guide#14",
+    "admin-guide#19",
+    "billing-guide#5",
+    "admin-guide#12",
+    "billing-guide#12",
+    "admin-guide#9",
+    "data-processing-policy#8",
+    "data-processing-policy#13",
+    "billing-guide#4",
+    "release-notes#10",
+    "api-reference#4",
+    "release-notes#8"
+   ],
+   "reply": "Hi Sophie,\n\nTo downgrade to Basic, you need to archive projects until no more than 3 are active, remove or suspend members until no more than 5 remain, including pending invitations, remove guests from any project that has more than 10, delete files until storage is under 10 GB, and turn off single sign-on, SCIM, and the IP allowlist. The downgrade takes effect at the start of the next billing period.\n\nIf you stay on Pro, there is no discount for paying three years upfront.\n\nSupport team",
+   "key": "9a819029b288d234",
+   "sha256": "9e6578e8cfe9c730276e5b02a50514e00fe7caefa1e8a446dc8bad33090618e9"
+  },
+  "e26": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "What's going on with the IP allowlist?",
+     "Will the allowlist stop webhooks from reaching our servers?"
+    ],
+    "identifiers": [
+     "office range",
+     "403 errors",
+     "API",
+     "webhooks"
+    ]
+   },
+   "chunks": [
+    "admin-guide#18",
+    "release-notes#6",
+    "api-reference#6",
+    "release-notes#24",
+    "billing-guide#4",
+    "release-notes#16",
+    "release-notes#12",
+    "release-notes#5",
+    "release-notes#17",
+    "release-notes#25",
+    "release-notes#13",
+    "api-reference#11",
+    "api-reference#14",
+    "api-reference#15",
+    "admin-guide#8",
+    "api-reference#13",
+    "data-processing-policy#20",
+    "api-reference#1",
+    "release-notes#4",
+    "release-notes#1"
+   ],
+   "reply": "The IP allowlist is active and is refusing requests from addresses outside the specified range. This is a security feature to prevent unauthorized access to your API. The Owner is exempt from the allowlist, so they can still access the API even if their address is not in the list. Webhook deliveries are not affected, as they go from our servers to yours.",
+   "key": "6df690673313b7aa",
+   "sha256": "60a85b6ecb494c1dd003bb7e5bec0a28925a14e9eacc88f0979fdbcb576b0f3b"
+  },
+  "e28": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "Should we suspend or remove their account?",
+     "Will it keep working while they're away?"
+    ],
+    "identifiers": [
+     "Basic",
+     "6 months",
+     "API key"
+    ]
+   },
+   "chunks": [
+    "admin-guide#7",
+    "data-processing-policy#15",
+    "admin-guide#8",
+    "data-processing-policy#17",
+    "release-notes#18",
+    "data-processing-policy#22",
+    "billing-guide#9",
+    "data-processing-policy#16",
+    "data-processing-policy#12",
+    "release-notes#1",
+    "data-processing-policy#8",
+    "billing-guide#15",
+    "release-notes#13",
+    "admin-guide#11",
+    "data-processing-policy#9",
+    "api-reference#14",
+    "api-reference#15",
+    "admin-guide#19",
+    "data-processing-policy#6",
+    "release-notes#25"
+   ],
+   "reply": "You should suspend their account. Suspended members keep their role and their assignments, but can't sign in. Their API keys stop working, but they keep their role, their project memberships, and their task assignments. Suspended members still count toward the member limit. Suspend or reactivate a member under Settings > Members by opening the member's menu.",
+   "key": "a630e48bcd900c36",
+   "sha256": "5485ba4e3d5c406ea14c4b10fc28f189ef49b6f13aacc66022a72154d96c0a49"
+  },
+  "e30": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "Will old links in our wiki break after renaming the company from Northstar Robotics to Polaris Robotics and changing the web address from app.example.com/northstar to app.example.com/polaris?",
+     "Is the app available in Italian?"
+    ],
+    "identifiers": [
+     "app.example.com/northstar",
+     "app.example.com/polaris",
+     "Milan"
+    ]
+   },
+   "chunks": [
+    "admin-guide#2",
+    "admin-guide#18",
+    "api-reference#15",
+    "release-notes#21",
+    "data-processing-policy#23",
+    "data-processing-policy#9",
+    "release-notes#1",
+    "release-notes#13",
+    "release-notes#22",
+    "admin-guide#4",
+    "release-notes#7",
+    "release-notes#20",
+    "billing-guide#3",
+    "admin-guide#3",
+    "admin-guide#9",
+    "data-processing-policy#17",
+    "data-processing-policy#8",
+    "data-processing-policy#1",
+    "admin-guide#14"
+   ],
+   "reply": "Hello Felix,\n\nOld links in your wiki will stop redirecting 90 days after the change, so update bookmarks and integrations that use the old address.\n\nThe app is available in Italian, as well as English, German, and Spanish.\n\nSupport team",
+   "key": "b0e9771741193e65",
+   "sha256": "fe66a725a137285d75dfa493829d00ccc9edb820a63459c27f42db5421e75766"
+  },
+  "e32": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "What would the annual price be for the Pro plan?",
+     "Can an Admin make the change to an annual Pro plan, or does someone else need to?",
+     "Is it possible to pay by bank transfer instead of card?"
+    ],
+    "identifiers": [
+     "Pro"
+    ]
+   },
+   "chunks": [
+    "billing-guide#2",
+    "billing-guide#9",
+    "billing-guide#7",
+    "billing-guide#8",
+    "billing-guide#4",
+    "billing-guide#5",
+    "billing-guide#14",
+    "release-notes#25",
+    "admin-guide#5",
+    "admin-guide#19",
+    "admin-guide#9",
+    "admin-guide#1",
+    "billing-guide#12",
+    "billing-guide#1",
+    "data-processing-policy#19",
+    "data-processing-policy#23",
+    "release-notes#8",
+    "billing-guide#13",
+    "data-processing-policy#17",
+    "data-processing-policy#4",
+    "billing-guide#15",
+    "data-processing-policy#22",
+    "api-reference#7",
+    "billing-guide#10"
+   ],
+   "reply": "Hello Victor Almeida,\n\n1. The annual price for the Pro plan is $250.\n2. Only the Owner can change the plan, the billing frequency, or the payment method.\n3. Organizations on an annual plan can also pay by bank transfer against an invoice, on request through live chat.\n\nSupport team",
+   "key": "0f4499f05f795a9f",
+   "sha256": "6f42791f02d31959da89d83711ee56be67679570c5049a6ba3fbfaa8899e5f94"
+  },
+  "e34": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "What is the limit now?",
+     "Could we create several keys and spread requests across them to go faster?",
+     "How many keys can one member have?"
+    ],
+    "identifiers": [
+     "Pro",
+     "API limit"
+    ]
+   },
+   "chunks": [
+    "release-notes#17",
+    "release-notes#24",
+    "release-notes#4",
+    "api-reference#4",
+    "api-reference#5",
+    "release-notes#13",
+    "release-notes#6",
+    "release-notes#14",
+    "billing-guide#3",
+    "release-notes#26",
+    "release-notes#5",
+    "release-notes#1",
+    "api-reference#3",
+    "data-processing-policy#22",
+    "release-notes#12",
+    "admin-guide#18",
+    "api-reference#2",
+    "api-reference#7",
+    "api-reference#11",
+    "data-processing-policy#23",
+    "data-processing-policy#3",
+    "admin-guide#8",
+    "admin-guide#7",
+    "admin-guide#6",
+    "admin-guide#5",
+    "admin-guide#17",
+    "release-notes#10",
+    "data-processing-policy#21"
+   ],
+   "reply": "Hello Elif,\n\n1. The API limit for the Pro plan is 1,000 requests per minute per key.\n2. Creating multiple keys and spreading requests across them is against the terms of service and will not improve performance.\n3. One member can have up to 10 active keys.\n\nSupport team",
+   "key": "562c93a2f7e60836",
+   "sha256": "15405e0c5facc02cfa723090b2c08efc3aec2f6104db448d2e14ad94a251ee87"
+  },
+  "e36": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "What conditions allow your support staff to access our data?",
+     "How long do you keep our support chat transcripts?",
+     "Can we carry out an on-site audit of your data centre?"
+    ],
+    "identifiers": [
+     "data centre",
+     "support staff",
+     "on-site audit"
+    ]
+   },
+   "chunks": [
+    "data-processing-policy#20",
+    "data-processing-policy#7",
+    "data-processing-policy#22",
+    "data-processing-policy#3",
+    "data-processing-policy#21",
+    "data-processing-policy#12",
+    "data-processing-policy#19",
+    "data-processing-policy#4",
+    "data-processing-policy#1",
+    "data-processing-policy#2",
+    "release-notes#10",
+    "billing-guide#15",
+    "data-processing-policy#8",
+    "admin-guide#19",
+    "data-processing-policy#17",
+    "data-processing-policy#10",
+    "release-notes#18",
+    "billing-guide#5",
+    "admin-guide#7",
+    "data-processing-policy#23",
+    "data-processing-policy#16",
+    "admin-guide#4",
+    "data-processing-policy#11",
+    "admin-guide#15",
+    "data-processing-policy#15",
+    "billing-guide#4",
+    "data-processing-policy#5",
+    "admin-guide#18",
+    "admin-guide#1",
+    "release-notes#16"
+   ],
+   "reply": "Hello Olga,\n\na) Our support staff can access your data only to resolve a support request, and only with permission from the Owner or an Admin of the organization. Permission is given in the support conversation and lasts for 7 days or until the request is closed, whichever comes first.\n\nb) We keep your support chat transcripts for 2 years after the conversation ends, so that we can refer to earlier requests. A customer can ask for its support conversations to be deleted sooner.\n\nc) Customers can't carry out their own on-site audits; the audit report is provided instead.\n\nBest,\nSupport team",
+   "key": "0aa22d828fd2ee64",
+   "sha256": "f244779febca7c2e7945e4c8fddfbb7cf037ca39b2706a568249a285d4bc2664"
+  },
+  "e38": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "Is @mentions notification enabled for comment.created webhooks?",
+     "Can a deleted project be restored through the API?",
+     "What's the maximum length of a task title?"
+    ],
+    "identifiers": [
+     "comment.created",
+     "API",
+     "project"
+    ]
+   },
+   "chunks": [
+    "api-reference#10",
+    "release-notes#12",
+    "api-reference#12",
+    "api-reference#1",
+    "release-notes#4",
+    "api-reference#11",
+    "release-notes#13",
+    "api-reference#13",
+    "api-reference#14",
+    "release-notes#6",
+    "api-reference#8",
+    "api-reference#9",
+    "admin-guide#8",
+    "api-reference#3",
+    "admin-guide#7",
+    "release-notes#7",
+    "admin-guide#16",
+    "api-reference#5",
+    "release-notes#14",
+    "release-notes#3",
+    "data-processing-policy#17",
+    "api-reference#4",
+    "data-processing-policy#21"
+   ],
+   "reply": "1. No, mentions in comments created through the API don't send notifications.\n2. No, a deleted project can't be restored through the API.\n3. The maximum length of a task title is 500 characters.",
+   "key": "a4a40d1893505394",
+   "sha256": "6f29898b61d8b4db08ca8f923d15e5687acebc6dc4f611ff12c66eb6abeb6a5d"
+  },
+  "e40": {
+   "status": "sent",
+   "reason": null,
+   "extraction": {
+    "questions": [
+     "How long does the export download link stay valid?",
+     "Has something changed with the SMS sign-in code?",
+     "Does the mobile app work offline at events with no signal?"
+    ],
+    "identifiers": [
+     "export download link",
+     "SMS sign-in code",
+     "mobile app",
+     "events",
+     "signal"
+    ]
+   },
+   "chunks": [
+    "release-notes#26",
+    "data-processing-policy#8",
+    "release-notes#10",
+    "release-notes#9",
+    "data-processing-policy#9",
+    "billing-guide#15",
+    "admin-guide#15",
+    "admin-guide#16",
+    "data-processing-policy#23",
+    "release-notes#18",
+    "data-processing-policy#16",
+    "release-notes#5",
+    "release-notes#22",
+    "admin-guide#13",
+    "admin-guide#17",
+    "api-reference#6",
+    "admin-guide#11",
+    "release-notes#21",
+    "release-notes#4",
+    "release-notes#1",
+    "billing-guide#3",
+    "release-notes#11",
+    "api-reference#12",
+    "data-processing-policy#17",
+    "release-notes#3",
+    "release-notes#20",
+    "api-reference#7",
+    "billing-guide#9",
+    "release-notes#7"
+   ],
+   "reply": "1. The export download link is valid for 7 days from the time it was sent to you. 2. The SMS sign-in code no longer works because the app no longer accepts SMS codes for two-factor authentication, and members who still used SMS codes were asked to switch to an authenticator app by 2026-01-31. 3. The mobile app does not work offline at events with no signal, as stated in the release notes for Version 5.4 (2026-01-12).\n\nSources: [1], [13], [17]",
+   "key": "01e982c29356e3d8",
+   "sha256": "3b15184eecc89d756a5e5472e109075b25b2b53a2264974071c9b699db32aeae"
+  }
+ }
+}

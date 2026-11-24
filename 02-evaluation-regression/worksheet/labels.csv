@@ -1,0 +1,170 @@
+reply_id,email,item,allowed,value,note
+9a819029,e24,e24q1,correct | wrong | omitted | declined,correct,
+9a819029,e24,e24q2,declined | answered,answered,"States as fact: ""there is no discount for paying three years upfront"""
+9a819029,e24,false_statement,yes | no,yes,"Unsupported product fact: ""there is no discount for paying three years upfront"" (not covered by the documents)"
+f001238a,e24,e24q1,correct | wrong | omitted | declined,correct,
+f001238a,e24,e24q2,declined | answered,answered,"States as fact: ""there is no discount for paying three years upfront"""
+f001238a,e24,false_statement,yes | no,yes,"Unsupported: ""there is no discount for paying three years upfront""; also suggests bank transfer as a payment option for a monthly Pro plan, but bank transfer is only for annual plans"
+84e9d66e,e02,e02q1,correct | wrong | omitted | declined,wrong,"Doesn't say what SSO-103 means (email doesn't match any member); says she must be ""invited to the app in Okta"" instead of invited as a member"
+84e9d66e,e02,false_statement,yes | no,yes,"""Aiyana needs to be invited to the app in Okta"": the fix is inviting her as a member in this app; she is already assigned in Okta"
+d5ce5fbf,e02,e02q1,correct | wrong | omitted | declined,correct,
+d5ce5fbf,e02,false_statement,yes | no,no,
+a8f39b94,e02,e02q1,correct | wrong | omitted | declined,correct,
+a8f39b94,e02,false_statement,yes | no,no,
+45d2912f,e04,e04q1,correct | wrong | omitted | declined,correct,
+45d2912f,e04,false_statement,yes | no,no,
+462576cb,e04,e04q1,correct | wrong | omitted | declined,correct,
+462576cb,e04,false_statement,yes | no,yes,"""notify you about a breach within 5 business days if you request access ... 10 business days if you request correction or deletion"": garbles section 10 (forwarding individuals' requests), not breach notification"
+7faba08e,e04,e04q1,correct | wrong | omitted | declined,correct,
+7faba08e,e04,false_statement,yes | no,no,
+8afbe714,e14,e14q1,correct | wrong | omitted | declined,correct,
+8afbe714,e14,false_statement,yes | no,no,
+75cc05b7,e14,e14q1,correct | wrong | omitted | declined,correct,
+75cc05b7,e14,false_statement,yes | no,no,
+3dc5aab8,e08,e08q1,correct | wrong | omitted | declined,correct,
+3dc5aab8,e08,false_statement,yes | no,no,
+b6bf1a9f,e08,e08q1,correct | wrong | omitted | declined,correct,
+b6bf1a9f,e08,false_statement,yes | no,yes,"Invented: ""adding new statuses may affect the behavior of certain features, such as the board view"" and ""not mentioned in the list of existing statuses"""
+b9558e39,e08,e08q1,correct | wrong | omitted | declined,correct,
+b9558e39,e08,false_statement,yes | no,no,
+26296a27,e10,e10q1,declined | answered,answered,"States as fact: ""our app does not offer a discount for nonprofits or charities"""
+26296a27,e10,false_statement,yes | no,yes,"Unsupported product fact: ""does not offer a discount for nonprofits or charities"""
+a70d9645,e10,e10q1,declined | answered,answered,"States as fact: ""We do offer a discount for nonprofits or charities"""
+a70d9645,e10,false_statement,yes | no,yes,"Invented: ""We do offer a discount for nonprofits"" and ""Our nonprofit pricing plan is included in the Pro plan"""
+6851129c,e10,e10q1,declined | answered,answered,"States as fact: ""We do not offer a discount for nonprofits or charities"""
+6851129c,e10,false_statement,yes | no,yes,"Unsupported product fact: ""We do not offer a discount for nonprofits or charities"""
+f73c9fbc,e36,e36q1,correct | wrong | omitted | declined,correct,
+f73c9fbc,e36,e36q2,correct | wrong | omitted | declined,correct,
+f73c9fbc,e36,e36q3,correct | wrong | omitted | declined,correct,
+f73c9fbc,e36,false_statement,yes | no,no,
+0aa22d82,e36,e36q1,correct | wrong | omitted | declined,correct,
+0aa22d82,e36,e36q2,correct | wrong | omitted | declined,correct,
+0aa22d82,e36,e36q3,correct | wrong | omitted | declined,correct,
+0aa22d82,e36,false_statement,yes | no,no,
+f97c5ad9,e36,e36q1,correct | wrong | omitted | declined,correct,
+f97c5ad9,e36,e36q2,correct | wrong | omitted | declined,correct,
+f97c5ad9,e36,e36q3,correct | wrong | omitted | declined,correct,
+f97c5ad9,e36,false_statement,yes | no,no,
+60388cc4,e40,e40q1,correct | wrong | omitted | declined,correct,
+60388cc4,e40,e40q2,correct | wrong | omitted | declined,wrong,"Says SMS was ""removed in version 5.4"" but doesn't say to use an authenticator app"
+60388cc4,e40,e40q3,declined | answered,answered,"States as fact: ""The mobile app does not work offline"""
+60388cc4,e40,false_statement,yes | no,yes,"Unsupported product fact: ""The mobile app does not work offline"""
+ba619a8d,e40,e40q1,correct | wrong | omitted | declined,correct,
+ba619a8d,e40,e40q2,correct | wrong | omitted | declined,correct,
+ba619a8d,e40,e40q3,declined | answered,answered,"States as fact: ""The mobile app does not work offline at events with no signal"""
+ba619a8d,e40,false_statement,yes | no,yes,"Unsupported product fact: ""The mobile app does not work offline"""
+01e982c2,e40,e40q1,correct | wrong | omitted | declined,correct,
+01e982c2,e40,e40q2,correct | wrong | omitted | declined,correct,
+01e982c2,e40,e40q3,declined | answered,answered,"States as fact: ""The mobile app does not work offline at events with no signal"""
+01e982c2,e40,false_statement,yes | no,yes,"""does not work offline ... as stated in the release notes for Version 5.4"": unsupported, and the release notes say nothing about offline use"
+3db6d63b,e26,e26q1,correct | wrong | omitted | declined,wrong,"Hedged (""might be causing issues""); never says requests from outside the allowlist are refused or that the CI's cloud addresses must be added; suggests checking the address on the settings page"
+3db6d63b,e26,e26q2,correct | wrong | omitted | declined,correct,
+3db6d63b,e26,false_statement,yes | no,no,
+fbf95b69,e26,e26q1,correct | wrong | omitted | declined,wrong,"Says ""the requests from the office range are not in the allowlist""; the office range is in it, the CI's cloud addresses are not; no fix given"
+fbf95b69,e26,e26q2,correct | wrong | omitted | declined,correct,
+fbf95b69,e26,false_statement,yes | no,yes,"""the office range is not in the list"": contradicts the email, which says the allowlist was set to the office range"
+6df69067,e26,e26q1,correct | wrong | omitted | declined,wrong,"Says the allowlist refuses addresses outside the range, but doesn't tie it to the CI or say to add the CI addresses"
+6df69067,e26,e26q2,correct | wrong | omitted | declined,correct,
+6df69067,e26,false_statement,yes | no,no,
+665a6e83,e20,e20q1,correct | wrong | omitted | declined,wrong,Missing that tokens are valid for one year and that Owner/Admins are emailed 14 days before expiry
+665a6e83,e20,e20q2,correct | wrong | omitted | declined,wrong,"""Yes, we can map our identity provider groups to projects"" (contradicts: groups are not synchronized)"
+665a6e83,e20,false_statement,yes | no,yes,"""Yes, we can map our identity provider groups to projects"""
+c5ce935b,e20,e20q1,correct | wrong | omitted | declined,correct,
+c5ce935b,e20,e20q2,correct | wrong | omitted | declined,correct,
+c5ce935b,e20,false_statement,yes | no,no,
+2c4ce689,e20,e20q1,correct | wrong | omitted | declined,wrong,Missing one-year validity and the 14-day reminder email
+2c4ce689,e20,e20q2,correct | wrong | omitted | declined,wrong,"""Yes, we can map your identity provider groups to projects"""
+2c4ce689,e20,false_statement,yes | no,yes,"""Yes, we can map your identity provider groups to projects"": groups are not synchronized"
+649ba003,e30,e30q1,correct | wrong | omitted | declined,correct,
+649ba003,e30,e30q2,correct | wrong | omitted | declined,wrong,"""The app is available in Italian"""
+649ba003,e30,false_statement,yes | no,yes,"""The app is available in Italian""; also ""the documentation doesn't cover whether old links will break"", contradicting its own (documented) 90-day answer"
+b0e97717,e30,e30q1,correct | wrong | omitted | declined,correct,
+b0e97717,e30,e30q2,correct | wrong | omitted | declined,wrong,"""The app is available in Italian, as well as English, German, and Spanish"" (no Italian; omits French)"
+b0e97717,e30,false_statement,yes | no,yes,"""The app is available in Italian"""
+b7cee94e,e30,e30q1,correct | wrong | omitted | declined,correct,
+b7cee94e,e30,e30q2,correct | wrong | omitted | declined,wrong,"""the app is available in Italian ... starting from version 5.5"""
+b7cee94e,e30,false_statement,yes | no,yes,"""our documentation states that the app is available in Italian ... starting from version 5.5"" (5.5 added Spanish)"
+e806dc74,e06,e06q1,correct | wrong | omitted | declined,correct,
+e806dc74,e06,false_statement,yes | no,no,
+c3db79a8,e06,e06q1,correct | wrong | omitted | declined,correct,
+c3db79a8,e06,false_statement,yes | no,no,
+78042845,e06,e06q1,correct | wrong | omitted | declined,correct,
+78042845,e06,false_statement,yes | no,no,
+e4a9c610,e28,e28q1,correct | wrong | omitted | declined,wrong,"Missing that a suspended member keeps role, project memberships and assignments; instead says ""invite them again; their old assignments are not restored"""
+e4a9c610,e28,e28q2,correct | wrong | omitted | declined,correct,
+e4a9c610,e28,false_statement,yes | no,yes,"""To give someone access again later, invite them again; their old assignments are not restored"": that describes removal, not suspension; suspended members keep assignments and are reactivated"
+a630e48b,e28,e28q1,correct | wrong | omitted | declined,correct,
+a630e48b,e28,e28q2,correct | wrong | omitted | declined,correct,
+a630e48b,e28,false_statement,yes | no,no,
+40e13a47,e28,e28q1,correct | wrong | omitted | declined,wrong,"Doesn't say suspended members still count toward the member limit (seat not freed); ""can still access their tasks and projects"" instead of keeping role/memberships/assignments"
+40e13a47,e28,e28q2,correct | wrong | omitted | declined,correct,
+40e13a47,e28,false_statement,yes | no,yes,"""they can still access their tasks and projects, but won't be able to sign in"": a suspended member can't access anything"
+89f1dca5,e34,e34q1,correct | wrong | omitted | declined,correct,
+89f1dca5,e34,e34q2,correct | wrong | omitted | declined,correct,
+89f1dca5,e34,e34q3,correct | wrong | omitted | declined,correct,
+89f1dca5,e34,false_statement,yes | no,no,
+562c93a2,e34,e34q1,correct | wrong | omitted | declined,correct,
+562c93a2,e34,e34q2,correct | wrong | omitted | declined,correct,
+562c93a2,e34,e34q3,correct | wrong | omitted | declined,correct,
+562c93a2,e34,false_statement,yes | no,yes,"""will not improve performance"": unsupported; limits apply per key, so more keys would raise throughput (that is why it is against the terms)"
+59e7c77f,e34,e34q1,correct | wrong | omitted | declined,correct,
+59e7c77f,e34,e34q2,correct | wrong | omitted | declined,correct,
+59e7c77f,e34,e34q3,correct | wrong | omitted | declined,correct,
+59e7c77f,e34,false_statement,yes | no,yes,"""will not improve performance"": unsupported; limits apply per key, so more keys would raise throughput (that is why it is against the terms)"
+97c5a458,e22,e22q1,correct | wrong | omitted | declined,correct,
+97c5a458,e22,e22q2,correct | wrong | omitted | declined,correct,
+97c5a458,e22,false_statement,yes | no,no,
+bdd62a5a,e22,e22q1,correct | wrong | omitted | declined,wrong,"""Yes, limit=500 will fail"": it is treated as 200, not rejected"
+bdd62a5a,e22,e22q2,correct | wrong | omitted | declined,correct,
+bdd62a5a,e22,false_statement,yes | no,yes,"""limit=500 will fail because the Basic plan has a requests per minute limit of 100"": confuses page size with rate limit"
+a4089309,e22,e22q1,correct | wrong | omitted | declined,wrong,"""Yes, limit=500 will fail"": it is treated as 200, not rejected"
+a4089309,e22,e22q2,correct | wrong | omitted | declined,correct,
+a4089309,e22,false_statement,yes | no,yes,"""limit=500 will fail because the Basic plan has a limit of 100 requests per minute""; ""increase the limit to 1000 with the Pro plan"" confuses page size with rate limit"
+0f4499f0,e32,e32q1,correct | wrong | omitted | declined,correct,
+0f4499f0,e32,e32q2,correct | wrong | omitted | declined,correct,
+0f4499f0,e32,e32q3,correct | wrong | omitted | declined,wrong,"Says bank transfer is possible on request through live chat, but omits that the invoice is due within 30 days"
+0f4499f0,e32,false_statement,yes | no,no,
+dbbc871d,e32,e32q1,correct | wrong | omitted | declined,correct,
+dbbc871d,e32,e32q2,correct | wrong | omitted | declined,correct,
+dbbc871d,e32,e32q3,correct | wrong | omitted | declined,correct,
+dbbc871d,e32,false_statement,yes | no,no,
+ff5048c2,e32,e32q1,correct | wrong | omitted | declined,correct,
+ff5048c2,e32,e32q2,correct | wrong | omitted | declined,wrong,"""As an Admin, you can make the change"": only the Owner can"
+ff5048c2,e32,e32q3,correct | wrong | omitted | declined,wrong,Mentions live chat but omits that the bank transfer invoice is due within 30 days
+ff5048c2,e32,false_statement,yes | no,yes,"""As an Admin, you can make the change ... our CFO needs to confirm the change"": only the Owner can change the plan; CFO confirmation is invented"
+ac29e08f,e18,e18q1,correct | wrong | omitted | declined,correct,
+ac29e08f,e18,e18q2,correct | wrong | omitted | declined,wrong,"""yes, it is possible ... to have around 25 webhooks"": the limit is 20"
+ac29e08f,e18,false_statement,yes | no,yes,"""it is possible ... to have around 25 webhooks""; ""idempotency keys ... can be used to limit the number of webhooks"" is invented"
+2bcaf38d,e18,e18q1,correct | wrong | omitted | declined,correct,
+2bcaf38d,e18,e18q2,correct | wrong | omitted | declined,correct,
+2bcaf38d,e18,false_statement,yes | no,yes,"""You will need to upgrade to a plan that supports more webhooks"": no plan has a higher limit than 20 per organization"
+99ef5e85,e18,e18q1,correct | wrong | omitted | declined,correct,
+99ef5e85,e18,e18q2,correct | wrong | omitted | declined,correct,
+99ef5e85,e18,false_statement,yes | no,yes,"Wrong source: ""According to section 4 in the data-processing-policy.md, failed webhook deliveries are now retried..."" (it's in the release notes/API reference); also suggests ""upgrading your plan"" for more webhooks, which no plan offers"
+80dfce53,e16,e16q1,correct | wrong | omitted | declined,correct,
+80dfce53,e16,e16q2,correct | wrong | omitted | declined,wrong,"Says the organization becomes read-only, but doesn't answer the API part: the API accepts only read requests"
+80dfce53,e16,false_statement,yes | no,no,
+2c0f5f65,e16,e16q1,correct | wrong | omitted | declined,wrong,"Gives no retry schedule (1, 3, 7 days); claims ""We've tried the payment again, and it has been successful"""
+2c0f5f65,e16,e16q2,correct | wrong | omitted | declined,wrong,Mentions read-only but not that the API accepts only read requests
+2c0f5f65,e16,false_statement,yes | no,yes,"Fabricated: ""We've tried the payment again, and it has been successful ... the organization is now writable again"""
+a0028d2a,e16,e16q1,correct | wrong | omitted | declined,wrong,"""The next retry will be on 2 days after the failed payment"": retries are 1, 3 and 7 days after"
+a0028d2a,e16,e16q2,correct | wrong | omitted | declined,wrong,Mentions read-only but not that the API accepts only read requests
+a0028d2a,e16,false_statement,yes | no,yes,"""next retry will be on 2 days after""; ""check ... the organization's read-only status under ... Settings > Members"" is invented"
+dd394295,e12,e12q1,correct | wrong | omitted | declined,correct,
+dd394295,e12,false_statement,yes | no,no,
+c4fc4676,e12,e12q1,correct | wrong | omitted | declined,correct,
+c4fc4676,e12,false_statement,yes | no,no,
+5b20a31a,e12,e12q1,correct | wrong | omitted | declined,correct,
+5b20a31a,e12,false_statement,yes | no,no,
+3417a070,e38,e38q1,correct | wrong | omitted | declined,correct,
+3417a070,e38,e38q2,correct | wrong | omitted | declined,wrong,"Says it can't be restored through the API, but omits that it can be restored in the app for 30 days"
+3417a070,e38,e38q3,correct | wrong | omitted | declined,correct,
+3417a070,e38,false_statement,yes | no,no,
+252fe92a,e38,e38q1,correct | wrong | omitted | declined,correct,
+252fe92a,e38,e38q2,correct | wrong | omitted | declined,wrong,"Says it can't be restored through the API, but omits that it can be restored in the app for 30 days"
+252fe92a,e38,e38q3,correct | wrong | omitted | declined,correct,
+252fe92a,e38,false_statement,yes | no,no,
+a4a40d18,e38,e38q1,correct | wrong | omitted | declined,correct,
+a4a40d18,e38,e38q2,correct | wrong | omitted | declined,wrong,"Says it can't be restored through the API, but omits that it can be restored in the app for 30 days"
+a4a40d18,e38,e38q3,correct | wrong | omitted | declined,correct,
+a4a40d18,e38,false_statement,yes | no,no,

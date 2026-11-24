@@ -1,0 +1,522 @@
+{
+ "labeller": "Claude Opus 5.5, a separate blind agent (README deviation D1)",
+ "labels": {
+  "01e982c29356e3d8": {
+   "email": "e40",
+   "questions": {
+    "e40q1": "correct",
+    "e40q2": "correct",
+    "e40q3": "answered"
+   },
+   "false_statement": true,
+   "note": "e40q3: States as fact: \"The mobile app does not work offline at events with no signal\" | false_statement: \"does not work offline ... as stated in the release notes for Version 5.4\": unsupported, and the release notes say nothing about offline use"
+  },
+  "0aa22d828fd2ee64": {
+   "email": "e36",
+   "questions": {
+    "e36q1": "correct",
+    "e36q2": "correct",
+    "e36q3": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "0f4499f05f795a9f": {
+   "email": "e32",
+   "questions": {
+    "e32q1": "correct",
+    "e32q2": "correct",
+    "e32q3": "wrong"
+   },
+   "false_statement": false,
+   "note": "e32q3: Says bank transfer is possible on request through live chat, but omits that the invoice is due within 30 days"
+  },
+  "252fe92a5661599b": {
+   "email": "e38",
+   "questions": {
+    "e38q1": "correct",
+    "e38q2": "wrong",
+    "e38q3": "correct"
+   },
+   "false_statement": false,
+   "note": "e38q2: Says it can't be restored through the API, but omits that it can be restored in the app for 30 days"
+  },
+  "26296a27dd48bffa": {
+   "email": "e10",
+   "questions": {
+    "e10q1": "answered"
+   },
+   "false_statement": true,
+   "note": "e10q1: States as fact: \"our app does not offer a discount for nonprofits or charities\" | false_statement: Unsupported product fact: \"does not offer a discount for nonprofits or charities\""
+  },
+  "2bcaf38da01cc986": {
+   "email": "e18",
+   "questions": {
+    "e18q1": "correct",
+    "e18q2": "correct"
+   },
+   "false_statement": true,
+   "note": "false_statement: \"You will need to upgrade to a plan that supports more webhooks\": no plan has a higher limit than 20 per organization"
+  },
+  "2c0f5f65c0ec8771": {
+   "email": "e16",
+   "questions": {
+    "e16q1": "wrong",
+    "e16q2": "wrong"
+   },
+   "false_statement": true,
+   "note": "e16q1: Gives no retry schedule (1, 3, 7 days); claims \"We've tried the payment again, and it has been successful\" | e16q2: Mentions read-only but not that the API accepts only read requests | false_statement: Fabricated: \"We've tried the payment again, and it has been successful ... the organization is now writable again\""
+  },
+  "2c4ce6891ee6bb74": {
+   "email": "e20",
+   "questions": {
+    "e20q1": "wrong",
+    "e20q2": "wrong"
+   },
+   "false_statement": true,
+   "note": "e20q1: Missing one-year validity and the 14-day reminder email | e20q2: \"Yes, we can map your identity provider groups to projects\" | false_statement: \"Yes, we can map your identity provider groups to projects\": groups are not synchronized"
+  },
+  "3417a07018b00e99": {
+   "email": "e38",
+   "questions": {
+    "e38q1": "correct",
+    "e38q2": "wrong",
+    "e38q3": "correct"
+   },
+   "false_statement": false,
+   "note": "e38q2: Says it can't be restored through the API, but omits that it can be restored in the app for 30 days"
+  },
+  "3db6d63b74019401": {
+   "email": "e26",
+   "questions": {
+    "e26q1": "wrong",
+    "e26q2": "correct"
+   },
+   "false_statement": false,
+   "note": "e26q1: Hedged (\"might be causing issues\"); never says requests from outside the allowlist are refused or that the CI's cloud addresses must be added; suggests checking the address on the settings page"
+  },
+  "3dc5aab87c2d8210": {
+   "email": "e08",
+   "questions": {
+    "e08q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "40e13a474b0db7e4": {
+   "email": "e28",
+   "questions": {
+    "e28q1": "wrong",
+    "e28q2": "correct"
+   },
+   "false_statement": true,
+   "note": "e28q1: Doesn't say suspended members still count toward the member limit (seat not freed); \"can still access their tasks and projects\" instead of keeping role/memberships/assignments | false_statement: \"they can still access their tasks and projects, but won't be able to sign in\": a suspended member can't access anything"
+  },
+  "45d2912f7403a0ee": {
+   "email": "e04",
+   "questions": {
+    "e04q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "462576cb7b567d3d": {
+   "email": "e04",
+   "questions": {
+    "e04q1": "correct"
+   },
+   "false_statement": true,
+   "note": "false_statement: \"notify you about a breach within 5 business days if you request access ... 10 business days if you request correction or deletion\": garbles section 10 (forwarding individuals' requests), not breach notification"
+  },
+  "562c93a2f7e60836": {
+   "email": "e34",
+   "questions": {
+    "e34q1": "correct",
+    "e34q2": "correct",
+    "e34q3": "correct"
+   },
+   "false_statement": true,
+   "note": "false_statement: \"will not improve performance\": unsupported; limits apply per key, so more keys would raise throughput (that is why it is against the terms)"
+  },
+  "59e7c77f9175a00c": {
+   "email": "e34",
+   "questions": {
+    "e34q1": "correct",
+    "e34q2": "correct",
+    "e34q3": "correct"
+   },
+   "false_statement": true,
+   "note": "false_statement: \"will not improve performance\": unsupported; limits apply per key, so more keys would raise throughput (that is why it is against the terms)"
+  },
+  "5b20a31a1137c385": {
+   "email": "e12",
+   "questions": {
+    "e12q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "60388cc43a292413": {
+   "email": "e40",
+   "questions": {
+    "e40q1": "correct",
+    "e40q2": "wrong",
+    "e40q3": "answered"
+   },
+   "false_statement": true,
+   "note": "e40q2: Says SMS was \"removed in version 5.4\" but doesn't say to use an authenticator app | e40q3: States as fact: \"The mobile app does not work offline\" | false_statement: Unsupported product fact: \"The mobile app does not work offline\""
+  },
+  "649ba0038edb6f6a": {
+   "email": "e30",
+   "questions": {
+    "e30q1": "correct",
+    "e30q2": "wrong"
+   },
+   "false_statement": true,
+   "note": "e30q2: \"The app is available in Italian\" | false_statement: \"The app is available in Italian\"; also \"the documentation doesn't cover whether old links will break\", contradicting its own (documented) 90-day answer"
+  },
+  "665a6e83ba9f0420": {
+   "email": "e20",
+   "questions": {
+    "e20q1": "wrong",
+    "e20q2": "wrong"
+   },
+   "false_statement": true,
+   "note": "e20q1: Missing that tokens are valid for one year and that Owner/Admins are emailed 14 days before expiry | e20q2: \"Yes, we can map our identity provider groups to projects\" (contradicts: groups are not synchronized) | false_statement: \"Yes, we can map our identity provider groups to projects\""
+  },
+  "6851129cfb12d05f": {
+   "email": "e10",
+   "questions": {
+    "e10q1": "answered"
+   },
+   "false_statement": true,
+   "note": "e10q1: States as fact: \"We do not offer a discount for nonprofits or charities\" | false_statement: Unsupported product fact: \"We do not offer a discount for nonprofits or charities\""
+  },
+  "6df690673313b7aa": {
+   "email": "e26",
+   "questions": {
+    "e26q1": "wrong",
+    "e26q2": "correct"
+   },
+   "false_statement": false,
+   "note": "e26q1: Says the allowlist refuses addresses outside the range, but doesn't tie it to the CI or say to add the CI addresses"
+  },
+  "75cc05b70237e396": {
+   "email": "e14",
+   "questions": {
+    "e14q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "78042845a283157f": {
+   "email": "e06",
+   "questions": {
+    "e06q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "7faba08e6fbde4f2": {
+   "email": "e04",
+   "questions": {
+    "e04q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "80dfce5330c5e9ea": {
+   "email": "e16",
+   "questions": {
+    "e16q1": "correct",
+    "e16q2": "wrong"
+   },
+   "false_statement": false,
+   "note": "e16q2: Says the organization becomes read-only, but doesn't answer the API part: the API accepts only read requests"
+  },
+  "84e9d66e0304d7dc": {
+   "email": "e02",
+   "questions": {
+    "e02q1": "wrong"
+   },
+   "false_statement": true,
+   "note": "e02q1: Doesn't say what SSO-103 means (email doesn't match any member); says she must be \"invited to the app in Okta\" instead of invited as a member | false_statement: \"Aiyana needs to be invited to the app in Okta\": the fix is inviting her as a member in this app; she is already assigned in Okta"
+  },
+  "89f1dca5715a5c08": {
+   "email": "e34",
+   "questions": {
+    "e34q1": "correct",
+    "e34q2": "correct",
+    "e34q3": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "8afbe714c76602b2": {
+   "email": "e14",
+   "questions": {
+    "e14q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "97c5a458df4f920f": {
+   "email": "e22",
+   "questions": {
+    "e22q1": "correct",
+    "e22q2": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "99ef5e85f40895ca": {
+   "email": "e18",
+   "questions": {
+    "e18q1": "correct",
+    "e18q2": "correct"
+   },
+   "false_statement": true,
+   "note": "false_statement: Wrong source: \"According to section 4 in the data-processing-policy.md, failed webhook deliveries are now retried...\" (it's in the release notes/API reference); also suggests \"upgrading your plan\" for more webhooks, which no plan offers"
+  },
+  "9a819029b288d234": {
+   "email": "e24",
+   "questions": {
+    "e24q1": "correct",
+    "e24q2": "answered"
+   },
+   "false_statement": true,
+   "note": "e24q2: States as fact: \"there is no discount for paying three years upfront\" | false_statement: Unsupported product fact: \"there is no discount for paying three years upfront\" (not covered by the documents)"
+  },
+  "a0028d2a9dc865ee": {
+   "email": "e16",
+   "questions": {
+    "e16q1": "wrong",
+    "e16q2": "wrong"
+   },
+   "false_statement": true,
+   "note": "e16q1: \"The next retry will be on 2 days after the failed payment\": retries are 1, 3 and 7 days after | e16q2: Mentions read-only but not that the API accepts only read requests | false_statement: \"next retry will be on 2 days after\"; \"check ... the organization's read-only status under ... Settings > Members\" is invented"
+  },
+  "a40893092adbb5c6": {
+   "email": "e22",
+   "questions": {
+    "e22q1": "wrong",
+    "e22q2": "correct"
+   },
+   "false_statement": true,
+   "note": "e22q1: \"Yes, limit=500 will fail\": it is treated as 200, not rejected | false_statement: \"limit=500 will fail because the Basic plan has a limit of 100 requests per minute\"; \"increase the limit to 1000 with the Pro plan\" confuses page size with rate limit"
+  },
+  "a4a40d1893505394": {
+   "email": "e38",
+   "questions": {
+    "e38q1": "correct",
+    "e38q2": "wrong",
+    "e38q3": "correct"
+   },
+   "false_statement": false,
+   "note": "e38q2: Says it can't be restored through the API, but omits that it can be restored in the app for 30 days"
+  },
+  "a630e48bcd900c36": {
+   "email": "e28",
+   "questions": {
+    "e28q1": "correct",
+    "e28q2": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "a70d96457d5b4f1f": {
+   "email": "e10",
+   "questions": {
+    "e10q1": "answered"
+   },
+   "false_statement": true,
+   "note": "e10q1: States as fact: \"We do offer a discount for nonprofits or charities\" | false_statement: Invented: \"We do offer a discount for nonprofits\" and \"Our nonprofit pricing plan is included in the Pro plan\""
+  },
+  "a8f39b94a74080f3": {
+   "email": "e02",
+   "questions": {
+    "e02q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "ac29e08fd6f9ebd4": {
+   "email": "e18",
+   "questions": {
+    "e18q1": "correct",
+    "e18q2": "wrong"
+   },
+   "false_statement": true,
+   "note": "e18q2: \"yes, it is possible ... to have around 25 webhooks\": the limit is 20 | false_statement: \"it is possible ... to have around 25 webhooks\"; \"idempotency keys ... can be used to limit the number of webhooks\" is invented"
+  },
+  "b0e9771741193e65": {
+   "email": "e30",
+   "questions": {
+    "e30q1": "correct",
+    "e30q2": "wrong"
+   },
+   "false_statement": true,
+   "note": "e30q2: \"The app is available in Italian, as well as English, German, and Spanish\" (no Italian; omits French) | false_statement: \"The app is available in Italian\""
+  },
+  "b6bf1a9f00afc549": {
+   "email": "e08",
+   "questions": {
+    "e08q1": "correct"
+   },
+   "false_statement": true,
+   "note": "false_statement: Invented: \"adding new statuses may affect the behavior of certain features, such as the board view\" and \"not mentioned in the list of existing statuses\""
+  },
+  "b7cee94e7139f26e": {
+   "email": "e30",
+   "questions": {
+    "e30q1": "correct",
+    "e30q2": "wrong"
+   },
+   "false_statement": true,
+   "note": "e30q2: \"the app is available in Italian ... starting from version 5.5\" | false_statement: \"our documentation states that the app is available in Italian ... starting from version 5.5\" (5.5 added Spanish)"
+  },
+  "b9558e39fdeed176": {
+   "email": "e08",
+   "questions": {
+    "e08q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "ba619a8d23ff32ae": {
+   "email": "e40",
+   "questions": {
+    "e40q1": "correct",
+    "e40q2": "correct",
+    "e40q3": "answered"
+   },
+   "false_statement": true,
+   "note": "e40q3: States as fact: \"The mobile app does not work offline at events with no signal\" | false_statement: Unsupported product fact: \"The mobile app does not work offline\""
+  },
+  "bdd62a5abafb8d23": {
+   "email": "e22",
+   "questions": {
+    "e22q1": "wrong",
+    "e22q2": "correct"
+   },
+   "false_statement": true,
+   "note": "e22q1: \"Yes, limit=500 will fail\": it is treated as 200, not rejected | false_statement: \"limit=500 will fail because the Basic plan has a requests per minute limit of 100\": confuses page size with rate limit"
+  },
+  "c3db79a8598cfdcd": {
+   "email": "e06",
+   "questions": {
+    "e06q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "c4fc4676cac2cea8": {
+   "email": "e12",
+   "questions": {
+    "e12q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "c5ce935bea523722": {
+   "email": "e20",
+   "questions": {
+    "e20q1": "correct",
+    "e20q2": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "d5ce5fbfea1f7c6d": {
+   "email": "e02",
+   "questions": {
+    "e02q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "dbbc871dcc6b874f": {
+   "email": "e32",
+   "questions": {
+    "e32q1": "correct",
+    "e32q2": "correct",
+    "e32q3": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "dd39429555ae99e9": {
+   "email": "e12",
+   "questions": {
+    "e12q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "e4a9c610314284e4": {
+   "email": "e28",
+   "questions": {
+    "e28q1": "wrong",
+    "e28q2": "correct"
+   },
+   "false_statement": true,
+   "note": "e28q1: Missing that a suspended member keeps role, project memberships and assignments; instead says \"invite them again; their old assignments are not restored\" | false_statement: \"To give someone access again later, invite them again; their old assignments are not restored\": that describes removal, not suspension; suspended members keep assignments and are reactivated"
+  },
+  "e806dc74883847f0": {
+   "email": "e06",
+   "questions": {
+    "e06q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "f001238aacd71743": {
+   "email": "e24",
+   "questions": {
+    "e24q1": "correct",
+    "e24q2": "answered"
+   },
+   "false_statement": true,
+   "note": "e24q2: States as fact: \"there is no discount for paying three years upfront\" | false_statement: Unsupported: \"there is no discount for paying three years upfront\"; also suggests bank transfer as a payment option for a monthly Pro plan, but bank transfer is only for annual plans"
+  },
+  "f73c9fbca3dcbde8": {
+   "email": "e36",
+   "questions": {
+    "e36q1": "correct",
+    "e36q2": "correct",
+    "e36q3": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "f97c5ad9bec9fd2e": {
+   "email": "e36",
+   "questions": {
+    "e36q1": "correct",
+    "e36q2": "correct",
+    "e36q3": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "fbf95b69e276c9c4": {
+   "email": "e26",
+   "questions": {
+    "e26q1": "wrong",
+    "e26q2": "correct"
+   },
+   "false_statement": true,
+   "note": "e26q1: Says \"the requests from the office range are not in the allowlist\"; the office range is in it, the CI's cloud addresses are not; no fix given | false_statement: \"the office range is not in the list\": contradicts the email, which says the allowlist was set to the office range"
+  },
+  "ff5048c2eda2e225": {
+   "email": "e32",
+   "questions": {
+    "e32q1": "correct",
+    "e32q2": "wrong",
+    "e32q3": "wrong"
+   },
+   "false_statement": true,
+   "note": "e32q2: \"As an Admin, you can make the change\": only the Owner can | e32q3: Mentions live chat but omits that the bank transfer invoice is due within 30 days | false_statement: \"As an Admin, you can make the change ... our CFO needs to confirm the change\": only the Owner can change the plan; CFO confirmation is invented"
+  }
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "_comment": "Written once by freeze.py before the first report. check.py, and so report.py, refuse to run if any file listed here has changed.",
+ "frozen_at_utc": "2026-11-24 12:13:35",
+ "python": "3.12.13",
+ "inputs": {
+  "01-reliable-llm-pipeline/data/labels.json": "28aafdbff5afc5c1f0138a9280c4af7c0ecea9f282f731b27a9e9a8222d1d12e",
+  "01-reliable-llm-pipeline/data/splits.json": "7c51f4e315636c275987366ad1bd49b468dce57e33ef97d16c9f95d386e82914",
+  "01-reliable-llm-pipeline/data/hand_labels.json": "1be970bafeedb337a663bee0f977d503dedb370d1d62913320a3c24bc5e06383",
+  "01-reliable-llm-pipeline/python/score.py": "9c3fa6c1bfba97d95c283f6c958ffcc96e956de22b8e9a7803e5b46743f54461",
+  "01-reliable-llm-pipeline/python/steps.py": "96dc28bf54c4b18f89d244187194c716ff5b714ee4d1ae777491a5809caa563e",
+  "02-evaluation-regression/data/replies.json": "2ef4f84ddc27b4a75343c93fa0c13769548b605a4e77292cf580a06106d9ad74"
+ },
+ "code": {
+  "02-evaluation-regression/PROTOCOL.md": "2ec49ff101f5f8718b208b52bb6cb32f45193faf6d138cf5b3aa838c9fe504c8",
+  "02-evaluation-regression/python/common.py": "4958a8e45b17d8258009a534627a840f84379332e5398c9b8f80c102724bfd0d",
+  "02-evaluation-regression/python/check.py": "c808b1d9d2e5241b91bcacc99899e8ba363bebd12d4e8ed4ffa6acc3af1cc2a8",
+  "02-evaluation-regression/python/grade.py": "ab7ce72b755a6a61629a28ae6629b193a7a0ebee97505f0e8b503d0314fe56e7",
+  "02-evaluation-regression/python/compare.py": "ba0eebc5579059169bea00e63cc933b44e5f00b52e8fff252f4dfcc85165970f",
+  "02-evaluation-regression/python/report.py": "7a780cb61c8708e2ae6e13dfbdfd2efd4e35a12428cb8c2271fdbb33a9f3f4db"
+ }
+}
