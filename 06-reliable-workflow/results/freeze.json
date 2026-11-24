@@ -1,0 +1,20 @@
+{
+ "files": {
+  "PROTOCOL.md": "e4bf1b85d670d1742eae48942a43a8cbfada416c82cd21dd78ba0db367d903b4",
+  "data/fixtures.json": "c84ed86bd05538b460ba2757cfe56f48a0cf883a9b44fde9cb07fd0236d11c52",
+  "python/common.py": "55c70e0779ebd23eb2f0b9e0b8b4e94a1053223f74a5db6e09fc6f993314fdb7",
+  "python/compare.py": "84b3c3a7e38ef8697174daf13e2ea5aa36a8ba086eb986e4cf9cf66c0b4f5317",
+  "python/freeze.py": "ba19be40f84e7d0e9260fa9e0313d4a9dbc1c9bc6775cb28de9e94480dc3f19c",
+  "python/model.py": "4c4174b37cc96ad5b3365f2dfa667287169d56dac3afd7e3eab8bbe978c1cc77",
+  "python/record.py": "bc6d3ce333190a134bb5f9c79b8e25f717aea81611781c663e22011abf2545d8",
+  "python/report.py": "339864762048cc4c5545b11f47892fe9811ab17ace052fac19173a856a9e3e0d",
+  "python/run.py": "823ae47d1773a3c69576e8068e6484b9b904f1908d969ebdb3b197aff4eafb36",
+  "python/scenarios.py": "51be4bac71d180a38270d383316dd270abb15d03eb44d802ea6431da1419e392",
+  "python/services.py": "87547e2458600231a662dcbefe2808e57bd96cae3d54fce029fe949fef8dccea",
+  "python/test_workflow.py": "a0c916caf56868658b50fac7d4171606837ee46d043ddd83e1e98ce5dcf91635",
+  "python/validate.py": "416b19141a74a8f15c828dd9c2f21b92d987e67bd20ffb6bd18117fdc622a875",
+  "python/worker.py": "706df5b1eb5b012c87afb0c6adf70c7c927641a5d8c69431b57dc2cb35744d66",
+  "python/workflow.py": "3addc116ccca0e0cb20789dc064c60b2cc7240b0c0bd527fa485454145c6a2a2"
+ },
+ "frozen_at": "2026-11-24 16:24:55 UTC"
+}

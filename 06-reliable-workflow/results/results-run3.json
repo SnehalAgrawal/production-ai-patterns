@@ -1,0 +1,8249 @@
+{
+ "environment": {
+  "python": "3.12.13",
+  "sqlite": "3.51.0"
+ },
+ "results": {
+  "E1": {
+   "e02": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 2
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 1,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": false
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "validation_failed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 2
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   },
+   "e03": {
+    "attempts": {
+     "understand": 2
+    },
+    "calls": {
+     "apply_credit": 0,
+     "billing_reads": 0,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 0,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "validation_failed"
+     ],
+     [
+      "understand",
+      "validation_failed"
+     ],
+     [
+      "understand",
+      "failed"
+     ],
+     [
+      null,
+      "handed_over"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 2
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": null,
+     "scheduled_plan": null
+    },
+    "steps": {
+     "apply_credit": "pending",
+     "change_plan": "pending",
+     "check": "pending",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "failed",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "committed": [],
+       "level": "syntactic",
+       "rule": "the output is valid JSON",
+       "step": "understand",
+       "why": "the output failed validation"
+      },
+      "status": "handed_over"
+     }
+    ]
+   }
+  },
+  "E10": {
+   "10a": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 4,
+     "lookup": 0,
+     "send": 2,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": false
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [
+     70,
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   },
+   "10b": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 4,
+     "lookup": 0,
+     "send": 2,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": false
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport",
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [
+     70,
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": false,
+     "mismatches": [
+      "send: record 1 email(s), email service 2"
+     ],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   },
+   "10c_no_outbox": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 4,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": false
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [
+     70,
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   },
+   "10c_outbox": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 4,
+     "lookup": 0,
+     "send": 1,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": false
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [
+     70,
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   }
+  },
+  "E2": {
+   "e04": {
+    "attempts": {
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 0,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 0,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "validation_failed"
+     ],
+     [
+      null,
+      "handed_over"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": null,
+     "scheduled_plan": null
+    },
+    "steps": {
+     "apply_credit": "pending",
+     "change_plan": "pending",
+     "check": "failed",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "committed": [],
+       "detail": "the reading says immediately",
+       "level": "business_rule",
+       "revalidation": false,
+       "rule": "downgrades take effect at the start of the next billing period",
+       "step": "check",
+       "why": "the decision failed validation"
+      },
+      "status": "handed_over"
+     }
+    ]
+   },
+   "e05": {
+    "attempts": {
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 0,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 0,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "validation_failed"
+     ],
+     [
+      null,
+      "handed_over"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2500,
+     "scheduled_effective": null,
+     "scheduled_plan": null
+    },
+    "steps": {
+     "apply_credit": "pending",
+     "change_plan": "pending",
+     "check": "failed",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "committed": [],
+       "detail": "7 members",
+       "level": "business_rule",
+       "revalidation": false,
+       "rule": "Basic allows 5 members, pending invitations included",
+       "step": "check",
+       "why": "the decision failed validation"
+      },
+      "status": "handed_over"
+     }
+    ]
+   },
+   "e06": {
+    "attempts": {
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 0,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 0,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "validation_failed"
+     ],
+     [
+      null,
+      "handed_over"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 25000,
+     "scheduled_effective": null,
+     "scheduled_plan": null
+    },
+    "steps": {
+     "apply_credit": "pending",
+     "change_plan": "pending",
+     "check": "failed",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "committed": [],
+       "detail": "computed credit $250.00",
+       "level": "approval",
+       "revalidation": false,
+       "rule": "credits up to $50.00 run without a person",
+       "step": "check",
+       "why": "needs_approval"
+      },
+      "status": "handed_over"
+     }
+    ]
+   }
+  },
+  "E3": {
+   "e07": {
+    "attempts": {
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 0,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 0,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "validation_failed"
+     ],
+     [
+      null,
+      "handed_over"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": null,
+     "scheduled_plan": null
+    },
+    "steps": {
+     "apply_credit": "pending",
+     "change_plan": "pending",
+     "check": "failed",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "committed": [],
+       "detail": "INV-1034 is not in the email",
+       "level": "evidence",
+       "revalidation": false,
+       "rule": "the invoice is named in the email",
+       "step": "check",
+       "why": "the decision failed validation"
+      },
+      "status": "handed_over"
+     }
+    ]
+   },
+   "e08": {
+    "attempts": {
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 0,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 0,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "validation_failed"
+     ],
+     [
+      null,
+      "handed_over"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": null,
+     "scheduled_plan": null
+    },
+    "steps": {
+     "apply_credit": "pending",
+     "change_plan": "pending",
+     "check": "failed",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "committed": [],
+       "detail": "1 successful charge",
+       "level": "evidence",
+       "revalidation": false,
+       "rule": "the invoice was charged more than once",
+       "step": "check",
+       "why": "the decision failed validation"
+      },
+      "status": "handed_over"
+     }
+    ]
+   },
+   "e09": {
+    "attempts": {
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 0,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 0,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "validation_failed"
+     ],
+     [
+      null,
+      "handed_over"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": null,
+     "scheduled_plan": null
+    },
+    "steps": {
+     "apply_credit": "pending",
+     "change_plan": "pending",
+     "check": "failed",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "committed": [],
+       "detail": "INV-9999 not found in billing",
+       "level": "evidence",
+       "revalidation": false,
+       "rule": "the invoice exists",
+       "step": "check",
+       "why": "the decision failed validation"
+      },
+      "status": "handed_over"
+     }
+    ]
+   }
+  },
+  "E4": {
+   "4a": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 1,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": false
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "degraded"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed_degraded"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "degraded",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": {
+       "degraded": [
+        "draft"
+       ]
+      },
+      "status": "completed_degraded"
+     }
+    ]
+   },
+   "4b_first": {
+    "attempts": {},
+    "calls": {
+     "apply_credit": 0,
+     "billing_reads": 0,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 0,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "model_unavailable"
+     ],
+     [
+      null,
+      "held"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": null,
+     "scheduled_plan": null
+    },
+    "steps": {
+     "apply_credit": "pending",
+     "change_plan": "pending",
+     "check": "pending",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "pending",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "step": "understand",
+       "why": "model unavailable"
+      },
+      "status": "held"
+     }
+    ]
+   },
+   "4b_second": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 1,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": false
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "model_unavailable"
+     ],
+     [
+      null,
+      "held"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [
+     0,
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 2
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   },
+   "4c": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 1,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": false
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "degraded"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed_degraded"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "degraded"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "degraded": [
+        "update_ticket"
+       ]
+      },
+      "status": "completed_degraded"
+     }
+    ]
+   }
+  },
+  "E5": {
+   "5a": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 1,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": false
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "statuses": [
+     "claim_refused",
+     "completed"
+    ],
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   },
+   "5b_check_then_insert": {
+    "credits_per_trial": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "replayed_per_trial": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "5b_keys": {
+    "credits_per_trial": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "replayed_per_trial": [
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7
+    ]
+   },
+   "5c_after": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 1,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": false
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [
+     0,
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   },
+   "5c_before": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 1,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": false
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   }
+  },
+  "E6": {
+   "A": {
+    "P01": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 2,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "running"
+      },
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P02": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 2,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "running"
+      },
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P03": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "running"
+      },
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P04": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "running"
+      },
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P05": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 2,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "running"
+      },
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P06": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 2,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "running"
+      },
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P07": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 2,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "running"
+      },
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P08": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 2,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 2,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 2,
+      "replayed": false
+     },
+     "credits": [
+      2000,
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": false,
+      "mismatches": [
+       "apply_credit: record done [2], credit service [1, 2]"
+      ],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "running"
+      },
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P09": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 2,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 2,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 2,
+      "replayed": false
+     },
+     "credits": [
+      2000,
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": false,
+      "mismatches": [
+       "apply_credit: record done [2], credit service [1, 2]"
+      ],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "running"
+      },
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P10": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 2,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 2,
+      "set_status": 2
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 2,
+      "replayed": false
+     },
+     "credits": [
+      2000,
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": false,
+      "mismatches": [
+       "apply_credit: record done [2], credit service [1, 2]"
+      ],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "running"
+      },
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P11": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 2,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 2,
+      "set_status": 2
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 2,
+      "replayed": false
+     },
+     "credits": [
+      2000,
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 2,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": false,
+      "mismatches": [
+       "apply_credit: record done [2], credit service [1, 2]"
+      ],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "running"
+      },
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P12": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 2,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 2,
+      "set_plan": 2,
+      "set_status": 2
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 2,
+      "replayed": false
+     },
+     "credits": [
+      2000,
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport",
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 2,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": false,
+      "mismatches": [
+       "apply_credit: record done [2], credit service [1, 2]",
+       "send: record 1 email(s), email service 2"
+      ],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "running"
+      },
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P13": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 2,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 2,
+      "set_plan": 2,
+      "set_status": 2
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 2,
+      "replayed": false
+     },
+     "credits": [
+      2000,
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport",
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 2,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": false,
+      "mismatches": [
+       "apply_credit: record done [2], credit service [1, 2]",
+       "send: record 1 email(s), email service 2"
+      ],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      },
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    }
+   },
+   "B": {
+    "P01": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 2,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P02": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 2,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P03": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P04": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 2,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P05": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 2,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 2,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P06": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P07": {
+     "attempts": {
+      "apply_credit": 2,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P08": {
+     "attempts": {
+      "apply_credit": 2,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 2,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 2,
+      "replayed": false
+     },
+     "credits": [
+      2000,
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": false,
+      "mismatches": [
+       "apply_credit: record done [2], credit service [1, 2]"
+      ],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P09": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P10": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 2
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P11": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P12": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 2,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport",
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": false,
+      "mismatches": [
+       "send: record 1 email(s), email service 2"
+      ],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P13": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 2,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    }
+   },
+   "C": {
+    "P01": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 2,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 2
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P02": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 2,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P03": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P04": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 2,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P05": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 2,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 2,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P06": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P07": {
+     "attempts": {
+      "apply_credit": 2,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "unknown"
+      ],
+      [
+       "apply_credit",
+       "retry_same_key"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P08": {
+     "attempts": {
+      "apply_credit": 2,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 2,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": true
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "unknown"
+      ],
+      [
+       "apply_credit",
+       "retry_same_key"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P09": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P10": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 2
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P11": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P12": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 4,
+      "lookup": 0,
+      "send": 2,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    },
+    "P13": {
+     "attempts": {
+      "apply_credit": 1,
+      "change_plan": 1,
+      "understand": 1
+     },
+     "calls": {
+      "apply_credit": 1,
+      "billing_reads": 2,
+      "lookup": 0,
+      "send": 1,
+      "set_plan": 1,
+      "set_status": 1
+     },
+     "credit_record": {
+      "amount_cents": 2000,
+      "credit_id": 1,
+      "replayed": false
+     },
+     "credits": [
+      2000
+     ],
+     "emails": [
+      "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+     ],
+     "events": [
+      [
+       null,
+       "created"
+      ],
+      [
+       null,
+       "claimed"
+      ],
+      [
+       "understand",
+       "done"
+      ],
+      [
+       "check",
+       "done"
+      ],
+      [
+       "change_plan",
+       "started"
+      ],
+      [
+       "change_plan",
+       "done"
+      ],
+      [
+       "apply_credit",
+       "started"
+      ],
+      [
+       "apply_credit",
+       "done"
+      ],
+      [
+       "update_ticket",
+       "done"
+      ],
+      [
+       "draft",
+       "done"
+      ],
+      [
+       "send",
+       "done"
+      ],
+      [
+       null,
+       "completed"
+      ]
+     ],
+     "exits": [
+      70,
+      0
+     ],
+     "model_calls": {
+      "draft": 1,
+      "understand": 1
+     },
+     "outcome": {
+      "matches": true,
+      "mismatches": [],
+      "unresolved": []
+     },
+     "plan": {
+      "plan": "Pro",
+      "price_cents": 2000,
+      "scheduled_effective": "2026-12-01",
+      "scheduled_plan": "Basic"
+     },
+     "steps": {
+      "apply_credit": "done",
+      "change_plan": "done",
+      "check": "done",
+      "draft": "done",
+      "send": "done",
+      "understand": "done",
+      "update_ticket": "done"
+     },
+     "ticket": "waiting_on_customer",
+     "workflows": [
+      {
+       "reason": null,
+       "status": "completed"
+      }
+     ]
+    }
+   }
+  },
+  "E7": {
+   "7a": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 4,
+     "lookup": 0,
+     "send": 1,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": false
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [
+     70,
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   },
+   "7b": {
+    "attempts": {
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 0,
+     "billing_reads": 4,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 0,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "check",
+      "validation_failed"
+     ],
+     [
+      null,
+      "handed_over"
+     ]
+    ],
+    "exits": [
+     70,
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": null,
+     "scheduled_plan": null
+    },
+    "steps": {
+     "apply_credit": "pending",
+     "change_plan": "pending",
+     "check": "failed",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "committed": [],
+       "detail": "computed credit $20.00",
+       "level": "approval",
+       "revalidation": true,
+       "rule": "credits up to $15.00 run without a person",
+       "step": "check",
+       "why": "needs_approval"
+      },
+      "status": "handed_over"
+     }
+    ]
+   },
+   "7c": {
+    "attempts": {
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 0,
+     "billing_reads": 4,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 1,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "check",
+      "validation_failed"
+     ],
+     [
+      null,
+      "handed_over"
+     ]
+    ],
+    "exits": [
+     70,
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "pending",
+     "change_plan": "done",
+     "check": "failed",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "committed": [
+        "change_plan"
+       ],
+       "detail": "computed credit $20.00",
+       "level": "approval",
+       "revalidation": true,
+       "rule": "credits up to $15.00 run without a person",
+       "step": "check",
+       "why": "needs_approval"
+      },
+      "status": "handed_over"
+     }
+    ]
+   },
+   "7d": {
+    "attempts": {
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 0,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 0,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ]
+    ],
+    "exits": [
+     70,
+     3
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": null,
+     "scheduled_plan": null
+    },
+    "steps": {
+     "apply_credit": "pending",
+     "change_plan": "pending",
+     "check": "done",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "running"
+     }
+    ]
+   },
+   "7d_before_resume": {
+    "attempts": {
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 0,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 0,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ]
+    ],
+    "exits": [
+     70
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": null,
+     "scheduled_plan": null
+    },
+    "steps": {
+     "apply_credit": "pending",
+     "change_plan": "pending",
+     "check": "done",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "running"
+     }
+    ]
+   },
+   "7e_saved": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 4,
+     "lookup": 0,
+     "send": 1,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": false
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [
+     70,
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   },
+   "7e_unsaved": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 4,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 1,
+     "set_status": 0
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": false
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "validation_failed"
+     ],
+     [
+      null,
+      "handed_over"
+     ]
+    ],
+    "exits": [
+     70,
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 2
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "failed",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "committed": [
+        "change_plan",
+        "apply_credit"
+       ],
+       "detail": "the reading says immediately",
+       "level": "business_rule",
+       "revalidation": true,
+       "rule": "downgrades take effect at the start of the next billing period",
+       "step": "check",
+       "why": "the decision failed validation"
+      },
+      "status": "handed_over"
+     }
+    ]
+   }
+  },
+  "E8": {
+   "8a": {
+    "attempts": {
+     "apply_credit": 2,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 2,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 1,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1,
+     "replayed": true
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "unknown"
+     ],
+     [
+      "apply_credit",
+      "retry_same_key"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   },
+   "8b": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 2,
+     "lookup": 1,
+     "send": 1,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "unknown"
+     ],
+     [
+      "apply_credit",
+      "lookup"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   },
+   "8c": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 1,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [
+     2000
+    ],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "unknown"
+     ],
+     [
+      null,
+      "handed_over"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": false,
+     "mismatches": [],
+     "unresolved": [
+      "apply_credit"
+     ]
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "unknown",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "committed": [
+        "change_plan"
+       ],
+       "step": "apply_credit",
+       "unknown": [
+        "apply_credit"
+       ],
+       "why": "outcome unknown"
+      },
+      "status": "handed_over"
+     }
+    ]
+   },
+   "8d_aware": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 4,
+     "lookup": 1,
+     "send": 1,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 1
+    },
+    "credits": [
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "unknown"
+     ],
+     [
+      "apply_credit",
+      "lookup"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [
+     70,
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   },
+   "8d_naive": {
+    "attempts": {
+     "apply_credit": 2,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 2,
+     "billing_reads": 4,
+     "lookup": 0,
+     "send": 1,
+     "set_plan": 1,
+     "set_status": 1
+    },
+    "credit_record": {
+     "amount_cents": 2000,
+     "credit_id": 2,
+     "replayed": false
+    },
+    "credits": [
+     2000,
+     2000
+    ],
+    "emails": [
+     "Hello,\n\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\n\nBest regards,\nSupport"
+    ],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "unknown"
+     ],
+     [
+      "apply_credit",
+      "retry_same_key"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "done"
+     ],
+     [
+      "update_ticket",
+      "done"
+     ],
+     [
+      "draft",
+      "done"
+     ],
+     [
+      "send",
+      "done"
+     ],
+     [
+      null,
+      "completed"
+     ]
+    ],
+    "exits": [
+     70,
+     0
+    ],
+    "model_calls": {
+     "draft": 1,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": false,
+     "mismatches": [
+      "apply_credit: record done [2], credit service [1, 2]"
+     ],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "done",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "done",
+     "send": "done",
+     "understand": "done",
+     "update_ticket": "done"
+    },
+    "ticket": "waiting_on_customer",
+    "workflows": [
+     {
+      "reason": null,
+      "status": "completed"
+     }
+    ]
+   }
+  },
+  "E9": {
+   "9a": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 1,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "rejected"
+     ],
+     [
+      null,
+      "handed_over"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": "2026-12-01",
+     "scheduled_plan": "Basic"
+    },
+    "steps": {
+     "apply_credit": "failed",
+     "change_plan": "done",
+     "check": "done",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "committed": [
+        "change_plan"
+       ],
+       "step": "apply_credit",
+       "why": "invoice_disputed"
+      },
+      "status": "handed_over"
+     }
+    ]
+   },
+   "9b": {
+    "attempts": {
+     "apply_credit": 1,
+     "change_plan": 1,
+     "compensate_change_plan": 2,
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 1,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 3,
+     "set_status": 0
+    },
+    "compensation_attempts": 2,
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "done"
+     ],
+     [
+      "change_plan",
+      "started"
+     ],
+     [
+      "change_plan",
+      "done"
+     ],
+     [
+      "apply_credit",
+      "started"
+     ],
+     [
+      "apply_credit",
+      "rejected"
+     ],
+     [
+      "compensate_change_plan",
+      "started"
+     ],
+     [
+      "compensate_change_plan",
+      "attempt_failed"
+     ],
+     [
+      "compensate_change_plan",
+      "started"
+     ],
+     [
+      "compensate_change_plan",
+      "done"
+     ],
+     [
+      "change_plan",
+      "compensated"
+     ],
+     [
+      null,
+      "handed_over"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2500,
+     "scheduled_effective": null,
+     "scheduled_plan": null
+    },
+    "steps": {
+     "apply_credit": "failed",
+     "change_plan": "compensated",
+     "check": "done",
+     "compensate_change_plan": "done",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "committed": [
+        "change_plan"
+       ],
+       "compensated": [
+        "change_plan"
+       ],
+       "step": "apply_credit",
+       "why": "invoice_disputed"
+      },
+      "status": "handed_over"
+     }
+    ]
+   },
+   "9c": {
+    "attempts": {
+     "understand": 1
+    },
+    "calls": {
+     "apply_credit": 0,
+     "billing_reads": 2,
+     "lookup": 0,
+     "send": 0,
+     "set_plan": 0,
+     "set_status": 0
+    },
+    "credit_record": null,
+    "credits": [],
+    "emails": [],
+    "events": [
+     [
+      null,
+      "created"
+     ],
+     [
+      null,
+      "claimed"
+     ],
+     [
+      "understand",
+      "done"
+     ],
+     [
+      "check",
+      "validation_failed"
+     ],
+     [
+      null,
+      "handed_over"
+     ]
+    ],
+    "exits": [
+     0
+    ],
+    "model_calls": {
+     "draft": 0,
+     "understand": 1
+    },
+    "outcome": {
+     "matches": true,
+     "mismatches": [],
+     "unresolved": []
+    },
+    "plan": {
+     "plan": "Pro",
+     "price_cents": 2000,
+     "scheduled_effective": null,
+     "scheduled_plan": null
+    },
+    "steps": {
+     "apply_credit": "pending",
+     "change_plan": "pending",
+     "check": "failed",
+     "draft": "pending",
+     "send": "pending",
+     "understand": "done",
+     "update_ticket": "pending"
+    },
+    "ticket": "open",
+    "workflows": [
+     {
+      "reason": {
+       "committed": [],
+       "detail": "INV-1043 is disputed",
+       "level": "evidence",
+       "revalidation": false,
+       "rule": "the invoice is not under dispute",
+       "step": "check",
+       "why": "the decision failed validation"
+      },
+      "status": "handed_over"
+     }
+    ]
+   }
+  }
+ }
+}

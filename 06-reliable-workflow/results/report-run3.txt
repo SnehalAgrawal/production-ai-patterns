@@ -1,0 +1,67 @@
+run: 20261124T162514Z   python 3.12.13, sqlite 3.51.0
+freeze: ok
+PASS  E1   e02: syntactic failure recorded on attempt 1
+PASS  E1   e02: 2 model calls for step 1
+PASS  E1   e02: completed with one of each effect
+PASS  E1   e02: the first billing write comes after the repaired output is accepted
+PASS  E1   e03: handed over at step 1, syntactic
+PASS  E1   e03: 0 effects, 0 calls to any receiving system
+PASS  E2   e04: handed over at step 2, level business_rule
+PASS  E2   e04: 0 effects
+PASS  E2   e04: step 1 passed syntactic and schema
+PASS  E2   e05: handed over at step 2, level business_rule
+PASS  E2   e05: 0 effects
+PASS  E2   e05: step 1 passed syntactic and schema
+PASS  E2   e06: handed over at step 2, level approval
+PASS  E2   e06: 0 effects
+PASS  E2   e06: step 1 passed syntactic and schema
+PASS  E2   e06: reason needs_approval
+PASS  E3   e07: handed over at step 2, level evidence
+PASS  E3   e07: 0 effects
+PASS  E3   e07: step 1 passed syntactic and schema
+PASS  E3   e07: 0 billing writes, 0 credit-service calls
+PASS  E3   e08: handed over at step 2, level evidence
+PASS  E3   e08: 0 effects
+PASS  E3   e08: step 1 passed syntactic and schema
+PASS  E3   e08: 0 billing writes, 0 credit-service calls
+PASS  E3   e09: handed over at step 2, level evidence
+PASS  E3   e09: 0 effects
+PASS  E3   e09: step 1 passed syntactic and schema
+PASS  E3   e09: 0 billing writes, 0 credit-service calls
+PASS  E4   4a: draft degraded, workflow completed_degraded
+PASS  E4   4a: the email is the template, with $20.00 and 1 December 2026
+PASS  E4   4a: one of each effect, record matches
+PASS  E4   4b: held, 0 effects
+PASS  E4   4b: second run completed, one of each, 2 step-1 calls
+PASS  E4   4c: step 5 degraded, ticket unchanged, completed_degraded
+PASS  E4   4c: plan, credit, email one each; matches
+PASS  E5   5a: one claim succeeds, the other is refused
+PASS  E5   5a: one of each effect
+PASS  E5   5b: check-then-insert, 8 credits in every trial
+PASS  E5   5b: key under a unique constraint, 1 credit in every trial
+PASS  E5   5b: the other 7 calls return the first result, replayed
+PASS  E5   5c: redelivery after completion: no new workflow, effects or model calls
+PASS  E7   7a: 2 model calls in total, resume calls only step 6, completed, one of each
+PASS  E7   7b: revalidation fails at approval, handed over, 0 effects
+PASS  E7   7c: step 3 stays done, handed over listing change_plan
+PASS  E7   7c: plan scheduled Basic, 0 credits, 0 emails, no compensation
+PASS  E7   7d: resume refuses (exit 3), no further calls, status unchanged
+PASS  E7   7e: regenerated reading fails at business rule, handed over listing both effects
+PASS  E7   7e: 1 plan change, 1 credit, 0 emails
+PASS  E7   7e under C: completed, no new step 1 call
+PASS  E8   8a: unknown recorded, then the same key again
+PASS  E8   8a: replayed first result; 1 credit, 2 calls; completed, matches
+PASS  E8   8b: unknown, then a lookup finds it; 1 credit, 1 write; completed, matches
+PASS  E8   8c: handed over with step 4 unknown; 1 credit in the service
+PASS  E8   8d naive: the pruned key makes a second credit; the record doesn't match
+PASS  E8   8d retention-aware: no write, a lookup finds the credit; 1 credit, completed, matches
+PASS  E9   9a: plan scheduled Basic, 0 credits, 0 compensations, 0 emails, handed over listing change_plan
+PASS  E9   9b: 2 compensation calls; plan stays Pro at $25.00 (was $20.00); 0 credits; handed over
+PASS  E9   9c: handed over at step 2, evidence; 0 effects, 0 compensations
+PASS  E10  10a: 2 send calls, 1 email
+PASS  E10  10b: no deduplication, 2 emails
+PASS  E10  10c without outbox: 0 emails, the record says step 6 done
+PASS  E10  10c with outbox: 1 email
+E6: 132 of 132 checks pass (failures listed above)
+
+194 of 194 checks pass

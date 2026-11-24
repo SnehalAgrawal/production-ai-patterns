@@ -1,0 +1,67 @@
+{
+  "_note": "Fictional organizations, invoices, emails and scripted model outputs, written for this demo. Prices follow the fictional product's billing guide in 01-reliable-llm-pipeline: per organization, Basic $10 and Pro $25 a month; org-acme pays a legacy Pro price of $20. Amounts are in cents.",
+  "start_time": "2026-11-02T09:00:00Z",
+  "list_prices": {"Basic": 1000, "Pro": 2500},
+  "basic_member_limit": 5,
+  "policies": {
+    "1": {"version": 1, "auto_approve_cap_cents": 5000},
+    "2": {"version": 2, "auto_approve_cap_cents": 1500}
+  },
+  "subscriptions": [
+    {"org": "org-acme", "plan": "Pro", "price_cents": 2000, "members": 4, "next_period_start": "2026-12-01", "ticket": "T-301"},
+    {"org": "org-other", "plan": "Pro", "price_cents": 2500, "members": 3, "next_period_start": "2026-12-05", "ticket": "T-302"},
+    {"org": "org-big", "plan": "Pro", "price_cents": 2500, "members": 7, "next_period_start": "2026-12-01", "ticket": "T-303"},
+    {"org": "org-annual", "plan": "Pro", "price_cents": 25000, "members": 3, "next_period_start": "2027-03-15", "ticket": "T-304"}
+  ],
+  "invoices": [
+    {"id": "INV-1043", "org": "org-acme", "period": "2026-10", "amount_cents": 2000,
+     "charges": [{"id": "CH-5501", "status": "succeeded"}, {"id": "CH-5502", "status": "succeeded"}]},
+    {"id": "INV-1044", "org": "org-acme", "period": "2026-11", "amount_cents": 2000,
+     "charges": [{"id": "CH-5601", "status": "succeeded"}]},
+    {"id": "INV-1034", "org": "org-other", "period": "2026-10", "amount_cents": 2500,
+     "charges": [{"id": "CH-5401", "status": "succeeded"}, {"id": "CH-5402", "status": "succeeded"}]},
+    {"id": "INV-3301", "org": "org-big", "period": "2026-10", "amount_cents": 2500,
+     "charges": [{"id": "CH-7701", "status": "succeeded"}, {"id": "CH-7702", "status": "succeeded"}]},
+    {"id": "INV-2207", "org": "org-annual", "period": "2026-03", "amount_cents": 25000,
+     "charges": [{"id": "CH-8801", "status": "succeeded"}, {"id": "CH-8802", "status": "succeeded"}]}
+  ],
+  "readings": {
+    "acme_1043": "{\"intent\": \"change_plan_and_credit\", \"target_plan\": \"Basic\", \"effective\": \"next_billing_period\", \"invoice\": \"INV-1043\", \"reason\": \"duplicate_charge\"}",
+    "acme_1043_now": "{\"intent\": \"change_plan_and_credit\", \"target_plan\": \"Basic\", \"effective\": \"immediately\", \"invoice\": \"INV-1043\", \"reason\": \"duplicate_charge\"}",
+    "acme_1034": "{\"intent\": \"change_plan_and_credit\", \"target_plan\": \"Basic\", \"effective\": \"next_billing_period\", \"invoice\": \"INV-1034\", \"reason\": \"duplicate_charge\"}",
+    "acme_1044": "{\"intent\": \"change_plan_and_credit\", \"target_plan\": \"Basic\", \"effective\": \"next_billing_period\", \"invoice\": \"INV-1044\", \"reason\": \"duplicate_charge\"}",
+    "acme_9999": "{\"intent\": \"change_plan_and_credit\", \"target_plan\": \"Basic\", \"effective\": \"next_billing_period\", \"invoice\": \"INV-9999\", \"reason\": \"duplicate_charge\"}",
+    "big_3301": "{\"intent\": \"change_plan_and_credit\", \"target_plan\": \"Basic\", \"effective\": \"next_billing_period\", \"invoice\": \"INV-3301\", \"reason\": \"duplicate_charge\"}",
+    "annual_2207": "{\"intent\": \"change_plan_and_credit\", \"target_plan\": \"Basic\", \"effective\": \"next_billing_period\", \"invoice\": \"INV-2207\", \"reason\": \"duplicate_charge\"}",
+    "cut_off": "{\"intent\": \"change_plan_and_credit\", \"target_plan\": \"Basic\", \"effective\": \"next_bil"
+  },
+  "drafts": {
+    "acme_ok": "{\"subject\": \"Your move to Basic and the October credit\", \"body\": \"Hello,\\n\\nYour organization will move to Basic on 1 December 2026, at the start of your next billing period. We've applied a credit of $20.00 for the duplicate October payment on invoice INV-1043; it will appear on your next invoice.\\n\\nBest regards,\\nSupport\"}"
+  },
+  "emails": {
+    "e01": {"org": "org-acme", "text": "Please move us to Basic from the next billing period, and credit us for invoice INV-1043: the October payment went through twice.",
+            "model": {"understand": ["acme_1043"], "draft": ["acme_ok"]}},
+    "e02": {"org": "org-acme", "text": "Please move us to Basic from the next billing period, and credit us for invoice INV-1043: the October payment went through twice.",
+            "model": {"understand": ["cut_off", "acme_1043"], "draft": ["acme_ok"]}},
+    "e03": {"org": "org-acme", "text": "Please move us to Basic from the next billing period, and credit us for invoice INV-1043: the October payment went through twice.",
+            "model": {"understand": ["cut_off", "cut_off"], "draft": ["acme_ok"]}},
+    "e04": {"org": "org-acme", "text": "Please move us to Basic from the next billing period, and credit us for invoice INV-1043: the October payment went through twice.",
+            "model": {"understand": ["acme_1043_now"], "draft": ["acme_ok"]}},
+    "e05": {"org": "org-big", "text": "Please move us to Basic from the next billing period, and credit us for invoice INV-3301, which we paid twice in October.",
+            "model": {"understand": ["big_3301"], "draft": ["acme_ok"]}},
+    "e06": {"org": "org-annual", "text": "Please move us to Basic when our year ends, and credit us for invoice INV-2207: the annual payment was taken twice.",
+            "model": {"understand": ["annual_2207"], "draft": ["acme_ok"]}},
+    "e07": {"org": "org-acme", "text": "Please move us to Basic from the next billing period, and credit us for invoice INV-1043: the October payment went through twice.",
+            "model": {"understand": ["acme_1034"], "draft": ["acme_ok"]}},
+    "e08": {"org": "org-acme", "text": "Please move us to Basic from the next billing period, and credit us for invoice INV-1044: the November payment went through twice.",
+            "model": {"understand": ["acme_1044"], "draft": ["acme_ok"]}},
+    "e09": {"org": "org-acme", "text": "Please move us to Basic from the next billing period, and credit us for invoice INV-9999: that payment went through twice.",
+            "model": {"understand": ["acme_9999"], "draft": ["acme_ok"]}},
+    "e10": {"org": "org-acme", "text": "Please move us to Basic from the next billing period, and credit us for invoice INV-1043: the October payment went through twice.",
+            "model": {"understand": ["acme_1043", "acme_1043_now"], "draft": ["acme_ok"]}},
+    "e11": {"org": "org-acme", "text": "Please move us to Basic from the next billing period, and credit us for invoice INV-1043: the October payment went through twice.",
+            "model": {"understand": ["acme_1043"], "draft": ["UNAVAILABLE"]}},
+    "e12": {"org": "org-acme", "text": "Please move us to Basic from the next billing period, and credit us for invoice INV-1043: the October payment went through twice.",
+            "model": {"understand": ["UNAVAILABLE", "acme_1043"], "draft": ["acme_ok"]}}
+  }
+}
