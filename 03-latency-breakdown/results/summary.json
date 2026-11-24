@@ -1,0 +1,2028 @@
+{
+ "hashes": {
+  "PROTOCOL.md": "89208ade3ca2c09c8485200e765055de96674ee852137a5f0b6c0d5074688d83",
+  "data/settings.json": "44a0af5057a8bf461ed2486f70e3b013e7f6a929bab3a046ba60404dcc38166e",
+  "data/answer.txt": "f7fa83238ad91ed877fd534410e53dcf7f5f10ddf5fdbdd50db6037bed0600ef",
+  "python/app.py": "1398b3c6b05b76cadd6c66664c7daf94a5a1b6871aad2b6f3449b9d6a70da0a6",
+  "python/breakdown.py": "280a2a186f531ad858839f4436aba531aeb66f8de89852c0eb059afb6a5a29c9",
+  "python/client.py": "e65d591ccdf4d3fb98a679b74bc837979543276f8af34a2c80d8708b443eaa53",
+  "python/common.py": "9a0a4878162e29997226f1f4ef79477f2b4b5cc391dbca312485cb71601701fd",
+  "python/report.py": "fbec43b49c18e0c16a1ccd9d14c5377c79b20440a1a5e628ede1651ecf0a567a",
+  "python/run.py": "7a3ca04278f5d065adcf3c840ad454976a65fb6f50090c47351782b026d0209c",
+  "python/services.py": "4a472d8e687ea20a3ca74984580cac7345a22322b2ed316261313b293d9e6c7f",
+  "python/test_breakdown.py": "afaf9f66238a88cd357e9af1a6dc650e6c8b8d0db39db8d96fda6e3e2fe8d7f1"
+ },
+ "environment": [
+  {
+   "variant": "V0-baseline",
+   "repeat": 1,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:10:54+0530",
+    "loadavg": [
+     2.3515625,
+     2.02734375,
+     1.89111328125
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 34.8,
+   "after": {
+    "time": "2026-11-24T18:11:29+0530",
+    "loadavg": [
+     1.79833984375,
+     1.9267578125,
+     1.859375
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "V0-baseline",
+   "repeat": 2,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:15:10+0530",
+    "loadavg": [
+     2.52978515625,
+     2.3427734375,
+     2.0576171875
+    ],
+    "ollama_established_connections": 2
+   },
+   "seconds": 34.7,
+   "after": {
+    "time": "2026-11-24T18:15:45+0530",
+    "loadavg": [
+     2.01806640625,
+     2.2509765625,
+     2.0361328125
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "V0-baseline",
+   "repeat": 3,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:19:26+0530",
+    "loadavg": [
+     3.56298828125,
+     2.81494140625,
+     2.3037109375
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 34.8,
+   "after": {
+    "time": "2026-11-24T18:20:01+0530",
+    "loadavg": [
+     2.59130859375,
+     2.65869140625,
+     2.2666015625
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "V1-faster-decode",
+   "repeat": 1,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:11:29+0530",
+    "loadavg": [
+     1.79833984375,
+     1.9267578125,
+     1.859375
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 33.8,
+   "after": {
+    "time": "2026-11-24T18:12:03+0530",
+    "loadavg": [
+     3.0810546875,
+     2.1826171875,
+     1.95068359375
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "V1-faster-decode",
+   "repeat": 2,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:15:45+0530",
+    "loadavg": [
+     2.01806640625,
+     2.2509765625,
+     2.0361328125
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 33.8,
+   "after": {
+    "time": "2026-11-24T18:16:19+0530",
+    "loadavg": [
+     1.7080078125,
+     2.15673828125,
+     2.00927734375
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "V1-faster-decode",
+   "repeat": 3,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:20:01+0530",
+    "loadavg": [
+     2.59130859375,
+     2.65869140625,
+     2.2666015625
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 33.8,
+   "after": {
+    "time": "2026-11-24T18:20:34+0530",
+    "loadavg": [
+     2.40234375,
+     2.58837890625,
+     2.25439453125
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "V2-parallel-lookups",
+   "repeat": 1,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:12:03+0530",
+    "loadavg": [
+     3.0810546875,
+     2.1826171875,
+     1.95068359375
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 34.6,
+   "after": {
+    "time": "2026-11-24T18:12:38+0530",
+    "loadavg": [
+     2.52001953125,
+     2.130859375,
+     1.93896484375
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "V2-parallel-lookups",
+   "repeat": 2,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:16:19+0530",
+    "loadavg": [
+     1.7080078125,
+     2.15673828125,
+     2.00927734375
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 34.6,
+   "after": {
+    "time": "2026-11-24T18:16:54+0530",
+    "loadavg": [
+     2.3779296875,
+     2.25390625,
+     2.04833984375
+    ],
+    "ollama_established_connections": 2
+   }
+  },
+  {
+   "variant": "V2-parallel-lookups",
+   "repeat": 3,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:20:35+0530",
+    "loadavg": [
+     2.40234375,
+     2.58837890625,
+     2.25439453125
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 34.6,
+   "after": {
+    "time": "2026-11-24T18:21:09+0530",
+    "loadavg": [
+     2.3583984375,
+     2.56201171875,
+     2.25537109375
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "V3-stream-per-sentence",
+   "repeat": 1,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:12:38+0530",
+    "loadavg": [
+     2.52001953125,
+     2.130859375,
+     1.93896484375
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 34.6,
+   "after": {
+    "time": "2026-11-24T18:13:13+0530",
+    "loadavg": [
+     2.2509765625,
+     2.1005859375,
+     1.93310546875
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "V3-stream-per-sentence",
+   "repeat": 2,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:16:54+0530",
+    "loadavg": [
+     2.3779296875,
+     2.25390625,
+     2.04833984375
+    ],
+    "ollama_established_connections": 2
+   },
+   "seconds": 34.6,
+   "after": {
+    "time": "2026-11-24T18:17:28+0530",
+    "loadavg": [
+     2.82666015625,
+     2.359375,
+     2.09130859375
+    ],
+    "ollama_established_connections": 2
+   }
+  },
+  {
+   "variant": "V3-stream-per-sentence",
+   "repeat": 3,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:21:09+0530",
+    "loadavg": [
+     2.3583984375,
+     2.56201171875,
+     2.25537109375
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 34.6,
+   "after": {
+    "time": "2026-11-24T18:21:44+0530",
+    "loadavg": [
+     2.1953125,
+     2.498046875,
+     2.2431640625
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "V4a-burst-app-queue",
+   "repeat": 1,
+   "requests": 12,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:13:13+0530",
+    "loadavg": [
+     2.2509765625,
+     2.1005859375,
+     1.93310546875
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 8.7,
+   "after": {
+    "time": "2026-11-24T18:13:22+0530",
+    "loadavg": [
+     2.9326171875,
+     2.24609375,
+     1.98583984375
+    ],
+    "ollama_established_connections": 2
+   }
+  },
+  {
+   "variant": "V4a-burst-app-queue",
+   "repeat": 2,
+   "requests": 12,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:17:28+0530",
+    "loadavg": [
+     2.82666015625,
+     2.359375,
+     2.09130859375
+    ],
+    "ollama_established_connections": 2
+   },
+   "seconds": 8.5,
+   "after": {
+    "time": "2026-11-24T18:17:37+0530",
+    "loadavg": [
+     2.7666015625,
+     2.36279296875,
+     2.09521484375
+    ],
+    "ollama_established_connections": 2
+   }
+  },
+  {
+   "variant": "V4a-burst-app-queue",
+   "repeat": 3,
+   "requests": 12,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:21:44+0530",
+    "loadavg": [
+     2.1953125,
+     2.498046875,
+     2.2431640625
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 8.5,
+   "after": {
+    "time": "2026-11-24T18:21:53+0530",
+    "loadavg": [
+     1.93701171875,
+     2.43212890625,
+     2.22265625
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "V4b-burst-kernel-queue",
+   "repeat": 1,
+   "requests": 12,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:13:22+0530",
+    "loadavg": [
+     2.9326171875,
+     2.24609375,
+     1.98583984375
+    ],
+    "ollama_established_connections": 2
+   },
+   "seconds": 8.5,
+   "after": {
+    "time": "2026-11-24T18:13:30+0530",
+    "loadavg": [
+     3.5703125,
+     2.40283203125,
+     2.0439453125
+    ],
+    "ollama_established_connections": 2
+   }
+  },
+  {
+   "variant": "V4b-burst-kernel-queue",
+   "repeat": 2,
+   "requests": 12,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:17:37+0530",
+    "loadavg": [
+     2.7666015625,
+     2.36279296875,
+     2.09521484375
+    ],
+    "ollama_established_connections": 2
+   },
+   "seconds": 8.5,
+   "after": {
+    "time": "2026-11-24T18:17:46+0530",
+    "loadavg": [
+     2.3408203125,
+     2.28466796875,
+     2.0703125
+    ],
+    "ollama_established_connections": 2
+   }
+  },
+  {
+   "variant": "V4b-burst-kernel-queue",
+   "repeat": 3,
+   "requests": 12,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:21:53+0530",
+    "loadavg": [
+     1.93701171875,
+     2.43212890625,
+     2.22265625
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 8.5,
+   "after": {
+    "time": "2026-11-24T18:22:01+0530",
+    "loadavg": [
+     1.79248046875,
+     2.384765625,
+     2.2080078125
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "V5-rare-slow-billing",
+   "repeat": 1,
+   "requests": 400,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:13:30+0530",
+    "loadavg": [
+     3.5703125,
+     2.40283203125,
+     2.0439453125
+    ],
+    "ollama_established_connections": 2
+   },
+   "seconds": 64.7,
+   "after": {
+    "time": "2026-11-24T18:14:35+0530",
+    "loadavg": [
+     2.2919921875,
+     2.294921875,
+     2.03173828125
+    ],
+    "ollama_established_connections": 2
+   }
+  },
+  {
+   "variant": "V5-rare-slow-billing",
+   "repeat": 2,
+   "requests": 400,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:17:46+0530",
+    "loadavg": [
+     2.3408203125,
+     2.28466796875,
+     2.0703125
+    ],
+    "ollama_established_connections": 2
+   },
+   "seconds": 64.7,
+   "after": {
+    "time": "2026-11-24T18:18:51+0530",
+    "loadavg": [
+     3.01513671875,
+     2.578125,
+     2.19970703125
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "V5-rare-slow-billing",
+   "repeat": 3,
+   "requests": 400,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:22:01+0530",
+    "loadavg": [
+     1.79248046875,
+     2.384765625,
+     2.2080078125
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 64.8,
+   "after": {
+    "time": "2026-11-24T18:23:06+0530",
+    "loadavg": [
+     1.36279296875,
+     2.1279296875,
+     2.1220703125
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "NC-uninstrumented-step",
+   "repeat": 1,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:14:35+0530",
+    "loadavg": [
+     2.2919921875,
+     2.294921875,
+     2.03173828125
+    ],
+    "ollama_established_connections": 2
+   },
+   "seconds": 34.9,
+   "after": {
+    "time": "2026-11-24T18:15:10+0530",
+    "loadavg": [
+     2.52978515625,
+     2.3427734375,
+     2.0576171875
+    ],
+    "ollama_established_connections": 2
+   }
+  },
+  {
+   "variant": "NC-uninstrumented-step",
+   "repeat": 2,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:18:51+0530",
+    "loadavg": [
+     3.01513671875,
+     2.578125,
+     2.19970703125
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 34.9,
+   "after": {
+    "time": "2026-11-24T18:19:26+0530",
+    "loadavg": [
+     3.56298828125,
+     2.81494140625,
+     2.3037109375
+    ],
+    "ollama_established_connections": 0
+   }
+  },
+  {
+   "variant": "NC-uninstrumented-step",
+   "repeat": 3,
+   "requests": 200,
+   "python": "3.12.13",
+   "implementation": "CPython",
+   "platform": "macOS-26.6.2-arm64-arm-64bit",
+   "machine": "arm64",
+   "cpu_count": 12,
+   "before": {
+    "time": "2026-11-24T18:23:06+0530",
+    "loadavg": [
+     1.36279296875,
+     2.1279296875,
+     2.1220703125
+    ],
+    "ollama_established_connections": 0
+   },
+   "seconds": 34.9,
+   "after": {
+    "time": "2026-11-24T18:23:41+0530",
+    "loadavg": [
+     1.39111328125,
+     2.04931640625,
+     2.091796875
+    ],
+    "ollama_established_connections": 0
+   }
+  }
+ ],
+ "per_repeat": {
+  "V0-baseline": {
+   "all: N": [
+    200,
+    200,
+    200
+   ],
+   "all: mean e2e": [
+    723.44093742,
+    721.8346192299999,
+    722.89624742
+   ],
+   "all: p50 e2e": [
+    717.551375,
+    714.900166,
+    718.315042
+   ],
+   "all: p90 e2e": [
+    777.536042,
+    777.594041,
+    778.353875
+   ],
+   "all: p95 e2e": [
+    790.674667,
+    790.580041,
+    790.153375
+   ],
+   "all: p99 e2e": [
+    804.474417,
+    801.257958,
+    804.723334
+   ],
+   "all: max e2e": [
+    812.118042,
+    802.71325,
+    807.391917
+   ],
+   "all: p50 ttfb": [
+    717.551375,
+    714.900166,
+    718.315042
+   ],
+   "all: p50 handler": [
+    714.049125,
+    710.935834,
+    712.793333
+   ],
+   "tool: N": [
+    80,
+    80,
+    80
+   ],
+   "tool: mean e2e": [
+    759.9191315875,
+    759.2135605999999,
+    759.5821300125
+   ],
+   "tool: p50 e2e": [
+    758.494959,
+    757.973041,
+    759.459959
+   ],
+   "tool: p90 e2e": [
+    794.712667,
+    793.461375,
+    792.988292
+   ],
+   "tool: p95 e2e": [
+    798.216792,
+    796.928916,
+    798.46775
+   ],
+   "tool: p99 e2e": [
+    812.118042,
+    802.71325,
+    807.391917
+   ],
+   "tool: max e2e": [
+    812.118042,
+    802.71325,
+    807.391917
+   ],
+   "tool: p50 ttfb": [
+    758.494959,
+    757.973041,
+    759.459959
+   ],
+   "tool: p50 handler": [
+    752.49625,
+    754.046625,
+    753.64325
+   ],
+   "no tool: N": [
+    120,
+    120,
+    120
+   ],
+   "no tool: mean e2e": [
+    699.1221413083333,
+    696.9153249833333,
+    698.4389923583333
+   ],
+   "no tool: p50 e2e": [
+    697.654084,
+    692.563291,
+    696.223125
+   ],
+   "no tool: p90 e2e": [
+    728.917834,
+    727.430208,
+    727.723625
+   ],
+   "no tool: p95 e2e": [
+    744.245334,
+    739.820916,
+    742.127084
+   ],
+   "no tool: p99 e2e": [
+    775.138625,
+    761.86975,
+    762.00525
+   ],
+   "no tool: max e2e": [
+    786.112375,
+    778.934875,
+    783.765042
+   ],
+   "no tool: p50 ttfb": [
+    697.654084,
+    692.563291,
+    696.223125
+   ],
+   "no tool: p50 handler": [
+    693.71525,
+    689.890792,
+    692.340042
+   ]
+  },
+  "V1-faster-decode": {
+   "all: N": [
+    200,
+    200,
+    200
+   ],
+   "all: mean e2e": [
+    554.91451092,
+    555.159196565,
+    555.3736998950001
+   ],
+   "all: p50 e2e": [
+    548.993833,
+    548.76675,
+    551.286875
+   ],
+   "all: p90 e2e": [
+    603.496875,
+    608.225667,
+    606.848125
+   ],
+   "all: p95 e2e": [
+    620.406916,
+    620.496625,
+    620.027167
+   ],
+   "all: p99 e2e": [
+    629.305416,
+    629.806292,
+    629.512792
+   ],
+   "all: max e2e": [
+    640.63,
+    638.638417,
+    635.160209
+   ],
+   "all: p50 ttfb": [
+    548.993833,
+    548.76675,
+    551.286875
+   ],
+   "all: p50 handler": [
+    544.67075,
+    543.295041,
+    546.162917
+   ],
+   "tool: N": [
+    80,
+    80,
+    80
+   ],
+   "tool: mean e2e": [
+    592.8821657999999,
+    593.566886775,
+    593.0253367500001
+   ],
+   "tool: p50 e2e": [
+    592.770708,
+    590.727334,
+    591.305375
+   ],
+   "tool: p90 e2e": [
+    622.644916,
+    622.001667,
+    621.598125
+   ],
+   "tool: p95 e2e": [
+    628.569791,
+    624.901125,
+    628.805125
+   ],
+   "tool: p99 e2e": [
+    640.63,
+    638.638417,
+    635.160209
+   ],
+   "tool: max e2e": [
+    640.63,
+    638.638417,
+    635.160209
+   ],
+   "tool: p50 ttfb": [
+    592.770708,
+    590.727334,
+    591.305375
+   ],
+   "tool: p50 handler": [
+    587.060625,
+    587.174875,
+    587.563041
+   ],
+   "no tool: N": [
+    120,
+    120,
+    120
+   ],
+   "no tool: mean e2e": [
+    529.602741,
+    529.5540697583333,
+    530.2726086583333
+   ],
+   "no tool: p50 e2e": [
+    528.554625,
+    526.860959,
+    528.315834
+   ],
+   "no tool: p90 e2e": [
+    558.75575,
+    558.205459,
+    558.581417
+   ],
+   "no tool: p95 e2e": [
+    564.62375,
+    562.412292,
+    566.18275
+   ],
+   "no tool: p99 e2e": [
+    589.066958,
+    582.4615,
+    584.461125
+   ],
+   "no tool: max e2e": [
+    591.8505,
+    588.803709,
+    586.861334
+   ],
+   "no tool: p50 ttfb": [
+    528.554625,
+    526.860959,
+    528.315834
+   ],
+   "no tool: p50 handler": [
+    524.3955,
+    523.444208,
+    524.919916
+   ]
+  },
+  "V2-parallel-lookups": {
+   "all: N": [
+    200,
+    200,
+    200
+   ],
+   "all: mean e2e": [
+    708.540557085,
+    706.639059685,
+    708.05640812
+   ],
+   "all: p50 e2e": [
+    707.551542,
+    704.842875,
+    707.884625
+   ],
+   "all: p90 e2e": [
+    750.941083,
+    748.685333,
+    747.788917
+   ],
+   "all: p95 e2e": [
+    760.441458,
+    756.786291,
+    759.805167
+   ],
+   "all: p99 e2e": [
+    769.609167,
+    771.423375,
+    772.425458
+   ],
+   "all: max e2e": [
+    781.397417,
+    780.134208,
+    776.997333
+   ],
+   "all: p50 ttfb": [
+    707.551542,
+    704.842875,
+    707.884625
+   ],
+   "all: p50 handler": [
+    702.577667,
+    700.18975,
+    703.510791
+   ],
+   "tool: N": [
+    80,
+    80,
+    80
+   ],
+   "tool: mean e2e": [
+    724.1304234500001,
+    722.6826960625,
+    724.3592093625
+   ],
+   "tool: p50 e2e": [
+    722.878833,
+    718.389708,
+    720.58125
+   ],
+   "tool: p90 e2e": [
+    759.10225,
+    756.786291,
+    760.621125
+   ],
+   "tool: p95 e2e": [
+    764.074125,
+    762.8655,
+    765.730667
+   ],
+   "tool: p99 e2e": [
+    771.883958,
+    772.428458,
+    776.997333
+   ],
+   "tool: max e2e": [
+    771.883958,
+    772.428458,
+    776.997333
+   ],
+   "tool: p50 ttfb": [
+    722.878833,
+    718.389708,
+    720.58125
+   ],
+   "tool: p50 handler": [
+    717.866958,
+    715.766,
+    718.24275
+   ],
+   "no tool: N": [
+    120,
+    120,
+    120
+   ],
+   "no tool: mean e2e": [
+    698.1473128416667,
+    695.9433021,
+    697.1878739583334
+   ],
+   "no tool: p50 e2e": [
+    694.317625,
+    696.5055,
+    692.347708
+   ],
+   "no tool: p90 e2e": [
+    726.843042,
+    728.283666,
+    728.554708
+   ],
+   "no tool: p95 e2e": [
+    738.287667,
+    738.971,
+    743.035583
+   ],
+   "no tool: p99 e2e": [
+    769.609167,
+    771.423375,
+    758.635083
+   ],
+   "no tool: max e2e": [
+    781.397417,
+    780.134208,
+    773.28
+   ],
+   "no tool: p50 ttfb": [
+    694.317625,
+    696.5055,
+    692.347708
+   ],
+   "no tool: p50 handler": [
+    690.756042,
+    692.183709,
+    691.554583
+   ]
+  },
+  "V3-stream-per-sentence": {
+   "all: N": [
+    200,
+    200,
+    200
+   ],
+   "all: mean e2e": [
+    692.31572759,
+    690.41465888,
+    691.6322364749999
+   ],
+   "all: p50 e2e": [
+    688.047791,
+    684.049584,
+    685.36275
+   ],
+   "all: p90 e2e": [
+    749.2675,
+    744.859584,
+    742.311958
+   ],
+   "all: p95 e2e": [
+    760.151333,
+    757.428459,
+    761.361292
+   ],
+   "all: p99 e2e": [
+    772.02725,
+    771.731709,
+    769.12675
+   ],
+   "all: max e2e": [
+    782.574708,
+    775.32575,
+    772.931708
+   ],
+   "all: p50 ttfb": [
+    393.986416,
+    390.190375,
+    394.975958
+   ],
+   "all: p50 handler": [
+    682.614584,
+    681.439416,
+    681.784542
+   ],
+   "tool: N": [
+    80,
+    80,
+    80
+   ],
+   "tool: mean e2e": [
+    729.2456340625,
+    727.2274441,
+    728.185813525
+   ],
+   "tool: p50 e2e": [
+    727.848375,
+    725.388209,
+    727.321542
+   ],
+   "tool: p90 e2e": [
+    768.106041,
+    758.523292,
+    763.294833
+   ],
+   "tool: p95 e2e": [
+    771.246875,
+    767.401209,
+    767.211417
+   ],
+   "tool: p99 e2e": [
+    782.574708,
+    775.32575,
+    772.931708
+   ],
+   "tool: max e2e": [
+    782.574708,
+    775.32575,
+    772.931708
+   ],
+   "tool: p50 ttfb": [
+    438.430625,
+    437.101625,
+    434.283917
+   ],
+   "tool: p50 handler": [
+    721.770417,
+    721.283292,
+    723.394333
+   ],
+   "no tool: N": [
+    120,
+    120,
+    120
+   ],
+   "no tool: mean e2e": [
+    667.6957899416667,
+    665.8728020666666,
+    667.2631851083333
+   ],
+   "no tool: p50 e2e": [
+    664.163375,
+    662.57925,
+    662.932667
+   ],
+   "no tool: p90 e2e": [
+    697.257916,
+    696.512459,
+    698.33275
+   ],
+   "no tool: p95 e2e": [
+    708.334541,
+    709.998292,
+    710.750542
+   ],
+   "no tool: p99 e2e": [
+    742.174041,
+    739.882209,
+    739.940292
+   ],
+   "no tool: max e2e": [
+    753.676166,
+    748.37475,
+    747.841125
+   ],
+   "no tool: p50 ttfb": [
+    372.343791,
+    370.783959,
+    371.211708
+   ],
+   "no tool: p50 handler": [
+    660.247542,
+    658.163666,
+    659.512209
+   ]
+  },
+  "V4a-burst-app-queue": {
+   "all: N": [
+    12,
+    12,
+    12
+   ],
+   "all: mean e2e": [
+    2575.729187833333,
+    2446.4674830833333,
+    2463.1864721666666
+   ],
+   "all: p50 e2e": [
+    2231.646292,
+    2099.946792,
+    2122.481875
+   ],
+   "all: p90 e2e": [
+    4256.371834,
+    4126.532084,
+    4144.245875
+   ],
+   "all: p95 e2e": [
+    4374.8755,
+    4256.530209,
+    4280.360042
+   ],
+   "all: p99 e2e": [
+    4374.8755,
+    4256.530209,
+    4280.360042
+   ],
+   "all: max e2e": [
+    4374.8755,
+    4256.530209,
+    4280.360042
+   ],
+   "all: p50 ttfb": [
+    2231.646292,
+    2099.946792,
+    2122.481875
+   ],
+   "all: p50 handler": [
+    697.945792,
+    693.612291,
+    693.74525
+   ],
+   "tool: N": [
+    2,
+    2,
+    2
+   ],
+   "tool: mean e2e": [
+    2271.388167,
+    2160.944042,
+    2182.301958
+   ],
+   "tool: p50 e2e": [
+    1556.68325,
+    1462.520834,
+    1480.087458
+   ],
+   "tool: p90 e2e": [
+    2986.093084,
+    2859.36725,
+    2884.516458
+   ],
+   "tool: p95 e2e": [
+    2986.093084,
+    2859.36725,
+    2884.516458
+   ],
+   "tool: p99 e2e": [
+    2986.093084,
+    2859.36725,
+    2884.516458
+   ],
+   "tool: max e2e": [
+    2986.093084,
+    2859.36725,
+    2884.516458
+   ],
+   "tool: p50 ttfb": [
+    1556.68325,
+    1462.520834,
+    1480.087458
+   ],
+   "tool: p50 handler": [
+    753.887916,
+    758.897208,
+    761.374333
+   ],
+   "no tool: N": [
+    10,
+    10,
+    10
+   ],
+   "no tool: mean e2e": [
+    2636.597392,
+    2503.5721713,
+    2519.363375
+   ],
+   "no tool: p50 e2e": [
+    2231.646292,
+    2099.946792,
+    2122.481875
+   ],
+   "no tool: p90 e2e": [
+    4256.371834,
+    4126.532084,
+    4144.245875
+   ],
+   "no tool: p95 e2e": [
+    4374.8755,
+    4256.530209,
+    4280.360042
+   ],
+   "no tool: p99 e2e": [
+    4374.8755,
+    4256.530209,
+    4280.360042
+   ],
+   "no tool: max e2e": [
+    4374.8755,
+    4256.530209,
+    4280.360042
+   ],
+   "no tool: p50 ttfb": [
+    2231.646292,
+    2099.946792,
+    2122.481875
+   ],
+   "no tool: p50 handler": [
+    694.276,
+    676.757583,
+    686.936
+   ]
+  },
+  "V4b-burst-kernel-queue": {
+   "all: N": [
+    12,
+    12,
+    12
+   ],
+   "all: mean e2e": [
+    2457.0559345,
+    2445.7659580833333,
+    2456.7690520833335
+   ],
+   "all: p50 e2e": [
+    2128.482834,
+    2177.31575,
+    2100.832042
+   ],
+   "all: p90 e2e": [
+    4099.477917,
+    4053.6575,
+    4184.291958
+   ],
+   "all: p95 e2e": [
+    4284.117209,
+    4325.710791,
+    4229.121125
+   ],
+   "all: p99 e2e": [
+    4284.117209,
+    4325.710791,
+    4229.121125
+   ],
+   "all: max e2e": [
+    4284.117209,
+    4325.710791,
+    4229.121125
+   ],
+   "all: p50 ttfb": [
+    2128.482834,
+    2177.31575,
+    2100.832042
+   ],
+   "all: p50 handler": [
+    693.535459,
+    692.6955,
+    696.141417
+   ],
+   "tool: N": [
+    2,
+    2,
+    2
+   ],
+   "tool: mean e2e": [
+    1839.271563,
+    2199.0027499999997,
+    2162.7442705000003
+   ],
+   "tool: p50 e2e": [
+    788.398959,
+    1464.47525,
+    1463.159333
+   ],
+   "tool: p90 e2e": [
+    2890.144167,
+    2933.53025,
+    2862.329208
+   ],
+   "tool: p95 e2e": [
+    2890.144167,
+    2933.53025,
+    2862.329208
+   ],
+   "tool: p99 e2e": [
+    2890.144167,
+    2933.53025,
+    2862.329208
+   ],
+   "tool: max e2e": [
+    2890.144167,
+    2933.53025,
+    2862.329208
+   ],
+   "tool: p50 ttfb": [
+    788.398959,
+    1464.47525,
+    1463.159333
+   ],
+   "tool: p50 handler": [
+    760.996416,
+    755.717166,
+    760.744042
+   ],
+   "no tool: N": [
+    10,
+    10,
+    10
+   ],
+   "no tool: mean e2e": [
+    2580.6128088,
+    2495.1185997000002,
+    2515.5740084
+   ],
+   "no tool: p50 e2e": [
+    2128.482834,
+    2177.31575,
+    2100.832042
+   ],
+   "no tool: p90 e2e": [
+    4099.477917,
+    4053.6575,
+    4184.291958
+   ],
+   "no tool: p95 e2e": [
+    4284.117209,
+    4325.710791,
+    4229.121125
+   ],
+   "no tool: p99 e2e": [
+    4284.117209,
+    4325.710791,
+    4229.121125
+   ],
+   "no tool: max e2e": [
+    4284.117209,
+    4325.710791,
+    4229.121125
+   ],
+   "no tool: p50 ttfb": [
+    2128.482834,
+    2177.31575,
+    2100.832042
+   ],
+   "no tool: p50 handler": [
+    682.460833,
+    683.345209,
+    685.964166
+   ]
+  },
+  "V5-rare-slow-billing": {
+   "all: N": [
+    400,
+    400,
+    400
+   ],
+   "all: mean e2e": [
+    726.3894839525,
+    727.6765169575,
+    729.4894526774999
+   ],
+   "all: p50 e2e": [
+    714.217167,
+    714.647708,
+    715.914708
+   ],
+   "all: p90 e2e": [
+    778.684542,
+    780.8735,
+    781.608291
+   ],
+   "all: p95 e2e": [
+    793.871584,
+    793.145916,
+    797.485541
+   ],
+   "all: p99 e2e": [
+    1329.472959,
+    1331.930416,
+    1337.096
+   ],
+   "all: max e2e": [
+    1382.292584,
+    1383.01325,
+    1379.268375
+   ],
+   "all: p50 ttfb": [
+    714.217167,
+    714.647708,
+    715.914708
+   ],
+   "all: p50 handler": [
+    709.923375,
+    710.9555,
+    711.811125
+   ],
+   "tool: N": [
+    161,
+    161,
+    161
+   ],
+   "tool: mean e2e": [
+    776.065627136646,
+    777.8555325403727,
+    779.5633006397516
+   ],
+   "tool: p50 e2e": [
+    756.302292,
+    758.975166,
+    760.193541
+   ],
+   "tool: p90 e2e": [
+    797.2465,
+    800.299125,
+    803.901166
+   ],
+   "tool: p95 e2e": [
+    813.058667,
+    818.000333,
+    814.391
+   ],
+   "tool: p99 e2e": [
+    1358.734209,
+    1359.166416,
+    1365.727041
+   ],
+   "tool: max e2e": [
+    1382.292584,
+    1383.01325,
+    1379.268375
+   ],
+   "tool: p50 ttfb": [
+    756.302292,
+    758.975166,
+    760.193541
+   ],
+   "tool: p50 handler": [
+    753.178417,
+    756.199959,
+    756.756333
+   ],
+   "no tool: N": [
+    239,
+    239,
+    239
+   ],
+   "no tool: mean e2e": [
+    692.925638543933,
+    693.873916502092,
+    695.7576973556486
+   ],
+   "no tool: p50 e2e": [
+    691.682959,
+    691.792916,
+    695.120833
+   ],
+   "no tool: p90 e2e": [
+    723.11075,
+    723.878791,
+    725.748166
+   ],
+   "no tool: p95 e2e": [
+    734.873875,
+    732.857833,
+    737.957125
+   ],
+   "no tool: p99 e2e": [
+    755.74925,
+    756.120291,
+    759.101291
+   ],
+   "no tool: max e2e": [
+    778.684542,
+    782.972666,
+    777.965875
+   ],
+   "no tool: p50 ttfb": [
+    691.682959,
+    691.792916,
+    695.120833
+   ],
+   "no tool: p50 handler": [
+    687.501625,
+    687.405916,
+    691.004375
+   ]
+  },
+  "NC-uninstrumented-step": {
+   "all: N": [
+    200,
+    200,
+    200
+   ],
+   "all: mean e2e": [
+    743.201126585,
+    745.916956595,
+    745.7773780800001
+   ],
+   "all: p50 e2e": [
+    738.689709,
+    740.187792,
+    740.474333
+   ],
+   "all: p90 e2e": [
+    795.14925,
+    801.530292,
+    800.388708
+   ],
+   "all: p95 e2e": [
+    811.628834,
+    813.598209,
+    814.583042
+   ],
+   "all: p99 e2e": [
+    825.572792,
+    825.757709,
+    827.868542
+   ],
+   "all: max e2e": [
+    829.367209,
+    835.334292,
+    831.517583
+   ],
+   "all: p50 ttfb": [
+    738.689709,
+    740.187792,
+    740.474333
+   ],
+   "all: p50 handler": [
+    735.209166,
+    735.394542,
+    736.613
+   ],
+   "tool: N": [
+    80,
+    80,
+    80
+   ],
+   "tool: mean e2e": [
+    779.46582375,
+    781.9412060875,
+    782.3205431624999
+   ],
+   "tool: p50 e2e": [
+    776.372834,
+    781.540417,
+    781.82125
+   ],
+   "tool: p90 e2e": [
+    813.3135,
+    814.763709,
+    820.061167
+   ],
+   "tool: p95 e2e": [
+    820.679375,
+    821.460417,
+    823.552958
+   ],
+   "tool: p99 e2e": [
+    829.367209,
+    835.334292,
+    831.517583
+   ],
+   "tool: max e2e": [
+    829.367209,
+    835.334292,
+    831.517583
+   ],
+   "tool: p50 ttfb": [
+    776.372834,
+    781.540417,
+    781.82125
+   ],
+   "tool: p50 handler": [
+    772.891792,
+    777.280125,
+    778.212833
+   ],
+   "no tool: N": [
+    120,
+    120,
+    120
+   ],
+   "no tool: mean e2e": [
+    719.0246618083333,
+    721.9007902666667,
+    721.415268025
+   ],
+   "no tool: p50 e2e": [
+    716.942459,
+    721.440667,
+    720.711375
+   ],
+   "no tool: p90 e2e": [
+    746.43975,
+    753.226667,
+    749.936417
+   ],
+   "no tool: p95 e2e": [
+    761.215209,
+    766.450834,
+    766.675125
+   ],
+   "no tool: p99 e2e": [
+    787.52,
+    791.87525,
+    786.62525
+   ],
+   "no tool: max e2e": [
+    812.095417,
+    811.778959,
+    810.06025
+   ],
+   "no tool: p50 ttfb": [
+    716.942459,
+    721.440667,
+    720.711375
+   ],
+   "no tool: p50 handler": [
+    713.251708,
+    717.773709,
+    715.988292
+   ]
+  }
+ },
+ "expectations": [
+  {
+   "name": "E1 r1",
+   "pass": true,
+   "detail": "largest answer, answer share 68.9%, unattributed 0.16 ms"
+  },
+  {
+   "name": "E2 r1",
+   "pass": true,
+   "detail": "segments add up: True; kernel queue 0.06, app queue 0.05; naive > handler for all: True; leaf sum - handler max -0.04"
+  },
+  {
+   "name": "E3 r1",
+   "pass": true,
+   "detail": "e2e drop tool 165.7, no tool 169.1; largest other span change 0.53 (rewrite)"
+  },
+  {
+   "name": "E4 r1",
+   "pass": true,
+   "detail": "tool: leaf sum - handler 34.4, e2e drop 35.6; no tool: e2e change -3.3"
+  },
+  {
+   "name": "E5 r1",
+   "pass": true,
+   "detail": "TTFB drop 323.6, e2e drop 29.5"
+  },
+  {
+   "name": "E6 r1",
+   "pass": true,
+   "detail": "app queue max 3671.7, kernel queue max 0.11, handler median 697.9 vs V0 714.0"
+  },
+  {
+   "name": "E7 r1",
+   "pass": true,
+   "detail": "kernel queue max 3582.7, app queue max 0.00, handler median 693.5, max e2e 4284.1 vs V4a 4374.9"
+  },
+  {
+   "name": "E8 r1",
+   "pass": true,
+   "detail": "slowest 5 [34, 137, 172, 249, 269]; p95 793.9, p99 1329.5"
+  },
+  {
+   "name": "E9 r1",
+   "pass": false,
+   "detail": "unattributed rise 23.93; largest span change 0.82 (retrieval)"
+  },
+  {
+   "name": "E11 r1",
+   "pass": true,
+   "detail": "app-observed >= reported for every call: True; median gap 0.87"
+  },
+  {
+   "name": "E1 r2",
+   "pass": true,
+   "detail": "largest answer, answer share 69.0%, unattributed 0.14 ms"
+  },
+  {
+   "name": "E2 r2",
+   "pass": true,
+   "detail": "segments add up: True; kernel queue 0.05, app queue 0.04; naive > handler for all: True; leaf sum - handler max -0.06"
+  },
+  {
+   "name": "E3 r2",
+   "pass": true,
+   "detail": "e2e drop tool 167.2, no tool 165.7; largest other span change 0.43 (retrieval)"
+  },
+  {
+   "name": "E4 r2",
+   "pass": true,
+   "detail": "tool: leaf sum - handler 34.0, e2e drop 39.6; no tool: e2e change +3.9"
+  },
+  {
+   "name": "E5 r2",
+   "pass": true,
+   "detail": "TTFB drop 324.7, e2e drop 30.9"
+  },
+  {
+   "name": "E6 r2",
+   "pass": true,
+   "detail": "app queue max 3559.3, kernel queue max 0.03, handler median 693.6 vs V0 710.9"
+  },
+  {
+   "name": "E7 r2",
+   "pass": true,
+   "detail": "kernel queue max 3629.4, app queue max 0.00, handler median 692.7, max e2e 4325.7 vs V4a 4256.5"
+  },
+  {
+   "name": "E8 r2",
+   "pass": true,
+   "detail": "slowest 5 [34, 137, 172, 249, 269]; p95 793.1, p99 1331.9"
+  },
+  {
+   "name": "E9 r2",
+   "pass": false,
+   "detail": "unattributed rise 24.38; largest span change 0.69 (answer)"
+  },
+  {
+   "name": "E11 r2",
+   "pass": true,
+   "detail": "app-observed >= reported for every call: True; median gap 0.78"
+  },
+  {
+   "name": "E1 r3",
+   "pass": true,
+   "detail": "largest answer, answer share 69.1%, unattributed 0.17 ms"
+  },
+  {
+   "name": "E2 r3",
+   "pass": true,
+   "detail": "segments add up: True; kernel queue 0.06, app queue 0.05; naive > handler for all: True; leaf sum - handler max -0.10"
+  },
+  {
+   "name": "E3 r3",
+   "pass": true,
+   "detail": "e2e drop tool 168.2, no tool 167.9; largest other span change 0.71 (tool)"
+  },
+  {
+   "name": "E4 r3",
+   "pass": true,
+   "detail": "tool: leaf sum - handler 34.7, e2e drop 38.9; no tool: e2e change -3.9"
+  },
+  {
+   "name": "E5 r3",
+   "pass": true,
+   "detail": "TTFB drop 323.3, e2e drop 33.0"
+  },
+  {
+   "name": "E6 r3",
+   "pass": true,
+   "detail": "app queue max 3577.9, kernel queue max 0.23, handler median 693.7 vs V0 712.8"
+  },
+  {
+   "name": "E7 r3",
+   "pass": true,
+   "detail": "kernel queue max 3528.7, app queue max 0.00, handler median 696.1, max e2e 4229.1 vs V4a 4280.4"
+  },
+  {
+   "name": "E8 r3",
+   "pass": true,
+   "detail": "slowest 5 [34, 137, 172, 249, 269]; p95 797.5, p99 1337.1"
+  },
+  {
+   "name": "E9 r3",
+   "pass": false,
+   "detail": "unattributed rise 24.97; largest span change 0.53 (rewrite)"
+  },
+  {
+   "name": "E11 r3",
+   "pass": true,
+   "detail": "app-observed >= reported for every call: True; median gap 0.89"
+  },
+  {
+   "name": "E10 V0-baseline tool",
+   "pass": true,
+   "detail": "medians 758.5, 758.0, 759.5; range 1.5"
+  },
+  {
+   "name": "E10 V0-baseline no tool",
+   "pass": true,
+   "detail": "medians 697.7, 692.6, 696.2; range 5.1"
+  },
+  {
+   "name": "E10 V1-faster-decode tool",
+   "pass": true,
+   "detail": "medians 592.8, 590.7, 591.3; range 2.0"
+  },
+  {
+   "name": "E10 V1-faster-decode no tool",
+   "pass": true,
+   "detail": "medians 528.6, 526.9, 528.3; range 1.7"
+  },
+  {
+   "name": "E10 V2-parallel-lookups tool",
+   "pass": true,
+   "detail": "medians 722.9, 718.4, 720.6; range 4.5"
+  },
+  {
+   "name": "E10 V2-parallel-lookups no tool",
+   "pass": true,
+   "detail": "medians 694.3, 696.5, 692.3; range 4.2"
+  },
+  {
+   "name": "E10 V3-stream-per-sentence tool",
+   "pass": true,
+   "detail": "medians 727.8, 725.4, 727.3; range 2.5"
+  },
+  {
+   "name": "E10 V3-stream-per-sentence no tool",
+   "pass": true,
+   "detail": "medians 664.2, 662.6, 662.9; range 1.6"
+  },
+  {
+   "name": "E10 V5-rare-slow-billing tool",
+   "pass": true,
+   "detail": "medians 756.3, 759.0, 760.2; range 3.9"
+  },
+  {
+   "name": "E10 V5-rare-slow-billing no tool",
+   "pass": true,
+   "detail": "medians 691.7, 691.8, 695.1; range 3.4"
+  },
+  {
+   "name": "E10 NC-uninstrumented-step tool",
+   "pass": true,
+   "detail": "medians 776.4, 781.5, 781.8; range 5.4"
+  },
+  {
+   "name": "E10 NC-uninstrumented-step no tool",
+   "pass": true,
+   "detail": "medians 716.9, 721.4, 720.7; range 4.5"
+  },
+  {
+   "name": "E12",
+   "pass": true,
+   "detail": "4272 of 4272 first reads carried answer text"
+  }
+ ]
+}

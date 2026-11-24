@@ -1,0 +1,33 @@
+{
+  "about": "Configured delays for the stand-in services. They are inputs, not findings. They are the illustrative eight-second budget at the top of the article at one tenth scale: 8.0 s becomes 0.8 s.",
+  "seed": 35,
+  "repeats": 3,
+  "ports": {"services": 8735, "app": 8736},
+  "base": {
+    "requests": 200,
+    "warmup": 5,
+    "arrival": {"kind": "steady", "interval_ms": 150},
+    "server": {"mode": "accept-then-queue", "workers": 8, "backlog": 64},
+    "tool_share": 0.4,
+    "jitter_sigma": 0.1,
+    "decode_jitter_sigma": 0.05,
+    "load_state_ms": 10,
+    "rewrite": {"enabled": true, "ttft_ms": 60, "output_tokens": 20, "ms_per_output_token": 3.0},
+    "retrieval_ms": 30,
+    "billing": {"ms": 60, "slow_probability": 0.0, "slow_extra_ms": 0},
+    "lookups": "sequential",
+    "answer": {"ttft_ms": 150, "output_tokens": 350, "ms_per_output_token": 1.0, "chunk_tokens": 10},
+    "check": {"mode": "whole-answer", "whole_ms": 30, "per_sentence_ms": 3},
+    "uninstrumented_ms": 0
+  },
+  "variants": {
+    "V0-baseline": {},
+    "V1-faster-decode": {"answer": {"ms_per_output_token": 0.5}},
+    "V2-parallel-lookups": {"lookups": "parallel"},
+    "V3-stream-per-sentence": {"check": {"mode": "per-sentence"}},
+    "V4a-burst-app-queue": {"requests": 12, "arrival": {"kind": "burst"}, "server": {"mode": "accept-then-queue", "workers": 2}},
+    "V4b-burst-kernel-queue": {"requests": 12, "arrival": {"kind": "burst"}, "server": {"mode": "accept-when-free", "workers": 2}},
+    "V5-rare-slow-billing": {"requests": 400, "billing": {"slow_probability": 0.05, "slow_extra_ms": 600}},
+    "NC-uninstrumented-step": {"uninstrumented_ms": 20}
+  }
+}
