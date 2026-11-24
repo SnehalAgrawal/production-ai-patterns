@@ -1,0 +1,11 @@
+{
+ "note": "Configured, illustrative periods for this demo. Real periods come from the rules that apply to you, your contracts and your legal team.",
+ "days": {
+  "debug_traces": 30,
+  "outbound_requests": 30,
+  "content": 365,
+  "eval_cases": 365,
+  "audit": 730
+ },
+ "purge_log": "kept; holds counts, date ranges and rule names, no personal data"
+}

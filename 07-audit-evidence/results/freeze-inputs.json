@@ -1,0 +1,18 @@
+{
+ "frozen_at_utc": "2026-11-24T16:43:06+00:00",
+ "note": "Inputs frozen before any code in python/ existed. run.py compares these hashes on every run.",
+ "files": {
+  "PROTOCOL.md": "12e5f2ea998718f508d272a77e6d20a0e10ffb49d392aa504f851fe7794fb79a",
+  "data/cases.json": "51ff4fbdc307e125c47608c9123076c89520cd42efecc68dc1bfaa4e1f1a40f1",
+  "data/decisions.json": "4b01cddeb8604c4ab658006ed97087abea904ad00ddac6975b73891e8481d685",
+  "data/evaluations.json": "21a58484aefdad05898f36e4fae6b63d96518bda8af2c33de27452a430008b02",
+  "data/extraction_prompt.txt": "ccbeadb9f61301d935ce8d5a48111366132f36e92da751d33b367f2cc79db8f6",
+  "data/policies.json": "92654c8c32821b85fafd3ac271bb11c6abcab8b6196230ddf383266d4a66e3bd",
+  "data/questionnaire.json": "17a6c83b3f61593ad1e1c9cf477d391ec7787f9821069bba19c5b16dfacbb111",
+  "data/recommendation_prompt.txt": "cd25a6655caf46f2935a191fc1d848217c0f06beeabd959edaadb6a78bae5927",
+  "data/releases.json": "8dbabaece00e74fd96d9601873986cfe31244a94924e91bd3805d4488f409b61",
+  "data/retention.json": "4dbb31b1d876632b9a99ea3b4117ff3a2549376fac5ca379a3d15ee5fcfacfdf",
+  "data/staff.json": "99ff5e5252978e34029e5dc37816efac16b8cfc6664098e208d7336a72ddd69d",
+  "data/stand_in_outputs.json": "261566df8fdb3fa73cd27f1b5c40350f4558c86840b9cb629a157e95fd56f8b9"
+ }
+}

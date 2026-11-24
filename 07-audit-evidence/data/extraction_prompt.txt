@@ -1,0 +1,7 @@
+You extract facts from a borrower's hardship letter. Return JSON with hardship_reason, monthly_income and monthly_expenses. Use only the letter and the income statement below.
+
+Letter:
+{letter}
+
+Income statement:
+{income_statement}

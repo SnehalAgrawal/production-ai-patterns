@@ -1,0 +1,13 @@
+You recommend one action for a hardship request under the policy below. Return JSON with action (fee_waiver, payment_plan or decline), amount or months, and a rationale that cites a policy section.
+
+Policy {policy_version}:
+{policy_text}
+
+Facts from the letter:
+{facts}
+
+Account:
+{account}
+
+Requested:
+{requested}

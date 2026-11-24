@@ -1,0 +1,49 @@
+{
+ "note": "Release definitions. The manifest and its SHA-256 are computed from these components and the files they name (rule in PROTOCOL.md).",
+ "releases": {
+  "assistant-2026.11.1": {
+   "extraction_prompt": {
+    "file": "extraction_prompt.txt",
+    "version": "2026-10-28.1"
+   },
+   "recommendation_prompt": {
+    "file": "recommendation_prompt.txt",
+    "version": "2026-10-28.2"
+   },
+   "policy": {
+    "doc_id": "hardship-policy",
+    "version": "v14"
+   },
+   "model": {
+    "requested": "lender-recommender",
+    "expected_returned": "lender-recommender-2026-10-01",
+    "version_metadata": null
+   },
+   "workflow": {
+    "version": "wf-3"
+   }
+  },
+  "assistant-2026.11.2": {
+   "extraction_prompt": {
+    "file": "extraction_prompt.txt",
+    "version": "2026-10-28.1"
+   },
+   "recommendation_prompt": {
+    "file": "recommendation_prompt.txt",
+    "version": "2026-10-28.2"
+   },
+   "policy": {
+    "doc_id": "hardship-policy",
+    "version": "v15"
+   },
+   "model": {
+    "requested": "lender-recommender",
+    "expected_returned": "lender-recommender-2026-10-01",
+    "version_metadata": null
+   },
+   "workflow": {
+    "version": "wf-3"
+   }
+  }
+ }
+}

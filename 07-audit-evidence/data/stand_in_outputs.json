@@ -1,0 +1,53 @@
+{
+ "note": "A scripted stand-in for the model, written by hand for this demo. Not output from any model. The demo checks what records can show, not recommendation quality.",
+ "cases": {
+  "C01": {
+   "extraction_raw": "{\"hardship_reason\": \"lost shifts, reduced income\", \"monthly_expenses\": 1395, \"monthly_income\": 1480}",
+   "recommendation_raw": "{\"action\": \"fee_waiver\", \"amount\": 35.0, \"rationale\": \"Documented income loss; surplus 85 is below 200. Waive the 35.00 late fee under 4.2.\"}"
+  },
+  "C02": {
+   "extraction_raw": "{\"hardship_reason\": \"unexpected car repair\", \"monthly_expenses\": 2040, \"monthly_income\": 2110}",
+   "recommendation_raw": "{\"action\": \"fee_waiver\", \"amount\": 25.0, \"rationale\": \"One-off expense, surplus 70. Waive 25.00 under 4.2.\"}"
+  },
+  "C03": {
+   "extraction_raw": "{\"hardship_reason\": \"reduced hours until January\", \"monthly_expenses\": 1250, \"monthly_income\": 1320}",
+   "recommendation_raw": "{\"action\": \"payment_plan\", \"months\": 3, \"rationale\": \"Temporary income reduction; a 3-month plan is within 4.4.\"}"
+  },
+  "C04": {
+   "extraction_raw": "{\"hardship_reason\": \"medical bills\", \"monthly_expenses\": 1690, \"monthly_income\": 1760}",
+   "recommendation_raw": "{\"action\": \"fee_waiver\", \"amount\": 35.0, \"rationale\": \"Documented medical costs, surplus 70. Waive 35.00 under 4.2.\"}"
+  },
+  "C05": {
+   "extraction_raw": "{\"hardship_reason\": \"partner moved out, sole rent\", \"monthly_expenses\": 1610, \"monthly_income\": 1550}",
+   "recommendation_raw": "{\"action\": \"fee_waiver\", \"amount\": 120.0, \"rationale\": \"Negative surplus; waive all 120.00 under 4.2. Above the agent limit.\"}"
+  },
+  "C06": {
+   "extraction_raw": "{\"hardship_reason\": \"forgot the payment date\", \"monthly_expenses\": 2100, \"monthly_income\": 4300}",
+   "recommendation_raw": "{\"action\": \"decline\", \"rationale\": \"No hardship stated; surplus 2200 is above 200. Decline under 4.1.\"}"
+  },
+  "C07": {
+   "extraction_raw": "{\"hardship_reason\": \"employer paid late\", \"monthly_expenses\": 1640, \"monthly_income\": 1690}",
+   "recommendation_raw": "{\"action\": \"fee_waiver\", \"amount\": 30.0, \"rationale\": \"Late salary twice, surplus 50. Waive 30.00 under 4.2.\"}"
+  },
+  "C08": {
+   "extraction_raw": "{\"hardship_reason\": \"illness without sick pay\", \"monthly_expenses\": 1380, \"monthly_income\": 1410}",
+   "recommendation_raw": "{\"action\": \"fee_waiver\", \"amount\": 45.0, \"rationale\": \"Three weeks without pay, surplus 30. Waive 45.00 under 4.2.\"}"
+  },
+  "C09": {
+   "extraction_raw": "{\"hardship_reason\": \"childcare costs increased\", \"monthly_expenses\": 1930, \"monthly_income\": 1980}",
+   "recommendation_raw": "{\"action\": \"payment_plan\", \"months\": 2, \"rationale\": \"Ongoing cost increase; a 2-month plan is within 4.4.\"}"
+  },
+  "C10": {
+   "extraction_raw": "{\"hardship_reason\": \"flood repairs\", \"monthly_expenses\": 1720, \"monthly_income\": 1600}",
+   "recommendation_raw": "{\"action\": \"fee_waiver\", \"amount\": 150.0, \"rationale\": \"Negative surplus after flood; waive 150.00 under 4.2. Above the agent limit.\"}"
+  },
+  "C11": {
+   "extraction_raw": "{\"hardship_reason\": \"first salary late after job change\", \"monthly_expenses\": 1980, \"monthly_income\": 2050}",
+   "recommendation_raw": "{\"action\": \"fee_waiver\", \"amount\": 40.0, \"rationale\": \"Timing gap in income, surplus 70. Waive 40.00 under 4.2.\"}"
+  },
+  "C12": {
+   "extraction_raw": "{\"hardship_reason\": \"paid one day late\", \"monthly_expenses\": 1700, \"monthly_income\": 2900}",
+   "recommendation_raw": "{\"action\": \"fee_waiver\", \"amount\": 30.0, \"rationale\": \"One day late; waive 30.00 as goodwill.\"}"
+  }
+ }
+}

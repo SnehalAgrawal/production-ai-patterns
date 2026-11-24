@@ -1,0 +1,72 @@
+Report for run 20261124T165022Z
+PASS F: inputs and code unchanged since the freezes
+PASS B.1: deploy gate admits assistant-2026.11.1 with manifest f83e1fdc...
+PASS B.2: 12 decisions
+PASS B.3: 10 executed: C01-C05, C07-C11
+PASS B.4: no action for C06 and C12
+PASS B.5: 10 ledger entries
+PASS B.6: C05 and C10 routed to a lead, the other 10 to an agent
+PASS B.7: only C12's surplus_below_threshold check fails
+PASS B.8: the checker reports 0 findings on the baseline
+PASS E1.D-C01: D-C01: all nine questions answered from the records
+PASS E1.D-C04: D-C04: all nine questions answered from the records
+PASS E1.Q3: Q3 shows requested and returned model strings and 'no version metadata returned'
+PASS E1.C04: D-C04: recommended 35.00, decided modify to 20.00, executed 20.00
+PASS E1.C04.Q7: D-C04 Q7: matches the approval, differs from the recommendation by a recorded modification
+PASS E2a.1: deploy gate refuses the edited prompt
+PASS E2a.2: the diff names exactly recommendation_prompt
+PASS E2a.3: no decision made under it
+PASS E2b.1: both new decisions execute normally
+PASS E2b.2: K6 flags exactly D-E2-1 and D-E2-2, none of the baseline
+PASS E3a.1: executor refuses 50.00 against an approval of 35.00
+PASS E3a.2: ledger unchanged
+PASS E3a.3: the refusal is in the audit log
+PASS E3b: K3 flags the forced 50.00 execution
+PASS E3c.1: baseline D-C04 (modify) not flagged by K7
+PASS E3c.2: forced execution differing from the recommendation after 'approve': K7 and K3 flag it
+PASS E4.1: deploy gate admits assistant-2026.11.2 with manifest 9cc4c56e...
+PASS E4.2: execution refused as stale
+PASS E4.3: a new approval by S-103 refused: agent limit 40.00 under v15
+PASS E4.4: K3 flags the forced execution of the stale approval
+PASS E5a: S-104 approving their own exception is refused
+PASS E5b: S-101 (agent) approving 120.00 is refused
+PASS E5c: K3 flags the forced records: separation of duties (D-E5a) and role limit (D-E5b)
+PASS E6a: K3 flags an execution with no decision
+PASS E6b: K5 flags a ledger entry with no audit event
+PASS E6n: negative control: with K5 off, nothing reported for (b)
+PASS E7a: K1 broken at the edited event
+PASS E7b: K1 broken at the event after the deleted one
+PASS E7c.1: truncation: K1 verifies
+PASS E7c.2: truncation: K2 flags the log as shorter than the anchor
+PASS E7c.3: truncation: K8 flags D-C12 as incomplete
+PASS E8.1: full rewrite: K1 verifies
+PASS E8.2: full rewrite: K2 flags a head-hash mismatch
+PASS E8.3: full rewrite with K2 off: nothing reported
+PASS E9.1: the canary is in the content store and outbound.jsonl
+FAIL E9.2: the canary is in no other store  | observed: ['content', 'eval_cases.jsonl', 'outbound.jsonl']
+PASS E9.3: the canary is in none of the audit log, app log, traces, ledger, anchors
+PASS E9.4: the canary is in no recommendation prompt
+PASS E9.5: no borrower name outside the content store
+PASS E9.6: negative control: a logger writing prompts puts the canary in app.log
+PASS E10.1: plain SHA-256 recovered after 398,842 attempts
+PASS E10.2: HMAC: whoever holds the key recovers it the same way
+PASS E10.3: HMAC with a different random key: 0 matches in 1,000,000
+PASS E11.1: before: B-1003 has items in content, keys, outbound, eval_cases
+PASS E11.2: after: none in any of them
+PASS E11.3: one erased event; K1 verifies
+PASS E11.4: D-C03 Q1 and the snapshot: content erased, 2026-11-20, ER-0001
+PASS E11.5: D-C03 policy version and Q3-Q9 answered
+PASS E11.6: negative control: the phrase is found in cache.jsonl, and only there
+PASS E12.0: day 0: nothing purged; nine answered
+PASS E12.31: 2026-12-04: all traces and outbound requests purged; nine answered
+PASS E12.366a: 2027-11-04: content, keys and eval_cases purged
+PASS E12.366b: 2027-11-04: Q1 and the snapshot 'content deleted by retention' (rule, date); the rest answered; K1 verifies
+PASS E12.731: 2028-11-03: audit purged; D-C01 not answerable; the purge-log entry is named
+62 of 63 checks passed
+stable section SHA-256: f50cd69677f874d4c687eee9ea4cec388becbe2c1c566b43fbe5c4fd9b9b6a0a
+
+E10 timings (measured; not part of the stable section):
+  plain SHA-256, 398,842 candidates: 0.174 s
+  HMAC with the key, 398,842 candidates: 0.476 s
+  HMAC with another key, 1,000,000 candidates: 1.202 s
+  setup: Python 3.12.13, macOS-26.6.2-arm64-arm-64bit, load average 4.01 at the start

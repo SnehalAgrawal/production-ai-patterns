@@ -1,0 +1,18 @@
+{
+ "frozen_at_utc": "2026-11-24T16:50:19+00:00",
+ "note": "Code frozen before the first reported run. run.py compares these hashes on every run.",
+ "files": {
+  "python/checker.py": "e6e59d441100515bc9a9e245e407ad3de9ce0bf460c9b752e84ca88ad902d586",
+  "python/common.py": "83d8dfb6f14db3d0dba64580257843aa96f23537f35c4616d500a41c097a081f",
+  "python/compare.py": "3f314626ac3dac25d87338b9890ee028b34eb4f24de739ffacadd34f41ce8d6a",
+  "python/evidence.py": "9a4d7d9bc83007cfae6c63802881b43a093293bc89243cc6275b045de3bbb01a",
+  "python/freeze.py": "64d24cda97f843862ec8b00e866870d18dcc09ffe666a6a69bb790873329257b",
+  "python/hashes.py": "ed0e4cf0870f159150af4d20e9fb8a14278eae20b865522d4c1f3ef21542f281",
+  "python/lifecycle.py": "08d76b79436efbb8f993c9bf09acee31d2fc9dc9196de60fde30dcefa95528b6",
+  "python/reconstruct.py": "d645dfde9edaef7be4949eb5342958a9559885744b9f43da1e94da4c759b5130",
+  "python/report.py": "40312e3adcc43e7f4a97e7e7528c3ba242c0dd96cbf56721110d64c78584cc18",
+  "python/run.py": "94ef81407d107f462cd8a8301f66a8ca2b67a6e6518f34cb08923f0e5681a3f1",
+  "python/test_evidence.py": "49bfea963127477548d96d3cbd994878b992881c92e7155d3bbb469a9d28fde5",
+  "python/workflow.py": "b551ea72fe1f6e7eadba7ade422e7d93ec3601aa942d974f83c632dd2fbd606a"
+ }
+}

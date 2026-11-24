@@ -1,0 +1,18 @@
+{
+ "frozen_at_utc": "2026-11-24T17:11:47+00:00",
+ "note": "Code re-frozen after the delegated review (deviation D3: checker guard after a partial purge, retention attribution by date range, two tests, this note). The original freeze is results/v1/freeze.json. run.py compares these hashes on every run.",
+ "files": {
+  "python/checker.py": "7a583ca5d4952763cc2b4e23d1656c20d2162c9dac5a4c3ff8accb6c09b8551e",
+  "python/common.py": "83d8dfb6f14db3d0dba64580257843aa96f23537f35c4616d500a41c097a081f",
+  "python/compare.py": "3f314626ac3dac25d87338b9890ee028b34eb4f24de739ffacadd34f41ce8d6a",
+  "python/evidence.py": "9a4d7d9bc83007cfae6c63802881b43a093293bc89243cc6275b045de3bbb01a",
+  "python/freeze.py": "48ee38de479b7baa6fd0e2388c955e109b7563752a90746e89ab48850d707936",
+  "python/hashes.py": "ed0e4cf0870f159150af4d20e9fb8a14278eae20b865522d4c1f3ef21542f281",
+  "python/lifecycle.py": "08d76b79436efbb8f993c9bf09acee31d2fc9dc9196de60fde30dcefa95528b6",
+  "python/reconstruct.py": "abff359961fee4e433766b928e4c40349fdac573d83fcd6d63a49c8377ce9f0b",
+  "python/report.py": "40312e3adcc43e7f4a97e7e7528c3ba242c0dd96cbf56721110d64c78584cc18",
+  "python/run.py": "94ef81407d107f462cd8a8301f66a8ca2b67a6e6518f34cb08923f0e5681a3f1",
+  "python/test_evidence.py": "458e0dbf2ec0c0ec74d2a865bdfa0a9a323d80da695b259765c502f4095859a0",
+  "python/workflow.py": "b551ea72fe1f6e7eadba7ade422e7d93ec3601aa942d974f83c632dd2fbd606a"
+ }
+}

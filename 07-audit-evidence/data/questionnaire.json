@@ -1,0 +1,14 @@
+{
+ "note": "The lender's questionnaire, asked of one decision.",
+ "questions": {
+  "Q1": "What did the customer ask?",
+  "Q2": "What information did the system use, at which version?",
+  "Q3": "Which release, model identifiers and instructions produced the recommendation?",
+  "Q4": "What did it recommend?",
+  "Q5": "Which checks ran, with what result?",
+  "Q6": "Who decided, in what role, when, on what basis, and what were they shown?",
+  "Q7": "What was executed, and does it match what was approved?",
+  "Q8": "Is the record intact?",
+  "Q9": "Was the release that produced it evaluated before use?"
+ }
+}

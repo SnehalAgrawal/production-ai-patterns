@@ -1,0 +1,21 @@
+{
+ "note": "Fictional staff.",
+ "staff": {
+  "S-101": {
+   "name": "Ana Pirel",
+   "role": "hardship-agent"
+  },
+  "S-102": {
+   "name": "Bo Lindqvist",
+   "role": "hardship-lead"
+  },
+  "S-103": {
+   "name": "Cai Morrow",
+   "role": "hardship-agent"
+  },
+  "S-104": {
+   "name": "Dee Harlan",
+   "role": "hardship-lead"
+  }
+ }
+}

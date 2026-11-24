@@ -1,0 +1,81 @@
+{
+ "note": "Scripted reviewer decisions for the baseline run. Minutes after the case was received.",
+ "decisions": {
+  "C01": {
+   "reviewer": "S-101",
+   "decision": "approve",
+   "reason_code": "policy-4.2",
+   "after_minutes": 12
+  },
+  "C02": {
+   "reviewer": "S-101",
+   "decision": "approve",
+   "reason_code": "policy-4.2",
+   "after_minutes": 12
+  },
+  "C03": {
+   "reviewer": "S-103",
+   "decision": "approve",
+   "reason_code": "policy-4.4",
+   "after_minutes": 12
+  },
+  "C04": {
+   "reviewer": "S-101",
+   "decision": "modify",
+   "modified_action": {
+    "action": "fee_waiver",
+    "amount": 20.0
+   },
+   "reason_code": "policy-4.3",
+   "after_minutes": 12
+  },
+  "C05": {
+   "reviewer": "S-102",
+   "decision": "approve",
+   "reason_code": "policy-4.2",
+   "after_minutes": 12
+  },
+  "C06": {
+   "reviewer": "S-103",
+   "decision": "approve",
+   "reason_code": "policy-4.1",
+   "after_minutes": 12
+  },
+  "C07": {
+   "reviewer": "S-101",
+   "decision": "approve",
+   "reason_code": "policy-4.2",
+   "after_minutes": 12
+  },
+  "C08": {
+   "reviewer": "S-103",
+   "decision": "approve",
+   "reason_code": "policy-4.2",
+   "after_minutes": 12
+  },
+  "C09": {
+   "reviewer": "S-101",
+   "decision": "approve",
+   "reason_code": "policy-4.4",
+   "after_minutes": 12
+  },
+  "C10": {
+   "reviewer": "S-102",
+   "decision": "approve",
+   "reason_code": "policy-4.2",
+   "after_minutes": 12
+  },
+  "C11": {
+   "reviewer": "S-103",
+   "decision": "approve",
+   "reason_code": "policy-4.2",
+   "after_minutes": 12
+  },
+  "C12": {
+   "reviewer": "S-101",
+   "decision": "reject",
+   "reason_code": "policy-4.1",
+   "after_minutes": 12
+  }
+ }
+}

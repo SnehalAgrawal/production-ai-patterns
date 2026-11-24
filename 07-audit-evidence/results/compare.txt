@@ -1,0 +1,7 @@
+20261124T171147Z  stable section f50cd69677f874d4c687eee9ea4cec388becbe2c1c566b43fbe5c4fd9b9b6a0a
+20261124T171151Z  stable section f50cd69677f874d4c687eee9ea4cec388becbe2c1c566b43fbe5c4fd9b9b6a0a
+20261124T171154Z  stable section f50cd69677f874d4c687eee9ea4cec388becbe2c1c566b43fbe5c4fd9b9b6a0a
+stable sections identical: True
+E10 plain: 0.159-0.174 s over 3 runs
+E10 keyed_with_key: 0.448-0.471 s over 3 runs
+E10 keyed_other_key: 1.170-1.182 s over 3 runs

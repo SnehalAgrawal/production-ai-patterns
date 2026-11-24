@@ -1,0 +1,641 @@
+{
+ "run": "20261124T171147Z",
+ "freezes": {
+  "freeze-inputs.json": "ok",
+  "freeze.json": "ok"
+ },
+ "setup": {
+  "python": "3.12.13",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "load_average_1m": 1.77
+ },
+ "B": {
+  "activated": [
+   {
+    "release": "assistant-2026.11.1",
+    "manifest_sha256": "f83e1fdc45e070e2f7d56a4d772645e46cbdc83cc7e8d83c61d6ce2fd26d9d6a",
+    "evaluation_id": "EV-assistant-2026.11.1",
+    "policy_version": "v14"
+   }
+  ],
+  "decisions": [
+   "D-C01",
+   "D-C02",
+   "D-C03",
+   "D-C04",
+   "D-C05",
+   "D-C06",
+   "D-C07",
+   "D-C08",
+   "D-C09",
+   "D-C10",
+   "D-C11",
+   "D-C12"
+  ],
+  "executed": [
+   "D-C01",
+   "D-C02",
+   "D-C03",
+   "D-C04",
+   "D-C05",
+   "D-C07",
+   "D-C08",
+   "D-C09",
+   "D-C10",
+   "D-C11"
+  ],
+  "no_action": [
+   "D-C06",
+   "D-C12"
+  ],
+  "ledger_entries": 10,
+  "routed": {
+   "D-C01": "hardship-agent",
+   "D-C02": "hardship-agent",
+   "D-C03": "hardship-agent",
+   "D-C04": "hardship-agent",
+   "D-C05": "hardship-lead",
+   "D-C06": "hardship-agent",
+   "D-C07": "hardship-agent",
+   "D-C08": "hardship-agent",
+   "D-C09": "hardship-agent",
+   "D-C10": "hardship-lead",
+   "D-C11": "hardship-agent",
+   "D-C12": "hardship-agent"
+  },
+  "failed_checks": {
+   "D-C12": [
+    "surplus_below_threshold"
+   ]
+  },
+  "findings": []
+ },
+ "E1": {
+  "D-C01": {
+   "statuses": {
+    "Q1": "answered",
+    "Q2.policy": "answered",
+    "Q2.account_snapshot": "answered",
+    "Q3": "answered",
+    "Q4": "answered",
+    "Q5": "answered",
+    "Q6": "answered",
+    "Q7": "answered",
+    "Q8": "answered",
+    "Q9": "answered"
+   },
+   "Q3_calls": [
+    {
+     "step": "extraction",
+     "prompt_template": {
+      "name": "extraction_prompt",
+      "version": "2026-10-28.1",
+      "sha256": "ccbeadb9f61301d935ce8d5a48111366132f36e92da751d33b367f2cc79db8f6"
+     },
+     "model_requested": "lender-recommender",
+     "model_returned": "lender-recommender-2026-10-01",
+     "version_metadata": "no version metadata returned"
+    },
+    {
+     "step": "recommendation",
+     "prompt_template": {
+      "name": "recommendation_prompt",
+      "version": "2026-10-28.2",
+      "sha256": "cd25a6655caf46f2935a191fc1d848217c0f06beeabd959edaadb6a78bae5927"
+     },
+     "model_requested": "lender-recommender",
+     "model_returned": "lender-recommender-2026-10-01",
+     "version_metadata": "no version metadata returned"
+    }
+   ],
+   "Q4": {
+    "action": "fee_waiver",
+    "amount": 35.0
+   },
+   "Q6": {
+    "reviewer": "S-101",
+    "role": "hardship-agent",
+    "decision": "approve",
+    "approved_action": {
+     "action": "fee_waiver",
+     "amount": 35.0
+    }
+   },
+   "Q7": {
+    "status": "answered",
+    "executed": {
+     "action": "fee_waiver",
+     "amount": 35.0
+    },
+    "ledger_entry": true,
+    "matches_approval": true,
+    "matches_recommendation": true,
+    "modification_recorded": false
+   },
+   "Q8": {
+    "status": "answered",
+    "chain_verifies": true,
+    "broken_at": null,
+    "anchor": "agrees"
+   },
+   "Q9": {
+    "status": "answered",
+    "evaluation_id": "EV-assistant-2026.11.1",
+    "evaluated_at": "2026-10-30T16:00:00Z",
+    "activated_at": "2026-11-03T08:00:00Z",
+    "same_manifest": true,
+    "evaluated_before_use": true,
+    "returned_model_matches": true
+   }
+  },
+  "D-C04": {
+   "statuses": {
+    "Q1": "answered",
+    "Q2.policy": "answered",
+    "Q2.account_snapshot": "answered",
+    "Q3": "answered",
+    "Q4": "answered",
+    "Q5": "answered",
+    "Q6": "answered",
+    "Q7": "answered",
+    "Q8": "answered",
+    "Q9": "answered"
+   },
+   "Q3_calls": [
+    {
+     "step": "extraction",
+     "prompt_template": {
+      "name": "extraction_prompt",
+      "version": "2026-10-28.1",
+      "sha256": "ccbeadb9f61301d935ce8d5a48111366132f36e92da751d33b367f2cc79db8f6"
+     },
+     "model_requested": "lender-recommender",
+     "model_returned": "lender-recommender-2026-10-01",
+     "version_metadata": "no version metadata returned"
+    },
+    {
+     "step": "recommendation",
+     "prompt_template": {
+      "name": "recommendation_prompt",
+      "version": "2026-10-28.2",
+      "sha256": "cd25a6655caf46f2935a191fc1d848217c0f06beeabd959edaadb6a78bae5927"
+     },
+     "model_requested": "lender-recommender",
+     "model_returned": "lender-recommender-2026-10-01",
+     "version_metadata": "no version metadata returned"
+    }
+   ],
+   "Q4": {
+    "action": "fee_waiver",
+    "amount": 35.0
+   },
+   "Q6": {
+    "reviewer": "S-101",
+    "role": "hardship-agent",
+    "decision": "modify",
+    "approved_action": {
+     "action": "fee_waiver",
+     "amount": 20.0
+    }
+   },
+   "Q7": {
+    "status": "answered",
+    "executed": {
+     "action": "fee_waiver",
+     "amount": 20.0
+    },
+    "ledger_entry": true,
+    "matches_approval": true,
+    "matches_recommendation": false,
+    "modification_recorded": true
+   },
+   "Q8": {
+    "status": "answered",
+    "chain_verifies": true,
+    "broken_at": null,
+    "anchor": "agrees"
+   },
+   "Q9": {
+    "status": "answered",
+    "evaluation_id": "EV-assistant-2026.11.1",
+    "evaluated_at": "2026-10-30T16:00:00Z",
+    "activated_at": "2026-11-03T08:00:00Z",
+    "same_manifest": true,
+    "evaluated_before_use": true,
+    "returned_model_matches": true
+   }
+  }
+ },
+ "E2a": {
+  "refused": "no evaluation of manifest ebd7800f; changed: ['recommendation_prompt']",
+  "refusal_events": [
+   {
+    "release": "assistant-2026.11.1",
+    "manifest_sha256": "ebd7800f83f3efcc6f78863d6a23b96750008470969286c2e660c2ae1b0879e8",
+    "changed_components": [
+     "recommendation_prompt"
+    ],
+    "reason": "no evaluation of this manifest"
+   }
+  ],
+  "process_refused": "no active release",
+  "decisions": 0
+ },
+ "E2b": {
+  "executed": [
+   "D-E2-1",
+   "D-E2-2"
+  ],
+  "K6_decisions": [
+   "D-E2-1",
+   "D-E2-2"
+  ],
+  "findings": [
+   [
+    "K6",
+    "D-E2-1",
+    "returned model lender-recommender-2026-11-20 differs from the evaluated lender-recommender-2026-10-01"
+   ],
+   [
+    "K6",
+    "D-E2-1",
+    "returned model lender-recommender-2026-11-20 differs from the evaluated lender-recommender-2026-10-01"
+   ],
+   [
+    "K6",
+    "D-E2-2",
+    "returned model lender-recommender-2026-11-20 differs from the evaluated lender-recommender-2026-10-01"
+   ],
+   [
+    "K6",
+    "D-E2-2",
+    "returned model lender-recommender-2026-11-20 differs from the evaluated lender-recommender-2026-10-01"
+   ]
+  ]
+ },
+ "E3": {
+  "a_refused": "the action differs from the approved action",
+  "a_refusal_logged": [
+   "the action differs from the approved action"
+  ],
+  "a_ledger_before": 10,
+  "a_ledger_after": 10,
+  "b_findings": [
+   [
+    "K3",
+    "D-E3",
+    "executed action differs from the approved action"
+   ],
+   [
+    "K7",
+    "D-E3",
+    "executed action differs from the recommendation without a modify decision"
+   ]
+  ],
+  "c_baseline_K7": [],
+  "c_forced_findings": [
+   [
+    "K3",
+    "D-E3c",
+    "executed action differs from the approved action"
+   ],
+   [
+    "K7",
+    "D-E3c",
+    "executed action differs from the recommendation without a modify decision"
+   ]
+  ]
+ },
+ "E4": {
+  "activated": {
+   "release": "assistant-2026.11.2",
+   "manifest_sha256": "9cc4c56ed883fe014c02c807d9223a6bb579facb9518980ff640ca0e6a437de0",
+   "policy_version": "v15"
+  },
+  "stale_refused": "stale: the release changed since the approval",
+  "reapproval_refused": "role limit: hardship-agent may approve up to 40.00 under v15",
+  "reprocessed_routed_to": [
+   "hardship-lead"
+  ],
+  "forced_findings": [
+   [
+    "K3",
+    "D-E4",
+    "stale approval: approved under assistant-2026.11.1, executed under assistant-2026.11.2"
+   ],
+   [
+    "K3",
+    "D-E4",
+    "role limit: hardship-agent approved 45.00 under v15"
+   ]
+  ]
+ },
+ "E5": {
+  "a_refused": "separation of duties: the reviewer raised this exception",
+  "b_refused": "role limit: hardship-agent may approve up to 50.00 under v14",
+  "forced_findings": [
+   [
+    "K3",
+    "D-E5a",
+    "separation of duties: approved by the person who raised the exception"
+   ],
+   [
+    "K3",
+    "D-E5b",
+    "role limit: hardship-agent approved 120.00 under v14"
+   ]
+  ]
+ },
+ "E6": {
+  "a_findings": [
+   [
+    "K3",
+    "D-E6a",
+    "executed with no approval"
+   ]
+  ],
+  "b_findings": [
+   [
+    "K5",
+    "D-E6b",
+    "ledger entry ADJ-F6B has 0 executed events"
+   ]
+  ],
+  "b_findings_without_K5": []
+ },
+ "E7": {
+  "a_edited_seq": 9,
+  "a_findings": [
+   [
+    "K1",
+    null,
+    "chain broken at event 9"
+   ]
+  ],
+  "b_deleted_seq": 17,
+  "b_findings": [
+   [
+    "K1",
+    null,
+    "chain broken at event 18"
+   ]
+  ],
+  "c_removed": [
+   [
+    "D-C12",
+    "routed"
+   ],
+   [
+    "D-C12",
+    "decided"
+   ],
+   [
+    "D-C12",
+    "no_action"
+   ]
+  ],
+  "c_findings": [
+   [
+    "K2",
+    null,
+    "log ends before the anchored event 109"
+   ],
+   [
+    "K8",
+    "D-C12",
+    "incomplete: steps ['received', 'context', 'model_call', 'model_call', 'recommended', 'checked']"
+   ]
+  ]
+ },
+ "E8": {
+  "findings": [
+   [
+    "K2",
+    null,
+    "hash of event 109 differs from the anchored head"
+   ]
+  ],
+  "findings_without_K2": []
+ },
+ "E9": {
+  "canary_stores": [
+   "content",
+   "eval_cases.jsonl",
+   "outbound.jsonl"
+  ],
+  "canary_content_items": [
+   "content/B-1007/D-C07-extraction-prompt.json",
+   "content/B-1007/D-C07-letter.json"
+  ],
+  "canary_in_recommendation_prompts": [],
+  "names_found": {},
+  "negative_control_stores": [
+   "app.log",
+   "content",
+   "eval_cases.jsonl",
+   "outbound.jsonl"
+  ]
+ },
+ "E10": {
+  "space": 1000000,
+  "plain": {
+   "recovered": true,
+   "attempts": 398842,
+   "seconds": 0.15877791699313093
+  },
+  "keyed_with_key": {
+   "recovered": true,
+   "attempts": 398842,
+   "seconds": 0.4481730420011445
+  },
+  "keyed_other_key": {
+   "matches": 0,
+   "seconds": 1.182314582998515
+  }
+ },
+ "E11": {
+  "before": {
+   "content": 7,
+   "keys": 1,
+   "outbound": 2,
+   "eval_cases": 1
+  },
+  "deleted": {
+   "content": 7,
+   "keys": 1,
+   "outbound": 2,
+   "eval_cases": 1
+  },
+  "after": {
+   "content": 0,
+   "keys": 0,
+   "outbound": 0,
+   "eval_cases": 0
+  },
+  "erased_events": [
+   {
+    "subject_id": "B-1003",
+    "request_id": "ER-0001",
+    "deleted": {
+     "content": 7,
+     "keys": 1,
+     "outbound": 2,
+     "eval_cases": 1
+    }
+   }
+  ],
+  "K1": [],
+  "statuses": {
+   "Q1": "content erased",
+   "Q2.policy": "answered",
+   "Q2.account_snapshot": "content erased",
+   "Q3": "answered",
+   "Q4": "answered",
+   "Q5": "answered",
+   "Q6": "answered",
+   "Q7": "answered",
+   "Q8": "answered",
+   "Q9": "answered"
+  },
+  "Q1": {
+   "status": "content erased",
+   "when": "2026-11-20T10:00:00Z",
+   "request": "ER-0001"
+  },
+  "Q2_snapshot": {
+   "status": "content erased",
+   "when": "2026-11-20T10:00:00Z",
+   "request": "ER-0001"
+  },
+  "negative_control_stores": [
+   "cache.jsonl"
+  ]
+ },
+ "E12": {
+  "day0": {
+   "purged": [],
+   "keys_left": 12,
+   "traces_left": 24,
+   "outbound_left": 24,
+   "statuses": {
+    "Q1": "answered",
+    "Q2.policy": "answered",
+    "Q2.account_snapshot": "answered",
+    "Q3": "answered",
+    "Q4": "answered",
+    "Q5": "answered",
+    "Q6": "answered",
+    "Q7": "answered",
+    "Q8": "answered",
+    "Q9": "answered"
+   },
+   "Q1": {
+    "status": "answered",
+    "value": "I lost two shifts a week since September and fell behind. Could you waive the late fee on my loan this month?"
+   },
+   "K1": [],
+   "why": null
+  },
+  "day31": {
+   "purged": [
+    {
+     "store": "traces",
+     "rule": "debug_traces-30d",
+     "count": 24
+    },
+    {
+     "store": "outbound",
+     "rule": "outbound_requests-30d",
+     "count": 24
+    }
+   ],
+   "keys_left": 12,
+   "traces_left": 0,
+   "outbound_left": 0,
+   "statuses": {
+    "Q1": "answered",
+    "Q2.policy": "answered",
+    "Q2.account_snapshot": "answered",
+    "Q3": "answered",
+    "Q4": "answered",
+    "Q5": "answered",
+    "Q6": "answered",
+    "Q7": "answered",
+    "Q8": "answered",
+    "Q9": "answered"
+   },
+   "Q1": {
+    "status": "answered",
+    "value": "I lost two shifts a week since September and fell behind. Could you waive the late fee on my loan this month?"
+   },
+   "K1": [],
+   "why": null
+  },
+  "day366": {
+   "purged": [
+    {
+     "store": "eval_cases",
+     "rule": "eval_cases-365d",
+     "count": 2
+    },
+    {
+     "store": "content",
+     "rule": "content-365d",
+     "count": 84
+    }
+   ],
+   "keys_left": 0,
+   "traces_left": 0,
+   "outbound_left": 0,
+   "statuses": {
+    "Q1": "content deleted by retention",
+    "Q2.policy": "answered",
+    "Q2.account_snapshot": "content deleted by retention",
+    "Q3": "answered",
+    "Q4": "answered",
+    "Q5": "answered",
+    "Q6": "answered",
+    "Q7": "answered",
+    "Q8": "answered",
+    "Q9": "answered"
+   },
+   "Q1": {
+    "status": "content deleted by retention",
+    "when": "2027-11-04T00:00:00Z",
+    "rule": "content-365d"
+   },
+   "K1": [],
+   "why": null
+  },
+  "day731": {
+   "purged": [
+    {
+     "store": "audit",
+     "rule": "audit-730d",
+     "count": 109
+    }
+   ],
+   "keys_left": 0,
+   "traces_left": 0,
+   "outbound_left": 0,
+   "statuses": {
+    "Q1": "not answerable",
+    "Q2": "not answerable",
+    "Q3": "not answerable",
+    "Q4": "not answerable",
+    "Q5": "not answerable",
+    "Q6": "not answerable",
+    "Q7": "not answerable",
+    "Q8": "not answerable",
+    "Q9": "not answerable"
+   },
+   "Q1": {
+    "status": "not answerable",
+    "why": "no events for this decision; purge log: rule audit-730d deleted 109 audit events dated 2026-11-03T08:00:00Z to 2026-11-03T12:52:00Z on 2028-11-03T00:00:00Z"
+   },
+   "K1": [],
+   "why": "no events for this decision; purge log: rule audit-730d deleted 109 audit events dated 2026-11-03T08:00:00Z to 2026-11-03T12:52:00Z on 2028-11-03T00:00:00Z"
+  }
+ }
+}

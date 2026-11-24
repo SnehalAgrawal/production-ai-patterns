@@ -1,0 +1,33 @@
+{
+ "note": "Fictional hardship policy. v15 lowers the agent's waiver limit from 50.00 to 40.00.",
+ "versions": {
+  "v14": {
+   "doc_id": "hardship-policy",
+   "version": "v14",
+   "effective_from": "2026-10-01",
+   "text": "4.1 Decline when the monthly surplus (income minus expenses) is 200.00 or more and no hardship is stated.\n4.2 A documented hardship may have late fees waived, up to the fees outstanding.\n4.3 A reviewer may approve a partial waiver.\n4.4 A payment plan may spread payments over at most 3 months.\n5.1 A hardship agent may approve waivers up to 50.00 and payment plans; a hardship lead up to 200.00.\n5.2 Whoever raised an exception may not approve it.",
+   "rules": {
+    "surplus_decline_at": 200.0,
+    "max_plan_months": 3,
+    "role_waiver_limit": {
+     "hardship-agent": 50.0,
+     "hardship-lead": 200.0
+    }
+   }
+  },
+  "v15": {
+   "doc_id": "hardship-policy",
+   "version": "v15",
+   "effective_from": "2026-11-03",
+   "text": "4.1 Decline when the monthly surplus (income minus expenses) is 200.00 or more and no hardship is stated.\n4.2 A documented hardship may have late fees waived, up to the fees outstanding.\n4.3 A reviewer may approve a partial waiver.\n4.4 A payment plan may spread payments over at most 3 months.\n5.1 A hardship agent may approve waivers up to 40.00 and payment plans; a hardship lead up to 200.00.\n5.2 Whoever raised an exception may not approve it.",
+   "rules": {
+    "surplus_decline_at": 200.0,
+    "max_plan_months": 3,
+    "role_waiver_limit": {
+     "hardship-agent": 40.0,
+     "hardship-lead": 200.0
+    }
+   }
+  }
+ }
+}

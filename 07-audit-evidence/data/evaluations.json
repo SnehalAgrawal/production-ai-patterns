@@ -1,0 +1,21 @@
+{
+ "note": "Fixtures. This demo does not run an evaluation; it checks that an evaluation record is bound to the exact release that was deployed, and to the model identifier observed when it ran.",
+ "evaluations": [
+  {
+   "evaluation_id": "EV-assistant-2026.11.1",
+   "release": "assistant-2026.11.1",
+   "evaluated_at": "2026-10-30T16:00:00Z",
+   "manifest_sha256": "f83e1fdc45e070e2f7d56a4d772645e46cbdc83cc7e8d83c61d6ce2fd26d9d6a",
+   "returned_model_observed": "lender-recommender-2026-10-01",
+   "outcome": "accepted (fixture)"
+  },
+  {
+   "evaluation_id": "EV-assistant-2026.11.2",
+   "release": "assistant-2026.11.2",
+   "evaluated_at": "2026-11-02T16:00:00Z",
+   "manifest_sha256": "9cc4c56ed883fe014c02c807d9223a6bb579facb9518980ff640ca0e6a437de0",
+   "returned_model_observed": "lender-recommender-2026-10-01",
+   "outcome": "accepted (fixture)"
+  }
+ ]
+}
