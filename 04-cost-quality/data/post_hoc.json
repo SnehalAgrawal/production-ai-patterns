@@ -1,0 +1,129 @@
+{
+ "_comment": "Post-hoc records, written after the runs and outside the freeze (README deviation D2). Nothing here changes a",
+ "cut_off_drafts": [
+  {
+   "run": "b0",
+   "email": "e14",
+   "model": "llama3.2:3b",
+   "output_tokens": 700,
+   "stopped_in": "sources",
+   "highest_source": 11,
+   "content": "{\n  \"reply\": \"Our app backs up your data every 6 hours. Our data retention policy states that backups are kept for 35 days and then deleted. Data deleted from the app is kept in backups for up to 35 days after the deletion. After 90 days, all projects, tasks, and files are permanently deleted.\",\n  \"sources\": [11, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,"
+  },
+  {
+   "run": "v2",
+   "email": "e02",
+   "model": "llama3.2:3b",
+   "output_tokens": 150,
+   "stopped_in": "reply",
+   "highest_source": null,
+   "content": "{\n  \"reply\": \"Aiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) to fix the issue.\\n\\nTo fix the SSO login error for Aiyana, invite her or check the NameID format. If the problem continues, contact support through live chat with the error code and the time of the failed attempt.\\n\\nAiyana gets SSO-103 when she tries to sign in through Okta because the email address doesn't match any member. Invite Aiyana, or check the NameID format (step 3) to fix the issue.\\n"
+  },
+  {
+   "run": "v2",
+   "email": "e14",
+   "model": "llama3.2:3b",
+   "output_tokens": 150,
+   "stopped_in": "sources",
+   "highest_source": 11,
+   "content": "{\n  \"reply\": \"Our app backs up your data every 6 hours. Our data retention policy states that backups are kept for 35 days and then deleted. Data deleted from the app is kept in backups for up to 35 days after the deletion. After 90 days, all projects, tasks, and files are permanently deleted.\",\n  \"sources\": [11, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5"
+  },
+  {
+   "run": "v2",
+   "email": "e18",
+   "model": "llama3.2:3b",
+   "output_tokens": 150,
+   "stopped_in": "sources",
+   "highest_source": 8,
+   "content": "{\n  \"reply\": \"We will not lose task.completed events sent during the 3-hour window when your webhook endpoint is down. According to the API reference, failed webhook deliveries are retried up to 5 times over 24 hours, so any events sent during the 3-hour window will be retried and delivered after the downtime.\\n\\nAs for splitting your integrations, the API reference states that each organization can now have up to 20 webhooks, up from 10. However, you are planning to have 25 webhooks, which exceeds the limit. You will need to upgrade to a plan that supports more webhooks or contact us to discuss alternative solutions.\",\n  \"sources\": [\n    3,\n    8"
+  },
+  {
+   "run": "v2",
+   "email": "e24",
+   "model": "llama3.2:3b",
+   "output_tokens": 150,
+   "stopped_in": "sources",
+   "highest_source": 24,
+   "content": "{\n  \"reply\": \"Hi Sophie,\\n\\nTo downgrade to Basic, you need to archive projects until no more than 3 are active, remove or suspend members until no more than 5 remain, including pending invitations, remove guests from any project that has more than 10, delete files until storage is under 10 GB, and turn off single sign-on, SCIM, and the IP allowlist. The downgrade takes effect at the start of the next billing period.\\n\\nIf you stay on Pro, there is no discount for paying three years upfront.\\n\\nSupport team\",\n  \"sources\": [1, 5, 9, 13, 15, 19, 21, 22, 24"
+  },
+  {
+   "run": "v2",
+   "email": "e36",
+   "model": "llama3.2:3b",
+   "output_tokens": 150,
+   "stopped_in": "sources",
+   "highest_source": 7,
+   "content": "{\n  \"reply\": \"Hello Olga,\\n\\na) Our support staff can access your data only to resolve a support request, and only with permission from the Owner or an Admin of the organization. Permission is given in the support conversation and lasts for 7 days or until the request is closed, whichever comes first.\\n\\nb) We keep your support chat transcripts for 2 years after the conversation ends, so that we can refer to earlier requests. A customer can ask for its support conversations to be deleted sooner.\\n\\nc) Customers can't carry out their own on-site audits; the audit report is provided instead.\\n\\nBest,\\nSupport team\",\n  \"sources\": [1, 6, 7,"
+  },
+  {
+   "run": "v3",
+   "email": "e14",
+   "model": "llama3.2:1b",
+   "output_tokens": 700,
+   "stopped_in": "reply",
+   "highest_source": null,
+   "content": "{\"reply\": \"How often does the app back up our data?\\n1. How often does the app back up our data?\\n2. How long are the backups kept?\\nDocumentation excerpts:\\n[1] (data-processing-policy.md)\\n# Data Processing Policy\\n## 5. Retention\\n### 5.3 Backups\\nEach backup is kept for 35 days and then deleted. Data deleted from the app therefore remains in backups for up to 35 days after the deletion. Backups are used only to recover from failures of our systems, not to restore individual items for customers.\\n[2] (data-processing-policy.md)\\n# Data Processing Policy\\n## 5.3 Backups\\nEach backup is kept for 35 days and then deleted. Data deleted from the app therefore remains in backups for up to 35 days after the deletion. Backups are used only to recover from failures of our systems, not to restore individual items for customers.\\n[3] (data-processing-policy.md)\\n# Data Processing Policy\\n## 11. Changes to this policy\\nWe may change this policy to reflect changes in the app, our subprocessors, or the law. We email the Owner at least 30 days before a change takes effect, unless the law requires a change sooner. The current version and the date of the last change are always shown at the top of this policy.\\n[4] (data-processing-policy.md)\\n# Data Processing Policy\\n## 5. Retention\\n### 5.2 After the subscription ends\\nWhen a subscription ends, for example after cancellation, customer data is kept for 90 days so that the customer can export it or reactivate the subscription. After 90 days, it is permanently deleted from the app.\\n[5] (data-processing-policy.md)\\n# Data Processing Policy\\n## 5. Retention\\n### 5.1 While the subscription is active\\nCustomer data is kept for as long as the customer keeps it in the app. Deleted tasks, files, and projects stay in Trash for 30 days and are then permanently deleted.\\n[6] (billing-guide.md)\\n# Billing and Plans Guide\\n## Cancelling\\nCancel under Settings > Billing > Cancel. The plan stays active until the end of the current billing period, and then the organization becomes read-only.\\n[7] (data-processing-policy.md)\\n# Data Processing Policy\\n## 6. Deletion\\n### 6.1 Deleting an organization\\nWhen the Owner deletes the organization, all customer data is deleted from the app within 24 hours. Copies in backups are not deleted early; they expire as described in section 5.3. Billing records are kept as described in section 5.6.\\n[8] (data-processing-policy.md)\\n# Data Processing Policy\\n## 8. Security\\n### 8.3 Access by our staff\\nOur staff can access customer data only to resolve a support request, and only with permission from the Owner or an Admin of the organization. Permission is given in the support conversation and lasts for 7 days or until the request is closed, whichever comes first. Every access is logged and appears in the customer's audit log.\\n[9] (data-processing-policy.md)\\n# Data Processing Policy\\n## 3. Categories of data\\nWe process:\\n1. Customer data, as defined in"
+  },
+  {
+   "run": "v3",
+   "email": "e16",
+   "model": "llama3.2:1b",
+   "output_tokens": 700,
+   "stopped_in": "reply",
+   "highest_source": null,
+   "content": "{\n  \"reply\": \"Will you try the payment again, and when?\\r\\nWhat happens if it keeps failing?\\r\\n1. Will you try the payment again, and when?\\r\\n2. What happens if it keeps failing?\\r\\n[1] (billing-guide.md)\\r\\n# Billing and Plans Guide\\r\\n## Failed payments\\r\\nIf a card payment fails, we retry it on this schedule, and email the Owner after each failed attempt:\\r\\n| Attempt | When |\\r\\n| First retry | 1 day after the failed payment |\\r\\n| Second retry | 3 days after the failed payment |\\r\\n| Third retry | 7 days after the failed payment |\\r\\n[2] (billing-guide.md)\\r\\n# Billing and Plans Guide\\r\\n## Refunds\\r\\nYou can request a refund within 30 days of purchase, through live chat. A purchase is the first payment of a plan or an annual renewal. Approved refunds go back to the original payment method.\\r\\n[3] (billing-guide.md)\\r\\n# Billing and Plans Guide\\r\\n## Billing frequency and billing dates\\r\\n### Annual billing\\r\\nAn annual plan costs the same as 10 months of monthly billing. It renews automatically on the anniversary of the purchase date, and the Owner receives a reminder email 14 days before each renewal. Switch between monthly and annual billing under Settings > Billing > Billing frequency. When you switch from monthly to annual, the unused part of the current month is credited against the first annual payment. When you switch from annual to monthly, the change takes effect when the annual period ends.\\r\\n[4] (billing-guide.md)\\r\\n# Billing and Plans Guide\\r\\n## Cancelling\\r\\nCancel under Settings > Billing > Cancel. The plan stays active until the end of the current billing period, and then the organization becomes read-only.\\r\\nAfter the plan ends, your data is kept for 90 days. During that time you can sign in, export your data, and reactivate the subscription from Settings > Billing, and everything will be exactly as you left it. After 90 days, all projects, tasks, and files are permanently deleted. If you want your data deleted sooner, delete the organization instead; see the Data Processing Policy for how long deletion takes, including backups.\\r\\n[5] (billing-guide.md)\\r\\n# Billing and Plans Guide\\r\\n## Payment methods\\r\\nWe accept Visa, Mastercard, and American Express. Organizations on an annual plan can also pay by bank transfer against an invoice. Ask for this through live chat before your first annual payment. A bank transfer invoice is due within 30 days of its date; if it isn't paid by then, the organization becomes read-only, as with a failed card payment. Payable by bank transfer is not accepted.\\r\\n[6] (billing-guide.md)\\r\\n# Billing and Plans Guide\\r\\n## Taxes\\r\\nPrices don't include tax. For organizations in the European Union, VAT is added at the rate of your country, unless you enter a valid VAT number under Settings > Billing > Invoice details; then the reverse-charge mechanism applies and no VAT is added. The VAT number is checked when you save it, and an invalid number is rejected. Organizations elsewhere are charged the sales tax that applies at the billing address, if any. Tax is shown as a separate"
+  },
+  {
+   "run": "v3",
+   "email": "e24",
+   "model": "llama3.2:1b",
+   "output_tokens": 700,
+   "stopped_in": "reply",
+   "highest_source": null,
+   "content": "{\"reply\": \"Downgrading to Basic\\nWhen would the downgrade take effect?\\n\\n1. The downgrade takes effect at the start of the next billing period, so you keep Pro features until then.\\n2. On an annual plan, a downgrade takes effect when the annual period ends.\\n3. There is no refund for the rest of the current period.\\n\\n4. Before you can downgrade to Basic, the organization has to fit within its limits:\\n\\n1. Archive projects until no more than 3 are active.\\n2. Remove or suspend members until no more than 5 remain, including pending invitations.\\n3. Remove guests from any project that has more than 10.\\n4. Delete files until storage is under 10 GB. Files larger than 100 MB that are already stored are kept, but new uploads must be under 100 MB.\\n5. Turn off single sign-on, SCIM, and the IP allowlist. The audit log is kept, but it stops recording new events and becomes visible again only if you upgrade.\\n\\n5. The Change plan page checks each of these and lists anything that still needs to be done.\\n\\n6. The Change plan page checks every limit on the Change plan page and lists what still needs to be done, instead of failing with a single error.\\n\\n7. The Change plan page checks every limit on the Change plan page and lists what still needs to be done, instead of failing with a single error.\\n\\n8. The Change plan page checks every limit on the Change plan page and lists what still needs to be done, instead of failing with a single error.\\n\\n9. The Change plan page checks every limit on the Change plan page and lists what still needs to be done, instead of failing with a single error.\\n\\n10. The Change plan page checks every limit on the Change plan page and lists what still needs to be done, instead of failing with a single error.\\n\\n11. The Change plan page checks every limit on the Change plan page and lists what still needs to be done, instead of failing with a single error.\\n\\n12. The Change plan page checks every limit on the Change plan page and lists what still needs to be done, instead of failing with a single error.\\n\\n13. The Change plan page checks every limit on the Change plan page and lists what still needs to be done, instead of failing with a single error.\\n\\n14. The Change plan page checks every limit on the Change plan page and lists what still needs to be done, instead of failing with a single error.\\n\\n15. The Change plan page checks every limit on the Change plan page and lists what still needs to be done, instead of failing with a single error.\\n\\n16. The Change plan page checks every limit on the Change plan page and lists what still needs to be done, instead of failing with a single error.\\n\\n17. The Change plan page checks every limit on the Change plan page and lists what still needs to be done, instead of failing with a single error.\\n\\n18. The Change plan page checks every limit on the Change plan page and lists what still needs to be done, instead of failing with a single error.\\n\\n19. The Change plan page checks every limit on the Change plan page and lists what still needs to be done, instead of failing with a single"
+  },
+  {
+   "run": "v3",
+   "email": "e30",
+   "model": "llama3.2:1b",
+   "output_tokens": 700,
+   "stopped_in": "reply",
+   "highest_source": null,
+   "content": "{\"reply\": \"Will old links in our wiki break after renaming the company from Northstar Robotics to Polaris Robotics and changing the web address from app.example.com/northstar to app.example.com/polaris?\\n\\n1. Will old links in our wiki break after renaming the company from Northstar Robotics to Polaris Robotics and changing the web address from app.example.com/northstar to app.example.com/polaris?\\n\\n2. Is the app available in Italian?\\n\\nDocumentation excerpts:\\n[1] (admin-guide.md)\\n# Administrator Guide\\n## 1. Organization settings\\n### 1.1 Name and address\\nThe organization name appears in the sidebar, in invitation emails, and on invoices. Change it under Settings > Organization > General. Every organization also has a web address of the form app.example.com/your-name. The address can be changed once every 30 days. Old links keep working for 90 days after a change and then stop redirecting, so update bookmarks and integrations that use the old address.\\n[2] (admin-guide.md)\\n# Administrator Guide\\n## 7. Security settings\\n### 7.3 IP allowlist\\nOn the Pro plan, Admins can limit sign-ins and API requests to a list of IP address ranges, under Settings > Security > IP allowlist. Enter up to 50 ranges in CIDR notation, such as 203.0.113.0/24. Requests from other addresses are refused with an error that names the allowlist. The Owner is exempt from the allowlist, so a wrong entry can't lock everyone out. Webhook deliveries are not affected, because they go from our servers to yours.\\n[3] (api-reference.md)\\n# API Reference\\n## Versioning and deprecation\\nThe version is part of the path. Changes that could break existing clients, such as removing a field or changing its type, are made only in a new version. Adding fields, endpoints, or event types isn't considered breaking, so clients should ignore fields they don't know.\\nWhen an endpoint or version is deprecated, its responses include a Deprecation header, and a Sunset header with the date it will stop working. A deprecated version keeps working for at least 6 months after the announcement.\\n[4] (release-notes.md)\\n# Release Notes\\n## Version 5.4 (2026-01-12)\\n### Changed\\n- Organization web addresses can now be changed once every 30 days, instead of once only. Old addresses redirect for 90 days.\\n[5] (data-processing-policy.md)\\n# Data Processing Policy\\n## 11. Changes to this policy\\nWe may change this policy to reflect changes in the app, our subprocessors, or the law. We email the Owner at least 30 days before a change takes effect, unless the law requires a change sooner. The current version and the date of the last change are always shown at the top of this policy.\\n[6] (data-processing-policy.md)\\n# Data Processing Policy\\n## 5. Retention\\n### 5.2 After the subscription ends\\nWhen a subscription ends, for example after cancellation, customer data is kept for 90 days so that the customer can export it or reactivate the subscription. After 90 days, it is permanently deleted from the app.\\n[7] ("
+  },
+  {
+   "run": "v3",
+   "email": "e32",
+   "model": "llama3.2:1b",
+   "output_tokens": 700,
+   "stopped_in": "sources",
+   "highest_source": 226,
+   "content": "{\"reply\": \"1. What would the annual price be for the Pro plan?\\n\",\n\"sources\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226"
+  },
+  {
+   "run": "v3",
+   "email": "e34",
+   "model": "llama3.2:1b",
+   "output_tokens": 700,
+   "stopped_in": "sources",
+   "highest_source": 218,
+   "content": "{\"reply\": \"1. What is the limit now?\\n2. Could we create several keys and spread requests across them to go faster?\\n3. How many keys can one member have?\\n\", \"sources\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, "
+  },
+  {
+   "run": "v3",
+   "email": "e38",
+   "model": "llama3.2:1b",
+   "output_tokens": 700,
+   "stopped_in": "sources",
+   "highest_source": 226,
+   "content": "{\"reply\": \"1. Is @mentions notification enabled for comment.created webhooks?\\n\",\n\"sources\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226"
+  }
+ ],
+ "agreement_with_33": {
+  "replies": 19,
+  "same_outcome": 19,
+  "question_values": 37,
+  "same_question_values": 37,
+  "same_false_statement_flags": 19
+ }
+}
