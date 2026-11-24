@@ -162,7 +162,7 @@ The application saw the answer call's first chunk at a median of 153.7 to 153.9 
 
 The negative control adds a 20 ms step with no span. Median unattributed time rose by 23.9, 24.4, and 25.0 ms in the three repeats, more than the 17 to 23 ms the protocol expected, so E9 failed every time. Every instrumented span stayed within 0.82 ms of the baseline, so the extra time did appear as unattributed, as intended. The expectation got its size wrong.
 
-A check made afterwards (post hoc, not part of the protocol) measured `time.sleep` on this machine, 60 calls each: a 10 ms sleep overshot by a median of 2.51 ms, a 20 ms sleep by 4.63 ms, and a 30 ms sleep by 3.77 ms. That matches the step taking about 24 ms. The other in-process sleeps show the same effect: `load_state`, configured with a median of 10 ms, measured a median of about 12. **Configured delays are nominal; the measured times include this overshoot.** The protocol wasn't changed.
+A check made afterwards (post hoc, not part of the protocol) measured `time.sleep` on this machine, 60 calls each: a 10 ms sleep overshot by a median of 2.51 ms, a 20 ms sleep by 4.63 ms, and a 30 ms sleep by 3.77 ms. That is consistent with the step taking about 24 ms, and suggests the cause. The other in-process sleeps show the same effect: `load_state`, configured with a median of 10 ms, measured a median of about 12. **Configured delays are nominal; the measured times include this overshoot.** The protocol wasn't changed.
 
 ## Limits
 
