@@ -1,0 +1,150 @@
+{
+  "_comment": "Synthetic data. C-1001 is the account from ai-agent-patterns/07-human-in-the-loop (Article #29), copied unchanged apart from this comment: October's invoice INV-1002 was charged twice on 2026-10-29 (PAY-5005 and PAY-5006). C-3001 is added for this demo: one $600 annual invoice, charged once. disputes starts empty; scenarios open one. Nothing here describes a real customer or company.",
+  "customers": [
+    {
+      "id": "C-1001",
+      "email": "owner@customer.example",
+      "plan": "Pro"
+    },
+    {
+      "id": "C-3001",
+      "email": "admin@annual.example",
+      "plan": "Pro annual"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "INV-0998",
+      "customer": "C-1001",
+      "date": "2026-08-28",
+      "amount": 25,
+      "description": "Pro plan, August 2026",
+      "status": "refunded"
+    },
+    {
+      "id": "INV-1001",
+      "customer": "C-1001",
+      "date": "2026-09-28",
+      "amount": 25,
+      "description": "Pro plan, September 2026",
+      "status": "paid"
+    },
+    {
+      "id": "INV-1002",
+      "customer": "C-1001",
+      "date": "2026-10-28",
+      "amount": 25,
+      "description": "Pro plan, October 2026",
+      "status": "paid"
+    },
+    {
+      "id": "INV-1003",
+      "customer": "C-1001",
+      "date": "2026-11-05",
+      "amount": 15,
+      "description": "Extra seats add-on",
+      "status": "paid"
+    },
+    {
+      "id": "INV-2042",
+      "customer": "C-2042",
+      "date": "2026-11-02",
+      "amount": 25,
+      "description": "Pro plan, November 2026",
+      "status": "paid"
+    },
+    {
+      "id": "INV-3001",
+      "customer": "C-3001",
+      "date": "2026-11-01",
+      "amount": 600,
+      "description": "Pro plan, annual, 2026-11 to 2027-10",
+      "status": "paid"
+    }
+  ],
+  "payments": [
+    {
+      "id": "PAY-5001",
+      "customer": "C-1001",
+      "date": "2026-08-28",
+      "type": "charge",
+      "amount": 25,
+      "invoice": "INV-0998",
+      "status": "succeeded"
+    },
+    {
+      "id": "PAY-5002",
+      "customer": "C-1001",
+      "date": "2026-09-05",
+      "type": "refund",
+      "amount": 25,
+      "invoice": "INV-0998",
+      "status": "succeeded"
+    },
+    {
+      "id": "PAY-5003",
+      "customer": "C-1001",
+      "date": "2026-09-28",
+      "type": "charge",
+      "amount": 25,
+      "invoice": "INV-1001",
+      "status": "succeeded"
+    },
+    {
+      "id": "PAY-5004",
+      "customer": "C-1001",
+      "date": "2026-10-28",
+      "type": "charge",
+      "amount": 25,
+      "invoice": "INV-1002",
+      "status": "failed",
+      "note": "card declined"
+    },
+    {
+      "id": "PAY-5005",
+      "customer": "C-1001",
+      "date": "2026-10-29",
+      "type": "charge",
+      "amount": 25,
+      "invoice": "INV-1002",
+      "status": "succeeded"
+    },
+    {
+      "id": "PAY-5006",
+      "customer": "C-1001",
+      "date": "2026-10-29",
+      "type": "charge",
+      "amount": 25,
+      "invoice": "INV-1002",
+      "status": "succeeded"
+    },
+    {
+      "id": "PAY-5007",
+      "customer": "C-1001",
+      "date": "2026-11-05",
+      "type": "charge",
+      "amount": 15,
+      "invoice": "INV-1003",
+      "status": "succeeded"
+    },
+    {
+      "id": "PAY-6001",
+      "customer": "C-2042",
+      "date": "2026-11-02",
+      "type": "charge",
+      "amount": 25,
+      "invoice": "INV-2042",
+      "status": "succeeded"
+    },
+    {
+      "id": "PAY-7001",
+      "customer": "C-3001",
+      "date": "2026-11-01",
+      "type": "charge",
+      "amount": 600,
+      "invoice": "INV-3001",
+      "status": "succeeded"
+    }
+  ],
+  "disputes": []
+}

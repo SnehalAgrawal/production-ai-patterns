@@ -1,0 +1,20 @@
+{
+  "_comment": "Synthetic review policy for the support assistant. Times are UTC. A demo policy, not a recommendation for real limits.",
+  "start": "2026-11-12T09:00:00Z",
+  "refund_window_days": 30,
+  "store_credit_auto_max": 25,
+  "high_value_min": 500,
+  "not_available_to_model": ["close_account", "change_permissions"],
+  "reply_review_pattern": "\\b(refund(ed|s)?|credit(ed|s)?|cancel(l?ed)?|waive(d)?)\\b",
+  "tiers": {
+    "within_policy": {"may_decide": ["support", "billing_lead"], "approvals": 1},
+    "exception":     {"may_decide": ["billing_lead"], "approvals": 1},
+    "high_value":    {"may_decide": ["billing_lead"], "approvals": 2},
+    "reply":         {"may_decide": ["support", "billing_lead"], "approvals": 1}
+  },
+  "reject_reasons": ["wrong_invoice", "outside_policy", "already_refunded", "not_supported_by_records", "needs_more_information", "other"],
+  "sla_hours": 4,
+  "expiry_hours": 24,
+  "lease_minutes": 30,
+  "audit_sample_percent": 10
+}

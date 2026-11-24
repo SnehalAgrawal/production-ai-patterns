@@ -1,0 +1,270 @@
+Review desk, run 1. Freeze: matches=True
+
+== All safeguards on
+
+R01  no review item
+     money: none
+     sent: "Your next invoice is due on 2026-11-28 for $25 plus $15 for the extra seats."
+R02  no review item
+     money: $25.00 credit to C-1001 (approved by: automatic)
+R03  RV-001 within_policy -> completed
+     decisions: ana approve
+     money: $25.00 refund on INV-1002 (approved by: ana)
+R04  RV-001 exception -> completed
+     decisions: chen approve; ana approve refused (not_authorized)
+     money: $25.00 refund on INV-1001 (approved by: chen)
+R05  RV-001 exception -> pending
+     decisions: ana approve refused (not_authorized)
+     money: none
+R06  RV-001 exception -> pending
+     decisions: dee approve refused (not_authorized)
+     money: none
+R07  RV-001 exception -> completed
+     decisions: dee approve; chen approve refused (requester)
+     money: $25.00 refund on INV-1001 (approved by: dee)
+R08  RV-001 high_value -> completed
+     decisions: chen approve; dee approve
+     money: $600.00 refund on INV-3001 (approved by: chen, dee)
+R09  RV-001 within_policy -> pending (v2)
+     decisions: ana approve refused (action_changed)
+     money: none
+R10  RV-001 within_policy -> pending (v2)
+     decisions: ana approve
+     money: none
+R11  RV-001 exception -> refused_at_execution
+     decisions: chen approve_with_edit
+     money: none
+R12  RV-001 reply -> completed
+     decisions: ana approve_with_edit
+     money: none
+     sent: "Your refund request for the duplicate October charge is with our billing team. We'll email you when it's done."
+R13  RV-001 within_policy -> rejected
+     decisions: ana reject
+     money: none
+R14  RV-001 within_policy -> completed
+     decisions: ana approve
+     money: $10.00 refund on INV-1002 (approved by: ana)
+R15  RV-001 within_policy -> expired escalated
+     money: none
+     sent: "We couldn't finish reviewing your request in time, so nothing has been refunded. Reply to this message and we'll look at it again."
+     notified billing_lead: SLA passed with no decision
+R16  RV-001 within_policy -> completed
+     decisions: ben approve
+     money: $25.00 refund on INV-1002 (approved by: ben)
+R17  RV-001 within_policy -> completed
+     decisions: ana approve
+     money: $25.00 refund on INV-1002 (approved by: ana)
+R18  RV-001 within_policy -> needs_evidence
+     decisions: ana approve refused (needs_evidence)
+     money: none
+R19  RV-001 within_policy -> completed
+     decisions: ana approve
+     money: $15.00 refund on INV-1003 (approved by: ana)
+R20  RV-001 within_policy -> approved
+     decisions: ana approve
+     money: none
+     seeded cases: 0 of 1 that should be rejected were caught
+R21  RV-001 exception -> completed escalated
+     decisions: ana escalate; chen approve
+     money: $25.00 refund on INV-1001 (approved by: chen)
+     notified billing_lead: ana: reject (outside_policy)
+R22  RV-001 within_policy -> completed
+     decisions: ana approve
+     money: $25.00 refund on INV-1002 (approved by: no approval)
+R23  RV-001 within_policy -> pending (v2)
+     decisions: ana approve
+     money: none
+R24  RV-001 high_value -> completed (v2)
+     decisions: chen approve; dee approve; chen approve
+     money: $599.00 refund on INV-3001 (approved by: dee, chen)
+R25  RV-001 high_value -> pending
+     decisions: chen approve_with_edit; dee approve refused (action_changed)
+     money: none
+R26  RV-001 within_policy -> expired
+     money: none
+R27  RV-001 high_value -> completed
+     decisions: chen approve; dee approve_with_edit; chen approve
+     money: $450.00 refund on INV-3001 (approved by: dee, chen)
+R28  RV-001 within_policy -> needs_evidence (v2)
+     decisions: ana approve refused (needs_evidence)
+     money: none
+R29  RV-001 within_policy -> completed
+     decisions: chen approve; chen approve_with_edit refused (edit_not_allowed)
+     money: $100.00 credit to C-3001 (approved by: chen)
+R30  RV-001 within_policy -> pending
+     money: none
+R31  RV-001 within_policy -> completed
+     decisions: ana approve
+     money: $25.00 refund on INV-1002 (approved by: no approval)
+R32  RV-001 within_policy -> pending (v2)
+     decisions: ana approve
+     money: none
+
+R19 labels exported:
+  {"item": "RV-001", "kind": "operational_decision", "source": "ana", "value": "approved"}
+  {"item": "RV-001", "kind": "gold", "reason": "wrong_invoice", "source": "independent audit by eli", "value": "wrong"}
+
+== Walkthrough: R10, evidence changed after approval
+
+The screen ana approved from:
+RV-001 v1  within_policy  may decide: support, billing_lead  approvals needed: 1  expires 2026-11-13T09:00:00Z
+  customer said:  'I was charged twice for my October invoice. Please refund the extra charge.'
+  action:         refund(invoice_id='INV-1002', amount=25.00)
+  requested by:   assistant
+  records (billing):
+    PAY-5001  2026-08-28  $25  INV-0998
+    PAY-5003  2026-09-28  $25  INV-1001
+    PAY-5005  2026-10-29  $25  INV-1002
+    PAY-5006  2026-10-29  $25  INV-1002
+    PAY-5007  2026-11-05  $15  INV-1003
+    refunded: {'INV-0998': 25.0, 'INV-1001': 0.0, 'INV-1002': 0.0, 'INV-1003': 0.0}   open disputes: none
+  claims:         {'duplicate_charge': True}
+  action_sha256   7d26eae9a08e232a...   evidence_sha256 81462ceccfb40148...
+Executor, 5 minutes later, after a chargeback was opened: evidence_changed
+  open_disputes: [] -> ["DSP-001 on PAY-5006"]
+The item back in the queue:
+RV-001 v2  within_policy  may decide: support, billing_lead  approvals needed: 1  expires 2026-11-13T09:00:00Z
+  customer said:  'I was charged twice for my October invoice. Please refund the extra charge.'
+  action:         refund(invoice_id='INV-1002', amount=25.00)
+  requested by:   assistant
+  records (billing):
+    PAY-5001  2026-08-28  $25  INV-0998
+    PAY-5003  2026-09-28  $25  INV-1001
+    PAY-5005  2026-10-29  $25  INV-1002
+    PAY-5006  2026-10-29  $25  INV-1002
+    PAY-5007  2026-11-05  $15  INV-1003
+    refunded: {'INV-0998': 25.0, 'INV-1001': 0.0, 'INV-1002': 0.0, 'INV-1003': 0.0}   open disputes: ['DSP-001 on PAY-5006']
+  claims:         {'duplicate_charge': True}
+  action_sha256   7d26eae9a08e232a...   evidence_sha256 d5bb4a13ebe4b597...
+
+== Determinism check (the all-on run repeated): identical in every scenario
+
+== Ablation: one safeguard off, everything else on
+
+G1 authority_from_directory off: changed R05   predicted to change R05: all changed
+    R05: money moved: $25.00 refund on INV-1001 (approved by: ana)
+    R05: status: RV-001 completed v1 (all-on: RV-001 pending v1)
+G2 authority_at_decision off: changed R06   predicted to change R06: all changed
+    R06: money moved: $25.00 refund on INV-1001 (approved by: dee)
+    R06: status: RV-001 completed v1 (all-on: RV-001 pending v1)
+G3 requester_cannot_approve off: changed R07   predicted to change R07: all changed
+    R07: money moved: $25.00 refund on INV-1001 (approved by: chen)
+    R07: money not moved: $25.00 refund on INV-1001 (approved by: dee)
+G4 two_person_rule off: changed R08, R24, R25, R27   predicted to change R08, R24, R25, R27: all changed
+    R08: money moved: $600.00 refund on INV-3001 (approved by: chen)
+    R08: money not moved: $600.00 refund on INV-3001 (approved by: chen, dee)
+    R24: money moved: $600.00 refund on INV-3001 (approved by: chen)
+    R24: money not moved: $599.00 refund on INV-3001 (approved by: dee, chen)
+    R24: status: RV-001 completed v1 (all-on: RV-001 completed v2)
+    R25: money moved: $550.00 refund on INV-3001 (approved by: chen)
+    R25: status: RV-001 completed v1 (all-on: RV-001 pending v1)
+    R27: money moved: $600.00 refund on INV-3001 (approved by: chen)
+    R27: money not moved: $450.00 refund on INV-3001 (approved by: dee, chen)
+G5 bind_to_action off: changed R09, R23, R24, R25, R27, R28, R32   predicted to change R09, R23, R24, R25, R27, R28, R32: all changed
+    R09: money moved: $15.00 refund on INV-1003 (approved by: ana)
+    R09: status: RV-001 completed v1 (all-on: RV-001 pending v2)
+    R23: money moved: $15.00 refund on INV-1003 (approved by: ana)
+    R23: status: RV-001 completed v1 (all-on: RV-001 pending v2)
+    R24: money moved: $599.00 refund on INV-3001 (approved by: chen, dee)
+    R24: money not moved: $599.00 refund on INV-3001 (approved by: dee, chen)
+    R24: status: RV-001 completed v1 (all-on: RV-001 completed v2)
+    R25: money moved: $550.00 refund on INV-3001 (approved by: chen, dee)
+    R25: status: RV-001 completed v1 (all-on: RV-001 pending v1)
+    R27: money moved: $450.00 refund on INV-3001 (approved by: chen, dee)
+    R27: money not moved: $450.00 refund on INV-3001 (approved by: dee, chen)
+    R28: status: RV-001 needs_evidence v1 (all-on: RV-001 needs_evidence v2)
+    R32: money moved: $25.00 refund on INV-1002 (approved by: ana)
+    R32: status: RV-001 completed v1 (all-on: RV-001 pending v2)
+G6 bind_to_evidence off: changed R10   predicted to change R10: all changed
+    R10: money moved: $25.00 refund on INV-1002 (approved by: ana)
+    R10: status: RV-001 completed v1 (all-on: RV-001 pending v2)
+G7 validate_at_execution off: changed R11   predicted to change R11: all changed
+    R11: money moved: $30.00 refund on INV-1002 (approved by: chen)
+    R11: status: RV-001 completed v1 (all-on: RV-001 refused_at_execution v1)
+G8 execute_final_version off: changed R11, R12, R27   predicted to change R11, R12: all changed   unpredicted: R27
+    R11: status: RV-001 pending v2 (all-on: RV-001 refused_at_execution v1)
+    R12: message not sent: "Your refund request for the duplicate October charge is with our billing team. We'll email you when it's done."
+    R12: status: RV-001 pending v2 (all-on: RV-001 completed v1)
+    R27: money not moved: $450.00 refund on INV-3001 (approved by: dee, chen)
+    R27: status: RV-001 pending v2 (all-on: RV-001 completed v1)
+G9 executor_checks_decision off: changed R13, R23, R32   predicted to change R13, R23, R32: all changed
+    R13: status: RV-001 pending v2 (all-on: RV-001 rejected v1)
+    R23: status: RV-001 pending v3 (all-on: RV-001 pending v2)
+    R32: money moved: $25.00 refund on INV-1002 (approved by: ana)
+    R32: status: RV-001 completed v2 (all-on: RV-001 pending v2)
+G10 execute_once off: changed R14, R22, R31   predicted to change R14, R22, R31: all changed
+    R14: money moved: $10.00 refund on INV-1002 (approved by: ana)
+    R22: status: RV-001 pending v2 (all-on: RV-001 completed v1)
+    R31: status: RV-001 pending v2 (all-on: RV-001 completed v1)
+G11 silence_is_not_consent off: changed R15, R26   predicted to change R15: all changed   unpredicted: R26
+    R15: money moved: $25.00 refund on INV-1002 (approved by: system:timeout)
+    R15: message not sent: "We couldn't finish reviewing your request in time, so nothing has been refunded. Reply to this message and we'll look at it again."
+    R15: review load: 1 items, 1 decisions (all-on: 1, 0)
+    R15: status: RV-001 completed v1 (all-on: RV-001 expired v1)
+    R26: review load: 1 items, 1 decisions (all-on: 1, 0)
+    R26: status: RV-001 approved v1 (all-on: RV-001 expired v1)
+G12 claim_lease off: changed R16   predicted to change R16: all changed
+    R16: money not moved: $25.00 refund on INV-1002 (approved by: ben)
+    R16: message sent: "We couldn't finish reviewing your request in time, so nothing has been refunded. Reply to this message and we'll look at it again."
+    R16: notified billing_lead: SLA passed with no decision
+    R16: status: RV-001 expired v1 (all-on: RV-001 completed v1)
+G13 dedupe_submissions off: changed R17   predicted to change R17: all changed
+    R17: review load: 2 items, 2 decisions (all-on: 1, 1)
+    R17: status: RV-001 completed v1, RV-002 pending v2 (all-on: RV-001 completed v1)
+G14 evidence_gate off: changed R18, R28   predicted to change R18, R28: all changed
+    R18: money moved: $15.00 refund on INV-1003 (approved by: ana)
+    R18: status: RV-001 completed v1 (all-on: RV-001 needs_evidence v1)
+    R28: money moved: $15.00 refund on INV-1003 (approved by: ana)
+    R28: status: RV-001 completed v2 (all-on: RV-001 needs_evidence v2)
+G15 label_provenance off: changed R03, R04, R07, R08, R10, R11, R12, R13, R14, R16, R17, R19, R20, R21, R22, R23, R24, R25, R26, R27, R29, R30, R31, R32   predicted to change R19, R23, R24, R25, R26, R27, R29, R30, R31, R32: all changed   unpredicted: R03, R04, R07, R08, R10, R11, R12, R13, R14, R16, R17, R20, R21, R22
+    R03: gold labels: RV-001 correct (decision by ana)
+    R04: gold labels: RV-001 correct (decision by chen)
+    R07: gold labels: RV-001 correct (decision by dee)
+    R08: gold labels: RV-001 correct (decision by chen); RV-001 correct (decision by dee)
+    R10: gold labels: RV-001 correct (decision by ana)
+    R11: gold labels: RV-001 correct (decision by chen)
+    R12: gold labels: RV-001 correct (decision by ana)
+    R13: gold labels: RV-001 wrong (decision by ana)
+    R14: gold labels: RV-001 correct (decision by ana)
+    R16: gold labels: RV-001 correct (decision by ben)
+    R17: gold labels: RV-001 correct (decision by ana)
+    R19: gold labels: RV-001 correct (decision by ana); RV-001 wrong (independent audit by eli)
+    R20: gold labels: RV-001 correct (decision by ana)
+    R21: gold labels: RV-001 wrong (decision by ana); RV-001 correct (decision by chen)
+    R22: gold labels: RV-001 correct (decision by ana)
+    R23: gold labels: RV-001 correct (decision by ana)
+    R24: gold labels: RV-001 correct (decision by chen); RV-001 correct (decision by dee); RV-001 correct (decision by chen)
+    R25: gold labels: RV-001 correct (decision by chen)
+    R26: gold labels: 
+    R27: gold labels: RV-001 correct (decision by chen); RV-001 correct (decision by dee); RV-001 correct (decision by chen)
+    R29: gold labels: RV-001 correct (decision by chen)
+    R30: gold labels: 
+    R31: gold labels: RV-001 correct (decision by ana)
+    R32: gold labels: RV-001 correct (decision by ana)
+G16 seeded_cases_inert off: changed R20, R26, R30   predicted to change R20, R26, R30: all changed
+    R20: money moved: $15.00 refund on INV-1003 (approved by: ana)
+    R20: status: RV-001 completed v1 (all-on: RV-001 approved v1)
+    R26: message sent: "We couldn't finish reviewing your request in time, so nothing has been refunded. Reply to this message and we'll look at it again."
+    R30: money moved: $20.00 credit to C-1001 (approved by: automatic)
+    R30: review load: 0 items, 0 decisions (all-on: 1, 0)
+    R30: status:  (all-on: RV-001 pending v1)
+    R30: gold labels: 
+
+== Summary (whether each predicted scenario changed; read the harm in the differences above)
+
+G1   authority_from_directory   predicted changed  changed  1
+G2   authority_at_decision      predicted changed  changed  1
+G3   requester_cannot_approve   predicted changed  changed  1
+G4   two_person_rule            predicted changed  changed  4
+G5   bind_to_action             predicted changed  changed  7
+G6   bind_to_evidence           predicted changed  changed  1
+G7   validate_at_execution      predicted changed  changed  1
+G8   execute_final_version      predicted changed  changed  3  (unpredicted: R27)
+G9   executor_checks_decision   predicted changed  changed  3
+G10  execute_once               predicted changed  changed  3
+G11  silence_is_not_consent     predicted changed  changed  2  (unpredicted: R26)
+G12  claim_lease                predicted changed  changed  1
+G13  dedupe_submissions         predicted changed  changed  1
+G14  evidence_gate              predicted changed  changed  2
+G15  label_provenance           predicted changed  changed 24  (unpredicted: R03, R04, R07, R08, R10, R11, R12, R13, R14, R16, R17, R20, R21, R22)
+G16  seeded_cases_inert         predicted changed  changed  3

@@ -1,0 +1,16 @@
+{
+  "frozen_at": "2026-11-24T17:20:05Z",
+  "note": "Second freeze (PROTOCOL-ADDENDUM.md). The first freeze (2026-11-24T16:59:00Z) and its three runs are in results/v1/. PROTOCOL-ADDENDUM.md's hash when written, before any code change (2026-11-24T17:18:38Z, the code then identical to the first freeze), was 3f3c2a6917d3f9cebd86fe9912f1c9a427215580f48af80bf8bb92d6bb48b923; it is unchanged. PROTOCOL.md is unchanged since 2026-11-24T16:52:47Z.",
+  "sha256": {
+    "PROTOCOL.md": "2b1c8c96657a5edb1e49a665a4b6056d8efe2a8474db58acefa200dba897262e",
+    "PROTOCOL-ADDENDUM.md": "3f3c2a6917d3f9cebd86fe9912f1c9a427215580f48af80bf8bb92d6bb48b923",
+    "data/accounts.json": "ed5cc9ee42f7ec634fa6adeefb3d4795fa1610f966ec8eea52fbfdb85d3ffb7b",
+    "data/directory.json": "aba13d0eb50904c54a689ecc28ed967757fd5a04d07e555b7672d6be88d74bce",
+    "data/policy.json": "dc10349b277b26ce565c786952b72fb8bfddc4fb0c677a99915a4f1a23c799b0",
+    "python/billing.py": "17bc10a70b428357b4550507c1f4fed510945eb819b6708c81669971ad6904e3",
+    "python/desk.py": "5d189044bb5f2818e3679adc0941be4e664cb8b435410211ce0b166efa384d2b",
+    "python/scenarios.py": "9c6ef0a0d0f2307a92ffc6ca2796f73bc66680b374ca2d0fb821c02f825ae5da",
+    "python/run.py": "67911e4a6f388c0f5bc23318f5c52ae3a2d9096fff2739f42311bca85847109c",
+    "python/test_desk.py": "05aa3093c20bbdcf9024ae149561bc5d3d2cdc80f61a0243ae63ee9eae82cb48"
+  }
+}

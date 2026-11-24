@@ -1,0 +1,46 @@
+test_r01_informational_reply_is_sent_without_review (test_desk.Scenarios.test_r01_informational_reply_is_sent_without_review) ... ok
+test_r02_small_store_credit_runs_automatically (test_desk.Scenarios.test_r02_small_store_credit_runs_automatically) ... ok
+test_r03_within_policy_refund_approved_once (test_desk.Scenarios.test_r03_within_policy_refund_approved_once) ... ok
+test_r04_support_cannot_approve_an_exception (test_desk.Scenarios.test_r04_support_cannot_approve_an_exception) ... ok
+test_r05_a_claimed_role_is_ignored (test_desk.Scenarios.test_r05_a_claimed_role_is_ignored) ... ok
+test_r06_authority_is_checked_when_the_decision_lands (test_desk.Scenarios.test_r06_authority_is_checked_when_the_decision_lands) ... ok
+test_r07_requester_cannot_approve_own_request (test_desk.Scenarios.test_r07_requester_cannot_approve_own_request) ... ok
+test_r08_high_value_needs_two_people (test_desk.Scenarios.test_r08_high_value_needs_two_people) ... ok
+test_r09_approval_of_a_different_action_is_refused (test_desk.Scenarios.test_r09_approval_of_a_different_action_is_refused) ... ok
+test_r10_evidence_changed_after_approval_reopens_the_item (test_desk.Scenarios.test_r10_evidence_changed_after_approval_reopens_the_item) ... ok
+test_r11_edited_amount_still_meets_the_hard_checks (test_desk.Scenarios.test_r11_edited_amount_still_meets_the_hard_checks) ... ok
+test_r12_the_edited_reply_is_sent (test_desk.Scenarios.test_r12_the_edited_reply_is_sent) ... ok
+test_r13_rejected_item_is_not_executed (test_desk.Scenarios.test_r13_rejected_item_is_not_executed) ... ok
+test_r14_two_workers_one_refund (test_desk.Scenarios.test_r14_two_workers_one_refund) ... ok
+test_r15_silence_escalates_then_expires (test_desk.Scenarios.test_r15_silence_escalates_then_expires) ... ok
+test_r16_an_abandoned_claim_lapses (test_desk.Scenarios.test_r16_an_abandoned_claim_lapses) ... ok
+test_r17_duplicate_submission_is_one_item (test_desk.Scenarios.test_r17_duplicate_submission_is_one_item) ... ok
+test_r18_unsupported_claim_cannot_be_approved (test_desk.Scenarios.test_r18_unsupported_claim_cannot_be_approved) ... ok
+test_r19_approval_is_not_a_gold_label (test_desk.Scenarios.test_r19_approval_is_not_a_gold_label) ... ok
+test_r20_seeded_case_measured_and_inert (test_desk.Scenarios.test_r20_seeded_case_measured_and_inert) ... ok
+test_r21_escalation_with_a_recommendation (test_desk.Scenarios.test_r21_escalation_with_a_recommendation) ... ok
+test_r22_unknown_outcome_retry_finds_the_refund (test_desk.Scenarios.test_r22_unknown_outcome_retry_finds_the_refund) ... ok
+test_r23_a_revision_after_approval_is_not_executed (test_desk.Scenarios.test_r23_a_revision_after_approval_is_not_executed) ... ok
+test_r24_an_approval_of_600_does_not_count_for_599 (test_desk.Scenarios.test_r24_an_approval_of_600_does_not_count_for_599) ... ok
+test_r25_second_approver_on_a_stale_screen_is_refused (test_desk.Scenarios.test_r25_second_approver_on_a_stale_screen_is_refused) ... ok
+test_r26_an_expired_seeded_case_sends_nothing (test_desk.Scenarios.test_r26_an_expired_seeded_case_sends_nothing) ... ok
+test_r27_an_edit_cannot_lower_the_number_of_approvers (test_desk.Scenarios.test_r27_an_edit_cannot_lower_the_number_of_approvers) ... ok
+test_r28_a_revision_goes_through_intake (test_desk.Scenarios.test_r28_a_revision_goes_through_intake) ... ok
+test_r29_store_credit_runs_as_credit_and_edits_keep_the_tool (test_desk.Scenarios.test_r29_store_credit_runs_as_credit_and_edits_keep_the_tool) ... ok
+test_r30_seeded_store_credit_is_not_automatic (test_desk.Scenarios.test_r30_seeded_store_credit_is_not_automatic) ... ok
+test_r31_no_revision_while_the_outcome_is_unknown (test_desk.Scenarios.test_r31_no_revision_while_the_outcome_is_unknown) ... ok
+test_r32_a_change_between_checks_and_write_stops_the_write (test_desk.Scenarios.test_r32_a_change_between_checks_and_write_stops_the_write) ... ok
+test_action_fingerprint_ignores_the_reason (test_desk.Units.test_action_fingerprint_ignores_the_reason) ... ok
+test_auditor_must_be_independent_of_the_decision (test_desk.Units.test_auditor_must_be_independent_of_the_decision) ... ok
+test_hard_checks_refuse_another_customers_invoice_without_a_person (test_desk.Units.test_hard_checks_refuse_another_customers_invoice_without_a_person) ... ok
+test_late_decision_on_an_expired_item_is_refused_before_the_sweeper_runs (test_desk.Units.test_late_decision_on_an_expired_item_is_refused_before_the_sweeper_runs) ... ok
+test_rejection_needs_a_listed_reason (test_desk.Units.test_rejection_needs_a_listed_reason) ... ok
+test_revision_cannot_change_customer_or_use_a_refused_tool (test_desk.Units.test_revision_cannot_change_customer_or_use_a_refused_tool) ... ok
+test_the_screen_does_not_reveal_a_seeded_case (test_desk.Units.test_the_screen_does_not_reveal_a_seeded_case) ... ok
+test_the_screen_shows_the_edited_action (test_desk.Units.test_the_screen_shows_the_edited_action) ... ok
+test_tool_not_available_to_the_model (test_desk.Units.test_tool_not_available_to_the_model) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 0.021s
+
+OK

@@ -1,0 +1,15 @@
+{
+  "frozen_at": "2026-11-24T16:59:00Z",
+  "note": "Written after development runs and before the first reported run. PROTOCOL.md's hash at the time it was written, before any code existed (2026-11-24T16:52:47Z), was 2b1c8c96657a5edb1e49a665a4b6056d8efe2a8474db58acefa200dba897262e; it is unchanged.",
+  "sha256": {
+    "PROTOCOL.md": "2b1c8c96657a5edb1e49a665a4b6056d8efe2a8474db58acefa200dba897262e",
+    "data/accounts.json": "ed5cc9ee42f7ec634fa6adeefb3d4795fa1610f966ec8eea52fbfdb85d3ffb7b",
+    "data/directory.json": "aba13d0eb50904c54a689ecc28ed967757fd5a04d07e555b7672d6be88d74bce",
+    "data/policy.json": "dc10349b277b26ce565c786952b72fb8bfddc4fb0c677a99915a4f1a23c799b0",
+    "python/billing.py": "17bc10a70b428357b4550507c1f4fed510945eb819b6708c81669971ad6904e3",
+    "python/desk.py": "353407ba6dc381e67e13d65061a22c7cd8d89bd9d99ebf8c72e11dc57edc4931",
+    "python/scenarios.py": "8c7fe1dc00ef0b7c2122b6aa345864e06b69af4540cebd5011ac2414d0879652",
+    "python/run.py": "6e20dd80bc71be3e52e820a6054e94dc252876e2bb3c3b21a89ecd4cb9a935d8",
+    "python/test_desk.py": "478e61387d4b1a89cc4dfdf87f9adb30a5822493507891a8bcd0513b9d3225a1"
+  }
+}

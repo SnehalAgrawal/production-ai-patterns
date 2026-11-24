@@ -1,0 +1,10 @@
+{
+  "_comment": "Synthetic reviewer directory: the system of record for who holds which role. The desk reads it at the moment a decision is recorded. Scenarios change it (a role revoked) to show why.",
+  "reviewers": {
+    "ana":  {"name": "Ana",  "roles": ["support"]},
+    "ben":  {"name": "Ben",  "roles": ["support"]},
+    "chen": {"name": "Chen", "roles": ["billing_lead"]},
+    "dee":  {"name": "Dee",  "roles": ["billing_lead"]},
+    "eli":  {"name": "Eli",  "roles": ["billing_lead"]}
+  }
+}

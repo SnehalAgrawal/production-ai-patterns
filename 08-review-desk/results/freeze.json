@@ -1,0 +1,18 @@
+{
+  "frozen_at": "2026-11-24T17:38:49Z",
+  "note": "Fourth freeze (PROTOCOL-ADDENDUM-3.md). Earlier freezes and their runs are in results/v1/, v2/ and v3/. PROTOCOL-ADDENDUM-3.md's hash when written, before any code change (2026-11-24T17:37:56Z, the code then identical to the third freeze), was 31baaa46084df7c7b3800bfe4ded24b425b6480914f67c2827ad9f52d472ae4b; it is unchanged. Earlier protocol files are unchanged.",
+  "sha256": {
+    "PROTOCOL.md": "2b1c8c96657a5edb1e49a665a4b6056d8efe2a8474db58acefa200dba897262e",
+    "PROTOCOL-ADDENDUM.md": "3f3c2a6917d3f9cebd86fe9912f1c9a427215580f48af80bf8bb92d6bb48b923",
+    "PROTOCOL-ADDENDUM-2.md": "367f684c0cc955827f7d2403623e48dffa0fb9c87d8a88d035fc815996297c50",
+    "PROTOCOL-ADDENDUM-3.md": "31baaa46084df7c7b3800bfe4ded24b425b6480914f67c2827ad9f52d472ae4b",
+    "data/accounts.json": "ed5cc9ee42f7ec634fa6adeefb3d4795fa1610f966ec8eea52fbfdb85d3ffb7b",
+    "data/directory.json": "aba13d0eb50904c54a689ecc28ed967757fd5a04d07e555b7672d6be88d74bce",
+    "data/policy.json": "dc10349b277b26ce565c786952b72fb8bfddc4fb0c677a99915a4f1a23c799b0",
+    "python/billing.py": "e26536083fccdca00c460c6eb4881352e585289e5dd546912e44b021d12514fd",
+    "python/desk.py": "b4b74789e1c33bbb384aa2cc8ca8c16384b345303ef5724c4cd81c9535d29e5f",
+    "python/scenarios.py": "79264e80ce2ebc150fd473ad6e354514d4e0ef0d7d82e8418ca61a27c8ab898e",
+    "python/run.py": "acf1d3e6279544a8bef00964748a56d2f7ae2dafc4e2b1f50f5fa189e2e283a9",
+    "python/test_desk.py": "181fbafc415435fff30740735729cec28cb725d39622a2ca1b732e610f8748e6"
+  }
+}
