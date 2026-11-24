@@ -1,0 +1,53 @@
+{
+ "_comment": "Every run of the experiment, in the order they run (PROTOCOL.md). Each changes one thing from b0. 'models' is the chat model per step; 'overrides' are changes to 01's data/settings.json; 'labelled' runs are on the test split and go to the blind worksheet. v4 has no run: it is assembled from b0 and v3 by report.py (PROTOCOL.md, V4).",
+ "order": ["b0dev", "b0", "v1", "v2", "v3", "v3r"],
+ "runs": {
+  "b0dev": {
+   "split": "dev",
+   "models": {"extract": "llama3.2:3b", "draft": "llama3.2:3b"},
+   "overrides": {},
+   "labelled": false,
+   "purpose": "the baseline on the development emails, only to set v2's output cap; never labelled or reported as a result"
+  },
+  "b0": {
+   "split": "test",
+   "models": {"extract": "llama3.2:3b", "draft": "llama3.2:3b"},
+   "overrides": {},
+   "labelled": true,
+   "purpose": "the baseline: 01's pipeline as #18 and #33 ran it (prompts v3, policy none)"
+  },
+  "v1": {
+   "split": "test",
+   "models": {"extract": "llama3.2:3b", "draft": "llama3.2:3b"},
+   "overrides": {"retrieval": {"budget_per_question": 500, "budget_per_email": 1500}},
+   "labelled": true,
+   "purpose": "send less: half the retrieval budget"
+  },
+  "v2": {
+   "split": "test",
+   "models": {"extract": "llama3.2:3b", "draft": "llama3.2:3b"},
+   "overrides": {"chat": {"draft_max_tokens": "cap_from_b0dev"}},
+   "labelled": true,
+   "purpose": "write less: an output cap at the typical reply length (the rule is in PROTOCOL.md and run.py)"
+  },
+  "v3": {
+   "split": "test",
+   "models": {"extract": "llama3.2:3b", "draft": "llama3.2:1b"},
+   "overrides": {},
+   "labelled": true,
+   "purpose": "a smaller model for drafting; extraction stays on the baseline model"
+  },
+  "v3r": {
+   "split": "test",
+   "models": {"extract": "llama3.2:3b", "draft": "llama3.2:1b"},
+   "overrides": {},
+   "labelled": false,
+   "purpose": "v3 again, only to compare text with v3 (run-to-run variation of the smaller model); never labelled"
+  }
+ },
+ "cap_rule": "the median output tokens of b0dev's draft calls, rounded up to the next multiple of 10",
+ "expected": {
+  "ollama": "0.40.17",
+  "models": {"llama3.2:3b": "a80c4f17acd5", "llama3.2:1b": "baf6a787fdff", "nomic-embed-text:latest": "0a109f422b47"}
+ }
+}

@@ -1,0 +1,468 @@
+{
+ "labeller": "Claude Opus 5.5, a separate blind agent (PROTOCOL.md, Labelling; same arrangement as 02's deviation D1)",
+ "verifier": "Claude (a second, separate Claude agent at the user's request instead of a person; README deviation D1)",
+ "changes": [],
+ "labels": {
+  "01e982c29356e3d8": {
+   "email": "e40",
+   "questions": {
+    "e40q1": "correct",
+    "e40q2": "correct",
+    "e40q3": "answered"
+   },
+   "false_statement": true,
+   "note": "e40q3: \"The mobile app does not work offline at events with no signal\" | false_statement: \"The mobile app does not work offline ... as stated in the release notes for Version 5.4\" (not in the documentation)"
+  },
+  "07c19dc87d461357": {
+   "email": "e04",
+   "questions": {
+    "e04q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "0aa22d828fd2ee64": {
+   "email": "e36",
+   "questions": {
+    "e36q1": "correct",
+    "e36q2": "correct",
+    "e36q3": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "0f4499f05f795a9f": {
+   "email": "e32",
+   "questions": {
+    "e32q1": "correct",
+    "e32q2": "correct",
+    "e32q3": "wrong"
+   },
+   "false_statement": false,
+   "note": "e32q3: Mentions live chat but omits that a bank transfer invoice is due within 30 days"
+  },
+  "27ea7133412462d4": {
+   "email": "e40",
+   "questions": {
+    "e40q1": "omitted",
+    "e40q2": "omitted",
+    "e40q3": "declined"
+   },
+   "false_statement": false,
+   "note": "e40q1: Only restates the questions | e40q2: Only restates the questions | e40q3: unsure: only restates the question; states nothing as fact but does not say it is not covered"
+  },
+  "2ba83d5cf85a3705": {
+   "email": "e20",
+   "questions": {
+    "e20q1": "wrong",
+    "e20q2": "wrong"
+   },
+   "false_statement": true,
+   "note": "e20q1: Omits one-year validity and the 14-day email before expiry | e20q2: \"We can map our identity provider groups to projects, but only if ...\"; \"planned for future releases\" | false_statement: \"We can map our identity provider groups to projects, but only if ...\"; \"it is planned for future releases\" (invented)"
+  },
+  "2bcaf38da01cc986": {
+   "email": "e18",
+   "questions": {
+    "e18q1": "correct",
+    "e18q2": "correct"
+   },
+   "false_statement": true,
+   "note": "false_statement: \"You will need to upgrade to a plan that supports more webhooks\" (no plan has more than 20; unsupported)"
+  },
+  "3262a05e4baa2d59": {
+   "email": "e08",
+   "questions": {
+    "e08q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "438edfbf2549a13c": {
+   "email": "e04",
+   "questions": {
+    "e04q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "45d2912f7403a0ee": {
+   "email": "e04",
+   "questions": {
+    "e04q1": "correct"
+   },
+   "false_statement": false,
+   "note": "false_statement: unsure: \"We help the customer decide whether to notify the authorities\" paraphrases \"the customer decides ...; we help with the information we have\""
+  },
+  "47a76f3ac7f4273f": {
+   "email": "e22",
+   "questions": {
+    "e22q1": "wrong",
+    "e22q2": "correct"
+   },
+   "false_statement": true,
+   "note": "e22q1: \"Yes, limit=500 will fail because the Basic plan has a rate limit of 100\" | false_statement: \"limit=500 will fail because the Basic plan has a rate limit of 100 requests per minute\""
+  },
+  "48638d0fdf66e686": {
+   "email": "e26",
+   "questions": {
+    "e26q1": "wrong",
+    "e26q2": "correct"
+   },
+   "false_statement": true,
+   "note": "e26q1: Says the allowlist is \"blocking requests from your office range\"; the office range is allowed, CI addresses are outside it; no advice to add the CI addresses | false_statement: \"The IP allowlist is currently blocking requests from your office range\" (requests from outside the allowlist are refused, not the office range)"
+  },
+  "4c5f4375a75ff141": {
+   "email": "e32",
+   "questions": {
+    "e32q1": "correct",
+    "e32q2": "correct",
+    "e32q3": "wrong"
+   },
+   "false_statement": true,
+   "note": "e32q2: unsure: states only the Owner can change the plan, but adds \"you need to contact our support team\" | e32q3: Mentions live chat before first annual payment but omits the 30-day due date | false_statement: unsure: \"To make the change, you need to contact our support team\" (the Owner changes the plan in Settings; not supported)"
+  },
+  "4d0f027c7b380d4d": {
+   "email": "e28",
+   "questions": {
+    "e28q1": "wrong",
+    "e28q2": "correct"
+   },
+   "false_statement": false,
+   "note": "e28q1: Omits that suspended members still count toward the member limit (seat not freed) | false_statement: unsure: \"Their data will be kept for 90 days after the subscription ends\" is true of organization data but irrelevant here"
+  },
+  "4dc2978f508ea531": {
+   "email": "e18",
+   "questions": {
+    "e18q1": "correct",
+    "e18q2": "omitted"
+   },
+   "false_statement": false,
+   "note": "e18q2: The 25-webhook question is not addressed"
+  },
+  "562c93a2f7e60836": {
+   "email": "e34",
+   "questions": {
+    "e34q1": "correct",
+    "e34q2": "correct",
+    "e34q3": "correct"
+   },
+   "false_statement": true,
+   "note": "false_statement: unsure: \"will not improve performance\" is unsupported (limits are per key, so more keys would raise throughput; it is against the terms)"
+  },
+  "578bc56406ae024a": {
+   "email": "e18",
+   "questions": {
+    "e18q1": "omitted",
+    "e18q2": "omitted"
+   },
+   "false_statement": false,
+   "note": "e18q1: Only restates a question | e18q2: Only restates a question"
+  },
+  "593c7b7e1293970e": {
+   "email": "e36",
+   "questions": {
+    "e36q1": "correct",
+    "e36q2": "correct",
+    "e36q3": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "5ac65e90a6cbf2fc": {
+   "email": "e28",
+   "questions": {
+    "e28q1": "wrong",
+    "e28q2": "wrong"
+   },
+   "false_statement": false,
+   "note": "e28q1: Recommends suspending but states neither what is kept nor that suspended members count toward the member limit | e28q2: unsure: \"prevent them from accessing their API keys\" does not state that the keys stop working | false_statement: unsure: \"prevent them from accessing their API keys and other sensitive data\" is loose wording rather than clearly false"
+  },
+  "5b20a31a1137c385": {
+   "email": "e12",
+   "questions": {
+    "e12q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "5d49c17cadf4864e": {
+   "email": "e20",
+   "questions": {
+    "e20q1": "omitted",
+    "e20q2": "omitted"
+   },
+   "false_statement": false,
+   "note": "e20q1: Only restates a question | e20q2: Only restates a question"
+  },
+  "665a6e83ba9f0420": {
+   "email": "e20",
+   "questions": {
+    "e20q1": "wrong",
+    "e20q2": "wrong"
+   },
+   "false_statement": true,
+   "note": "e20q1: Omits that tokens are valid for one year and the 14-day email before expiry | e20q2: \"Yes, we can map our identity provider groups to projects\" contradicts \"groups ... are not synchronized\" | false_statement: \"Yes, we can map our identity provider groups to projects\""
+  },
+  "6df690673313b7aa": {
+   "email": "e26",
+   "questions": {
+    "e26q1": "wrong",
+    "e26q2": "correct"
+   },
+   "false_statement": false,
+   "note": "e26q1: unsure: states \"refusing requests from addresses outside the specified range\" but never says to add the CI addresses or that CI is outside the range"
+  },
+  "80dfce5330c5e9ea": {
+   "email": "e16",
+   "questions": {
+    "e16q1": "correct",
+    "e16q2": "wrong"
+   },
+   "false_statement": false,
+   "note": "e16q2: States read-only but not that the API accepts only read requests (the integration question is unanswered)"
+  },
+  "8f4d8f3d873c319c": {
+   "email": "e02",
+   "questions": {
+    "e02q1": "omitted"
+   },
+   "false_statement": false,
+   "note": "e02q1: Only restates the questions and lists sources"
+  },
+  "968a758acef051cc": {
+   "email": "e40",
+   "questions": {
+    "e40q1": "correct",
+    "e40q2": "wrong",
+    "e40q3": "answered"
+   },
+   "false_statement": true,
+   "note": "e40q2: Says SMS codes were removed in 5.4 but omits using an authenticator app | e40q3: \"The mobile app does not work offline at events with no signal\" | false_statement: \"The mobile app does not work offline at events with no signal\" (not in the documentation)"
+  },
+  "9a819029b288d234": {
+   "email": "e24",
+   "questions": {
+    "e24q1": "correct",
+    "e24q2": "answered"
+   },
+   "false_statement": true,
+   "note": "e24q2: \"there is no discount for paying three years upfront\" | false_statement: \"there is no discount for paying three years upfront\" (not in the documentation)"
+  },
+  "a4a40d1893505394": {
+   "email": "e38",
+   "questions": {
+    "e38q1": "correct",
+    "e38q2": "wrong",
+    "e38q3": "correct"
+   },
+   "false_statement": false,
+   "note": "e38q2: Says it \"can't be restored through the API\" but omits that it can be restored in the app for 30 days"
+  },
+  "a630e48bcd900c36": {
+   "email": "e28",
+   "questions": {
+    "e28q1": "correct",
+    "e28q2": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "a70d96457d5b4f1f": {
+   "email": "e10",
+   "questions": {
+    "e10q1": "answered"
+   },
+   "false_statement": true,
+   "note": "e10q1: \"We do offer a discount for nonprofits or charities\" | false_statement: \"We do offer a discount for nonprofits or charities. Our nonprofit pricing plan is included in the Pro plan\" (invented)"
+  },
+  "a7216e8e0b70d70a": {
+   "email": "e10",
+   "questions": {
+    "e10q1": "answered"
+   },
+   "false_statement": true,
+   "note": "e10q1: \"We do not offer a discount for nonprofits or charities\" | false_statement: \"We do not offer a discount for nonprofits or charities\" (not in the documentation)"
+  },
+  "ac5c51c6d11ca9cf": {
+   "email": "e06",
+   "questions": {
+    "e06q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "ad50706090308554": {
+   "email": "e38",
+   "questions": {
+    "e38q1": "wrong",
+    "e38q2": "wrong",
+    "e38q3": "correct"
+   },
+   "false_statement": true,
+   "note": "e38q1: unsure: \"@mentions in comment.created webhooks are not enabled for notifications\" attributes it to webhooks, not to comments created through the API | e38q2: Says \"cannot be restored through the API\" but omits restore in the app within 30 days | false_statement: unsure: \"@mentions in comment.created webhooks are not enabled for notifications\" is not what the docs say (mentions in API-created comments don't notify)"
+  },
+  "b0e9771741193e65": {
+   "email": "e30",
+   "questions": {
+    "e30q1": "correct",
+    "e30q2": "wrong"
+   },
+   "false_statement": true,
+   "note": "e30q2: \"The app is available in Italian, as well as English, German, and Spanish\" (no Italian; French omitted) | false_statement: \"The app is available in Italian\""
+  },
+  "b48363f382ab569f": {
+   "email": "e06",
+   "questions": {
+    "e06q1": "wrong"
+   },
+   "false_statement": false,
+   "note": "e06q1: Omits contacting support through live chat"
+  },
+  "b6de03143b6f778d": {
+   "email": "e12",
+   "questions": {
+    "e12q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "b74a82df02d92a80": {
+   "email": "e10",
+   "questions": {
+    "e10q1": "answered"
+   },
+   "false_statement": true,
+   "note": "e10q1: \"We do not offer a discount for nonprofits or charities\" | false_statement: \"We do not offer a discount for nonprofits or charities\" (not in the documentation)"
+  },
+  "b9558e39fdeed176": {
+   "email": "e08",
+   "questions": {
+    "e08q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "bbaea243f54a47e9": {
+   "email": "e08",
+   "questions": {
+    "e08q1": "omitted"
+   },
+   "false_statement": false,
+   "note": "e08q1: Only restates the questions"
+  },
+  "bdd62a5abafb8d23": {
+   "email": "e22",
+   "questions": {
+    "e22q1": "wrong",
+    "e22q2": "correct"
+   },
+   "false_statement": true,
+   "note": "e22q1: \"Yes, limit=500 will fail because the Basic plan has a requests per minute limit of 100\" | false_statement: \"limit=500 will fail because the Basic plan has a requests per minute limit of 100\""
+  },
+  "bf492b5d9b9dac68": {
+   "email": "e34",
+   "questions": {
+    "e34q1": "correct",
+    "e34q2": "wrong",
+    "e34q3": "correct"
+   },
+   "false_statement": true,
+   "note": "e34q2: Omits that it is against the terms of service; says it \"won't speed up your API throughput\" | false_statement: \"won't speed up your API throughput, as the rate limit applies per key\" (a per-key limit means more keys would raise throughput)"
+  },
+  "c197a44d0db8ce1b": {
+   "email": "e02",
+   "questions": {
+    "e02q1": "correct"
+   },
+   "false_statement": true,
+   "note": "e02q1: unsure: facts stated correctly, but later says \"invite her in the identity provider (step 5)\" | false_statement: \"invite her in the identity provider (step 5 in the administrator guide)\" (members are invited in the app; step 5 is the metadata URL)"
+  },
+  "c28241d06d37cc69": {
+   "email": "e14",
+   "questions": {
+    "e14q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "c4b18aee175293bb": {
+   "email": "e12",
+   "questions": {
+    "e12q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "c849f58ef4b11f63": {
+   "email": "e16",
+   "questions": {
+    "e16q1": "wrong",
+    "e16q2": "wrong"
+   },
+   "false_statement": true,
+   "note": "e16q1: \"The next retry will be on 2 days after the failed payment\" (retries are 1, 3 and 7 days) | e16q2: unsure: says \"your integration will stop working\" and read-only, but does not state the API accepts only read requests | false_statement: \"The next retry will be on 2 days after the failed payment\"; \"We have passed this information to a colleague\" (unsupported)"
+  },
+  "ccbbf58d147be1a7": {
+   "email": "e30",
+   "questions": {
+    "e30q1": "correct",
+    "e30q2": "wrong"
+   },
+   "false_statement": true,
+   "note": "e30q2: \"The app is available in Italian\" | false_statement: \"The app is available in Italian, as it is one of the languages listed\""
+  },
+  "d5ce5fbfea1f7c6d": {
+   "email": "e02",
+   "questions": {
+    "e02q1": "correct"
+   },
+   "false_statement": false,
+   "note": ""
+  },
+  "e17eca84fa08d197": {
+   "email": "e22",
+   "questions": {
+    "e22q1": "wrong",
+    "e22q2": "correct"
+   },
+   "false_statement": true,
+   "note": "e22q1: \"Yes, it will fail\" (a larger value is treated as 200, not rejected) | false_statement: \"Yes, it will fail\""
+  },
+  "e4a90737c29592af": {
+   "email": "e26",
+   "questions": {
+    "e26q1": "omitted",
+    "e26q2": "omitted"
+   },
+   "false_statement": false,
+   "note": "e26q1: Only restates a question | e26q2: Only restates a question"
+  },
+  "e806dc74883847f0": {
+   "email": "e06",
+   "questions": {
+    "e06q1": "correct"
+   },
+   "false_statement": false,
+   "note": "false_statement: unsure: extra \"To regain access to your account, you can try signing in with your email address and password\" is irrelevant advice, not clearly false"
+  },
+  "e9fb156e2768991c": {
+   "email": "e24",
+   "questions": {
+    "e24q1": "correct",
+    "e24q2": "answered"
+   },
+   "false_statement": true,
+   "note": "e24q2: \"there is no discount for paying three years upfront\" | false_statement: \"there is no discount for paying three years upfront\" (not in the documentation)"
+  },
+  "fa8e56789c854289": {
+   "email": "e36",
+   "questions": {
+    "e36q1": "omitted",
+    "e36q2": "omitted",
+    "e36q3": "omitted"
+   },
+   "false_statement": false,
+   "note": "e36q1: Only restates a question | e36q2: Only restates a question | e36q3: Only restates a question"
+  }
+ }
+}

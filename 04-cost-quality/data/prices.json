@@ -1,0 +1,31 @@
+{
+ "_comment": "Published list prices in USD per million tokens, Standard processing, read from the providers' pricing pages on the date below. They change: re-read the pages before reusing them. The experiment runs local models, so these rates are applied to local token counts as a HYPOTHETICAL calculation: what calls with these token counts would cost at these rates. A hosted model's tokenizer would count the same text differently, and its answers would differ. 'roles' says which hosted model stands in for which local model.",
+ "checked": "2026-11-24",
+ "scenarios": {
+  "openai": {
+   "source": "https://developers.openai.com/api/docs/pricing",
+   "tier": "Standard, prompts up to 272K input tokens",
+   "roles": {"llama3.2:3b": "gpt-6.2-sol", "llama3.2:1b": "gpt-6-luna"},
+   "models": {
+    "gpt-6.2-sol": {"input": 2.00, "cache_read": 0.10, "cache_write_30m": 2.50, "cache_write_12h": 5.00, "output": 10.00},
+    "gpt-6-luna": {"input": 0.10, "cache_read": 0.01, "cache_write_30m": 0.125, "cache_write_12h": 0.25, "output": 0.50}
+   }
+  },
+  "anthropic": {
+   "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+   "tier": "Standard; Claude Haiku 5.5 at its price for prompts up to 100,000 tokens",
+   "roles": {"llama3.2:3b": "Claude Sonnet 5.5", "llama3.2:1b": "Claude Haiku 5.5"},
+   "models": {
+    "Claude Sonnet 5.5": {"input": 2.00, "cache_read": 0.10, "cache_write_5m": 2.50, "cache_write_1h": 4.00, "output": 10.00},
+    "Claude Haiku 5.5": {"input": 0.10, "cache_read": 0.01, "cache_write_5m": 0.125, "cache_write_1h": 0.20, "output": 0.50}
+   }
+  }
+ },
+ "embedding": {
+  "source": "https://developers.openai.com/api/docs/pricing",
+  "model": "text-embedding-3-small",
+  "stands_in_for": "nomic-embed-text:latest",
+  "input": 0.02,
+  "note": "Used in both scenarios for the query embeddings (Anthropic's pricing page lists no embedding model). Query tokens are counted with 01's Llama 3.2 tokenizer, an approximation of the embedding model's own count."
+ }
+}
