@@ -1,6 +1,6 @@
 # 03-latency-breakdown
 
-Companion code for **Latency in AI Applications: Where Does the Time Actually Go?** (Article #35 on [snehalagrawal.com](https://snehalagrawal.com/articles/); link added when it's published).
+Companion code for **[Latency in AI Applications: Where Does the Time Actually Go?](https://snehalagrawal.com/articles/latency-in-ai-applications-where-does-the-time-actually-go/)** (Article #35).
 
 A support assistant's chat request passes through several stages before the customer sees an answer:
 
